@@ -10,11 +10,17 @@ Template: adorn
 */
 /*custom*/
 body {
-    font-family: sans-serif!important;
+    font-family: 'balham'!important;
 }
-button.button, .edge-widget-title {
-    font-family: sans-serif!important;
+@font-face {
+  font-family: 'balham';
+  src: url("../adorn/custom/balham.woff") format('woff');
 }
+
+
+/*button.button, .edge-widget-title {
+    font-family: sans-serif!important;
+}*/
 #rev_slider_1_1 .edge-dark.tparrows:before {
 	color: #fff!important;
 	font-weight: bold;
@@ -25,13 +31,13 @@ button.button, .edge-widget-title {
 .edge-header-vertical .edge-vertical-area-widget-holder .widget.widget_nav_menu ul li a {
     color: #767675!important;
     font-size: 15px!important;
-    font-family: sans-serif!important;
+    font-family: 'balham'!important;
     letter-spacing: 1px!important;
 }
 .edge-header-vertical .edge-vertical-menu ul li a {
     color: #767675!important;
     font-size: 15px!important;
-    font-family: sans-serif!important;
+    font-family: 'balham'!important;
 }
 .edge-logo-wrapper {
     width: 270px!important;
@@ -43,11 +49,11 @@ button.button, .edge-widget-title {
     background: #fff!important;
 }
 .edge-main-menu>ul>li>a>span.item_outer .item_text, span.edge-logged-in-user-name, .edge-shopping-cart-holder .edge-header-cart .edge-cart-icon-text {
-	font-family: sans-serif!important;
+  font-family:'balham'!important;
     font-size: 12px!important;
 }
-a, li, .woocommerce-page .edge-content label, div.woocommerce label {
-    font-family: sans-serif!important;
+a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p {
+  font-family:'balham'!important;
 }
 .edge-google-map {
     height: 0!important;
