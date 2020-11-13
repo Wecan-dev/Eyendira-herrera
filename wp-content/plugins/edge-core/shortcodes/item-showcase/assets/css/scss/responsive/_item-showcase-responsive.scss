@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Item Showcase shortcode responsive style - begin
+   ========================================================================== */
+
+
+
+@include ipad-landscape {
+	.edge-item-showcase-holder {
+		.edge-is-image {
+			width: 100%;
+			float: none;
+			margin-bottom: 45px;
+		}
+
+		.edge-is-item-holder.edge-is-left-holder,
+		.edge-is-item-holder.edge-is-right-holder {
+			width: 45%;
+			padding:0 15px;
+		}
+
+		.edge-is-item-holder.edge-is-left-holder {
+			float: left;
+		}
+
+		.edge-is-item-holder.edge-is-right-holder {
+			float: right;
+		}
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	
+	.edge-item-showcase-holder {
+		
+		.edge-is-item-holder {
+			
+			&.edge-is-left-holder,
+			&.edge-is-right-holder {
+				float: none;
+				width: 100%;
+				padding: 0;
+			}
+		}
+		
+		.edge-is-item {
+			opacity: 1;
+			-webkit-transform: translateX(0) translateY(0) !important;
+			-moz-transform: translateX(0) translateY(0) !important;
+			transform: translateX(0) translateY(0) !important;
+			
+			&.edge-is-left,
+			&.edge-is-right {
+				
+				.edge-is-content {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+@include phone-portrait {
+	.edge-item-showcase-holder {
+
+		.edge-is-item-holder.edge-is-left-holder {
+			.edge-is-item {
+
+				&.edge-is-left {
+
+					&:last-child {
+						.edge-item-inner {
+							padding-bottom: 77px;
+						}
+					}
+				}
+
+
+
+			}
+		}
+
+
+	}
+}
+/* ==========================================================================
+   Item Showcase shortcode responsive style - end
+   ========================================================================== */

@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Grid System style - begin
+   ========================================================================== */
+
+.edge-two-columns-form-without-space {
+    
+    .edge-column-left {
+        display: table-cell;
+        width: 99%;
+        vertical-align: top;
+    }
+    
+    .edge-column-right {
+        display: table-cell;
+        width: 1%;
+        text-align: left;
+        vertical-align: top;
+    }
+}
+
+@import 'grid-system-mixin';
+
+.edge-grid-row {
+    @include createGridRow();
+    @include edgeClearfix();
+}
+
+//generate gutter spaces
+$columns_space_label: ('no', 'tiny', 'small', 'normal', 'medium', 'large');
+$columns_space: (0, 5, 10, 15, 20, 25);
+
+@for $i from 0 to length($columns_space_label) {
+    &.edge-grid-#{nth($columns_space_label,$i+1)}-gutter {
+        $item_space: nth($columns_space, $i+1);
+    
+        //generate holder margin
+        @include createGridRow($item_space);
+        
+        //generate columns padding
+        > div {
+            @include createGridColumnPadding($item_space);
+        }
+    }
+}
+
+//generate column classes
+@for $i from 1 to (map-get($gridConfig, numberOfCols) + 1) {
+    .edge-grid-col-#{$i} {
+        @include createGridColumn($i);
+        
+        @include createGridColumnResponsive(map-get($gridConfig, stackOn));
+    }
+}
+
+//generate push / pull classes
+@for $i from 1 to (map-get($gridConfig, numberOfCols) + 1) {
+    .edge-grid-col-push-#{$i} {
+        @include createGridColumnPush($i);
+    }
+    
+    .edge-grid-col-pull-#{$i} {
+        @include createGridColumnPull($i);
+    }
+}
+
+//generate responsive width column classes
+@for $i from 1 to (map-get($gridConfig, numberOfCols) + 1) {
+    @each $size, $width in $breakpoints {
+        .edge-grid-col-#{$size}-#{$i} {
+            $stack: false;
+            
+            //check if current column is max number of columns.
+            //if it is than we need to stack columns
+            @if($i == map-get($gridConfig, numberOfCols)) {
+                $stack: true;
+            }
+            
+            //if current column isn't the max number of columns
+            //than generate responsive for it.
+            @if($i < (map-get($gridConfig, numberOfCols) + 1)) {
+                @include createGridColumnResponsive($size, $i, $stack);
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Grid System style - end
+   ========================================================================== */

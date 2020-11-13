@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.edge-video-button-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	
+	.edge-video-button-image {
+		@include edgeRelativeHolderLayout();
+
+		&:after {
+			content:'';
+			position: absolute;
+			top:0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0,0,0,0.2);
+			opacity: 0;
+			@include edgeTransition(opacity .25s);
+		}
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.edge-video-button-play,
+	.edge-video-button-play-image {
+		@include edgeAbsoluteHolderLayout();
+		z-index: 1;
+		
+		.edge-video-button-play-inner {
+			box-sizing: border-box;
+			width: 55px;
+			height: 55px;
+			margin: auto;
+			color:white;
+			position: relative;
+			left: 0;
+			top: 50%;
+			text-align: center;
+			@include edgeTransform(translateY(-50%));
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			display: block;
+		}
+	}
+	
+	.edge-video-button-play {
+		color: $default-heading-color;
+		font-size: 86px;
+		display: block;
+		line-height: 55px;
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+
+		span {
+			display: block;
+			line-height: inherit;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include edgeTransform(translate(-50%, -50%));
+			
+			&:before {
+				display: block;
+				line-height: inherit;
+			}
+		}
+	}
+
+	&:hover {
+		.edge-video-button-image {
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+	
+	.edge-video-button-play-image {
+		
+		&.edge-vb-has-hover-image {
+			
+			&:hover {
+				
+				img {
+					
+					&:first-child {
+						opacity: 0;
+					}
+					
+					&:nth-child(2) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			@include edgeTransition(opacity .3s ease-in-out);
+			
+			&:first-child {
+				position: relative;
+				opacity: 1;
+			}
+			
+			&:nth-child(2) {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				opacity: 0;
+				@include edgeTransform(translateX(-50%) translateZ(0));
+				
+				.rev_slider_wrapper & {
+					@include edgeTransform(translateZ(0));
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

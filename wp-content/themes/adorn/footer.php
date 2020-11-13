@@ -1,0 +1,1 @@
+<?php do_action('adorn_edge_get_footer_template');

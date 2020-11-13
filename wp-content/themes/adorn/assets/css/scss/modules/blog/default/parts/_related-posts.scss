@@ -1,0 +1,124 @@
+/* Related posts styles - begin
+	====================================================================== */
+
+.edge-related-posts-holder {
+    @include edgeRelativeHolderLayout();
+    padding: 0;
+    box-sizing: border-box;
+
+    .edge-related-posts-holder-inner {
+        padding: 46px 0 26px;
+    }
+
+    .edge-related-posts-title {
+        margin: 0 0 40px;
+
+        > * {
+            margin: 0;
+        }
+    }
+
+    .edge-related-posts-inner {
+        margin: 0 -10px;
+    }
+
+    .edge-related-post {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 25%;
+        margin: 0 0 20px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    
+        .edge-content-has-sidebar & {
+            widtH: 33.33333333333333%;
+        }
+    
+        .touch & {
+            cursor: pointer;
+        }
+    
+        &:hover {
+        
+            .edge-related-post-image a:after {
+                opacity: 1;
+            }
+        }
+    
+        .edge-related-post-image {
+            @include edgeRelativeHolderLayout();
+            overflow: hidden;
+        
+            a {
+                position: relative;
+                display: block;
+            
+                &:after {
+                    @include edgeAbsoluteHolderLayout();
+                    content: '';
+                    opacity: 0;
+                    background-color: rgba($default-heading-color, 0.2);
+                    @include edgeTransition(opacity 0.3s ease);
+                }
+            }
+        
+            img {
+                display: block;
+            }
+        }
+    
+        .edge-post-title {
+            margin: 5px 0 0;
+        }
+    
+        .edge-post-info {
+            @include edgeRelativeHolderLayout();
+            margin: 19px 0 0;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+
+            > div {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                float: left;
+                padding: 0 13px 0 0;
+                color: inherit;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 4px;
+                    content: '/';
+                }
+
+                &:last-child {
+                    padding: 0;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                &.edge-post-info-author {
+
+                    .edge-post-info-author-text {
+                        margin: 0 3px 0 0;
+                    }
+                }
+
+                a {
+                    color: inherit;
+                    line-height: inherit;
+                    font-size: inherit;
+                    font-weight: inherit;
+                }
+            }
+        }
+    }
+}
+
+/* Related posts styles - end
+	====================================================================== */

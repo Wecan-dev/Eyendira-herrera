@@ -1,0 +1,84 @@
+/* ==========================================================================
+   WooCommerce Track Order page styles - begin
+   ========================================================================== */
+
+.edge-woocommerce-page.edge-woocommerce-order-tracking {
+    
+    .woocommerce {
+        margin: 0 0 45px;
+        
+        > .track_order {
+            display: block;
+            margin: 0 0 60px;
+            
+            > p:not(.form-row) {
+                display: none;
+                margin: 0 0 7px;
+                color: #fff;
+                text-align: center;
+                padding: 0 99px 42px;
+            }
+            
+            .form-row-first,
+            .form-row-last {
+                @include edgeRelativeHolderLayout();
+                margin: 0;
+                width: 37.3%;
+                float: left;
+                box-sizing: border-box;
+                padding-right: 17px;
+                
+                label {
+                    display: block;
+                    margin: 14px 0;
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 38px;
+                    margin-bottom: 0;
+                    visibility: hidden;
+                }
+
+                input::-webkit-contacts-auto-fill-button {
+                    visibility: hidden;
+                    display: none !important;
+                    pointer-events: none;
+                    position: absolute;
+                    right: 0;
+
+                }
+
+                input {
+                    padding: 11px 20px;
+                    height: 64px;
+                    line-height: 42px;
+                    @include edgePlaceholder {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            div.clear {
+                display: none;
+            }
+
+            .form-row {
+                &:nth-child(5) {
+                    width: 25.4%;
+                    float: left;
+                    position: relative;
+                    top: 29px;
+                }
+            }
+            
+            .button {
+                margin: 13px 0 0;
+                font-size: 14px;
+                padding: 8px 60px;
+                width: 100%;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   WooCommerce Track Order page styles - end
+   ========================================================================== */

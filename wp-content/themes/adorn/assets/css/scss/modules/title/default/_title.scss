@@ -1,0 +1,216 @@
+/* ==========================================================================
+   Title style - begin
+   ========================================================================== */
+
+.edge-title {
+    @include edgeRelativeHolderLayout();
+    height: 325px;
+    text-align: center;
+    z-index: 101;
+    background-color: #fafafa;
+    background-position: center 0;
+    background-repeat: no-repeat;
+
+    &.edge-has-parallax-background {
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        z-index: 101;
+    }
+
+    &.edge-content-left-alignment {
+        text-align: left;
+    }
+
+    &.edge-content-center-alignment {
+        text-align: center;
+    }
+
+    &.edge-content-right-alignment {
+        text-align: right;
+    }
+
+    &.edge-has-responsive-background {
+        height: auto !important;
+
+        .edge-title-holder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+
+            .edge-container {
+                display: block;
+                height: 100%;
+            }
+
+            .edge-container-inner {
+                display: table;
+                height: 100%;
+            }
+
+            .edge-title-subtitle-holder {
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+            }
+        }
+    }
+
+    .edge-title-image {
+
+        img {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &.edge-title-image-responsive {
+        height: auto !important;
+    }
+
+    &.edge-title-image-not-responsive {
+
+        .edge-title-image {
+            display: none;
+        }
+    }
+
+    .edge-title-holder {
+        position: relative;
+        display: table;
+        height: 100%;
+        width: 100%;
+
+        .edge-container {
+            display: table-row;
+            vertical-align: middle;
+            background-color: transparent;
+        }
+
+        .edge-container-inner {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 !important;
+        }
+
+        .edge-title-subtitle-holder {
+            position: relative;
+            display: block;
+            padding: 0;
+            z-index: 25;
+        }
+
+        .edge-title-subtitle-holder-inner {
+            position: relative; //because of the breadcrumbs (absolute position) on standard type title
+        }
+
+        /* #Standard title - start
+        ========================================================================== */
+    
+        .edge-page-title {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            line-height: 48px;
+    
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        .edge-subtitle {
+            display: block;
+            margin-top: 14px;
+            font-size: 18px;
+            line-height: 30px;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        /* #Standard title - end
+        ========================================================================== */
+
+        /* #Breadcrumb title - start
+        ========================================================================== */
+
+        .edge-breadcrumbs-holder {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .edge-breadcrumbs {
+
+            a, 
+            span {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                color: $default-text-color;
+                font-weight: 400;
+                font-family: $heading-font;
+            }
+
+            a:hover {
+                color: $default-heading-color;
+            }
+        }
+
+        /* #Breadcrumb title - end
+        ========================================================================== */
+    }
+
+    &.edge-standard-type {
+
+        .edge-breadcrumbs-holder {
+            position: absolute;
+            top: 0;
+            height: 100%;
+
+            .edge-breadcrumbs {
+                display: table;
+                height: 100%;
+                width: 100%;
+            }
+
+            .edge-breadcrumbs-inner {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+        }
+
+        &.edge-content-left-alignment {
+
+            .edge-breadcrumbs-holder {
+                right: 0;
+            }
+        }
+
+        &.edge-content-right-alignment {
+
+            .edge-breadcrumbs-holder {
+                left: 0;
+            }
+        }
+
+        &.edge-content-center-alignment {
+
+            .edge-breadcrumbs-holder {
+                position: relative;
+                top: auto;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Title style - end
+   ========================================================================== */

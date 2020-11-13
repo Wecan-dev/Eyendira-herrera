@@ -1,0 +1,169 @@
+/* ==========================================================================
+   Instagram widget style - begin
+   ========================================================================== */
+.widget_edge_instagram_widget{
+
+    position: relative;
+    .edge-instagram-text{
+        position: absolute;
+        top: calc(50% - 22.5px); //22.5px is a half of instagram widget bottom margin which need to calculate here
+        left: 50%;
+        z-index: 2;
+        font-family: $heading-font;
+        font-size: 16px;
+        font-weight: 400;
+        color: $additional-color;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 11px 22px;
+        background-color: rgba($default-background-color, 0.9);
+        @include edgeTransform(translate(-50%));
+    }
+}
+
+.edge-instagram-feed {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        float: left;
+        box-sizing: border-box;
+        border: none !important;
+
+        a {
+            position: relative;
+            display: block;
+            overflow: hidden;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba($default-heading-color, .6);
+                opacity: 0;
+                @include edgeTransition(opacity .6s);
+            }
+
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: #fff;
+                height: 30px;
+                width: 30px;
+                @include edgeTransform(translate(-50%,-50%));
+                overflow: hidden;
+                font-size: 27px;
+                z-index: 9;
+                i {
+                    opacity: 0;
+                    -webkit-transform: translate3d(0,30px,0);
+                    -moz-transform: translate3d(0,30px,0);
+                    transform: translate3d(0,30px,0);
+                    -webkit-transition: opacity .2s,-webkit-transform 0s .2s;
+                    transition: opacity .2s,transform 0s .2s;
+                }
+            }
+
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &.edge-instagram-gallery {
+
+        $gallery_space_label: ('no', 'tiny', 'small', 'normal');
+        $gallery_space_width: (0, 5, 10, 15);
+
+        @for $i from 0 to length($gallery_space_label) {
+            &.edge-#{nth($gallery_space_label,$i+1)}-space {
+                $column_width: nth($gallery_space_width, $i+1);
+                $column_width_margin: $column_width * 2;
+
+                @if ($column_width == 0) {
+                    margin: 0;
+                } @else {
+                    margin: 0 -#{$column_width}px -#{$column_width_margin}px;
+                }
+
+                li {
+                    padding: 0 #{$column_width}px;
+                    margin: 0 0 #{$column_width_margin}px;
+                }
+            }
+        }
+
+        &.edge-tiny-space {
+            li {
+                padding: 0 3px;
+                margin: 0 0 5px;
+            }
+        }
+
+        $gallery_columns: ('2', '3', '4','5','6', '7', '8', '9');
+        @for $i from 0 to length($gallery_columns) {
+            &.edge-col-#{nth($gallery_columns, $i+1)} {
+                $column_width:100% / ($i+2);
+
+
+                @if ($i == 3) {
+                    $column_width: 100%/6;
+                } @else if ($i == 4) {
+                    $column_width: 100%/9;
+                }
+
+                li {
+                    width: $column_width;
+                }
+            }
+        }
+    }
+
+    &.edge-instagram-carousel {
+
+        li {
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            a {
+                position: relative;
+                display: block;
+                height: 100%;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(#fff, .25);
+                    opacity: 0;
+                    @include edgeTransition(opacity 0.3s ease-in-out);
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Instagram widget style - end
+   ========================================================================== */

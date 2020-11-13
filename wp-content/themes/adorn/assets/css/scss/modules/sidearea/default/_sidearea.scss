@@ -1,0 +1,287 @@
+/* ==========================================================================
+# Side area style - start
+========================================================================== */
+
+/* Side area general style - start
+========================================================================== */
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-side-menu-button-opener,
+.edge-light-header .edge-top-bar .edge-side-menu-button-opener {
+	color: $header-light-color !important; //Color can be set inline from widget opener;
+	
+	&.opened,
+	&:hover {
+		color: $default-text-color !important; //Color can be set inline from widget opener;
+	}
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-side-menu-button-opener,
+.edge-dark-header .edge-top-bar .edge-side-menu-button-opener {
+	color: $header-dark-color !important; //Color can be set inline from widget opener;
+	
+	&.opened,
+	&:hover {
+		color: $default-text-color !important; //Color can be set inline from widget opener;
+	}
+}
+
+.edge-side-menu-button-opener {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin: -4px 10px 0 15px;
+	
+	.edge-side-menu-title {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 8px 0 0;
+		color: currentColor;
+	}
+	
+	.edge-side-menu-lines {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 10px;
+		color: $header-dark-color;
+
+		.edge-light-header &{
+			color: $default-background-color;
+		}
+		.edge-dark-header &,
+		.edge-sticky-header &{
+			color: $dark-color;
+		}
+		
+		.edge-side-menu-line {
+			position: absolute;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background-color: currentColor;
+			-webkit-transition: -webkit-transform .3s ease, top .2s ease-out, background-color .2s ease-out;
+			-moz-transition: -moz-transform .3s ease, top .2s ease-out, background-color .2s ease-out;
+			transition: transform .3s ease, top .2s ease-out, background-color .2s ease-out;
+
+
+			@include edgeTransition(all .2s ease-out);
+			
+			&.edge-line-1 {
+				top: 0;
+				outline: transparent solid 1px;
+			}
+			
+			&.edge-line-2 {
+				top: 50%;
+				outline: transparent solid 1px;
+			}
+			
+			&.edge-line-3 {
+				top: 100%;
+				outline: transparent solid 1px;
+			}
+		}
+	}
+	
+	&.opened{
+		.edge-side-menu-lines {
+
+			.edge-side-menu-line {
+				background-color: $first-main-color;
+
+				&.edge-line-1 {
+					display: none;
+				}
+
+				&.edge-line-2 {
+					top: 50%;
+					@include edgeTransform(rotate(45deg));
+				}
+
+				&.edge-line-3 {
+					top: 50%;
+					@include edgeTransform(rotate(-45deg));
+				}
+			}
+		}
+
+		&:hover {
+			.edge-side-menu-lines .edge-side-menu-line.edge-line-2 { 
+				@include edgeTransform(rotate(45deg));
+			}
+		}
+	}
+	&:hover {
+		color: $default-text-color;
+
+		.edge-side-menu-lines {
+
+			.edge-side-menu-line {
+
+				&.edge-line-1,
+				&.edge-line-3 {
+					top: 50%;
+				}
+
+				&.edge-line-2 {
+					@include edgeTransform(rotate(90deg));
+				}
+			}
+		}
+	}
+}
+
+.edge-side-menu {
+    position: fixed;
+    top: 0;
+	right: -605px;
+	width: 605px;
+    height: 100%;
+    min-height: 100%;
+	padding: 66px 62px 121px;
+    background-color: #111;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 9999;
+    -webkit-backface-visibility: hidden;
+    box-sizing: border-box;
+    @include edgeTransition(all .6s cubic-bezier(.77,0,.175,1));
+	text-align: center;
+
+	.edge-side-area-inner {
+		height: 100%;
+		min-height: 100%;
+		overflow: hidden;
+		outline: none;
+	}
+
+	div.widget_edge_instagram_widget {
+		padding: 0 50px;
+		margin-top: -8px;
+	}
+
+	div.widget_text {
+		.edge-widget-title-holder {
+			.edge-widget-title {
+				color: #fff;
+				letter-spacing: 0.1em;
+				margin-top: 28px;
+			}
+		}
+
+		.textwidget {
+			font-size: 24px;
+			color: $default-text-color;
+			font-weight: 300;
+			line-height: 36px;
+
+			p {
+				font-size: 12px;
+				color: #a5a5a5;
+				letter-spacing: 0.1em;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.edge-side-area-bottom {
+		.widget {
+			margin-bottom: -3px;
+			margin-top: -15px;
+		}
+
+		.edge-social-icon-widget-holder {
+			font-size: 15px;
+			color:	#fff;
+		}
+	}
+
+    .edge-close-side-menu-holder {
+        position: absolute;
+	    top: 38px;
+	    right: 38px;
+        z-index: 1000;
+    }
+
+	a.edge-close-side-menu {
+		display: block;
+		color: #fff;
+		font-size: 24px;
+		z-index: 1000;
+
+		&:hover {
+			color: $default-text-color;
+		}
+
+		span {
+			display: block;
+			line-height: inherit;
+
+			&:before {
+				display: block;
+				line-height: 29px;
+			}
+
+			&:after{
+				content: 'CLOSE';
+				font-size: 14px;
+				top: 0;
+				left: -45px;
+				position: absolute;
+				font-family: $heading-font;
+			}
+		}
+	}
+}
+
+.admin-bar .edge-side-menu .edge-close-side-menu-holder {
+    top: 32px;
+}
+
+/* Side area general style - end
+========================================================================== */
+
+/* Side area slides over content style - start
+========================================================================== */
+
+.edge-side-menu-slide-from-right {
+
+    .edge-wrapper {
+
+        .edge-cover {
+            z-index: -1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: 0;
+        }
+    }
+}
+
+.edge-side-menu-slide-from-right.edge-right-side-menu-opened {
+
+    .edge-wrapper {
+        .edge-cover {
+            z-index: 3000;
+			opacity: 1;
+			background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .edge-side-menu {
+        right: 0;
+        visibility: visible;
+    }
+}
+
+/* Side area slides over content style - end
+========================================================================== */
+
+/* ==========================================================================
+# Side area style - end
+========================================================================== */

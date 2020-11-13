@@ -1,0 +1,69 @@
+/*
+Theme Name: Adorn Child
+Theme URI: http://adorn.edge-themes.com
+Description: A child theme of Adorn Theme
+Author: Edge Themes
+Author URI: http://themeforest.net/user/edge-themes
+Version: 1.0.1
+Text Domain: adorn
+Template: adorn
+*/
+/*custom*/
+body {
+    font-family: sans-serif!important;
+}
+button.button, .edge-widget-title {
+    font-family: sans-serif!important;
+}
+#rev_slider_1_1 .edge-dark.tparrows:before {
+	color: #fff!important;
+	font-weight: bold;
+}
+.edge-header-vertical .edge-vertical-area-widget-holder .widget.widget_nav_menu {
+	border-bottom: 1px solid #5a5a59!important;
+}
+.edge-header-vertical .edge-vertical-area-widget-holder .widget.widget_nav_menu ul li a {
+    color: #767675!important;
+    font-size: 15px!important;
+    font-family: sans-serif!important;
+    letter-spacing: 1px!important;
+}
+.edge-header-vertical .edge-vertical-menu ul li a {
+    color: #767675!important;
+    font-size: 15px!important;
+    font-family: sans-serif!important;
+}
+.edge-logo-wrapper {
+    width: 270px!important;
+}
+.edge-pl-holder.edge-standard-layout.edge-no-space.edge-three-columns.edge-info-on-image, .edge-side-menu-button-opener .edge-side-menu-lines, .edge-social-sidebar-holder {
+    display: none!important;
+}
+.edge-fullscreen-search-holder.edge-animate {
+    background: #fff!important;
+}
+.edge-main-menu>ul>li>a>span.item_outer .item_text, span.edge-logged-in-user-name, .edge-shopping-cart-holder .edge-header-cart .edge-cart-icon-text {
+	font-family: sans-serif!important;
+    font-size: 12px!important;
+}
+a, li, .woocommerce-page .edge-content label, div.woocommerce label {
+    font-family: sans-serif!important;
+}
+.edge-google-map {
+    height: 0!important;
+}
+.edge-shopping-cart-dropdown .edge-cart-bottom .edge-btn-holder a {
+	font-size: 10px!important;
+}
+span.edge-cart-icon-text, .edge-btn-holder.clearfix, .edge-shopping-cart-inner {
+    text-transform: uppercase!important;
+}
+.edge-fullscreen-search-holder .edge-fullscreen-search-close-container a:before {
+	content: "CERRAR"!important;
+}
+.edge-pl-holder .edge-pl-ordering-outer .edge-pl-ordering div h5 {
+	font-size: 14px!important;
+}
+.edge-page-footer .edge-footer-top-holder .edge-footer-top-inner.edge-grid {
+	display: none!important;
+}

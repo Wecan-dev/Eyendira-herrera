@@ -1,0 +1,482 @@
+/* ==========================================================================
+   YITH Quick View styles - begin
+   ========================================================================== */
+#yith-quick-view-modal,
+.yith-quick-view.yith-modal {
+
+    .yith-quick-view-overlay {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .yith-wcqv-wrapper {
+        padding: 0;
+        max-width: 1080px;
+        height: auto !important;
+    }
+
+    .yith-wcqv-main {
+	    @include edgeRelativeHolderLayout();
+	    padding: 0;
+	    overflow: hidden !important;
+	    box-shadow: none;
+        border: 1px solid #e1e1e1;
+    }
+
+    #yith-quick-view-content {
+        .product{
+            margin: 0;
+        }
+
+        .product-type-grouped {
+            .summary {
+                div[itemprop="offers"] {
+                    margin: 0 0 30px;
+                }
+            }
+        }
+
+        .product-type-external {
+            .summary {
+                .edge-single-product-share-wish {
+                    display: none;
+                }
+            }
+        }
+
+        .product-type-variable {
+
+            .summary {
+                div[itemprop="offers"] {
+                    margin: 0 0 30px;
+                }
+            }
+
+            form {
+                .single_variation_wrap {
+                    margin: 5px 0 0;
+                }
+            }
+        }
+
+        .images,
+        .summary {
+            position: relative;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            height:  600px;
+        }
+
+        .images {
+
+            a, img {
+                display: block;
+            }
+
+            &.edge-owl-slider{
+                .owl-item{
+                    height: 600px;
+
+                    .item{
+                        height: 100%;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .summary {
+            padding: 46px 50px 0px;
+
+            .single_add_to_cart_button {
+                padding: 8px 46px;
+            }
+
+            .variations {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                border: none;
+                padding: 0;
+
+                select {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    background-color: #fff;
+                    border: 1px solid #e1e1e1;
+                    box-sizing: border-box;
+                    line-height: 50px;
+                    height: 50px;
+                    padding: 0 16px 0 16px;
+                    margin: 0 -4px 0 0;
+                    color: $default-text-color;
+                    font-weight: 300;
+                    font-size: 13px;
+                    font-family: $default-text-font;
+                }
+
+                tr {
+                    border: 0;
+                    display: block;
+                    float: left;
+
+                    &:first-child {
+                        padding-right: 6px;
+                    }
+                }
+
+                td {
+                    padding: 0;
+                    text-align: left;
+                    display: block;
+                }
+
+                td.label{
+                    width: 12%;
+                }
+
+                .select2-container{
+                    min-width: 180px;
+                }
+
+                .reset_variations {
+                    color: $default-heading-color;
+                }
+            }
+
+            .single_variation_wrap {
+                margin: 35px 0 0;
+
+                .single_variation {
+                    margin: 0 0 35px;
+                }
+            }
+
+            table.group_table {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                border: none;
+                padding: 0;
+
+                tbody {
+                    display: block;
+                }
+
+                tr {
+                    border: 1px solid $default-border-color;
+                    display: table;
+                    margin-bottom: 13px;
+                    width: 100%;
+                    background-color: #fff;
+                }
+
+                td {
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    text-align: left;
+                    display: inline-block;
+
+                    &:first-child {
+                        padding: 0;
+                    }
+
+                    &.label {
+                        text-align: left;
+                        vertical-align: middle;
+                    }
+
+                    &.price {
+                        display: table-cell;
+                        font-size: 16px;
+                        margin: 0;
+                        text-align: center;
+                        vertical-align: middle;
+
+                    }
+                }
+
+                .edge-quantity-buttons {
+                    margin: 0;
+                    border: 0;
+                    background: transparent;
+                    padding: 0px 10px;
+
+                    .edge-quantity-label{
+                        display: none;
+                    }
+
+                    .edge-quantity-input{
+                        width: 20px;
+                        margin: 0;
+                    }
+                }
+
+                a {
+                    color: $default-text-color;
+
+                    &:hover {
+                        color: $default-heading-color;
+                    }
+                }
+            }
+
+            .edge-yith-product-title {
+                display: block;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            div[itemprop="offers"] {
+                position: relative;
+                display: block;
+                margin: 0 0 58px;
+
+                .price {
+                    position: relative;
+                    display: block;
+                    margin: 0;
+                    line-height: 1;
+                    color: $default-heading-color;
+                    font-size: 24px;
+                    font-family: $heading-font;
+
+                    * {
+                        font-size: inherit;
+                        line-height: inherit;
+                    }
+
+                    del {
+                        margin: 0 8px 0 0;
+                        font-size: 16px;
+                        color: $default-text-color;
+                    }
+
+                    ins {
+                        text-decoration: none;
+                    }
+                }
+            }
+	
+	        .woocommerce-product-rating {
+		        @include edgeRelativeHolderLayout();
+		        line-height: 1;
+		        margin: 0 0 8px;
+	        }
+
+            div[itemprop="description"] {
+                @include edgeRelativeHolderLayout();
+	            margin: 0 0 47px;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            form.cart {
+                @include edgeRelativeHolderLayout();
+                margin: 70px 0 20px;
+            }
+
+            .edge-single-product-share-wish {
+                position: relative;
+                display: none;
+                width: 100%;
+                vertical-align: middle;
+                margin: 0px;
+
+                .yith-wcwl-wishlistexistsbrowse,
+                .yith-wcwl-wishlistaddedbrowse {
+                    a {
+                        &:after {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+                .yith-wcwl-wishlistaddedbrowse{
+                    span{
+                        font-family: $heading-font;
+                        font-weight: 400;
+                        color: $first-main-color;
+                    }
+                }
+
+                .clear{
+                    display: none;
+                }
+
+                > div{
+                    padding: 0 20px;
+
+                    &:after{
+                        content: "|";
+                        color: #d3d3d3;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    &:first-child{
+                        padding-left: 0;
+
+                        &:after{
+                            display: none;
+                        }
+                    }
+
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                }
+
+                .edge-woo-social-share-holder {
+                    float: left;
+                    position: relative;
+
+                    > * {
+                        display: table-cell;
+                        vertical-align: top;
+                        line-height: 22px;
+                    }
+
+                    > span {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        color: $first-main-color;
+                        padding: 0 9px 0 0;
+                    }
+                }
+            }
+
+            .yith-wcwl-add-to-wishlist {
+                width: auto;
+                background-color: transparent;
+                float: left;
+                margin-top: 10px;
+
+                .yith-wcwl-add-button,
+                .yith-wcwl-wishlistaddedbrowse,
+                .yith-wcwl-wishlistexistsbrowse {
+                    a {
+                        font-size: 12px;
+                        color: $first-main-color;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        line-height: 22px;
+                        font-weight: 400;
+                        font-family: $heading-font;
+
+                        &:after {
+                            content: "\e089";
+                            font-size: 16px;
+                            float: left;
+                            padding-right: 10px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+                .yith-wcwl-wishlistaddedbrowse{
+                    span{
+                        font-family: $heading-font;
+                        font-weight: 400;
+                        color: $first-main-color;
+                    }
+                }
+
+                .yith-wcwl-add-button {
+                    a {
+                        &:after {
+                            content: "\e030";
+                        }
+                    }
+                }
+            }
+
+            p.stock.out-of-stock,
+            p.stock.in-stock {
+                color: $default-heading-color;
+                font-weight: bold;
+                margin: 0 0 18px;
+            }
+
+            .price{
+                margin: 10px 0 47px 0;
+
+                .woocommerce-Price-amount{
+                    &.amount{
+                        font-family: $heading-font;
+                        font-size: 24px;
+                        color: $additional-color;
+                    }
+                }
+            }
+            .woocommerce-product-details__short-description{
+                font-size: 14px;
+            }
+            .cart{
+                .edge-quantity-buttons{
+                    margin-right: 15px;
+                }
+                .single_add_to_cart_button{
+                    padding: 0px 24px;
+                }
+            }
+        }
+    }
+
+    #yith-quick-view-close {
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        font-size: 0;
+        line-height: 30px;
+	    font-weight: 400;
+        text-align: center;
+        opacity: 1;
+        border: 0;
+        color: $default-heading-color;
+
+        &:before {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            font-family: 'ElegantIcons';
+            content: "\4d";
+	        font-size: 18px;
+            line-height: 28px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        &:after{
+            content: 'CLOSE';
+            position: absolute;
+            top: 0;
+            left: -30px;
+            font-size: 14px;
+            font-family: $heading-font;
+            color: $default-text-color;
+        }
+
+        &:hover {
+            &:after{
+                color: $dark-color;
+            }
+        }
+    }
+}
+.yith-wcwl-wishlistaddedbrowse span{
+    font-family: $heading-font;
+    font-weight: 400;
+    color: $first-main-color;
+}
+/* ==========================================================================
+   YITH Quick View  styles - end
+   ========================================================================== */

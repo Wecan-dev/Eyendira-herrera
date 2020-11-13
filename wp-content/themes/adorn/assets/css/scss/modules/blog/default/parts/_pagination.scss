@@ -1,0 +1,291 @@
+/* ==========================================================================
+   Blog pagination standard style - begin
+   ========================================================================== */
+
+.edge-blog-pagination-wp {
+    display: none;
+}
+
+.edge-blog-pagination {
+    @include edgeRelativeHolderLayout();
+	margin: 5px 0px 67px;
+    clear: both;
+	padding-top: 16px;
+	padding-bottom: 16px;
+    
+    ul {
+        @include edgeRelativeHolderLayout();
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        
+        li {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0;
+
+			&.edge-pag-number a{
+				&:hover {
+					color: $first-main-color;
+					border-bottom: 1px solid $first-main-color;
+				}
+			}
+            
+            a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0;
+				color: $default-text-color;
+				font-size: 16px;
+				width: auto;
+				margin: 0 12px;
+				text-decoration: none;
+				cursor: pointer;
+				white-space: nowrap;
+				@include edgeTransition(color .2s ease-out);
+				border-bottom: 1px solid transparent;
+            }
+
+			a.edge-pag-active {
+				color: $first-main-color;
+				border-bottom: 1px solid $first-main-color;
+			}
+            
+            &.edge-pag-prev,
+            &.edge-pag-next,
+            &.edge-pag-first,
+            &.edge-pag-last {
+	            
+	            a {
+					font-size: 18px;
+					color: $default-text-color;
+					font-weight: bold;
+					margin: 0 6px 0 4px;
+
+					&:hover {
+						color: $first-main-color;
+					}
+		
+		            span {
+			            display: block;
+			            line-height: inherit;
+			
+			            &:before {
+				            display: block;
+				            line-height: inherit;
+			            }
+		            }
+	            }
+            }
+
+
+			&.edge-pag-first,
+			&.edge-pag-last {
+				a {
+					span {
+						font-weight: 600;
+					}
+				}
+			}
+
+        }
+    }
+}
+/* ==========================================================================
+   Blog pagination standard style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog List shortcode pagination standard style - begin
+   ========================================================================== */
+
+.edge-blog-list-holder {
+	
+	&.edge-bl-pag-standard-blog-list {
+		
+		.edge-blog-list {
+			opacity: 1;
+			@include edgeTransition(opacity .2s ease-out);
+		}
+		
+		&.edge-bl-pag-standard-blog-list-animate {
+			
+			.edge-blog-list {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.edge-bl-standard-pagination {
+	@include edgeRelativeHolderLayout();
+	margin: 20px 0 0;
+	clear: both;
+	
+	ul {
+		@include edgeRelativeHolderLayout();
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		
+		li {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 12px;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0;
+				padding: 0;
+			}
+			
+			&.edge-bl-pag-active {
+				
+				a {
+					color: $first-main-color;
+				}
+			}
+			
+			&.edge-bl-pag-prev,
+			&.edge-bl-pag-next {
+				position: absolute;
+				top: 0;
+				
+				a {
+					font-size: 30px;
+					@include edgeTransition(color .2s ease-out, opacity .2s ease-out);
+					
+					span {
+						display: block;
+						line-height: inherit;
+						
+						&:before {
+							display: block;
+							line-height: inherit;
+						}
+					}
+				}
+			}
+			
+			&.edge-bl-pag-prev {
+				left: 0;
+				
+				a {
+					opacity: 0;
+				}
+			}
+			
+			&.edge-bl-pag-next {
+				right: 0;
+				
+				a {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Blog List shortcode pagination standard style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog pagination load more style - begin
+   ========================================================================== */
+
+.edge-blog-pag-load-more {
+	@include edgeRelativeHolderLayout();
+	margin: 40px 0 0;
+	text-align: center;
+}
+/* ==========================================================================
+   Blog pagination load more style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog pagination loading element style - begin
+   ========================================================================== */
+
+.edge-blog-pag-loading {
+	position: relative;
+	display: none;
+	width: 100%;
+	margin: 40px 0 20px;
+	color: $default-heading-color;
+	text-align: center;
+	
+	&.edge-standard-pag-trigger {
+		position: absolute;
+		top: 50px;
+		left: 0;
+	}
+	
+	&.edge-showing {
+		display: block;
+	}
+	
+	> div {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 14px;
+		height: 14px;
+		margin: 0 3px;
+		background-color: $default-heading-color;
+		border-radius: 100%;
+		@include edgeAnimation(bl-pag-bouncedelay 1.4s infinite ease-in-out both);
+	}
+	
+	.edge-blog-pag-bounce1 {
+		-webkit-animation-delay: -0.32s;
+		-moz-animation-delay: -0.32s;
+		animation-delay: -0.32s;
+	}
+	
+	.edge-blog-pag-bounce2 {
+		-webkit-animation-delay: -0.16s;
+		-moz-animation-delay: -0.16s;
+		animation-delay: -0.16s;
+	}
+}
+
+@-webkit-keyframes bl-pag-bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+	}
+	40% {
+		-webkit-transform: scale(1.0);
+	}
+}
+
+@-moz-keyframes bl-pag-bouncedelay {
+	0%, 80%, 100% {
+		-moz-transform: scale(0);
+	}
+	40% {
+		-moz-transform: scale(1.0);
+	}
+}
+
+@keyframes bl-pag-bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	40% {
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+/* ==========================================================================
+   Blog pagination loading element style - end
+   ========================================================================== */

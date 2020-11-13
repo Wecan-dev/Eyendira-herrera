@@ -1,0 +1,25 @@
+.edge-header-standard {
+	.edge-menu-area {
+		background-color: #fff;
+		box-sizing: border-box;
+
+        .edge-position-center-inner {
+            height: 100%;
+        }
+
+        .edge-position-right-inner {
+            height: 100%;
+
+            .edge-main-menu-widget-area {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+
+                .edge-main-menu-widget-area-inner {
+                    height: 100%;
+                }
+            }
+        }
+	}
+}

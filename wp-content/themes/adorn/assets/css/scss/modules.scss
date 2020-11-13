@@ -1,0 +1,95 @@
+//global partials
+@import 'variables';
+@import 'mixins';
+/*------------------------------------------------------------------
+ * This is main css file for theme. It is broken into following sections:
+ * 1.  Global styles and reset
+ * 2.  Header Styles
+ * 3.  Footer styles
+ * 4.  Title area styles
+ * 5.  Side area styles
+ * 6.  Fullscreen Menu functionality styles
+ * 7.  Search functionality styles
+ * 8.  Blog styles
+ * 9.  Widgets styles
+ * 10. Plugins styles
+ * 11. Shortcodes styles
+ * 12. Custom Post Types styles
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ * Color codes
+
+ * Accent color: #{$first-main-color}
+ * Background: #{$default-background-color}
+ * Content: #{$default-text-color}
+ * Header h1: #{$default-heading-color}
+ * Header h2: #{$default-heading-color}
+ * Header h3: #{$default-heading-color}
+ * Header h4: #{$default-heading-color}
+ * Header h5: #{$default-heading-color}
+ * Header h6: #{$default-text-color}
+ * Header Background: #ffffff
+ * Footer Top Background: #292929
+ * Footer Bottom Background: #fff
+
+ * a (standard): #{$first-main-color}
+ * a (hover): #{$first-main-color}
+ */
+/* ==========================================================================
+   1. Global styles and reset
+   ========================================================================== */
+@import 'global';
+@import 'grid-system';
+@import 'animations';
+@import 'spinners';
+@import 'common';
+
+/* ==========================================================================
+   2. Header styles
+   ========================================================================== */
+@import 'modules/header/default/**/*.scss';
+
+/* ==========================================================================
+   3. Footer styles
+   ========================================================================== */
+@import 'modules/footer/default/**/*.scss';
+
+/* ==========================================================================
+   4. Title area styles
+   ========================================================================== */
+@import 'modules/title/default/**/*.scss';
+
+/* ==========================================================================
+   5. Side area styles
+   ========================================================================== */
+@import 'modules/sidearea/default/**/*.scss';
+
+/* ==========================================================================
+   6. Fullscreen Menu area styles
+   ========================================================================== */
+@import 'modules/fullscreenmenu/default/**/*.scss';
+
+/* ==========================================================================
+   7. Search functionality styles
+   ========================================================================== */
+@import 'modules/search/default/**/*.scss';
+
+/* ==========================================================================
+   8. Blog styles
+   ========================================================================== */
+@import 'modules/blog/default/**/*.scss';
+
+/* ==========================================================================
+   9. Widgets styles
+   ========================================================================== */
+@import 'modules/widgets/default/**/*.scss';
+
+/* ==========================================================================
+   10. Plugins styles
+   ========================================================================== */
+@import 'modules/plugins/default/**/*.scss';
+
+/* ==========================================================================
+   11. Social Sidebar styles
+   ========================================================================== */
+@import 'modules/socialsidebar/default/**/*.scss';

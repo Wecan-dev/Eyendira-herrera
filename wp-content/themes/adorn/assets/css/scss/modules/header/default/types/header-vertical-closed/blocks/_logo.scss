@@ -1,0 +1,25 @@
+.edge-header-vertical-closed {
+
+    .edge-logo-wrapper {
+        @include edgeRelativeHolderLayout();
+        z-index: 100;
+
+        a {
+            display: block;
+            position: relative;
+            height: 100%;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            max-height: 100%;
+
+            @include edgeTransition(opacity 0.3s ease);
+        }
+    }
+
+    .edge-vertical-area-bottom-logo:not(.active) .edge-logo-wrapper{
+        @include edgeTransform(rotate(270deg));
+    }
+}

@@ -1,0 +1,42 @@
+/* ==========================================================================
+   WooCommerce Buttons styles - begin
+   ========================================================================== */
+
+.woocommerce-page .edge-content,
+div.woocommerce {
+    
+    a.button,
+    a.added_to_cart
+    .wc-forward:not(.added_to_cart):not(.checkout-button),
+    input[type="submit"],
+    button[type="submit"]{
+        @include edgeButtonDefaultStyle();
+        @include edgeButtonMediumParams();
+        @include edgeButtonSolidColor();
+        padding: 0px 30px;
+        cursor: pointer;
+        z-index: 3;
+        border-radius: 0;
+        line-height: 44px;
+        font-family: $heading-font;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &:hover {
+            @include edgeButtonSolidHoverColor();
+        }
+
+        &:disabled{
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    }
+    
+    a.added {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   WooCommerce Buttons styles - end
+   ========================================================================== */

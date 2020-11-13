@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Blog List widget style - begin
+   ========================================================================== */
+
+.widget.edge-blog-list-widget {
+    margin: 0 0 20px;
+
+    > h4 {
+        margin: 0 0 15px;
+    }
+
+    footer .edge-footer-top &,
+    .edge-top-bar & {
+
+        > h2 {
+            margin: 0 0 8px;
+        }
+    }
+}
+
+aside.edge-sidebar{
+    div.widget{
+        .edge-blog-list{
+            .edge-bli-content{
+                font-family: $heading-font;
+            }
+            .edge-post-title{
+                font-size: 16px;
+                line-height: 25px;
+                text-transform: none;
+                letter-spacing: 0;
+                color: $default-text-color;
+
+                a{
+                    color: $additional-color;
+                }
+                &:hover{
+                    a{
+                        color:$first-main-color;
+                    }
+                }
+            }
+
+            .edge-post-image{
+                img{
+                    width: 65px;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Blog List widget style - end
+   ========================================================================== */

@@ -1,0 +1,255 @@
+/* Woocommerce Product Page shortcode style - begin
+========================================================================== */
+
+div.woocommerce {
+
+    > .single-product {
+
+        .images {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            padding: 0;
+
+            a {
+                @include edgeRelativeHolderLayout();
+
+                img {
+                    position: relative;
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            figure {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 -10px;
+            }
+
+            .woocommerce-product-gallery__image {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                margin: 0;
+                padding: 0 10px;
+                box-sizing: border-box;
+
+                &:first-child {
+                    width: 100%;
+                }
+            }
+
+            &.woocommerce-product-gallery--with-images {
+
+                .woocommerce-product-gallery__image {
+
+                    &:not(:first-child) {
+                        float: left;
+                        padding-top: 20px;
+                    }
+                }
+            }
+
+            $thumb_3_columns_label: ('columns-2', 'columns-3', 'columns-4');
+            @for $i from 0 to length($thumb_3_columns_label) {
+                &.woocommerce-product-gallery--#{nth($thumb_3_columns_label, $i+1)} {
+                    $column_width: 100%/($i+2);
+
+                    .woocommerce-product-gallery__image {
+
+                        &:not(:first-child) {
+                            width: $column_width;
+                        }
+                    }
+                }
+            }
+        }
+
+        .woocommerce-tabs {
+            @include edgeRelativeHolderLayout();
+            margin: 30px 0 0;
+
+            ul.tabs {
+                @include edgeRelativeHolderLayout();
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border-top: 1px solid $additional-border-color;
+                border-bottom: 1px solid $additional-border-color;
+                text-align: center;
+                clear: both;
+
+                > li {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: top;
+                        padding: 13px 15px;
+                    }
+                }
+            }
+
+            .entry-content {
+                @include edgeRelativeHolderLayout();
+
+                > h2 {
+                    display: none;
+                }
+
+                > p {
+                    margin: 18px 0 20px;
+                }
+            }
+
+            table {
+                margin: 18px 0 20px;
+
+                tr, th {
+                    border: 0;
+                }
+
+                td, th {
+                    padding: 3px 0;
+                    vertical-align: middle;
+                    text-align: left;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                th {
+                    color: $default-heading-color;
+                    width: 1%;
+                    padding: 0 10px 0 0;
+                }
+
+                td {
+                    width: 99%;
+                }
+            }
+
+            #reviews {
+                @include edgeRelativeHolderLayout();
+                margin: 18px 0 20px;
+
+                h2 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 8px 0 24px;
+                }
+
+                ol.commentlist {
+                    list-style: none;
+
+                    .comment_container {
+                        @include edgeRelativeHolderLayout();
+
+                        img {
+                            float: left;
+                            width: 60px;
+                        }
+                    }
+
+                    .comment-text {
+                        padding: 0 0 0 80px;
+
+                        div[itemprop="description"] {
+                            padding: 0;
+                            margin: 0 0 15px;
+                            border: 0;
+                        }
+
+                        p {
+                            margin: 5px 0 0;
+                        }
+                    }
+                }
+
+                .comment-respond {
+                    margin-top: 15px;
+
+                    .comment-reply-title {
+                        margin: 0 0 10px;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .stars {
+                        overflow: hidden;
+
+                        a {
+                            position: relative;
+                            display: inline-block;
+                            color: transparent;
+                            font-size: 0;
+                            margin: 0;
+
+                            &:before {
+                                position: relative;
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-family: "ElegantIcons";
+                                content: "\e031";
+                                font-size: 12px;
+                                line-height: 1;
+                                letter-spacing: 2px;
+                                color: $default-text-color;
+                                overflow: hidden;
+                                z-index: -1;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                            }
+
+                            &.active:after {
+                                position: absolute;
+                                right: 0;
+                                bottom: 7px;
+                                display: block;
+                                font-family: "ElegantIcons";
+                                font-size: 12px;
+                                line-height: 1;
+                                letter-spacing: 2px;
+                                color: $default-text-color;
+                                content: "\e033\e033\e033\e033\e033";
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .related.products,
+        .upsells.products {
+            margin: 30px 0 0;
+            border-top: 1px solid $additional-border-color;
+
+            > h2 {
+                display: block;
+                margin: 36px 0 50px;
+                text-align: center;
+            }
+
+            .product {
+
+                .edge-pl-text-wrapper {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Woocommerce Product Page shortcode style - end
+========================================================================== */

@@ -1,0 +1,187 @@
+/* ==========================================================================
+# Slide From Window top search general style - start
+========================================================================== */
+
+.edge-search-slides-from-window-top {
+
+    .edge-top-bar,
+    .edge-page-header {
+        top: 0;
+        @include edgeTransition(all 0.25s ease-out);
+    }
+
+    .edge-mobile-header {
+        @include edgeTransition(all 0.25s ease-out);
+    }
+
+    .content_inner {
+        margin-top: 0;
+        @include edgeTransition(all 0.25s ease-out);
+    }
+
+    .mobile-header-appear .edge-mobile-header-inner {
+        padding-top: 0;
+        @include edgeTransition(all 0.25s ease-out);
+    }
+
+}
+
+.edge-search-slides-from-window-top.edge-search-open {
+
+    .edge-page-header,
+    .edge-top-bar {
+        top: 50px;
+    }
+
+    .edge-search-slide-window-top {
+        height: 50px;
+    }
+
+    .edge-mobile-header {
+        top: 50px !important; /* Mobile header has important top on max-width (1000px) */
+    }
+
+    .mobile-header-appear .edge-mobile-header-inner {
+        padding-top: 50px;
+    }
+
+    .content_inner {
+        margin-top: 50px;
+    }
+
+    .edge-sticky-header.header-appear {
+        @include edgeTransform(translateY(50px));
+    }
+
+}
+
+.edge-fixed-wrapper.fixed .edge-search-slide-window-top {
+    position: static;
+}
+
+.edge-search-slide-window-top {
+    background: none repeat scroll 0 0 #262626;
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    @include edgeTransition(all 0.25s ease-out);
+
+    .form-inner {
+        padding: 0 45px;
+    }
+
+    .edge-container {
+        background-color: transparent;
+    }
+
+    .edge-container-inner {
+        position: relative;
+    }
+
+    i {
+        color: #959595;
+        font-size: 13px;
+        display: inline-block;
+        float: left;
+        line-height: 50px;
+    }
+
+    .edge-container {
+
+        i {
+            padding: 0;
+        }
+
+        input{
+            width: 90%;
+            padding: 0 0 0 10px;
+        }
+
+        .edge-search-close {
+            right: 0;
+        }
+
+    }
+
+    input,
+    input:focus {
+        background-color: #262626;
+        border: medium none;
+        box-shadow: none;
+        color: #959595;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 20px;
+        height: 20px;
+        margin: 15px 0;
+        width: 90%;
+        padding: 0 0 0 10px;
+        font-family: inherit;
+        outline: none;
+        outline-offset:0;
+        -webkit-appearance: none;
+        border-radius: 0;
+        float: left;
+    }
+
+    input:focus{
+        outline-offset: 0 !important;
+    }
+
+    @media only screen and (max-width: 1200px){
+        input{
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        input{
+            width: 70%;
+        }
+    }
+
+    @media only screen and (max-width: 500px){
+        input {
+            width: 65%;
+        }
+    }
+
+    input[type="submit"] {
+        border: 0 none;
+        clip: rect(0px, 0px, 0px, 0px);
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        visibility: hidden;
+    }
+
+    .edge-search-close {
+        color: #959595;
+        font-size: 13px;
+        position: absolute;
+        line-height: 50px;
+        height: 50px;
+        top: 0;
+        right: 45px;
+    }
+
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+    color: #959595;
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+# Slide From Window top search general style - end
+========================================================================== */

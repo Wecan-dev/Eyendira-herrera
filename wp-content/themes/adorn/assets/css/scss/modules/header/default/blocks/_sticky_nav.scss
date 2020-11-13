@@ -1,0 +1,34 @@
+/* ==========================================================================
+#Sticky Nav header styles - start
+========================================================================== */
+.edge-sticky-header {
+
+    body[class*='edge-sticky'] & .edge-search-opener .edge-search-opener-wrapper {
+        top: 0;
+        @include edgeTransform(none);
+    }
+
+    .edge-vertical-align-containers {
+
+        .edge-position-right {
+
+            .edge-position-right-inner {
+                height: 100%;
+
+                .widget{
+                    display: inline-block;
+                    margin: 0 9px;
+
+                    &.widget_text{
+                        .edge-btn-text{
+                            padding-bottom: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+#Sticky Nav header styles - end
+========================================================================== */

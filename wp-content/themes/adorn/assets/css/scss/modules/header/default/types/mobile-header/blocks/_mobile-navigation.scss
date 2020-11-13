@@ -1,0 +1,163 @@
+.edge-mobile-header {
+
+    .edge-mobile-nav {
+
+        padding-top: 43%;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                font-size: 13px;
+                text-transform: uppercase;
+
+                &.current-menu-item > a,
+                &.current-menu-ancestor > a {
+                    color: $first-main-color;
+                }
+
+                &.edge-opened {
+                    padding-bottom: 15px;
+                }
+
+                &.edge-opened > a {
+                    padding-bottom: 20px;
+                }
+
+                a, h6 { //h6 is here because of no link option in navigation
+                    position: relative;
+                    display: inline-block;
+                    padding: 5px 0;
+                    margin: 0;
+                    color: #a5a5a5;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $heading-font;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+
+            //dropdowns
+            ul {
+                display: none;
+
+                li {
+
+                    &.current-menu-ancestor > a,
+                    &.current-menu-item > a {
+                        color: $first-main-color;
+                    }
+
+                    .mobile_arrow {
+                        top: 2px;
+                    }
+
+                    &.edge-opened > a {
+                        padding-bottom: 10px;
+                    }
+
+                    a, h6 {
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-transform: initial;
+                        padding: 3px 0;
+                    }
+
+                    ul{
+                        li{
+                            .mobile_arrow{
+                                font-size: 16px;
+                                top: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .edge-grid > ul {
+
+            > li {
+
+                > a,
+                > h6 {
+                    padding-left: 4px;
+                    font-size: 13px;
+                }
+
+                &.edge-active-item > a {
+                    opacity: .8;
+                }
+
+                &.edge-active-item > .mobile_arrow > .edge-sub-arrow {
+                    @include edgeTransform(rotate(90deg));
+                }
+            }
+        }
+
+        li.current-menu-ancestor > .mobile_arrow,
+        li.current-menu-item .mobile_arrow {
+            color: $first-main-color;
+        }
+
+        .mobile_arrow {
+
+            position: relative;
+            right: 0;
+            top: 1px;
+            line-height: 16px;
+            font-size: 16px;
+            text-align: right;
+            color: #a5a5a5;
+            padding-left: 3px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .edge-sub-arrow {
+                @include edgeTransition(transform 0.2s ease-in-out);
+                display: inline-block;
+            }
+
+            //@TODO remove this line of code when new headers are enabled
+            .arrow_triangle-down {
+                display: none; //temporarily
+            }
+        }
+
+        li.edge-opened > .mobile_arrow > .edge-sub-arrow {
+            @include edgeTransform(rotate(90deg));
+        }
+
+        & > ul > li:last-child > a,
+        & > .edge-grid > ul > li:last-child > a {
+            border-bottom: none;
+        }
+    }
+}
+
+@include ipad-portrait {
+    .edge-mobile-header {
+        .edge-mobile-nav {
+            padding-top: 20%;
+        }
+    }
+}
+
+
+@include phone-portrait {
+    .edge-mobile-header {
+        .edge-mobile-nav {
+            padding-top: 15%;
+        }
+    }
+}

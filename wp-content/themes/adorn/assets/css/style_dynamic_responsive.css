@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1024px){
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles-responsive.php adorn_edge_content_responsive_styles function */
+.edge-content .edge-content-inner > .edge-container > .edge-container-inner, .edge-content .edge-content-inner > .edge-full-width > .edge-full-width-inner { padding-top: 40px!important;}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+}
+
+@media only screen and (max-width: 480px){
+}

@@ -1,0 +1,41 @@
+.edge-image-slider-holder{
+    .edge-image-slider-item{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &.edge-owl-slider{
+        .owl-nav{
+            .edge-next-icon,
+            .edge-prev-icon{
+                font-size: 35px;
+                color: #fff;
+                display: block;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+        .owl-dots{
+            margin-top: 50px;
+            .owl-dot{
+                span{
+                    border-radius: 0;
+                    border-color: $additional-border-color;
+                    background-color: $first-main-color;
+                    width: 6px;
+                    height: 6px;
+                    border-width: 1px;
+                    margin: 0 10px;
+                }
+
+                &.active{
+                    span{
+                        background-color: #a2a2a2;
+                    }
+                }
+            }
+        }
+    }
+}
+

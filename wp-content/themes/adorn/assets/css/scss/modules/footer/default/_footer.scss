@@ -1,0 +1,332 @@
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+/* ==========================================================================
+   #Content bottom styles - start
+   ========================================================================== */
+.edge-content-bottom {
+
+    .edge-content-bottom-inner{
+        box-sizing: border-box;
+        .widget{
+            margin: 0;
+        }
+    }
+}
+
+.edge-page-footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+    z-index: 100;
+    box-sizing: border-box;
+
+    .edge-footer-bottom-holder {
+        @include edgeRelativeHolderLayout();
+        background-color: $first-main-color;
+        box-sizing: border-box;
+        text-align: center;
+
+        .edge-footer-bottom-column-1 {
+            text-align: left;
+        }
+
+        .edge-footer-bottom-column-3 {
+            text-align: right;
+        }
+
+        .edge-footer-bottom-inner {
+            box-sizing: border-box;
+            border-top: 1px solid $additional-border-color;
+
+            .edge-grid-col-6:first-child {
+                text-align: left;
+            }
+
+            .edge-grid-col-6:last-child {
+                text-align: right;
+            }
+
+            .edge-grid-col-4:first-child {
+                text-align: left;
+            }
+
+            .edge-grid-col-4:last-child {
+                text-align: right;
+            }
+
+            .widget {
+                margin: 0;
+                font-size: 15px;
+                padding-top: 0;
+                display: inline-block;
+                vertical-align: middle;
+                font-family: $heading-font;
+
+                &.widget_nav_menu {
+                    text-align: left;
+
+                    ul {
+                        padding: 0;
+
+                        li {
+                            padding: 0;
+                            float: left;
+
+                            a {
+                                color: $default-text-color;
+                                font-size: 15px;
+                                padding: 0 10px;
+                                transition: none;
+
+                                &:after {
+                                    content: '';
+                                }
+
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+
+                                &:hover {
+                                    padding: 0 10px;
+                                    &:first-child {
+                                        padding-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.edge-grid {
+                padding: 34px 0 36px;
+            }
+
+            &.edge-full-width {
+                padding: 33px 50px;
+            }
+        }
+    }
+
+    /* Light skin style */
+    .edge-light {
+        .widget {
+            color: $default-text-color;
+            ul {
+                li {
+                    a {
+                        color: $default-text-color;
+                        &:hover {
+                            color: $additional-border-color;
+                        }
+                    }
+                }
+            }
+
+            &.widget_nav_menu {
+                ul {
+                    li {
+                        a {
+                            color: $default-text-color;
+                            &:hover {
+                                color: $additional-border-color;
+                                border-color: $additional-border-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.widget_text{
+                margin-bottom: 20px;
+            }
+
+            div.edge-widget-title-holder {
+                .edge-widget-title {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+
+    .edge-footer-bottom-holder {
+
+        .edge-footer-bottom-inner {
+            box-sizing: border-box;
+            border-color: $default-text-color;
+
+            .edge-light {
+
+                .widget {
+                    color: $default-text-color;
+                    &.widget_nav_menu {
+                        ul li {
+                            a {
+                                color: $default-text-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .widget_text{
+                .edge-btn{
+                    letter-spacing: 0;
+                    line-height: 15px;
+                    .edge-btn-text{
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Light skin style end */
+
+    /* Dark skin style */
+    .edge-dark {
+        .widget {
+            color: #000;
+            ul {
+                li {
+                    a {
+                        color: #000;
+                        &:hover {
+                            color: $default-text-color;
+                        }
+                    }
+                }
+            }
+
+            &.widget_nav_menu {
+                ul {
+                    li {
+                        a {
+                            color: #000;
+                            &:hover {
+                                color: $default-text-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.edge-widget-title-holder {
+                .edge-widget-title {
+                    color: #000;
+                }
+            }
+        }
+
+    }
+
+    .edge-footer-bottom-holder {
+
+        .edge-footer-bottom-inner {
+            box-sizing: border-box;
+            border-color: $additional-border-color;
+
+            .edge-dark {
+
+                .widget {
+                    color: #000;
+                    &.widget_nav_menu {
+                        ul li {
+                            a {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Dark skin style end */
+
+    .widget {
+        color: $default-text-color;
+        ul {
+            li {
+                padding-top: 4px;
+                a {
+                    color: $default-text-color;
+                    font-size: 16px;
+                    font-family: $heading-font;
+                    line-height: 20px;
+
+                    &:hover {
+                        color: $first-main-color;
+                        border-bottom: 1px solid $default-border-color;
+                    }
+                }
+            }
+        }
+
+        &.widget_nav_menu {
+            border-top: 0;
+            ul {
+                li {
+                    padding-top: 4px;
+                    a {
+                        color: $default-text-color;
+                        font-size: 15px;
+                        font-family: $heading-font;
+                        line-height: 20px;
+                        font-weight: 400;
+
+                        &:hover {
+                            color: $first-main-color;
+                            border-bottom: 1px solid $default-border-color;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        div.edge-widget-title-holder {
+            .edge-widget-title {
+                color: $default-heading-color;
+                letter-spacing: 0.1em;
+                line-height: 20px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .edge-footer-top-holder {
+        @include edgeRelativeHolderLayout();
+        background-color: #f9f9f9;
+        box-sizing: border-box;
+
+        .edge-footer-top-alignment-center{
+            text-align: center;
+        }
+	    
+        .edge-footer-top-alignment-left{
+            text-align: left;
+        }
+	    
+        .edge-footer-top-alignment-right{
+            text-align: right;
+        }
+
+        .edge-footer-top-inner{
+            box-sizing: border-box;
+	        
+            &.edge-grid{
+                padding: 75px 0 43px;
+            }
+	        
+            &.edge-full-width{
+                padding: 76px 50px;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */

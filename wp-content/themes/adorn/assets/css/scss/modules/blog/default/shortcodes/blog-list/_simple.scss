@@ -1,0 +1,28 @@
+.edge-blog-list-holder {
+    &.edge-bl-simple {
+
+        .edge-post-title {
+            margin: 0;
+        }
+
+        .edge-post-image {
+            display: table-cell;
+            vertical-align: top;
+            width: auto;
+        }
+
+        .edge-bli-content {
+            display: table-cell;
+            vertical-align: top;
+            width: auto;
+            padding-left: 20px;
+        }
+        .edge-post-info-date{
+            a{
+                font-size: 12px;
+                color:  $additional-text-color;
+                letter-spacing: .1em;
+            }
+        }
+    }
+}

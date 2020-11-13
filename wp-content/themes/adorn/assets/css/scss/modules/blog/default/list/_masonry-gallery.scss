@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Blog List - Masonry Gallery style - begin
+   ========================================================================== */
+
+.edge-blog-holder {
+    
+    &.edge-blog-masonry-gallery {
+	
+	    article {
+            @include edgeTransition(opacity 0.15s ease-out);
+            opacity:0;
+
+            &.edge-appeared{
+                opacity:1;
+            }
+
+            .edge-post-content {
+                height: 100%;
+            }
+		
+		    .edge-post-image {
+			    height: 100%;
+			    img {
+				    width: 100%;
+			    }
+			    
+			    &:after {
+				    @include edgeAbsoluteHolderLayout();
+				    content: '';
+				    background: rgba($default-heading-color, 0.62);
+				    background: -webkit-linear-gradient(rgba($default-heading-color, 0), rgba($default-heading-color, 0.62));
+				    background: -moz-linear-gradient(rgba($default-heading-color, 0), rgba($default-heading-color, 0.62));
+				    background: linear-gradient(rgba($default-heading-color, 0), rgba($default-heading-color, 0.62));
+			    }
+		    }
+		    
+		    .edge-post-text {
+			    position: absolute;
+			    bottom: 39px;
+			    left: 0;
+			    padding: 0 20px;
+			    text-align: center;
+			    box-sizing: border-box;
+			    
+			    a {
+				    position: relative;
+				    z-index: 2;
+			    }
+		    }
+		    
+		    .edge-post-title {
+			    color: #fff;
+		    }
+
+            .edge-post-excerpt {
+                color: #fff;
+            }
+		    
+		    .edge-post-info {
+			    color: #fff;
+		    }
+		
+		    .edge-blog-masonry-gallery-link {
+			    @include edgeAbsoluteHolderLayout();
+		    }
+		
+		    &.format-link,
+		    &.format-quote {
+			    @include edgeTransition(background-color 0.2s ease-out);
+			
+			    .edge-post-text {
+				    top: 50%;
+				    left: 0;
+				    bottom: auto;
+				    @include edgeTransform(translateY(-50%));
+			    }
+
+		    }
+		
+		    &:not(.format-quote):not(.format-link) {
+			    
+			    .edge-post-text {
+				    -webkit-transition: -webkit-transform .3s cubic-bezier(.44, 1.22, 0, 1.43);
+				    -moz-transition: -moz-transform .3s cubic-bezier(.44, 1.22, 0, 1.43);
+				    transition: transform .3s cubic-bezier(.44, 1.22, 0, 1.43);
+			    }
+			    
+			    &:hover {
+				    
+				    .edge-post-text {
+					    -webkit-transition: -webkit-transform .5s cubic-bezier(.44, 1.22, 0, 1.43);
+					    -moz-transition: -moz-transform .5s cubic-bezier(.44, 1.22, 0, 1.43);
+					    transition: transform .5s cubic-bezier(.44, 1.22, 0, 1.43);
+					    @include edgeTransform(translateY(-20px));
+				    }
+			    }
+		    }
+	    }
+    }
+}
+/* ==========================================================================
+   Blog List - Masonry Gallery style - end
+   ========================================================================== */

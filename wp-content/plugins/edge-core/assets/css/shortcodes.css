@@ -1,0 +1,4674 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+.edge-accordion-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-accordion-holder .edge-title-holder {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.edge-accordion-holder .edge-title-holder .edge-tab-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 22px;
+}
+
+.edge-accordion-holder .edge-title-holder .edge-accordion-mark {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 24px;
+  line-height: 18px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-accordion-holder .edge-title-holder .edge-accordion-mark span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-accordion-holder .edge-title-holder .edge-accordion-mark span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-accordion-holder .edge-title-holder .edge-accordion-mark span.edge_icon_minus {
+  opacity: 0;
+}
+
+.edge-accordion-holder .edge-title-holder .edge-accordion-mark span.edge_icon_plus {
+  opacity: 1;
+}
+
+.edge-accordion-holder .edge-title-holder.ui-state-active .edge-accordion-mark span.edge_icon_minus, .edge-accordion-holder .edge-title-holder.ui-state-hover .edge-accordion-mark span.edge_icon_minus {
+  opacity: 1;
+}
+
+.edge-accordion-holder .edge-title-holder.ui-state-active .edge-accordion-mark span.edge_icon_plus, .edge-accordion-holder .edge-title-holder.ui-state-hover .edge-accordion-mark span.edge_icon_plus {
+  opacity: 0;
+}
+
+.edge-accordion-holder span.edge-title-holder {
+  display: block;
+  color: #212121;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.edge-accordion-holder span.edge-title-holder .edge-accordion-mark {
+  margin: -2px 0 0;
+}
+
+.edge-accordion-holder .edge-accordion-content {
+  margin: 0;
+}
+
+.edge-accordion-holder .edge-accordion-content p {
+  color: #888;
+  font-weight: 300;
+  margin: 0;
+}
+
+.edge-accordion-holder.edge-ac-boxed.edge-white-skin .edge-title-holder.ui-state-default {
+  background-color: transparent;
+  color: #fff;
+}
+
+.edge-accordion-holder.edge-ac-boxed.edge-white-skin .edge-title-holder.ui-state-default.ui-state-hover {
+  background-color: #fff;
+  color: #212121;
+}
+
+.edge-accordion-holder.edge-ac-boxed.edge-white-skin .edge-title-holder.ui-state-active {
+  background-color: #fff;
+  color: #212121;
+}
+
+.edge-accordion-holder.edge-ac-boxed .edge-title-holder {
+  margin: 15px 0 0;
+  padding: 11px 32px 8px 20px;
+  background-color: #fff;
+}
+
+.edge-accordion-holder.edge-ac-boxed .edge-title-holder:not(.ui-state-active) {
+  border: 1px solid #d3d3d3;
+}
+
+.edge-accordion-holder.edge-ac-boxed .edge-title-holder.ui-state-active {
+  border: 1px solid #212121;
+}
+
+.edge-accordion-holder.edge-ac-boxed .edge-title-holder:first-child {
+  margin: 0;
+}
+
+.edge-accordion-holder.edge-ac-boxed .edge-title-holder .edge-accordion-mark {
+  right: 20px;
+}
+
+.edge-accordion-holder.edge-ac-boxed .edge-title-holder.ui-state-active, .edge-accordion-holder.edge-ac-boxed .edge-title-holder.ui-state-hover {
+  color: #fff;
+  background-color: #212121;
+}
+
+.edge-accordion-holder.edge-ac-boxed .edge-accordion-content {
+  padding: 24px 20px 9px;
+}
+
+.edge-accordion-holder.edge-ac-simple {
+  border-bottom: 1px solid #959595;
+}
+
+.edge-accordion-holder.edge-ac-simple .edge-title-holder {
+  padding: 11px 32px 8px 20px;
+  border-top: 1px solid #959595;
+}
+
+.edge-accordion-holder.edge-ac-simple .edge-accordion-content {
+  border-top: 1px solid transparent;
+}
+
+.edge-accordion-holder.edge-ac-simple .edge-accordion-content.ui-accordion-content-active {
+  border-color: #959595;
+}
+
+.edge-accordion-holder.edge-ac-simple .edge-accordion-content {
+  padding: 21px 20px 16px;
+}
+
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+.edge-banner-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-banner-holder .edge-banner-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.edge-banner-holder .edge-banner-image img {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.edge-banner-holder .edge-banner-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.edge-banner-holder .edge-banner-text-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-banner-holder .edge-banner-subtitle {
+  margin: 0;
+  font-family: "Inconsolata";
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 0.1em;
+}
+
+.edge-banner-holder .edge-banner-title {
+  position: relative;
+  overflow: hidden;
+  margin: 4px 0 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  text-transform: none;
+  display: inline-block;
+  max-width: 200px;
+}
+
+.edge-banner-holder .edge-banner-text {
+  margin: 6px 0 0;
+  line-height: 1em;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.edge-banner-holder .edge-banner-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blockquote shortcode start styles
+   ========================================================================== */
+blockquote {
+  position: relative;
+  display: table;
+  padding: 50px 30px 38px;
+  background-color: #fafafa;
+}
+
+blockquote > * {
+  text-transform: uppercase;
+  font-family: "Inconsolata";
+}
+
+blockquote .edge-icon-quotations-holder {
+  display: table-cell;
+  width: 1%;
+  padding: 0 10px 0 15px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #212121;
+}
+
+blockquote .edge-blockquote-text {
+  display: block;
+  vertical-align: top;
+  color: #212121;
+  line-height: 1.83em;
+  margin-bottom: 6px;
+}
+
+blockquote .edge-blockquote-text span {
+  font-size: 24px;
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+blockquote .edge-blockquote-author {
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* ==========================================================================
+   Blockquote shortcode end styles
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+.edge-btn {
+  font-family: inherit;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  outline: none;
+  line-height: 47px;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  text-transform: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2px 48px;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  padding: 2px 48px;
+  font-size: 14px;
+}
+
+.edge-btn.edge-btn-simple {
+  padding: 0 !important;
+  color: #888;
+  background-color: transparent;
+  border: 0;
+  vertical-align: middle;
+  line-height: 16px;
+  border-bottom: 1px solid transparent;
+  font-family: "Inconsolata";
+}
+
+.edge-btn.edge-btn-simple .edge-btn-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-btn.edge-btn-simple:not(.edge-btn-custom-hover-color):hover {
+  color: #212121 !important;
+}
+
+.edge-btn.edge-btn-simple:not(.edge-btn-custom-hover-bg):hover {
+  background-color: transparent !important;
+}
+
+.edge-btn.edge-btn-simple:not(.edge-btn-custom-border-hover):hover {
+  border-color: #959595 !important;
+}
+
+.edge-btn.edge-btn-solid {
+  color: #fff;
+  background-color: #333;
+  border: 2px solid transparent;
+}
+
+.edge-btn.edge-btn-solid:not(.edge-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.edge-btn.edge-btn-solid:not(.edge-btn-custom-hover-bg):hover {
+  background-color: #000 !important;
+}
+
+.edge-btn.edge-btn-solid:not(.edge-btn-custom-border-hover):hover {
+  border-color: #000 !important;
+}
+
+.edge-btn.edge-btn-outline {
+  color: #212121;
+  background-color: transparent;
+  border: 1px solid #e9e9e9;
+}
+
+.edge-btn.edge-btn-outline:not(.edge-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.edge-btn.edge-btn-outline:not(.edge-btn-custom-hover-bg):hover {
+  background-color: #d3d3d3 !important;
+}
+
+.edge-btn.edge-btn-outline:not(.edge-btn-custom-border-hover):hover {
+  border-color: #d3d3d3 !important;
+}
+
+.edge-btn.edge-btn-small {
+  padding: 0 24px;
+}
+
+.edge-btn.edge-btn-large {
+  padding: 4px 58px;
+}
+
+.edge-btn.edge-btn-huge {
+  display: block;
+  text-align: center;
+  padding: 17px 65px;
+}
+
+.edge-btn.edge-btn-icon > i,
+.edge-btn.edge-btn-icon > span:not(.edge-btn-text) {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.142857142857143em;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.edge-btn.edge-btn-icon > i:before,
+.edge-btn.edge-btn-icon > span:not(.edge-btn-text):before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-btn.edge-btn-icon:hover > i,
+.edge-btn.edge-btn-icon:hover > span:not(.edge-btn-text) {
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+input[type=submit].edge-btn,
+button.edge-btn {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+.edge-call-to-action-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Layout Style - begin *****/
+  /***** Layout Style - end *****/
+  /***** Columns Space - begin *****/
+  /***** Columns Space - end *****/
+}
+
+.edge-call-to-action-holder .edge-cta-text-holder,
+.edge-call-to-action-holder .edge-cta-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-call-to-action-holder .edge-cta-text-holder h1, .edge-call-to-action-holder .edge-cta-text-holder h2, .edge-call-to-action-holder .edge-cta-text-holder h3, .edge-call-to-action-holder .edge-cta-text-holder h4, .edge-call-to-action-holder .edge-cta-text-holder h5, .edge-call-to-action-holder .edge-cta-text-holder h6 {
+  margin: 0;
+}
+
+.edge-call-to-action-holder .edge-cta-button-holder .edge-btn {
+  white-space: nowrap;
+}
+
+.edge-call-to-action-holder.edge-normal-layout .edge-cta-inner {
+  display: table;
+}
+
+.edge-call-to-action-holder.edge-normal-layout:not(.edge-content-in-grid) .edge-cta-inner {
+  width: 100%;
+}
+
+.edge-call-to-action-holder.edge-normal-layout .edge-cta-text-holder,
+.edge-call-to-action-holder.edge-normal-layout .edge-cta-button-holder {
+  display: table-cell;
+  box-sizing: border-box;
+}
+
+.edge-call-to-action-holder.edge-normal-layout .edge-cta-button-holder {
+  text-align: right;
+}
+
+.edge-call-to-action-holder.edge-simple-layout .edge-cta-inner {
+  text-align: center;
+}
+
+.edge-call-to-action-holder.edge-simple-layout .edge-cta-text-holder,
+.edge-call-to-action-holder.edge-simple-layout .edge-cta-button-holder {
+  width: 100%;
+}
+
+.edge-call-to-action-holder.edge-simple-layout .edge-cta-button-holder {
+  margin: 28px 0 0;
+}
+
+.edge-call-to-action-holder.edge-two-halves-columns .edge-cta-text-holder,
+.edge-call-to-action-holder.edge-two-halves-columns .edge-cta-button-holder {
+  width: 50%;
+}
+
+.edge-call-to-action-holder.edge-two-thirds-columns .edge-cta-text-holder {
+  width: 66.66666666666667%;
+}
+
+.edge-call-to-action-holder.edge-two-thirds-columns .edge-cta-button-holder {
+  width: 33.33333333333333%;
+}
+
+.edge-call-to-action-holder.edge-three-quarters-columns .edge-cta-text-holder {
+  width: 75%;
+}
+
+.edge-call-to-action-holder.edge-three-quarters-columns .edge-cta-button-holder {
+  width: 25%;
+}
+
+.edge-call-to-action-holder.edge-four-fifths-columns .edge-cta-text-holder {
+  width: 80%;
+}
+
+.edge-call-to-action-holder.edge-four-fifths-columns .edge-cta-button-holder {
+  width: 20%;
+}
+
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */
+.edge-cards-gallery-holder {
+  padding: 10px 0;
+}
+
+.edge-cards-gallery-holder .edge-cards-gallery {
+  width: 100%;
+  position: relative;
+}
+
+.edge-cards-gallery-holder img {
+  position: relative;
+  display: block;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.edge-cards-gallery-holder .fake_card {
+  position: relative;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.edge-cards-gallery-holder .card {
+  box-sizing: border-box;
+  position: absolute;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  width: 100%;
+}
+
+.edge-cards-gallery-holder .card.animating {
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+}
+
+.edge-cards-gallery-holder .card.animating-siblings {
+  -webkit-transition: all 0.6s cubic-bezier(0, 0, 0, 1);
+  -moz-transition: all 0.6s cubic-bezier(0, 0, 0, 1);
+  transition: all 0.6s cubic-bezier(0, 0, 0, 1);
+  pointer-events: none;
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card {
+  will-change: transform;
+  width: auto;
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card.out {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(6) {
+  -webkit-transform: scale(0.5) translateX(113%);
+  -moz-transform: scale(0.5) translateX(113%);
+  transform: scale(0.5) translateX(113%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(5) {
+  -webkit-transform: scale(0.65) translateX(150%);
+  -moz-transform: scale(0.65) translateX(150%);
+  transform: scale(0.65) translateX(150%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(4) {
+  -webkit-transform: scale(0.7) translateX(140%);
+  -moz-transform: scale(0.7) translateX(140%);
+  transform: scale(0.7) translateX(140%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(3) {
+  -webkit-transform: scale(0.72) translateX(123%);
+  -moz-transform: scale(0.72) translateX(123%);
+  transform: scale(0.72) translateX(123%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(2) {
+  -webkit-transform: scale(0.855) translateX(65%);
+  -moz-transform: scale(0.855) translateX(65%);
+  transform: scale(0.855) translateX(65%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card:last-child {
+  -webkit-transform: translateX(24%);
+  -moz-transform: translateX(24%);
+  transform: translateX(24%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card:not(:last-of-type) {
+  cursor: pointer;
+}
+
+.edge-cards-gallery-holder.edge-shuffled-left .card:not(:last-of-type):not(.active):hover {
+  margin-left: 10px !important;
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card {
+  will-change: transform;
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card.out {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(6) {
+  -webkit-transform: scale(0.5) translateX(-80%);
+  -moz-transform: scale(0.5) translateX(-80%);
+  transform: scale(0.5) translateX(-80%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(5) {
+  -webkit-transform: scale(0.5) translateX(-70%);
+  -moz-transform: scale(0.5) translateX(-70%);
+  transform: scale(0.5) translateX(-70%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(4) {
+  -webkit-transform: scale(0.5) translateX(-65%);
+  -moz-transform: scale(0.5) translateX(-65%);
+  transform: scale(0.5) translateX(-65%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(3) {
+  -webkit-transform: scale(0.577) translateX(-60%);
+  -moz-transform: scale(0.577) translateX(-60%);
+  transform: scale(0.577) translateX(-60%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(2) {
+  -webkit-transform: scale(0.74) translateX(-15%);
+  -moz-transform: scale(0.74) translateX(-15%);
+  transform: scale(0.74) translateX(-15%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card:last-child {
+  -webkit-transform: translateX(20%);
+  -moz-transform: translateX(20%);
+  transform: translateX(20%);
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card:not(:last-of-type) {
+  cursor: pointer;
+}
+
+.edge-cards-gallery-holder.edge-shuffled-right .card:not(:last-of-type):not(.active):hover {
+  margin-left: -10px !important;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation img {
+  visibility: hidden;
+}
+
+@-webkit-keyframes edgeCardAppearFromRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+  30% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes edgeCardAppearFromRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+  30% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared img {
+  -webkit-animation: edgeCardAppearFromRight 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: edgeCardAppearFromRight 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation: edgeCardAppearFromRight 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared .card:nth-child(1) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared .card:nth-child(2) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared .card:nth-child(3) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared .card:nth-child(4) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared .card:nth-child(5) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared .card:nth-child(6) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared .card:nth-child(7) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-right.edge-appeared .card:nth-child(8) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+@-webkit-keyframes edgeCardAppearFromLeft {
+  0% {
+    visibility: visible;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes edgeCardAppearFromLeft {
+  0% {
+    visibility: visible;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared img {
+  -webkit-animation: edgeCardAppearFromLeft 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: edgeCardAppearFromLeft 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation: edgeCardAppearFromLeft 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared .card:nth-child(1) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared .card:nth-child(2) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared .card:nth-child(3) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared .card:nth-child(4) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared .card:nth-child(5) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared .card:nth-child(6) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared .card:nth-child(7) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.no-touch .edge-cards-gallery-holder.edge-bundle-animation.edge-shuffled-left.edge-appeared .card:nth-child(8) img:not(.edge-animation-done) {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+/* ==========================================================================
+   Clients Boxes shortcode style - begin
+   ========================================================================== */
+.edge-clients-boxes-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Hover Types - begin *****/
+  /***** Hover Types - end *****/
+}
+
+.edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 769px) {
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-child(3n) .edge-cb-item-inner:before {
+    display: none;
+  }
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-last-child(-n+3) {
+    margin: 0;
+  }
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-last-child(-n+3) .edge-cb-item-inner {
+    margin: 0;
+  }
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-last-child(-n+3) .edge-cb-item-inner:after {
+    display: none;
+  }
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 769px) {
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-child(4n) .edge-cb-item-inner:before {
+    display: none;
+  }
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-last-child(-n+4) {
+    margin: 0;
+  }
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-last-child(-n+4) .edge-cb-item-inner {
+    margin: 0;
+  }
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-last-child(-n+4) .edge-cb-item-inner:after {
+    display: none;
+  }
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edge-clients-boxes-holder .edge-cb-inner {
+  margin: 0 -33px;
+}
+
+.edge-clients-boxes-holder .edge-cb-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  padding: 0 33px;
+  margin: 0 0 34px;
+  box-sizing: border-box;
+}
+
+.touch .edge-clients-boxes-holder .edge-cb-item {
+  cursor: pointer;
+}
+
+.edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 33px;
+}
+
+.edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner:before, .edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner:after {
+  content: '';
+  position: absolute;
+  background-color: rgba(215, 215, 215, 0.4);
+}
+
+.edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner:before {
+  top: 0;
+  right: -34px;
+  width: 1px;
+  height: 100%;
+}
+
+.edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner:after {
+  bottom: -34px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.edge-clients-boxes-holder .edge-cb-item .edge-cb-link {
+  position: relative;
+  display: block;
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-switch-images .edge-cb-item:hover .edge-cb-image {
+  opacity: 0;
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-switch-images .edge-cb-item:hover .edge-cb-hover-image {
+  opacity: 1;
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-switch-images .edge-cb-item .edge-cb-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-switch-images .edge-cb-item .edge-cb-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-roll-over .edge-cb-item:hover .edge-cb-image {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-roll-over .edge-cb-item:hover .edge-cb-hover-image {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-roll-over .edge-cb-item .edge-cb-item-inner,
+.edge-clients-boxes-holder.edge-cb-hover-roll-over .edge-cb-item .edge-cb-link {
+  overflow: hidden;
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-roll-over .edge-cb-item .edge-cb-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.edge-clients-boxes-holder.edge-cb-hover-roll-over .edge-cb-item .edge-cb-hover-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transform: translate(-150%, -50%);
+  -moz-transform: translate(-150%, -50%);
+  transform: translate(-150%, -50%);
+}
+
+/* ==========================================================================
+   Clients Boxes shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+.edge-clients-carousel-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Hover Types - begin *****/
+  /***** Hover Types - end *****/
+}
+
+.edge-clients-carousel-holder .edge-cc-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
+  /* No Js */
+  /*
+         *  Owl Carousel - Animate Plugin
+         */
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-nav {
+  display: none;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner.owl-loaded {
+  display: block;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner.owl-hidden {
+  opacity: 0;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner.owl-grab {
+  cursor: move;
+  cursor: grab;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner.owl-rtl {
+  direction: rtl;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner.owl-rtl .owl-item {
+  float: right;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-item {
+  cursor: move;
+}
+
+.no-js .edge-clients-carousel-holder .edge-cc-inner {
+  display: block;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-wrapper,
+.edge-clients-carousel-holder .edge-cc-inner .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-item img .owl-lazy {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-nav.disabled {
+  display: none;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-nav .owl-prev,
+.edge-clients-carousel-holder .edge-cc-inner .owl-nav .owl-next {
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-dots.disabled {
+  display: none;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-dots .owl-dot {
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-animated-in {
+  z-index: 0;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .owl-animated-out {
+  z-index: 1;
+}
+
+.edge-clients-carousel-holder .edge-cc-inner .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.edge-clients-carousel-holder .edge-cc-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .edge-clients-carousel-holder .edge-cc-item {
+  cursor: pointer;
+}
+
+.edge-clients-carousel-holder .edge-cc-item .edge-cc-item {
+  position: relative;
+  display: block;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-switch-images .edge-cc-item:hover .edge-cc-image {
+  opacity: 0;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-switch-images .edge-cc-item:hover .edge-cc-hover-image {
+  opacity: 1;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-switch-images .edge-cc-item .edge-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-switch-images .edge-cc-item .edge-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  opacity: 0;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-roll-over .edge-cc-item {
+  overflow: hidden;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-roll-over .edge-cc-item:hover .edge-cc-image {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-roll-over .edge-cc-item:hover .edge-cc-hover-image {
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  opacity: 1;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-roll-over .edge-cc-item .edge-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.edge-clients-carousel-holder.edge-cc-hover-roll-over .edge-cc-item .edge-cc-hover-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  opacity: 0;
+  -webkit-transform: translate(-150%, -50%);
+  -moz-transform: translate(-150%, -50%);
+  transform: translate(-150%, -50%);
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode style - begin
+   ========================================================================== */
+.edge-countdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-countdown .countdown-rtl {
+  direction: rtl;
+}
+
+.edge-countdown .countdown-row {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  clear: both;
+}
+
+.edge-countdown .countdown-row.countdown-show1 .countdown-section {
+  width: 100%;
+}
+
+.edge-countdown .countdown-row.countdown-show2 .countdown-section {
+  width: 50%;
+}
+
+.edge-countdown .countdown-row.countdown-show3 .countdown-section {
+  width: 33.33333333333333%;
+}
+
+.edge-countdown .countdown-row.countdown-show4 .countdown-section {
+  width: 25%;
+}
+
+.edge-countdown .countdown-row.countdown-show5 .countdown-section {
+  width: 20%;
+}
+
+.edge-countdown .countdown-row .countdown-section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.edge-countdown .countdown-row .countdown-section .countdown-amount {
+  position: relative;
+  display: block;
+  color: #212121;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+.edge-countdown .countdown-row .countdown-section .countdown-period {
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #212121;
+  padding-top: 6px;
+}
+
+.edge-countdown.edge-dark-skin .countdown-row .countdown-section .countdown-amount,
+.edge-countdown.edge-dark-skin .countdown-row .countdown-section .countdown-period {
+  color: #212121;
+}
+
+.edge-countdown.edge-light-skin .countdown-row .countdown-section .countdown-amount,
+.edge-countdown.edge-light-skin .countdown-row .countdown-section .countdown-period {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Countdown shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+.edge-counter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.edge-counter-holder.edge-counter-boxed {
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+.edge-counter-holder.edge-counter-boxed .edge-counter-inner {
+  padding: 55px 0;
+}
+
+.edge-counter-holder .edge-counter-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Inconsolata";
+}
+
+.edge-counter-holder .edge-counter {
+  height: 1em;
+  display: inline-block !important;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1em;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.edge-counter-holder .edge-counter-title {
+  margin: 5px 0 0;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.edge-counter-holder .edge-counter-text {
+  margin: 4px 0 0;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 25px;
+}
+
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Dropcaps shortcode style - begin
+   ========================================================================== */
+.edge-dropcaps {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  line-height: 42px;
+  font-size: 42px;
+  color: #888;
+  font-weight: 300;
+  text-align: center;
+  margin: 7px 10px 0 0;
+}
+
+.edge-dropcaps.edge-square, .edge-dropcaps.edge-circle {
+  height: 35px;
+  width: 35px;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #212121;
+  margin: 6px 9px 0 0;
+  box-sizing: border-box;
+}
+
+.edge-dropcaps.edge-circle {
+  border-radius: 3em;
+}
+
+/* ==========================================================================
+   Dropcaps shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+.edge-elements-holder {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.edge-elements-holder.edge-two-columns .edge-eh-item {
+  width: 50%;
+}
+
+.edge-elements-holder.edge-three-columns .edge-eh-item {
+  width: 33%;
+}
+
+.edge-elements-holder.edge-four-columns .edge-eh-item {
+  width: 25%;
+}
+
+.edge-elements-holder.edge-five-columns .edge-eh-item {
+  width: 20%;
+}
+
+.edge-elements-holder.edge-six-columns .edge-eh-item {
+  width: 16%;
+}
+
+.edge-elements-holder .edge-eh-item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.edge-elements-holder .edge-eh-item.edge-vertical-alignment-top {
+  vertical-align: top;
+}
+
+.edge-elements-holder .edge-eh-item.edge-vertical-alignment-bottom {
+  vertical-align: bottom;
+}
+
+.edge-elements-holder .edge-eh-item.edge-horizontal-alignment-center {
+  text-align: center;
+}
+
+.edge-elements-holder .edge-eh-item.edge-horizontal-alignment-right {
+  text-align: right;
+}
+
+.edge-elements-holder .edge-eh-item .edge-elements-holder-item-inner {
+  width: 100%;
+}
+
+.edge-elements-holder.edge-ehi-float.edge-three-columns .edge-eh-item {
+  width: 33.33333333333333%;
+}
+
+.edge-elements-holder.edge-ehi-float.edge-six-columns .edge-eh-item {
+  width: 16.66666666666667%;
+}
+
+.edge-elements-holder.edge-ehi-float .edge-eh-item {
+  float: left;
+}
+
+.edge-elements-holder .edge-ehi-content {
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Frame Slider shortcode style - begin
+   ========================================================================== */
+.edge-frame-slider-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 65px 0 48px;
+}
+
+.edge-frame-slider-holder .edge-fs-phone {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background: url("img/frame-slider.png") top center no-repeat;
+  z-index: 2;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.edge-frame-slider-holder .edge-fs-slides {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  cursor: -webkit-grab;
+  visibility: hidden;
+}
+
+.edge-frame-slider-holder .edge-fs-slides a, .edge-frame-slider-holder .edge-fs-slides img {
+  display: block;
+}
+
+/* ==========================================================================
+   Frame Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Frame Video shortcode start styles
+   ========================================================================== */
+.edge-frame-video-holder {
+  position: relative;
+  padding: 5% 15%;
+  box-sizing: border-box;
+}
+
+.edge-frame-video-holder .edge-frame-image-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.edge-frame-video-holder video {
+  width: 725px;
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   Frame Video shortcode end styles
+   ========================================================================== */
+/* ==========================================================================
+   Gallery Blocks shortcode style - begin
+   ========================================================================== */
+.edge-gallery-blocks-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-gallery-blocks-holder .edge-gb-images .edge-gb-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.edge-gallery-blocks-holder .edge-gb-images .edge-gb-image.edge-gb-featured-image {
+  width: 100%;
+}
+
+.edge-gallery-blocks-holder .edge-gb-images a {
+  position: relative;
+  display: block;
+}
+
+.edge-gallery-blocks-holder .edge-gb-images a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  z-index: 1;
+  background-color: rgba(33, 33, 33, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-gallery-blocks-holder .edge-gb-images a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-gallery-blocks-holder .edge-gb-images a:hover:after, .edge-gallery-blocks-holder .edge-gb-images a:hover:before {
+  opacity: 1;
+}
+
+.edge-gallery-blocks-holder .edge-gb-images img {
+  display: block;
+}
+
+.edge-gallery-blocks-holder.edge-no-space {
+  margin: 0;
+}
+
+.edge-gallery-blocks-holder.edge-no-space .edge-gb-images {
+  margin: 0;
+}
+
+.edge-gallery-blocks-holder.edge-no-space .edge-gb-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edge-gallery-blocks-holder.edge-tiny-space {
+  margin: 0 0 -10px;
+}
+
+.edge-gallery-blocks-holder.edge-tiny-space .edge-gb-images {
+  margin: 0 -5px;
+}
+
+.edge-gallery-blocks-holder.edge-tiny-space .edge-gb-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edge-gallery-blocks-holder.edge-small-space {
+  margin: 0 0 -20px;
+}
+
+.edge-gallery-blocks-holder.edge-small-space .edge-gb-images {
+  margin: 0 -10px;
+}
+
+.edge-gallery-blocks-holder.edge-small-space .edge-gb-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edge-gallery-blocks-holder.edge-normal-space {
+  margin: 0 0 -30px;
+}
+
+.edge-gallery-blocks-holder.edge-normal-space .edge-gb-images {
+  margin: 0 -15px;
+}
+
+.edge-gallery-blocks-holder.edge-normal-space .edge-gb-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Gallery Blocks shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode style - begin
+   ========================================================================== */
+.edge-google-map-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-google-map {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.edge-google-map iframe,
+.edge-google-map object,
+.edge-google-map embed {
+  width: 100%;
+  display: block;
+}
+
+.edge-google-map img {
+  max-width: none;
+}
+
+.edge-google-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+}
+
+/* ==========================================================================
+   Google Map shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon List Item shortcode style - begin
+   ========================================================================== */
+.edge-icon-list-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: auto;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.edge-icon-list-holder .edge-il-icon-holder,
+.edge-icon-list-holder .edge-il-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.edge-icon-list-holder .edge-il-icon-holder {
+  width: 1%;
+}
+
+.edge-icon-list-holder .edge-il-icon-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #212121;
+  font-size: 15px;
+  line-height: inherit;
+}
+
+.edge-icon-list-holder .edge-il-icon-holder > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-icon-list-holder .edge-il-text {
+  width: 99%;
+  padding: 0 0 0 13px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Icon List Item shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+.edge-iwt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-iwt .edge-iwt-icon a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-iwt .edge-iwt-icon .edge-icon-shortcode {
+  line-height: 1;
+}
+
+.edge-iwt .edge-iwt-icon .edge-icon-shortcode.edge-circle, .edge-iwt .edge-iwt-icon .edge-icon-shortcode.edge-square, .edge-iwt .edge-iwt-icon .edge-icon-shortcode.edge-dropcaps.edge-circle {
+  line-height: 2;
+}
+
+.edge-iwt .edge-iwt-title {
+  margin: 0;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  padding-top: 2px;
+  font-family: "Inconsolata";
+  font-weight: 400;
+}
+
+.edge-iwt .edge-iwt-title a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: currentColor;
+}
+
+.edge-iwt .edge-iwt-title-text {
+  display: block;
+}
+
+.edge-iwt .edge-iwt-text {
+  margin: 15px 0 0;
+  color: #888;
+}
+
+.edge-iwt.edge-iwt-icon-left {
+  width: auto;
+}
+
+.edge-iwt.edge-iwt-icon-left .edge-iwt-icon,
+.edge-iwt.edge-iwt-icon-left .edge-iwt-content {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.edge-iwt.edge-iwt-icon-left .edge-iwt-icon {
+  position: relative;
+  top: 13px;
+  right: 12px;
+}
+
+.edge-iwt.edge-iwt-icon-left .edge-iwt-icon .edge-icon-shortcode {
+  font-size: 2.5em;
+  color: #888;
+}
+
+.edge-iwt.edge-iwt-icon-left .edge-iwt-icon img {
+  max-width: none;
+}
+
+.edge-iwt.edge-iwt-icon-left .edge-iwt-content {
+  padding: 0 0 0 13px;
+}
+
+.edge-iwt.edge-iwt-icon-left-from-title .edge-iwt-icon,
+.edge-iwt.edge-iwt-icon-left-from-title .edge-iwt-title-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.edge-iwt.edge-iwt-icon-left-from-title .edge-iwt-icon .edge-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.edge-iwt.edge-iwt-icon-left-from-title .edge-iwt-icon img {
+  max-width: none;
+}
+
+.edge-iwt.edge-iwt-icon-left-from-title .edge-iwt-title-text {
+  padding: 0 0 0 17px;
+}
+
+.edge-iwt.edge-iwt-icon-left-from-title .edge-iwt-text {
+  margin-top: 2px;
+}
+
+.edge-iwt.edge-iwt-icon-top {
+  text-align: center;
+}
+
+.edge-iwt.edge-iwt-icon-top .edge-iwt-content {
+  padding: 17px 35px 0 22px;
+}
+
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon shortcode style - begin
+   ========================================================================== */
+.edge-icon-shortcode {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-icon-shortcode.edge-circle, .edge-icon-shortcode.edge-square, .edge-icon-shortcode.edge-dropcaps.edge-circle {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  background-color: #f7f7f7;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.edge-icon-shortcode.edge-circle a, .edge-icon-shortcode.edge-square a, .edge-icon-shortcode.edge-dropcaps.edge-circle a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.edge-icon-shortcode.edge-circle .edge-icon-element, .edge-icon-shortcode.edge-square .edge-icon-element, .edge-icon-shortcode.edge-dropcaps.edge-circle .edge-icon-element {
+  color: #000;
+  line-height: inherit;
+}
+
+.edge-icon-shortcode.edge-circle {
+  border-radius: 50%;
+}
+
+.edge-icon-shortcode .edge-icon-element {
+  display: block;
+  line-height: inherit;
+  -webkit-transition: color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+.edge-icon-shortcode .edge-icon-element:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-icon-animation-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: transform 0.15s ease-in-out;
+  -moz-transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+}
+
+.edge-icon-animation-holder.edge-icon-animation-show {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.edge-icon-tiny {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+.edge-icon-small {
+  font-size: 2em;
+}
+
+.edge-icon-medium {
+  font-size: 2.8em;
+}
+
+.edge-icon-large {
+  font-size: 4em;
+}
+
+.edge-icon-huge {
+  font-size: 5em;
+}
+
+/* ==========================================================================
+   Icon shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+.edge-image-gallery {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-image-gallery .edge-ig-grid span.edge-image-gallery-hover {
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-image-gallery .edge-ig-grid .edge-ig-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.edge-image-gallery .edge-ig-grid .edge-ig-image:hover span.edge-image-gallery-hover {
+  opacity: 0.95;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.edge-image-gallery .edge-ig-grid .edge-ig-image .edge-ig-image-inner {
+  position: relative;
+  display: inline-block;
+}
+
+.edge-image-gallery .edge-ig-grid .edge-ig-image a, .edge-image-gallery .edge-ig-grid .edge-ig-image img {
+  display: block;
+}
+
+.edge-image-gallery .edge-ig-grid .edge-ig-image a {
+  position: relative;
+}
+
+.edge-image-gallery .edge-ig-grid .edge-ig-image a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-image-gallery .edge-ig-grid .edge-ig-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(33, 33, 33, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-image-gallery .edge-ig-grid .edge-ig-image a:hover:before, .edge-image-gallery .edge-ig-grid .edge-ig-image a:hover:after {
+  opacity: 1;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-no-space {
+  margin: 0;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-no-space .edge-ig-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-tiny-space {
+  margin: 0 -5px;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-tiny-space .edge-ig-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-small-space {
+  margin: 0 -10px;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-small-space .edge-ig-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-normal-space {
+  margin: 0 -15px;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-normal-space .edge-ig-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-columns-2 .edge-ig-image {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-2 .edge-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-columns-3 .edge-ig-image {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-3 .edge-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-columns-4 .edge-ig-image {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-4 .edge-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image {
+  width: 16.66667%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-grayscale .edge-ig-image img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url(img/desaturate.svg#grayscale);
+}
+
+.touch .edge-image-gallery .edge-ig-grid.edge-ig-grayscale .edge-ig-image {
+  cursor: pointer;
+}
+
+.edge-image-gallery .edge-ig-grid.edge-ig-grayscale .edge-ig-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.edge-image-gallery .edge-ig-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.edge-image-gallery .edge-ig-slider .owl-item a {
+  position: relative;
+  display: block;
+}
+
+.edge-image-gallery .edge-ig-slider .owl-item a img {
+  display: block;
+}
+
+.edge-image-gallery .edge-ig-slider .owl-item a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-image-gallery .edge-ig-slider .owl-item a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(33, 33, 33, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-image-gallery .edge-ig-slider .owl-item a:hover:before, .edge-image-gallery .edge-ig-slider .owl-item a:hover:after {
+  opacity: 1;
+}
+
+.edge-image-gallery .edge-ig-slider.edge-nav-pag-enabled .owl-nav .owl-prev,
+.edge-image-gallery .edge-ig-slider.edge-nav-pag-enabled .owl-nav .owl-next {
+  -webkit-transform: translateY(calc(-50% - 19px));
+  -moz-transform: translateY(calc(-50% - 19px));
+  transform: translateY(calc(-50% - 19px));
+}
+
+.edge-image-gallery .owl-nav .owl-prev,
+.edge-image-gallery .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-image-gallery .owl-nav .owl-prev:hover .edge-prev-icon,
+.edge-image-gallery .owl-nav .owl-prev:hover .edge-next-icon,
+.edge-image-gallery .owl-nav .owl-next:hover .edge-prev-icon,
+.edge-image-gallery .owl-nav .owl-next:hover .edge-next-icon {
+  color: #212121;
+}
+
+.edge-image-gallery .owl-nav .owl-prev {
+  left: 30px;
+}
+
+.edge-image-gallery .owl-nav .owl-next {
+  right: 30px;
+}
+
+.edge-image-gallery .owl-nav .edge-prev-icon,
+.edge-image-gallery .owl-nav .edge-next-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #212121;
+  line-height: 1;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.edge-image-gallery .owl-nav .edge-prev-icon .edge-icon-arrow,
+.edge-image-gallery .owl-nav .edge-next-icon .edge-icon-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 46px;
+  line-height: inherit;
+}
+
+.edge-image-gallery .owl-nav .edge-prev-icon .edge-icon-arrow:before,
+.edge-image-gallery .owl-nav .edge-next-icon .edge-icon-arrow:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-image-gallery .owl-dots {
+  text-align: center;
+  margin: 51px 0 0;
+}
+
+.edge-image-gallery .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-image-gallery .owl-dots .owl-dot span {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px 0 11px;
+  border-radius: 0;
+  border: 0;
+  background-color: #e9e9e9;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-image-gallery .owl-dots .owl-dot span:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: #212121;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.edge-image-gallery .owl-dots .owl-dot:hover span, .edge-image-gallery .owl-dots .owl-dot.active span {
+  background-color: #e9e9e9;
+}
+
+.edge-image-gallery .owl-dots .owl-dot:hover span:before, .edge-image-gallery .owl-dots .owl-dot.active span:before {
+  background-color: #a2a2a2;
+}
+
+.edge-image-gallery .owl-carousel .owl-item img {
+  -webkit-transform: translateZ(0);
+}
+
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */
+.edge-image-slider-holder .edge-image-slider-item {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.edge-image-slider-holder.edge-owl-slider .owl-nav .edge-next-icon,
+.edge-image-slider-holder.edge-owl-slider .owl-nav .edge-prev-icon {
+  font-size: 35px;
+  color: #fff;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+}
+
+.edge-image-slider-holder.edge-owl-slider .owl-dots {
+  margin-top: 50px;
+}
+
+.edge-image-slider-holder.edge-owl-slider .owl-dots .owl-dot span {
+  border-radius: 0;
+  border-color: #d2d2d2;
+  background-color: #212121;
+  width: 6px;
+  height: 6px;
+  border-width: 1px;
+  margin: 0 10px;
+}
+
+.edge-image-slider-holder.edge-owl-slider .owl-dots .owl-dot.active span {
+  background-color: #a2a2a2;
+}
+
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+.edge-image-with-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-image-with-text-holder .edge-iwt-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-image-with-text-holder .edge-iwt-image a, .edge-image-with-text-holder .edge-iwt-image img {
+  display: block;
+}
+
+.edge-image-with-text-holder .shadow_enabled img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
+}
+
+.edge-image-with-text-holder .shadow_enabled:hover img {
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.edge-image-with-text-holder .border_enabled img {
+  border: 1px solid #efefef;
+}
+
+.edge-image-with-text-holder .edge-iwt-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-image-with-text-holder .edge-iwt-title {
+  margin: 35px 0 0;
+  letter-spacing: 2px;
+}
+
+.edge-image-with-text-holder .edge-iwt-text {
+  margin: 10px 0 0;
+  font-size: 15px;
+  line-height: 26px;
+  color: #888;
+}
+
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Item Showcase shortcode style - begin
+   ========================================================================== */
+.edge-item-showcase-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  opacity: 0;
+}
+
+.edge-item-showcase-holder .edge-is-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  margin-top: -100px;
+  opacity: 0;
+  -webkit-transform: translateY(70px);
+  -moz-transform: translateY(70px);
+  transform: translateY(70px);
+}
+
+.edge-item-showcase-holder .edge-is-image.edge-appeared {
+  -webkit-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -moz-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.edge-item-showcase-holder .edge-is-item-holder {
+  display: block;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.edge-item-showcase-holder .edge-is-item-holder.edge-is-left-holder {
+  float: left;
+}
+
+.edge-item-showcase-holder .edge-is-item-holder.edge-is-right-holder {
+  float: right;
+}
+
+.edge-item-showcase-holder .edge-is-item-holder .edge-is-item:first-child {
+  margin: 0;
+}
+
+.edge-item-showcase-holder .edge-is-item {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  margin: 56px 0 0;
+  opacity: 0;
+}
+
+.edge-item-showcase-holder .edge-is-item .edge-is-icon {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  z-index: 5;
+  color: #000;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.edge-item-showcase-holder .edge-is-item .edge-item-inner {
+  display: block;
+  padding-bottom: 21px;
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-is-left {
+  text-align: right;
+  -webkit-transform: translateX(-70px);
+  -moz-transform: translateX(-70px);
+  transform: translateX(-70px);
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-is-left .edge-is-icon {
+  padding: 5px 33px 5px;
+  -webkit-transform-origin: 65% 50%;
+  transform-origin: 65% 50%;
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-is-left .edge-is-content {
+  padding: 0 33px 0 0;
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-is-right {
+  text-align: left;
+  -webkit-transform: translateX(70px);
+  -moz-transform: translateX(70px);
+  transform: translateX(70px);
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-is-right .edge-is-icon {
+  padding: 5px 5px 5px 33px;
+  -webkit-transform-origin: 35% 50%;
+  transform-origin: 35% 50%;
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-is-right .edge-is-content {
+  padding: 0 0 0 33px;
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-appeared {
+  -webkit-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -moz-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-appeared .edge-is-icon {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.edge-item-showcase-holder .edge-is-item.edge-appeared .edge-is-content {
+  opacity: 1;
+}
+
+.edge-item-showcase-holder .edge-is-item .edge-is-content {
+  display: block;
+  vertical-align: top;
+  padding-top: 12px;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.edge-item-showcase-holder .edge-is-item .edge-is-title {
+  margin: 0;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+}
+
+.edge-item-showcase-holder .edge-is-item .edge-is-text {
+  margin: 5px 0 0;
+  color: #888;
+}
+
+.edge-item-showcase-holder .edge-is-icon .edge-icon-shortcode {
+  font-size: 30px;
+  border: 1px solid transparent;
+}
+
+.edge-item-showcase-holder .edge-is-icon:hover .edge-icon-shortcode {
+  background-color: #fff;
+}
+
+.edge-item-showcase-holder .edge-is-icon:hover .edge-icon-element {
+  color: #212121;
+}
+
+/* ==========================================================================
+   Item Showcase shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+# Message style - begin
+========================================================================== */
+/* Unique style for both types  - begin
+========================================================================== */
+.edge-message {
+  position: relative;
+  padding: 12px 27px;
+  margin: 0;
+  background-color: #212121;
+  border: 0 solid #212121;
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-message {
+    padding: 20px 22px;
+  }
+}
+
+.edge-message .edge-message-inner {
+  position: relative;
+  padding-right: 20px;
+}
+
+.edge-message .edge-message-inner .edge-message-text {
+  display: table;
+  height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .edge-message .edge-message-inner .edge-message-text {
+    line-height: normal !important;
+  }
+}
+
+.edge-message .edge-message-inner .edge-message-text .edge-message-text-inner {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  font-family: "Inconsolata";
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  left: -14px;
+  line-height: 29px;
+}
+
+.edge-message .edge-message-inner a.edge-close {
+  position: absolute;
+  right: -12px;
+  top: 7px;
+  line-height: 13px;
+  font-size: 18px;
+  color: #212121;
+}
+
+.edge-message .edge-message-inner a.edge-close i {
+  width: 14px;
+  height: 14px;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.edge-message .edge-message-inner a.edge-close i:hover {
+  color: #888 !important;
+}
+
+/* Unique style for both types - end
+========================================================================== */
+/* Type with icon - begin
+========================================================================== */
+.edge-message.edge-with-icon .edge-message-icon-holder {
+  float: left;
+  padding: 0 20px 0 0;
+  margin-left: -21px;
+  margin-top: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .edge-message.edge-with-icon .edge-message-icon-holder {
+    padding: 20px 22px;
+  }
+}
+
+.edge-message.edge-with-icon .edge-message-icon-holder .edge-message-icon {
+  display: table;
+  height: 100%;
+  color: #fff;
+}
+
+.edge-message.edge-with-icon .edge-message-icon-holder .edge-message-icon .edge-message-icon-inner {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.edge-message.edge-with-icon .edge-message-icon-holder .edge-message-icon .edge-message-icon-inner > i,
+.edge-message.edge-with-icon .edge-message-icon-holder .edge-message-icon .edge-message-icon-inner > span {
+  line-height: 1em;
+  padding: 8px;
+}
+
+/* Type with icon - end
+========================================================================== 
+/* ==========================================================================
+# Message style - end
+========================================================================== */
+/* ==========================================================================
+     Mobile Slider shortcode style - begin
+     ========================================================================== */
+.edge-mobile-slider-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .owl-dots {
+  text-align: center;
+  margin: 63px 0 0;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .owl-dots .owl-dot span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 3em;
+  background-color: transparent;
+  border: 2px solid rgba(33, 33, 33, 0.5);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  box-sizing: border-box;
+  background-color: #212121;
+  border-color: #212121;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .owl-dots .owl-dot:hover span, .edge-mobile-slider-holder .edge-ms-inner .owl-dots .owl-dot.active span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .owl-stage-outer {
+  margin: 0;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .edge-ms-item {
+  padding: 0 67px;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder {
+  position: relative;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: rgba(244, 244, 244, 0.75);
+  right: -50px;
+  top: -60px;
+  -webkit-box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .edge-ms-item h5 {
+  margin-bottom: 0;
+}
+
+.edge-mobile-slider-holder .edge-ms-inner .edge-ms-item p {
+  margin: 0 0 25px;
+  font-size: 14px;
+  color: #6e6a6a;
+}
+
+/* ==========================================================================
+     Mobile Slider shortcode style - end
+     ========================================================================== */
+/* ==========================================================================
+   Parallax shortcode style - begin
+   ========================================================================== */
+.edge-parallax-holder {
+  position: static;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center 0;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.edge-parallax-holder.edge-vertical-middle-align {
+  display: table;
+  width: 100%;
+}
+
+.edge-parallax-holder.edge-vertical-middle-align .edge-parallax-inner {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.touch .edge-parallax-holder.edge-disabled-parallax-on-touch {
+  height: auto !important;
+  min-height: 200px !important;
+  background-position: center top !important;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.edge-parallax-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.edge-parallax-container > .edge-parallax-image-frame {
+  position: absolute;
+  overflow: hidden;
+}
+
+.edge-parallax-container > .edge-parallax-image-frame > .edge-parallax-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 2000px;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* ==========================================================================
+   Parallax shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pie Chart shortcode style - begin
+   ========================================================================== */
+.edge-pie-chart-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.edge-pie-chart-holder .edge-pc-percentage {
+  position: relative;
+  display: block;
+  height: 176px;
+  width: 176px;
+  line-height: 176px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.edge-pie-chart-holder .edge-pc-percentage canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.edge-pie-chart-holder .edge-pc-percentage .edge-pc-percent {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #212121;
+  font-size: 36px;
+  line-height: inherit;
+  font-weight: 600;
+}
+
+.edge-pie-chart-holder .edge-pc-percentage .edge-pc-percent:after {
+  position: relative;
+  top: -15px;
+  content: '%';
+  font-size: 15px;
+}
+
+.edge-pie-chart-holder .edge-pc-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.edge-pie-chart-holder .edge-pc-text-holder .edge-pc-title {
+  margin: 0;
+}
+
+.edge-pie-chart-holder .edge-pc-text-holder .edge-pc-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Pie Chart shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Item shortcode style - begin
+   ========================================================================== */
+.edge-price-item {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.edge-price-item .edge-pi-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-price-item .edge-pi-inner .edge-pi-prices {
+  position: relative;
+  float: left;
+  padding-right: 37px;
+  width: 35%;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.edge-price-item .edge-pi-inner .edge-pi-prices .edge-pi-price {
+  display: inline-block;
+  font-size: 123px;
+  font-weight: 100;
+  margin: 0;
+  padding-top: 10px;
+  position: relative;
+  vertical-align: top;
+  color: #323232;
+}
+
+.edge-price-item .edge-pi-inner .edge-pi-prices .edge-pi-currency {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  color: #323232;
+  top: -20px;
+}
+
+.edge-price-item .edge-pi-inner .edge-pi-content-holder {
+  float: left;
+  width: 65%;
+  position: relative;
+  text-align: left;
+}
+
+.edge-price-item .edge-pi-inner .edge-pi-content-holder .edge-pi-title {
+  position: relative;
+  top: -39px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.1em;
+  line-height: 51px;
+}
+
+.edge-price-item .edge-pi-inner .edge-pi-content-holder .edge-pi-subtitle {
+  position: relative;
+  top: -40px;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 31px;
+  color: #888;
+}
+
+.edge-price-item .edge-pi-inner .edge-pi-content-holder .edge-pi-content {
+  position: relative;
+  top: -42px;
+}
+
+.edge-price-item .edge-pi-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edge-price-item .edge-pi-inner ul li {
+  margin: 0;
+  font-size: 16px;
+  color: #888;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.edge-price-item .edge-pi-inner ul li:before {
+  content: "\4e";
+  font-family: 'ElegantIcons';
+  font-size: 18px;
+  letter-spacing: 0.14em;
+  color: #212121;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+/* ==========================================================================
+   Pricing item shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+.edge-pricing-tables {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.edge-pricing-tables .edge-pt-wrapper {
+  position: relative;
+}
+
+.edge-pricing-tables.edge-pt-no-space .edge-pt-wrapper {
+  margin: 0;
+}
+
+.edge-pricing-tables.edge-pt-no-space .edge-price-table {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edge-pricing-tables.edge-pt-tiny-space .edge-pt-wrapper {
+  margin: 0 -5px;
+}
+
+.edge-pricing-tables.edge-pt-tiny-space .edge-price-table {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edge-pricing-tables.edge-pt-small-space .edge-pt-wrapper {
+  margin: 0 -10px;
+}
+
+.edge-pricing-tables.edge-pt-small-space .edge-price-table {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edge-pricing-tables.edge-pt-normal-space .edge-pt-wrapper {
+  margin: 0 -15px;
+}
+
+.edge-pricing-tables.edge-pt-normal-space .edge-price-table {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.edge-pricing-tables.edge-two-columns .edge-price-table {
+  width: 50%;
+}
+
+.edge-pricing-tables.edge-three-columns .edge-price-table {
+  width: 33.33333%;
+}
+
+.edge-pricing-tables.edge-four-columns .edge-price-table {
+  width: 25%;
+}
+
+.edge-pricing-tables.edge-five-columns .edge-price-table {
+  width: 20%;
+}
+
+.edge-price-table {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  box-sizing: border-box;
+  font-family: "Inconsolata";
+}
+
+.edge-price-table:hover .edge-pt-inner {
+  border-color: #959595;
+}
+
+.edge-price-table:hover .edge-pt-inner ul {
+  background-color: #fafafa;
+}
+
+.edge-price-table .edge-pt-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+  border: 1px solid #d2d2d2;
+}
+
+.edge-price-table .edge-pt-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edge-price-table .edge-pt-inner ul li {
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-title-holder {
+  position: relative;
+  color: #212121;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-bottom: 0;
+  font-family: "Inconsolata";
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-title-holder .edge-pt-title {
+  display: block;
+  padding: 17px 0 16px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 41px;
+  letter-spacing: 0.1em;
+  color: #888;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-subtitle-holder {
+  position: relative;
+  color: #212121;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 22px 0 2px;
+  font-family: "Inconsolata";
+  width: 70%;
+  margin: auto;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-subtitle-holder .edge-pt-subtitle {
+  display: block;
+  padding: 17px 0 32px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 31px;
+  letter-spacing: 0;
+  color: #888;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-subtitle-holder .edge-pt-subtitle:after {
+  content: ' ';
+  display: block;
+  margin: 20px auto;
+  margin-top: 34px;
+  width: 60%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5px;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-prices {
+  position: relative;
+  padding: 33px 15px 0;
+  padding-top: 0;
+  font-family: "Inconsolata";
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-prices .edge-pt-value {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  font-family: "Inconsolata";
+  color: #323232;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-prices .edge-pt-price {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  left: -5px;
+  font-size: 30px;
+  line-height: 47px;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  font-family: "Inconsolata";
+  color: #323232;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-prices .edge-pt-mark {
+  position: relative;
+  display: block;
+  margin: 1px 0 0;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-content {
+  padding: 16px 15px;
+  padding-top: 6px;
+  font-family: "Inconsolata";
+  font-size: 16px;
+  width: 70%;
+  margin: auto;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-content ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #888;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-content ul li:before {
+  content: "\4e";
+  font-family: 'ElegantIcons';
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: #888;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-button {
+  padding: 19px 15px 66px;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-button .edge-btn {
+  padding: 2px 48px 2px;
+}
+
+.edge-price-table .edge-pt-inner ul li.edge-pt-button .edge-btn .edge-btn-text {
+  font-family: "Inconsolata";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.15;
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */
+.edge-process-holder {
+  position: relative;
+}
+
+.edge-process-holder .edge-process-inner:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.edge-process-holder .edge-process-inner:before {
+  content: " ";
+  display: table;
+}
+
+.edge-process-holder .edge-image-holder-inner {
+  font-size: 100px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+.edge-process-holder .edge-image-holder-inner span {
+  position: relative;
+  z-index: 998;
+}
+
+.edge-process-holder .edge-process-background-image .edge-number-holder-inner {
+  background-color: transparent;
+}
+
+.edge-process-holder .edge-process-bg-holder {
+  position: absolute;
+  top: 97px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  margin: 0 10px;
+}
+
+.edge-process-holder .edge-process-item-holder {
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+
+.edge-process-holder .edge-process-item-holder:first-child .edge-pi-holder-inner .edge-pi-holder-inner-wrapper:before {
+  content: none;
+}
+
+.edge-process-holder .edge-process-item-holder:last-child .edge-pi-holder-inner .edge-pi-holder-inner-wrapper:after {
+  content: none;
+}
+
+.edge-process-holder .edge-process-item-holder .edge-pi-content-holder {
+  margin: 0 20px;
+}
+
+.edge-process-holder .edge-process-item-holder .edge-pi-holder-inner {
+  margin: 0 auto;
+}
+
+.edge-process-holder .edge-process-item-holder .edge-pi-holder-inner .edge-pi-holder-inner-wrapper {
+  position: relative;
+}
+
+.edge-process-holder .edge-process-item-holder.edge-pi-push-right .edge-pi-holder-inner {
+  float: right;
+}
+
+.edge-process-holder.edge-process-holder-items-three .edge-process-item-holder {
+  width: 33.33%;
+}
+
+.edge-process-holder.edge-process-multiple-highlights .edge-pi-holder-inner {
+  width: 100%;
+}
+
+.edge-process-holder .edge-pi-title-holder {
+  margin-bottom: 7px;
+}
+
+.edge-process-holder .edge-pi-title {
+  margin-bottom: 0;
+  margin-top: 18px;
+  letter-spacing: 0.1em;
+}
+
+.edge-process-holder .edge-pi-text-holder {
+  margin-top: -3px;
+}
+
+.edge-process-holder .edge-pi-text-holder p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+
+.edge-process-holder .edge-pi-image-holder {
+  background-color: #fff;
+  display: inline-block;
+  width: 214px;
+  height: 214px;
+  border: 1px dashed #ebebeb;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.edge-process-holder .edge-pi-image-holder img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+.edge-progress-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-progress-bar.edge-progress-bar-dark .edge-pb-title-holder {
+  position: relative;
+  margin: 16px 0 3px;
+  letter-spacing: 0.1em;
+  line-height: 33px;
+}
+
+.edge-progress-bar.edge-progress-bar-dark .edge-pb-title-holder .edge-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+  color: #000;
+}
+
+.edge-progress-bar.edge-progress-bar-dark .edge-pb-percent {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+  letter-spacing: 0.1em;
+  line-height: 33px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.edge-progress-bar.edge-progress-bar-dark .edge-pb-percent:after {
+  content: '%';
+}
+
+.edge-progress-bar.edge-progress-bar-dark .edge-pb-content-holder {
+  position: relative;
+  height: 3px;
+  overflow: hidden;
+  background-color: #b4b4b4;
+}
+
+.edge-progress-bar.edge-progress-bar-dark .edge-pb-content-holder .edge-pb-content {
+  height: 6px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+.edge-progress-bar.edge-progress-bar-light .edge-pb-title-holder {
+  position: relative;
+  margin: 16px 0 0px;
+  letter-spacing: 0.1em;
+  line-height: 33px;
+}
+
+.edge-progress-bar.edge-progress-bar-light .edge-pb-title-holder .edge-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+  color: #fff;
+}
+
+.edge-progress-bar.edge-progress-bar-light .edge-pb-percent {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+  letter-spacing: 0.1em;
+  line-height: 33px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.edge-progress-bar.edge-progress-bar-light .edge-pb-percent:after {
+  content: '%';
+}
+
+.edge-progress-bar.edge-progress-bar-light .edge-pb-content-holder {
+  position: relative;
+  height: 6px;
+  overflow: hidden;
+  background-color: #4d4d4d;
+}
+
+.edge-progress-bar.edge-progress-bar-light .edge-pb-content-holder .edge-pb-content {
+  height: 6px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.edge-progress-bar.edge-progress-bar-default .edge-pb-title-holder {
+  position: relative;
+  margin: 16px 0 6px;
+  letter-spacing: 0.1em;
+  line-height: 33px;
+  font-family: "Inconsolata";
+  color: #313131;
+}
+
+.edge-progress-bar.edge-progress-bar-default .edge-pb-title-holder .edge-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.edge-progress-bar.edge-progress-bar-default .edge-pb-percent {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+  letter-spacing: 0.1em;
+  line-height: 33px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.edge-progress-bar.edge-progress-bar-default .edge-pb-percent:after {
+  content: '%';
+}
+
+.edge-progress-bar.edge-progress-bar-default .edge-pb-content-holder {
+  position: relative;
+  height: 6px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.edge-progress-bar.edge-progress-bar-default .edge-pb-content-holder .edge-pb-content {
+  height: 6px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+.edge-section-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-section-title-holder .edge-st-title {
+  display: block;
+  margin: 0;
+  line-height: 45px;
+  margin-bottom: 28px;
+  letter-spacing: 3.8px;
+}
+
+.edge-section-title-holder .edge-st-text {
+  font-size: 20px;
+  display: block;
+  margin: 14px 0 0;
+  color: #888;
+  text-transform: none;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Separator shortcode style - begin
+   ========================================================================== */
+.edge-separator-holder {
+  position: relative;
+  height: auto;
+  font-size: 0;
+  line-height: 1em;
+}
+
+.edge-separator-holder.edge-separator-center {
+  text-align: center;
+}
+
+.edge-separator-holder.edge-separator-left {
+  text-align: left;
+}
+
+.edge-separator-holder.edge-separator-right {
+  text-align: right;
+}
+
+.edge-separator-holder.edge-separator-full-width .edge-separator {
+  width: 100% !important;
+}
+
+.edge-separator {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #ebebeb;
+  margin: 10px 0;
+}
+
+/* ==========================================================================
+   Separator shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+.edge-social-share-holder {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.edge-social-share-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List type - begin
+========================================================================== */
+.edge-social-share-holder.edge-list .edge-social-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  color: #888;
+  font-weight: 600;
+}
+
+.edge-social-share-holder.edge-list li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 13px 3px 0;
+}
+
+.edge-social-share-holder.edge-list li:last-child {
+  margin: 0 0 3px;
+}
+
+.edge-social-share-holder.edge-list li a {
+  font-size: 13px;
+  color: #212121;
+}
+
+/* List type - end
+========================================================================== */
+/* Dropdown type - begin
+========================================================================== */
+.edge-social-share-holder.edge-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown-opener {
+  display: block;
+  color: #888;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown-opener .edge-social-share-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown-opener .social_share {
+  font-size: 12px;
+  color: #212121;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown-opener:hover {
+  color: #212121;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown-opener:hover .social_share {
+  color: inherit;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown {
+  position: relative;
+  visibility: hidden;
+  z-index: 950;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul {
+  position: relative;
+  display: block;
+  z-index: 990;
+  margin: 0;
+  padding: 0 !important;
+  top: 3px;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li {
+  width: 88px;
+  height: 28px;
+  line-height: 28px;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #959595;
+  background-color: #fff;
+  font-size: 12px;
+  color: #888;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  -moz-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li.edge-facebook-share:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li.edge-twitter-share:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li.edge-google_plus-share:hover {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li.edge-linkedin-share:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li.edge-tumblr-share:hover {
+  background-color: #32506d;
+  color: #fff;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li.edge-pinterest-share:hover {
+  background-color: #cb2027;
+  color: #fff;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li.edge-vk-share:hover {
+  background-color: #45668e;
+  color: #fff;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li:not(:first-child) {
+  border-top: none;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li a {
+  display: block;
+  color: inherit !important;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li a span {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li:nth-child(1) {
+  bottom: -29px;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li:nth-child(2) {
+  bottom: -58px;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li:nth-child(3) {
+  bottom: -87px;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li:nth-child(4) {
+  bottom: -116px;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li:nth-child(5) {
+  bottom: -145px;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li:nth-child(6) {
+  bottom: -174px;
+}
+
+.edge-social-share-holder.edge-dropdown .edge-social-share-dropdown ul li:nth-child(7) {
+  bottom: -203px;
+}
+
+.edge-social-share-holder.edge-dropdown:hover .edge-social-share-dropdown ul li {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.edge-social-share-holder.edge-dropdown:hover .edge-social-share-dropdown ul li {
+  /* opacity and visibility need to be different, but not background-color */
+}
+
+.edge-social-share-holder.edge-dropdown:hover .edge-social-share-dropdown ul li:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+}
+
+.edge-social-share-holder.edge-dropdown:hover .edge-social-share-dropdown ul li:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+}
+
+.edge-social-share-holder.edge-dropdown:hover .edge-social-share-dropdown ul li:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+}
+
+.edge-social-share-holder.edge-dropdown:hover .edge-social-share-dropdown ul li:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+}
+
+.edge-social-share-holder.edge-dropdown:hover .edge-social-share-dropdown ul li:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+}
+
+.edge-social-share-holder.edge-dropdown:hover .edge-social-share-dropdown ul li:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+}
+
+/* Dropdown type - end
+========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Split Scrolling Section shortcode style - begin
+   ========================================================================== */
+.edge-split-scrolling-section {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.edge-split-scrolling-section .edge-sss-ms-left,
+.edge-split-scrolling-section .edge-sss-ms-right {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.edge-split-scrolling-section .edge-sss-ms-section {
+  height: 100%;
+  overflow: hidden;
+}
+
+.edge-split-scrolling-section .edge-sss-ms-left {
+  position: fixed;
+}
+
+.edge-split-scrolling-section .edge-sss-ms-left div, .edge-split-scrolling-section .edge-sss-ms-left ul, .edge-split-scrolling-section .edge-sss-ms-left li {
+  height: 100%;
+}
+
+.edge-split-scrolling-section .edge-sss-ms-left .edge-sss-ms-section {
+  background-position: 100% center;
+  background-size: cover;
+}
+
+.edge-split-scrolling-section .edge-sss-ms-right {
+  float: right;
+  margin-top: 57px;
+  padding: 0 25px;
+}
+
+.edge-split-scrolling-section .edge-sss-ms-right .edge-sss-ms-section {
+  background-position: 0 center;
+  background-size: cover;
+}
+
+.edge-split-scrolling-section .edge-image-slider-item-inner.image {
+  display: none;
+}
+
+.edge-split-scrolling-section .edge-image-slider-item-inner-wrapper {
+  position: relative;
+}
+
+.edge-split-scrolling-section .edge-image-slider-item-inner-wrapper .edge-image-slider-item-content {
+  height: auto;
+  position: absolute;
+  bottom: 56px;
+  width: 100%;
+  padding: 0 5%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.edge-split-scrolling-section .edge-image-slider-item-inner-wrapper .edge-image-slider-item-content .edge-image-slider-item-inner {
+  color: #fff;
+}
+
+.edge-split-scrolling-section .edge-image-slider-item-inner-wrapper .edge-image-slider-item-content .edge-image-slider-item-inner.title {
+  font-family: "Playfair Display", serif;
+  font-size: 150px;
+  margin: 0 0 75px;
+  letter-spacing: -8px;
+}
+
+.edge-split-scrolling-section .edge-image-slider-item-inner-wrapper .edge-image-slider-item-content .edge-image-slider-item-inner.content {
+  font-family: "Inconsolata";
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.edge-split-scrolling-section .edge-prod-cat.edge-cat-with-image:nth-child(even) {
+  top: 38px;
+}
+
+.edge-split-scrolling-section .edge-owl-slider .owl-nav .owl-next,
+.edge-split-scrolling-section .edge-owl-slider .owl-nav .owl-prev {
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  top: calc(100% - 48px);
+}
+
+/* ==========================================================================
+   Split Scrolling Section shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+.edge-tabs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-tabs .edge-tabs-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edge-tabs .edge-tabs-nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.edge-tabs .edge-tabs-nav li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  text-transform: uppercase;
+}
+
+.edge-tabs .edge-tab-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-tabs .edge-tab-container p {
+  margin: 0;
+}
+
+.edge-tabs.edge-tabs-standard .edge-tabs-nav li a {
+  padding: 3px 37px;
+  font-size: 14px;
+  line-height: 47px;
+  font-weight: 400;
+  color: #212121;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+}
+
+.edge-tabs.edge-tabs-standard .edge-tabs-nav li.ui-state-active a,
+.edge-tabs.edge-tabs-standard .edge-tabs-nav li.ui-state-hover a {
+  color: #fff;
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.edge-tabs.edge-tabs-standard .edge-tab-container {
+  margin: 35px 0 0;
+}
+
+.edge-tabs.edge-tabs-boxed .edge-tabs-nav li {
+  margin: 0;
+}
+
+.edge-tabs.edge-tabs-boxed .edge-tabs-nav li a {
+  padding: 3px 37px;
+  font-size: 14px;
+  line-height: 47px;
+  font-weight: 400;
+  color: #212121;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+}
+
+.edge-tabs.edge-tabs-boxed .edge-tabs-nav li.ui-state-active a,
+.edge-tabs.edge-tabs-boxed .edge-tabs-nav li.ui-state-hover a {
+  color: #fff;
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.edge-tabs.edge-tabs-boxed .edge-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.edge-tabs.edge-tabs-boxed .edge-tab-container {
+  margin: 25px 0 0;
+}
+
+.edge-tabs.edge-tabs-simple .edge-tabs-nav {
+  border-bottom: 1px solid #959595;
+}
+
+.edge-tabs.edge-tabs-simple .edge-tabs-nav li {
+  margin: 0 31px 0 0;
+}
+
+.edge-tabs.edge-tabs-simple .edge-tabs-nav li a {
+  padding: 13px 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+}
+
+.edge-tabs.edge-tabs-simple .edge-tabs-nav li.ui-state-active a,
+.edge-tabs.edge-tabs-simple .edge-tabs-nav li.ui-state-hover a {
+  color: #212121;
+}
+
+.edge-tabs.edge-tabs-simple .edge-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.edge-tabs.edge-tabs-simple .edge-tab-container {
+  padding: 31px 0;
+  border-bottom: 1px solid #959595;
+}
+
+.edge-tabs.edge-tabs-vertical .edge-tabs-nav {
+  display: table-cell;
+  vertical-align: top;
+  width: 140px;
+  height: 100%;
+  border-right: 1px solid #959595;
+  box-sizing: border-box;
+}
+
+.edge-tabs.edge-tabs-vertical .edge-tabs-nav li {
+  display: block;
+  float: none;
+  margin: 0 0 24px;
+}
+
+.edge-tabs.edge-tabs-vertical .edge-tabs-nav li a {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+}
+
+.edge-tabs.edge-tabs-vertical .edge-tabs-nav li.ui-state-active a,
+.edge-tabs.edge-tabs-vertical .edge-tabs-nav li.ui-state-hover a {
+  color: #212121;
+}
+
+.edge-tabs.edge-tabs-vertical .edge-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.edge-tabs.edge-tabs-vertical .edge-tab-container {
+  display: table-cell;
+  vertical-align: top;
+  width: calc(100% - 140px);
+  height: 100%;
+  padding: 0 0 0 45px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */
+.edge-text-marquee {
+  position: relative;
+  background-color: #f1f1f1;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.edge-text-marquee .edge-text-marquee-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.edge-text-marquee .edge-text-marquee-wrapper .edge-text-marquee-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #f4f3f5;
+  letter-spacing: -1px;
+  font-size: 64vh;
+  font-size: 32vmax;
+  font-family: "Playfair Display";
+  line-height: 1em;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 0 10% 0 10%;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.edge-text-marquee .edge-text-marquee-wrapper .edge-text-marquee-title.edge-aux-text {
+  position: absolute;
+  top: 0;
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - begin
+   ========================================================================== */
+.edge-vss-initialized .edge-content .edge-content-inner > .edge-container > .edge-container-inner {
+  padding: 0;
+}
+
+.edge-vss-initialized .edge-content .edge-content-inner > .edge-full-width > .edge-full-width-inner {
+  padding: 0;
+}
+
+.edge-vertical-split-slider {
+  position: relative;
+  opacity: 0;
+  margin: 0 -2px;
+  overflow: hidden;
+}
+
+.edge-vertical-split-slider .edge-vss-ms-left,
+.edge-vertical-split-slider .edge-vss-ms-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.edge-vertical-split-slider .edge-vss-ms-left {
+  top: 0;
+  left: 0;
+}
+
+.edge-vertical-split-slider .edge-vss-ms-left .edge-vss-ms-section {
+  background-position: 100% center;
+  background-size: cover;
+}
+
+.edge-vertical-split-slider .edge-vss-ms-right {
+  top: 10000px;
+  right: 0;
+}
+
+.edge-vertical-split-slider .edge-vss-ms-right .edge-vss-ms-section {
+  background-position: 0 center;
+  background-size: cover;
+}
+
+.edge-vertical-split-slider .edge-vss-ms-section.ms-table {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edge-vertical-split-slider .edge-vss-ms-section .ms-tableCell {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-vertical-split-slider .edge-vss-ms-section .ms-easing {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.edge-vss-responsive {
+  display: none;
+}
+
+.edge-vss-responsive .edge-vss-ms-section {
+  background-position: center;
+  background-size: cover;
+}
+
+.edge-vss-responsive .edge-vss-ms-section.ms-table {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edge-vss-responsive .edge-vss-ms-section .ms-tableCell {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-vertical-split-slider-widget-area {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  z-index: 100;
+}
+
+.edge-vertical-split-slider-widget-area .widget {
+  margin: 0 10px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#multiscroll-nav {
+  position: fixed;
+  bottom: 45px;
+  left: 50%;
+  -webkit-transform: translateX(-33px);
+  -moz-transform: translateX(-33px);
+  transform: translateX(-33px);
+  opacity: 1;
+  z-index: 1000;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+#multiscroll-nav ul {
+  margin: 0;
+  padding: 0;
+  counter-reset: section;
+}
+
+#multiscroll-nav ul li {
+  position: relative;
+  display: block;
+  margin: 30px 0px;
+  line-height: 1;
+  text-align: left;
+}
+
+#multiscroll-nav ul li a {
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 2px;
+  background-color: #999;
+  z-index: 1;
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.25s ease, width 0.25s ease;
+  -moz-transition: background-color 0.25s ease, width 0.25s ease;
+  transition: background-color 0.25s ease, width 0.25s ease;
+}
+
+#multiscroll-nav ul li a:before {
+  counter-increment: section;
+  content: "0" counter(section);
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: absolute;
+  left: -38px;
+  top: -10px;
+  color: #999;
+}
+
+#multiscroll-nav ul li a.active, #multiscroll-nav ul li a:hover {
+  background-color: #212121;
+  width: 110px;
+}
+
+#multiscroll-nav ul li a.active:before, #multiscroll-nav ul li a:hover:before {
+  color: #212121;
+}
+
+#multiscroll-nav ul li a .edge-light-header.active, #multiscroll-nav ul li a .edge-light-header:hover {
+  background-color: #fff;
+}
+
+#multiscroll-nav ul li a .edge-dark-header.active, #multiscroll-nav ul li a .edge-dark-header:hover {
+  background-color: #333;
+}
+
+#multiscroll-nav ul li a span {
+  display: block;
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+.edge-video-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-video-button-holder .edge-video-button-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-video-button-holder .edge-video-button-image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.edge-video-button-holder .edge-video-button-image img {
+  display: block;
+}
+
+.edge-video-button-holder .edge-video-button-play,
+.edge-video-button-holder .edge-video-button-play-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.edge-video-button-holder .edge-video-button-play .edge-video-button-play-inner,
+.edge-video-button-holder .edge-video-button-play-image .edge-video-button-play-inner {
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  color: white;
+  position: relative;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+}
+
+.edge-video-button-holder .edge-video-button-play {
+  color: #212121;
+  font-size: 86px;
+  display: block;
+  line-height: 55px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.edge-video-button-holder .edge-video-button-play span {
+  display: block;
+  line-height: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.edge-video-button-holder .edge-video-button-play span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-video-button-holder:hover .edge-video-button-image:after {
+  opacity: 1;
+}
+
+.edge-video-button-holder .edge-video-button-play-image.edge-vb-has-hover-image:hover img:first-child {
+  opacity: 0;
+}
+
+.edge-video-button-holder .edge-video-button-play-image.edge-vb-has-hover-image:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+.edge-video-button-holder .edge-video-button-play-image img {
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.edge-video-button-holder .edge-video-button-play-image img:first-child {
+  position: relative;
+  opacity: 1;
+}
+
+.edge-video-button-holder .edge-video-button-play-image img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateZ(0);
+  -moz-transform: translateX(-50%) translateZ(0);
+  transform: translateX(-50%) translateZ(0);
+}
+
+.rev_slider_wrapper .edge-video-button-holder .edge-video-button-play-image img:nth-child(2) {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-core/assets/css/shortcodes.css.map */

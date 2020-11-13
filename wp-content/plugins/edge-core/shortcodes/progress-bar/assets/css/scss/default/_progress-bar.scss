@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+
+.edge-progress-bar {
+    @include edgeRelativeHolderLayout();
+
+
+    &.edge-progress-bar-dark {
+        .edge-pb-title-holder {
+            position: relative;
+            margin: 16px 0 3px;
+            letter-spacing: 0.1em;
+            line-height: 33px;
+
+            .edge-pb-title {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                z-index: 100;
+                color: #000;
+
+            }
+        }
+
+
+        .edge-pb-percent {
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            opacity: 0;
+            z-index: 10;
+            letter-spacing: 0.1em;
+            line-height: 33px;
+            color: #000;
+            font-size: 14px;
+            font-weight: 400;
+
+            &:after {
+                content: '%';
+            }
+        }
+
+        .edge-pb-content-holder {
+            position: relative;
+            height: 3px;
+            overflow: hidden;
+            background-color: #b4b4b4;
+
+            .edge-pb-content {
+                height: 6px;
+                max-width: 100%;
+                overflow: hidden;
+                background-color: $first-main-color;
+            }
+        }
+    }
+
+    &.edge-progress-bar-light {
+        .edge-pb-title-holder {
+            position: relative;
+            margin: 16px 0 0px;
+            letter-spacing: 0.1em;
+            line-height: 33px;
+
+            .edge-pb-title {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                z-index: 100;
+                color: #fff;
+
+            }
+        }
+
+
+        .edge-pb-percent {
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            opacity: 0;
+            z-index: 10;
+            letter-spacing: 0.1em;
+            line-height: 33px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+
+            &:after {
+                content: '%';
+            }
+        }
+
+        .edge-pb-content-holder {
+            position: relative;
+            height: 6px;
+            overflow: hidden;
+            background-color: #4d4d4d;
+
+            .edge-pb-content {
+                height: 6px;
+                max-width: 100%;
+                overflow: hidden;
+                background-color: #fff;
+            }
+        }
+
+
+    }
+
+    &.edge-progress-bar-default {
+        .edge-pb-title-holder {
+            position: relative;
+            margin: 16px 0 6px;
+            letter-spacing: 0.1em;
+            line-height: 33px;
+            font-family: $heading-font;
+            color: $default-btn-hover-background-color;
+
+            .edge-pb-title {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                z-index: 100;
+
+            }
+        }
+
+
+        .edge-pb-percent {
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            opacity: 0;
+            z-index: 10;
+            letter-spacing: 0.1em;
+            line-height: 33px;
+            font-size: 14px;
+            font-weight: bold;
+
+            &:after {
+                content: '%';
+            }
+        }
+
+        .edge-pb-content-holder {
+            position: relative;
+            height: 6px;
+            overflow: hidden;
+            background-color: #f7f7f7;
+
+            .edge-pb-content {
+                height: 6px;
+                max-width: 100%;
+                overflow: hidden;
+                background-color: $first-main-color;
+            }
+        }
+
+
+    }
+
+
+}
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */

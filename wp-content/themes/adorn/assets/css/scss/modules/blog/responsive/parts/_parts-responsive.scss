@@ -1,0 +1,19 @@
+@include ipad-portrait {
+    
+    .edge-related-posts-holder {
+        
+        .edge-related-post {
+            width: 50% !important;
+        }
+    }
+}
+
+@include phone-portrait {
+    
+    .edge-related-posts-holder {
+        
+        .edge-related-post {
+            width: 100% !important;
+        }
+    }
+}

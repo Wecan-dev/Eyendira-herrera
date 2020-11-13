@@ -1,0 +1,7 @@
+@include ipad-portrait {
+
+    .edge-frame-video-holder { 
+    	padding:5% 16%;
+    }
+
+}

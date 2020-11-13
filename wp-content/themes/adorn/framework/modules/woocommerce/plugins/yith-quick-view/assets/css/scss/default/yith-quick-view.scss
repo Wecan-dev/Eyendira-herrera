@@ -1,0 +1,44 @@
+ul.products {
+    > .product{
+        > .yith-wcqv-button{
+            display: none !important;
+        }
+    }
+}
+
+%yith-wcqv-button-style {
+    .edge-yith-wcqv-holder {
+        display: inline-block;
+        vertical-align: middle;
+        height: 25px;
+        padding: 12px 0;
+
+        .yith-wcqv-button {
+            position: relative;
+            display: inline-block;
+            color: #c2c2c2;
+            font-family: $heading-font;
+            padding: 1px 5px 0;
+            font-size: 14px;
+            font-weight: 400;
+            height: 25px;
+            line-height: 25px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+
+            &:hover{
+                color: #fff;
+            }
+
+            div {
+                background-size: 15px 15px !important;
+            }
+        }
+    }
+}
+
+.edge-pl-holder .edge-pli-inner .edge-pli-text-inner,
+.edge-plc-holder .edge-plc-item .edge-plc-text-inner,
+ul.products > .product .edge-pl-inner .edge-pl-text-inner{
+    @extend %yith-wcqv-button-style;
+}

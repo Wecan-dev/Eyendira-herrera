@@ -1,0 +1,70 @@
+/* ==========================================================================
+   WooCommerce Track Order page responsive styles - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+	.edge-woocommerce-page.edge-woocommerce-order-tracking {
+
+		.woocommerce {
+
+			> .track_order {
+
+				.button {
+					padding: 8px 31px;
+				}
+			}
+		}
+	}
+
+}
+
+@include laptop-landscape {
+
+	.edge-woocommerce-page.edge-woocommerce-order-tracking {
+
+		.woocommerce {
+
+			> .track_order {
+
+				> p:not(.form-row) {
+					padding: 0 0 42px;
+				}
+
+			}
+		}
+	}
+
+}
+
+@include ipad-landscape {
+
+	.edge-woocommerce-page.edge-woocommerce-order-tracking {
+
+		.woocommerce {
+
+			> .track_order {
+
+				.form-row-first,
+				.form-row-last {
+					width: 100%;
+				}
+
+				.form-row {
+					&:nth-child(5) {
+						top: 13px;
+					}
+				}
+
+				.button {
+					width: auto;
+				}
+			}
+		}
+	}
+
+}
+
+/* ==========================================================================
+   WooCommerce Track Order page responsive styles - end
+   ========================================================================== */

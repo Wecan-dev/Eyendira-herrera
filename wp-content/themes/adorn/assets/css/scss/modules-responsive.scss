@@ -1,0 +1,54 @@
+/*------------------------------------------------------------------
+ * This is main responsive css file for theme. It is broken into following sections:
+ * 1. Global responsive styles
+ * 2. Header responsive styles
+ * 3. Footer responsive styles
+ * 4. Title area responsive styles
+ * 5. Search functionality responsive styles
+ * 6. Blog responsive styles
+ * 7. Widgets responsive styles
+ * 8. Shortcodes responsive styles
+ * 9. Custom Post Types responsive styles
+-------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. Global responsive styles
+   ========================================================================== */
+@import 'variables';
+@import 'mixins';
+@import 'global-responsive';
+
+/* ==========================================================================
+   2. Header responsive styles
+   ========================================================================== */
+@import 'modules/header/responsive/**/*.scss';
+
+/* ==========================================================================
+   3. Footer responsive styles
+   ========================================================================== */
+@import 'modules/footer/responsive/**/*.scss';
+
+/* ==========================================================================
+   4. Title area responsive styles
+   ========================================================================== */
+@import 'modules/title/responsive/**/*.scss';
+
+/* ==========================================================================
+   5. Search functionality responsive styles
+   ========================================================================== */
+@import 'modules/search/responsive/**/*.scss';
+
+/* ==========================================================================
+   6. Blog responsive styles
+   ========================================================================== */
+@import 'modules/blog/responsive/**/*.scss';
+
+/* ==========================================================================
+   7. Widgets responsive styles
+   ========================================================================== */
+@import 'modules/widgets/responsive/**/*.scss';
+
+/* ==========================================================================
+   8. Social sidebar responsive styles
+   ========================================================================== */
+@import 'modules/socialsidebar/responsive/**/*.scss';

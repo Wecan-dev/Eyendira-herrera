@@ -1,0 +1,194 @@
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-medium {
+
+	.edge-tabs {
+
+		&.edge-tabs-standard {
+
+			.edge-tabs-nav {
+
+				li {
+					padding-bottom: 15px;
+
+					a {
+						padding: 6px 46px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@include ipad-landscape {
+	
+	.edge-tabs {
+		
+		&.edge-tabs-standard {
+			
+			.edge-tabs-nav {
+				
+				li {
+					padding-bottom: 15px;
+					
+					a {
+						padding: 7px 21px;
+					}
+				}
+			}
+		}
+		
+		&.edge-tabs-boxed {
+			
+			.edge-tabs-nav {
+				
+				li {
+					margin: 0 8px 0 0;
+					
+					a {
+						padding: 7px 18px;
+					}
+				}
+			}
+		}
+		
+		&.edge-tabs-simple {
+			
+			.edge-tabs-nav {
+				
+				li {
+					margin: 0 26px 0 0;
+				}
+			}
+		}
+		
+		&.edge-tabs-vertical {
+			
+			.edge-tabs-nav {
+				width: 180px;
+			}
+			
+			.edge-tab-container {
+				width: calc(100% - 180px);
+				padding: 0 0 0 30px;
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+	
+	.edge-tabs {
+		
+		&.edge-tabs-standard {
+			
+			.edge-tabs-nav {
+				
+				li {
+					display: block;
+					float: none;
+					
+					a {
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+		&.edge-tabs-boxed {
+			
+			.edge-tabs-nav {
+				
+				li {
+					display: block;
+					float: none;
+					margin: 0 0 8px;
+					
+					a {
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+		&.edge-tabs-simple {
+			
+			.edge-tabs-nav {
+				
+				li {
+					margin: 0 20px 0 0;
+				}
+			}
+		}
+		
+		&.edge-tabs-vertical {
+			
+			.edge-tabs-nav,
+			.edge-tab-container {
+				display: inline-block;
+				width: 100%;
+				height: auto;
+			}
+			
+			.edge-tabs-nav {
+				border-right: 0;
+				
+				li {
+					float: left;
+					margin: 0 20px 0 0;
+				}
+			}
+			
+			.edge-tab-container {
+				padding: 31px 0 0;
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+	
+	.edge-tabs {
+		
+		&.edge-tabs-simple {
+			
+			.edge-tabs-nav {
+				padding: 0 0 20px;
+				
+				li {
+					display: block;
+					float: none;
+					margin: 0 0 20px;
+					
+					a {
+						padding: 0;
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+		&.edge-tabs-vertical {
+			
+			.edge-tabs-nav {
+				
+				li {
+					display: block;
+					float: none;
+					margin: 0 0 20px;
+					
+					a {
+						padding: 0;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */

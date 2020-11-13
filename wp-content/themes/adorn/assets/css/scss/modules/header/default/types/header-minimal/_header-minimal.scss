@@ -1,0 +1,24 @@
+.edge-header-minimal {
+    .edge-page-header .edge-menu-area {
+        box-sizing: border-box;
+
+        .edge-position-right-inner {
+            height: auto;
+        }
+    }
+
+    .edge-position-left:before,
+    .edge-position-right:before {
+        content: "";
+    }
+
+    .edge-page-header .edge-sticky-header .edge-position-left-inner {
+        height: auto;
+    }
+
+    .edge-sticky-header .edge-vertical-align-containers .edge-position-right .edge-position-right-inner {
+        height: auto;
+    }
+
+}
+

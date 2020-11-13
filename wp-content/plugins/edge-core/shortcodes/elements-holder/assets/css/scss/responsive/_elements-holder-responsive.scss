@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+.edge-elements-holder {
+
+	&.edge-responsive-mode-1280.edge-two-columns,
+	&.edge-responsive-mode-1280.edge-three-columns,
+	&.edge-responsive-mode-1280.edge-four-columns,
+	&.edge-responsive-mode-1280.edge-five-columns,
+	&.edge-responsive-mode-1280.edge-six-columns {
+
+		.edge-eh-item {
+			@media only screen and (max-width: 1280px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+	}
+
+	&.edge-responsive-mode-1024.edge-two-columns,
+	&.edge-responsive-mode-1024.edge-three-columns,
+	&.edge-responsive-mode-1024.edge-four-columns,
+	&.edge-responsive-mode-1024.edge-five-columns,
+	&.edge-responsive-mode-1024.edge-six-columns {
+
+		.edge-eh-item {
+			@media only screen and (max-width: 1024px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+	}
+
+	&.edge-responsive-mode-768.edge-two-columns,
+	&.edge-responsive-mode-768.edge-three-columns,
+	&.edge-responsive-mode-768.edge-four-columns,
+	&.edge-responsive-mode-768.edge-five-columns,
+	&.edge-responsive-mode-768.edge-six-columns {
+
+		.edge-eh-item {
+			@media only screen and (max-width: 768px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+	}
+
+	&.edge-responsive-mode-600.edge-two-columns,
+	&.edge-responsive-mode-600.edge-three-columns,
+	&.edge-responsive-mode-600.edge-four-columns,
+	&.edge-responsive-mode-600.edge-five-columns,
+	&.edge-responsive-mode-600.edge-six-columns {
+
+		.edge-eh-item {
+			@media only screen and (max-width: 600px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+	}
+
+	&.edge-responsive-mode-480.edge-two-columns,
+	&.edge-responsive-mode-480.edge-three-columns,
+	&.edge-responsive-mode-480.edge-four-columns,
+	&.edge-responsive-mode-480.edge-five-columns,
+	&.edge-responsive-mode-480.edge-six-columns {
+
+		.edge-eh-item {
+			@media only screen and (max-width: 480px) {
+				width: 100%;
+				display: inline-block;
+				height: auto;
+			}
+		}
+
+	}
+
+	.edge-eh-item-content{
+		@media only screen and (max-width: 480px) {
+			padding: 0 10px;
+		}
+	}
+
+}
+@media only screen and (max-width: 1280px) {
+	.edge-elements-holder.edge-responsive-mode-1280.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+		text-align: left;
+	}
+	.edge-elements-holder.edge-responsive-mode-1280.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+		text-align: right;
+	}
+	.edge-elements-holder.edge-responsive-mode-1280.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+		text-align: center;
+	}
+}
+@include ipad-landscape {
+	.edge-elements-holder.edge-responsive-mode-1024.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+		text-align: left;
+	}
+	.edge-elements-holder.edge-responsive-mode-1024.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+		text-align: right;
+	}
+	.edge-elements-holder.edge-responsive-mode-1024.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+		text-align: center;
+	}
+}
+
+@include ipad-portrait {
+	.edge-elements-holder.edge-responsive-mode-768.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+		text-align: left;
+	}
+	.edge-elements-holder.edge-responsive-mode-768.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+		text-align: right;
+	}
+	.edge-elements-holder.edge-responsive-mode-768.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+		text-align: center;
+	}
+}
+
+@include phone-landscape {
+	.edge-elements-holder.edge-responsive-mode-600.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+		text-align: left;
+	}
+	.edge-elements-holder.edge-responsive-mode-600.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+		text-align: right;
+	}
+	.edge-elements-holder.edge-responsive-mode-600.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+		text-align: center;
+	}
+}
+
+@include phone-portrait {
+	.edge-elements-holder.edge-responsive-mode-480.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+		text-align: left;
+	}
+	.edge-elements-holder.edge-responsive-mode-480.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+		text-align: right;
+	}
+	.edge-elements-holder.edge-responsive-mode-480.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+		text-align: center;
+	}
+}
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */

@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Portfolio Single - Images layout style - begin
+   ========================================================================== */
+
+.edge-portfolio-single-holder {
+
+    &.edge-ps-images-layout {
+
+        .edge-ps-info-holder {
+            padding-top: 15px;
+            padding-bottom: 101px;
+        }
+
+        .edge-ps-title-holder {
+            h2 {
+                letter-spacing: 0.1em;
+                line-height: 40px;
+                margin: 42px 0 12px;
+            }
+
+            p {
+                font-size: 18px;
+                color: $default-text-color;
+            }
+        }
+
+        .edge-ps-content-holder {
+            text-align: center;
+
+            .edge-ps-info-holder {
+
+                .edge-ps-info-item {
+                    padding-left: 40px;
+
+                    &.edge-ps-date {
+                        display: inline;
+                        margin-top: 6px;
+
+                        h5,
+                        p {
+                            display: inline-block;
+                        }
+
+                        p {
+                            padding-left: 3px;
+                            font-size: 14px;
+                            color: #b1b1b1;
+                        }
+
+                        h5 {
+                            text-transform: none;
+                            letter-spacing: 0;
+                        }
+                    }
+
+                    &.edge-ps-custom-field {
+                        display: inline;
+                        margin-top: 5px;
+                        margin-bottom: 3px;
+
+                        h5,
+                        p {
+                            display: inline-block;
+                        }
+
+                        p {
+                            padding-left: 3px;
+                            font-size: 14px;
+                            color: #b1b1b1;
+                        }
+
+                        h5 {
+                            text-transform: none;
+                            letter-spacing: 0;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .edge-ps-content-item {
+
+            p {
+                letter-spacing: 0;
+                width: 66%;
+                margin: 0 auto;
+                line-height: 30px;
+            }
+
+            @include ipad-landscape {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+
+        .edge-ps-social-info-holder {
+            padding: 13px 0 56px;
+            font-family: $heading-font;
+
+            .edge-portfolio-single-likes {
+                float: left;
+                display: inline-block;
+                padding-left: 3px;
+                font-family: $heading-font;
+                text-transform: uppercase;
+
+                a {
+                    padding-right: 20px;
+                    i {
+                        font-size: 13px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: #080808;
+                        letter-spacing: 0.1em;
+                        padding-left: 11px;
+
+                        &:nth-child(3) {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+
+            .edge-ps-social-share {
+                float: right;
+                display: inline;
+                padding-right: 5px;
+
+                &:before {
+                    content: "SHARE";
+                    font-size: 14px;
+                    color: #080808;
+                    letter-spacing: 0.1em;
+                    line-height: 25px;
+                    position: relative;
+                    bottom: 1px;
+                    padding-right: 15px;
+                    font-family: $heading-font;
+                }
+
+                ul{
+                    li{
+                        a{
+                            color: $additional-color;
+
+                            &:hover{
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .edge-ps-image-holder {
+            margin: 0 0 27px;
+
+            .edge-ps-image {
+                margin: 0 0 30px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Images layout style - end
+   ========================================================================== */

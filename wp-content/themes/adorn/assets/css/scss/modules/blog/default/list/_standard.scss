@@ -1,0 +1,362 @@
+/* ==========================================================================
+   Blog List - Standard style - begin
+   ========================================================================== */
+
+.edge-blog-holder {
+	
+    &.edge-blog-standard {
+	    
+        article {
+            margin: 0 0 59px;
+            padding: 0;
+
+            &.sticky {
+                .edge-post-title {
+                    a {
+                        color: red;
+                    }
+                }
+            }
+
+            &.edge-post-has-media {
+                .edge-post-heading {
+                    margin-bottom: 50px;
+                }
+            }
+
+            .edge-post-title {
+                margin: -8px 0 0px;
+            }
+
+            .edge-post-excerpt-holder {
+                @include edgeRelativeHolderLayout();
+                margin: 0 0 20px;
+
+                .edge-post-excerpt {
+                    color: $default-text-color;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 27px;
+
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+
+            .edge-more-link-container {
+                @include edgeRelativeHolderLayout();
+                margin: 20px 0 0;
+            }
+
+            .edge-post-info-top {
+                margin: -9px 0 10px;
+
+              .edge-post-info-date {
+                  display: inline-block;
+
+                  a {
+                      font-size: 12px;
+                      letter-spacing: 0.1em;
+                      line-height: 25px;
+                      font-weight: 400;
+                      color: $additional-text-color;
+                      font-family: $heading-font;
+                      text-transform: uppercase;
+                  }
+              }
+	
+	            > div {
+		            position: relative;
+		            display: inline-block;
+		            padding-right: 25px;
+		
+		            &:after {
+			            content: "/";
+			            position: absolute;
+			            top: 0;
+			            right: 5px;
+		            }
+		
+		            &:first-child {
+			            margin-left: 0;
+		            }
+		
+		            &:last-child {
+			
+			            &:after {
+				            content: '';
+			            }
+		            }
+		
+		            span {
+			            color: #444;
+		            }
+	            }
+            }
+
+            .edge-post-info-bottom {
+                margin-top: -5px;
+
+                .edge-post-info-bottom-left,
+                .edge-post-info-bottom-right {
+	                position: relative;
+	                display: inline-block;
+	                width: 100%;
+	                float: left;
+                    line-height: 27px;
+                }
+
+                .edge-post-info-bottom-right {
+	                
+                    > div {
+                        margin-left: 17px;
+	                    
+	                    &:first-child {
+		                    margin-left: 0;
+	                    }
+                    }
+                }
+
+                .edge-post-info-author {
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #404040;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin-right: 15px;
+                    font-family: $heading-font;
+
+                    span {
+                      color: $default-text-color;
+                    }
+	                
+                    a {
+                        color: $first-main-color;
+                        font-weight: 400;
+	                    
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .edge-post-info-bottom-right {
+                    text-align: right;
+                }
+
+                .edge-post-info-comments-holder,
+                .edge-blog-like,
+                .edge-post-info-category {
+                    display: inline-block;
+
+                    a {
+                        display: inline-block;
+
+                        span,
+                        i {
+                            vertical-align: middle;
+                            color: #444;
+                        }
+                    }
+                }
+
+                .edge-post-info-category {
+                    a {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: #464646;
+                        font-weight: bold;
+                        letter-spacing: 0.1em;
+                    }
+                }
+
+                .edge-blog-like {
+	                
+                    i:first-child,
+                    span:first-child {
+                        margin-right: 7px;
+	                    color: #c4c3c3;
+	                    @include edgeTransition(color 0.15s ease-out);
+                    }
+
+                    &:hover {
+	                    
+                        i:first-child,
+                        span:first-child {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .edge-post-info-comments-holder {
+
+                    a {
+                        color: $default-text-color;
+                        font-weight: bold;
+                        font-size: 15px;
+                        margin-left: 7px;
+                        margin-right: 15px;
+                    }
+
+                    &:before {
+                    content: "\76";
+                    font-family: 'ElegantIcons';
+                    font-size: 14px;
+                    }
+	                
+                    span:first-child {
+                        margin-right: 7px;
+	                    color: #c4c3c3;
+	                    @include edgeTransition(color 0.15s ease-out);
+                    }
+	                
+                    &:hover {
+	                    
+                        span:first-child {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+            }
+
+            &.format-audio {
+                &.edge-post-no-media.has-post-thumbnail {
+                    .edge-post-heading {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+
+            &.format-link {
+
+                .edge-post-additional-content {
+                    margin-bottom: 50px;
+                }
+
+                .edge-post-info-top {
+                    margin-bottom: 21px;
+                }
+
+                .edge-post-text-main {
+                    margin-bottom: 0;
+                }
+
+                .edge-post-text-inner {
+                    margin-bottom: 0;
+                }
+
+                .edge-post-text {
+                    padding: 50px 53px;
+                    background-color: #fbfbfb;
+                }
+
+                .edge-post-text-main {
+                    @include edgeTableLayout();
+                }
+
+                .edge-post-info-bottom {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .edge-post-mark {
+                    position: absolute;
+                    top: -33px;
+                    right: -57px;
+                    width: 50px;
+
+                    .edge-link-mark {
+                        font-size: 24px;
+                        color: #c7c7c7;
+                    }
+                }
+
+                .edge-post-link-holder {
+                    @include edgeTableCellLayout();
+                    text-align: center;
+                }
+
+                .edge-post-title {
+                    margin: 0;
+
+                    a {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            &.format-quote {
+	            
+                .edge-post-text {
+                    padding: 40px 71px 42px;
+	                background-color: #fafafa;
+                }
+	            
+                .edge-post-text-main {
+                    @include edgeTableLayout();
+                    text-align: center;
+                }
+
+                .edge-post-info-bottom {
+                    .edge-post-info-bottom-left {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                .edge-post-mark {
+                    @include edgeTableCellLayout();
+                    width: 50px;
+                    vertical-align: top;
+                    text-align: left;
+
+                    .edge-quote-mark {
+                        padding-top: 5px;
+                        font-size: 36px;
+                        color: $first-main-color;
+                    }
+                }
+	            
+                .edge-post-link-holder {
+                    @include edgeTableCellLayout();
+                    vertical-align: top;
+                    text-align: left;
+                }
+	            
+                .edge-post-title {
+                    margin-bottom: 0;
+                    padding: 18px 0 10px;
+                    a {
+                        font-size: 24px;
+                        color: $additional-color;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        line-height: 35px;
+                    }
+                }
+
+                .edge-quote-author {
+                    font-size: 12px;
+                    color: $first-main-color;
+                    letter-spacing: 0.1em;
+                    font-weight: 400;
+                    font-family: $heading-font;
+                    text-transform: uppercase;
+                }
+	            
+                .edge-post-author {
+	                display: inline-block;
+	                margin-bottom: 23px;
+	                font-size: 13px;
+	                line-height: 20px;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Blog List - Standard style - end
+   ========================================================================== */

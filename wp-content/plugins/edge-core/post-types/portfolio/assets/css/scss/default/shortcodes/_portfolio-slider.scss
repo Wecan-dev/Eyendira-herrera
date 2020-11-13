@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Portfolio Slider shortcode style - begin
+   ========================================================================== */
+
+.edge-portfolio-slider-holder {
+	@include edgeRelativeHolderLayout();
+	opacity: 0;
+
+	.edge-pl-inner {
+		margin: 0 !important;
+	}
+
+	article {
+		width: auto !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		float: none !important;
+	}
+
+	.owl-stage-outer {
+		position: relative;
+		overflow: hidden;
+		@include edgeTransform(translate3d(0, 0, 0));
+	}
+
+	.owl-item {
+		position: relative;
+		min-height: 1px;
+		float: left;
+	}
+
+	.owl-nav{
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		@include edgeTransform(translateY(-50%));
+
+		.owl-next,
+		.owl-prev {
+			@include edgeTransform(none);
+			position: absolute;
+			cursor: pointer;
+
+			.edge-prev-icon,
+			.edge-next-icon {
+				span {
+					font-family: "Linearicons-Free";
+					font-size: 35px;
+				}
+			}
+		}
+
+		.owl-prev {
+			left: 45px;
+
+			.edge-prev-icon span:before{
+				content: "\e879";
+			}
+		}
+
+		.owl-next{
+			right: 45px;
+
+			.edge-next-icon span:before{
+				content: "\e87a";
+			}
+		}
+	}
+
+	.owl-dots {
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		width: 100%;
+		text-align: center;
+		counter-reset: section;
+
+		.owl-dot {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 5px;
+
+			&:before {
+				counter-increment: section;
+				content: counter(section,decimal-leading-zero);
+				font-family: $heading-font;
+				font-size: 18px;
+			}
+
+			&:hover,
+			&.active {
+				&:before{
+					color: $first-main-color;
+					border-bottom: 1px solid $first-main-color;
+				}
+			}
+		}
+	}
+
+	.edge-portfolio-list-holder {
+
+		&.edge-nav-light-skin {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+
+					&:hover {
+
+						.edge-prev-icon,
+						.edge-next-icon {
+							color: $header-light-hover-color;
+						}
+					}
+				}
+
+				.edge-prev-icon,
+				.edge-next-icon {
+					color: $header-light-color;
+				}
+			}
+		}
+
+		&.edge-nav-dark-skin {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+
+					&:hover {
+
+						.edge-prev-icon,
+						.edge-next-icon {
+							color: $header-dark-hover-color;
+						}
+					}
+				}
+
+				.edge-prev-icon,
+				.edge-next-icon {
+					color: $header-dark-color;
+				}
+			}
+		}
+
+		&.edge-pag-light-skin {
+
+			.owl-dots {
+
+				.owl-dot {
+
+					&:before {
+						color: $header-light-color;
+					}
+
+					&.active,
+					&:hover {
+
+						&:before {
+							color: $header-light-hover-color;
+						}
+					}
+				}
+			}
+		}
+
+		&.edge-pag-dark-skin {
+
+			.owl-dots {
+
+				.owl-dot {
+
+					&:before {
+						color: rgba($header-dark-color, .2);
+					}
+
+					&.active,
+					&:hover {
+
+						&:before {
+							color: $header-dark-hover-color;
+						}
+					}
+				}
+			}
+		}
+
+		&.edge-pag-bellow-slider {
+
+			.owl-dots {
+				position: relative;
+				bottom: auto;
+				margin: 16px 0 0;
+			}
+		}
+
+		&.edge-pl-standard-shader{
+			article {
+				.edge-pli-text-holder {
+					position: absolute;
+					top: 43%;
+					left: 57%;
+					@include edgeTransform(translateY(-50%));
+
+					.edge-pli-text{
+						.edge-pli-title{
+							font-family: $heading-font;
+							font-weight: 400;
+							color: $header-light-color;
+							font-size: 40px;
+						}
+						.edge-pli-category-holder{
+							margin-bottom: 20px;
+
+							a{
+								font-family: $heading-font;
+								font-weight: 400;
+								color: $header-light-color;
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Slider shortcode style - end
+   ========================================================================== */

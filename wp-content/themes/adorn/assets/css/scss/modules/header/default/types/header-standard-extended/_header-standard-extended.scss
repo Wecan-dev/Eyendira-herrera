@@ -1,0 +1,100 @@
+.edge-header-standard-extended {
+
+    .edge-page-header {
+        .edge-logo-area {
+            box-sizing: border-box;
+            height: 90px;
+            z-index: 1; //to be above menu area in order to cover shadow
+
+            .edge-logo-wrapper a {
+                max-height: 90px; //100*0.9
+            }
+
+            .edge-vertical-align-containers {
+                .edge-position-right-inner {
+                    height: auto;
+                }
+            }
+
+            .edge-logo-widget-area {
+                margin-left: 8px;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .edge-right-from-logo-widget {
+                float: left;
+                padding: 0 40px 0 0;
+                position: relative;
+
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                &.widget_text{
+                    h6{
+                        text-align: left;
+                    }
+
+                    .edge-iwt-title-holder h6 {
+                        font-size: 13px;
+                        margin-top: 2px;
+                        margin-bottom: 5px;
+                    }
+
+                    .edge-iwt:not(.edge-iwt-left-from-title) .edge-iwt-title-holder {
+                        margin-bottom: 0;
+                    }
+
+                    .edge-iwt-text-holder p {
+                        margin: 0;
+                        font-size: 13px;
+                        line-height: 1em;
+                    }
+
+                    .edge-icon-top-left {
+                        float: left;
+                        margin-right: 15px;
+                    }
+
+                    .edge-elements-top-right {
+                        float: left;
+                    }
+
+                }
+            }
+        }
+
+        .edge-menu-area {
+            box-sizing: border-box;
+
+            height: 65px;
+
+            .edge-logo-wrapper a {
+                max-height: 72px; //80*0.9
+            }
+
+            .edge-main-menu {
+                margin-left: 0;
+
+                & > ul > li:first-child > a {
+                    padding-left: 0;
+                }
+            }
+
+            .edge-vertical-align-containers {
+                .edge-position-left-inner {
+                    height: 100%;
+                }
+
+                .edge-position-right-inner {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+}
+

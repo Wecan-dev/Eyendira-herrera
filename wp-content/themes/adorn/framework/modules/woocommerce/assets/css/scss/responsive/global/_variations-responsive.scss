@@ -1,0 +1,9 @@
+.edge-woocommerce-page .edge-content {
+    .variations {
+        .select2-container{
+            @include laptop-landscape-medium{
+                min-width: auto;
+            }
+        }
+    }
+}

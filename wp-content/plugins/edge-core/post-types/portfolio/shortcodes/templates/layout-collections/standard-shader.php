@@ -1,0 +1,1 @@
+<?php echo edge_core_get_cpt_shortcode_module_template_part('portfolio', 'parts/image', $item_style, $params); ?>

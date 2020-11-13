@@ -1,0 +1,120 @@
+/* Single posts navigation styles - begin
+    ====================================================================== */
+
+.edge-blog-single-navigation {
+    position: relative;
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0;
+    padding-top: 25px;
+    clear: both;
+    box-sizing: border-box;
+    border-top: 1px solid $additional-border-color;
+
+    a:hover .edge-blog-single-nav-label{
+        border-bottom: 1px solid $first-main-color;
+        color: $first-main-color;
+        line-height: 15px;
+    }
+
+    .edge-blog-single-navigation-inner {
+        padding: 35px 23px;
+        background-color: $default-background-color;
+    }
+
+    .edge-blog-single-nav-prev,
+    .edge-blog-single-nav-next{
+        width:50%;
+        color: $default-text-color;
+
+        h4{
+            display: block;
+        }
+        span{
+            display: inline-block;
+        }
+
+        .edge-blog-single-nav-thumbnail{
+            width: 100px;
+            height: 85px;
+
+            .wp-post-image{
+                width: auto;
+                max-width: 85px;
+                height: 100%;
+                border-radius: 50%
+            }
+        }
+    }
+
+    .edge-blog-single-nav-prev{
+        float: left;
+        text-align: left;
+
+        &.edge-with-image{
+            h4{
+                padding-left: 105px;
+            }
+            span{
+                margin-left: 7px;
+            }
+        }
+
+        .edge-blog-single-nav-thumbnail{
+            float: left;
+        }
+    }
+
+    .edge-blog-single-nav-next{
+        float: right;
+        text-align: right;
+
+        &.edge-with-image{
+            h4{
+                padding-right: 105px;
+            }
+            span{
+                margin-right: 7px;
+            }
+        }
+
+        .edge-blog-single-nav-thumbnail{
+            float: right;
+        }
+    }
+
+    .edge-blog-single-nav-title{
+        margin: 5px 0;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+
+        &:hover{
+            color: $first-main-color;
+        }
+    }
+
+    .edge-blog-single-nav-label {
+        font-size: 14px;
+        color: $additional-text-color;
+        font-family: $heading-font;
+    }
+}
+
+.edge-single-links-pages {
+    clear: both;
+    margin: 20px 0 5px;
+
+    .edge-single-links-pages-inner {
+
+        > a,
+        > span {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 15px 5px 0;
+        }
+    }
+}
+/* Single posts navigation styles - end
+    ====================================================================== */

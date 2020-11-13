@@ -1,0 +1,55 @@
+/* ==========================================================================
+# Search opener - begin
+========================================================================== */
+
+.edge-search-opener {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    color: $additional-color;
+    margin: 0 15px;
+
+    &:hover {
+        color: $default-text-color;
+    }
+
+    .edge-search-opener-wrapper {
+
+        line-height: 16px;
+
+        > * {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .edge-icon-font-awesome,
+        .edge-icon-font-elegant,
+        .edge-icon-ion-icon {
+            line-height: inherit;
+        }
+    }
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-search-opener,
+.edge-light-header .edge-top-bar .edge-search-opener {
+    color: $header-light-color !important; //Color can be set inline from widget opener
+
+    &:hover {
+        color: $header-light-hover-color !important;
+    }
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-search-opener,
+.edge-dark-header .edge-top-bar .edge-search-opener {
+    color: $header-dark-color !important; //Color can be set inline from widget opener
+
+    &:hover {
+        color: $header-dark-hover-color !important;
+    }
+}
+
+/* ==========================================================================
+# Search opener - end
+========================================================================== */

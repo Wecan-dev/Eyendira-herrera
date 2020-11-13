@@ -1,0 +1,155 @@
+/* ==========================================================================
+# Search template style - begin
+========================================================================== */
+
+.search .edge-content .edge-content-inner > .edge-container > .edge-container-inner {
+    padding: 66px 0 0;
+}
+
+.edge-search-page-holder {
+    @include edgeRelativeHolderLayout();
+
+    .edge-search-page-form {
+        @include edgeRelativeHolderLayout();
+        margin: 0 0 60px;
+
+        .edge-search-title {
+            margin: 0 0 34px;
+        }
+
+        .edge-search-label {
+            display: block;
+            font-size: 12px;
+        }
+
+        .edge-form-holder {
+            @include edgeRelativeHolderLayout();
+            margin: 0 0 17px;
+            clear: both;
+            border-bottom: 1px solid $default-border-color;
+
+            .edge-column-left {
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            .edge-column-right {
+                display: table-cell;
+                width: 1%;
+                text-align: left;
+                vertical-align: top;
+            }
+
+            .edge-search-field {
+                position: relative;
+                width: 100%;
+                height: 36px;
+                line-height: 36px;
+                margin: 0;
+                padding: 0 20px 0 3px;
+                font-family: inherit;
+                font-size: 14px;
+                color: $default-text-color;
+                background-color: transparent;
+                border: none;
+                outline: 0;
+                vertical-align: middle;
+                -webkit-appearance: none;
+                box-sizing: border-box;
+
+                &:focus {
+                    border-color: $default-heading-color;
+                }
+
+            }
+
+            .edge-search-submit {
+                position: relative;
+                display: inline-block;
+                width: auto;
+                height: 36px;
+                line-height: 36px;
+                padding: 0;
+                font-family: inherit;
+                font-size: 15px;
+                color: $default-text-color;
+                background-color: transparent;
+                border: 0;
+                outline: 0;
+                cursor: pointer;
+                vertical-align: middle;
+                @include edgeTransition(color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out);
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+
+    article {
+        @include edgeRelativeHolderLayout();
+        padding: 0;
+        margin: 0 0 31px;
+
+        &.sticky {
+            .edge-post-title-area h3 a {
+                color: $first-main-color;
+            }
+        }
+
+        &.page {
+            .edge-post-title-area .edge-post-info > div.edge-post-info-category {
+                display: none;
+            }
+        }
+
+        .edge-post-content {
+            @include edgeRelativeHolderLayout();
+        }
+
+        .edge-post-image {
+            display: block;
+            float: left;
+            width: 130px;
+            margin: 8px 0 0;
+
+            a, img {
+                display: block;
+            }
+        }
+
+        .edge-post-title-area {
+            height: 138px;
+            padding: 0 0 0 159px;
+
+            &.edge-no-thumbnail{
+                padding: 0;
+            }
+
+            .edge-post-title-area-inner {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-bottom: 1px solid $default-border-color;
+                box-sizing: border-box;
+    
+                .edge-post-title {
+                    margin: 0 0 14px;
+                }
+
+                .edge-post-excerpt {
+                    margin: 0;
+
+                    &:after {
+                        content: '...';
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Search template style - end
+========================================================================== */

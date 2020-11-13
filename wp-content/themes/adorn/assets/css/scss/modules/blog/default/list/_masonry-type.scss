@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Blog Masonry general style - begin
+   ========================================================================== */
+
+.edge-blog-holder {
+    
+    &.edge-blog-type-masonry {
+	
+	    .edge-blog-holder-inner {
+		    opacity: 0;
+			padding-bottom: 110px;
+	    }
+	
+	    article {
+		    float: left;
+	    }
+	
+	    article,
+	    .edge-blog-masonry-grid-sizer {
+		    width: 100%;
+	    }
+	
+	    .edge-blog-masonry-grid-gutter {
+		    width: 0;
+	    }
+	
+	    /***** Number of Columns - begin *****/
+	    
+	    $columns_number: ('two', 'three', 'four', 'five');
+	
+	    @for $i from 0 to length($columns_number) {
+		    &.edge-blog-#{nth($columns_number,$i+1)}-columns {
+			    $column_width: 100%/($i+2);
+			
+			    article,
+			    .edge-blog-masonry-grid-sizer {
+				    width: $column_width;
+			    }
+			    
+                article {
+                    &.edge-post-size-large-width,
+                    &.edge-post-size-large-width-height {
+                        width: 2*$column_width;
+                    }
+                }
+		    }
+	    }
+	
+	    /***** Number of Columns - end *****/
+	
+	    /***** Space Between Items - begin *****/
+	
+	    $columns_space_label: ('no', 'tiny', 'small', 'normal');
+	    $columns_space: (0, 5, 10, 15);
+	
+	    @for $i from 0 to length($columns_space_label) {
+		    &.edge-blog-#{nth($columns_space_label,$i+1)}-space {
+			    $item_space: nth($columns_space, $i+1);
+			    $item_bottom_margin: $item_space * 2;
+			
+			    .edge-blog-holder-inner {
+				    margin: 0 -#{$item_space}px;
+			    }
+			
+			    article {
+				    padding: 0 #{$item_space}px;
+				    margin: 0 0 #{$item_bottom_margin}px;
+			    }
+		    }
+	    }
+	
+	    /***** Space Between Items - end *****/
+
+        /***** Space on container if full width - start *****/
+
+        &.edge-blog-masonry-full {
+            box-sizing: border-box;
+
+            $columns_space_label: ('tiny', 'small', 'normal');
+            $columns_space: (5, 10, 15);
+
+            @for $i from 0 to length($columns_space_label) {
+                &.edge-blog-#{nth($columns_space_label,$i+1)}-space {
+                    $item_space: nth($columns_space, $i+1);
+
+                    padding: 0 #{2*$item_space}px;
+                }
+            }
+        }
+
+        /***** Space on container if full width - end *****/
+    }
+}
+/* ==========================================================================
+   Blog Masonry general style - end
+   ========================================================================== */

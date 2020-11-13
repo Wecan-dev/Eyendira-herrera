@@ -1,0 +1,378 @@
+/* ==========================================================================
+   Product List - Carousel shortcode styles - begin
+   ========================================================================== */
+
+.edge-plc-holder {
+    @include edgeRelativeHolderLayout();
+
+    .edge-plc-outer {
+        @include edgeRelativeHolderLayout();
+        margin-top: 10px;
+    }
+
+    .edge-plc-title{
+        font-family: $heading-font;
+        color: $first-main-color;
+        letter-spacing: 0.8px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .edge-plc-item {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        padding: 0;
+        z-index: 100;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        &:hover {
+
+            .edge-plc-image-outer {
+
+                .edge-plc-text {
+                    opacity: 1;
+                }
+            }
+
+            .edge-plc-price {
+                opacity: 0;
+                @include edgeTransform(translateX(60px));
+            }
+
+            .edge-plc-add-to-cart{
+                opacity: 1;
+                @include edgeTransform(translateX(-50%));
+                @include edgeTransition(all .4s .1s);
+            }
+
+            .edge-plc-text-inner {
+                @include edgeTransform(translateY(0));
+            }
+        }
+
+        .touch & {
+            cursor: pointer;
+        }
+
+        .edge-plc-image-outer {
+            @include edgeRelativeHolderLayout();
+
+            .edge-plc-image {
+                @include edgeRelativeHolderLayout();
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+
+                .edge-plc-onsale,
+                .edge-plc-out-of-stock,
+                .edge-plc-new-product {
+                    position: absolute;
+                    display: block;
+                    top: 15px;
+                    right: 20px;
+                    width: auto;
+                    color: $default-heading-color;
+                    font-family:$heading-font;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    z-index: 100;
+                    @include edgeTransform(translateZ(0));
+                    box-sizing: border-box;
+                }
+
+                .edge-plc-new-product {
+                    right: auto;
+                    left: 20px;
+                }
+            }
+
+            .edge-plc-text {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: inline-block;
+                opacity: 0;
+                box-sizing: border-box;
+                @include edgeTransition(all 0.3s ease);
+                z-index: 10;
+                text-align: center;
+                width: 100%;
+                color:#fff;
+                background-color: #313131;
+            }
+
+            .edge-plc-text-inner {
+                font-size: 0; //to remove space between inline-block items
+
+                .yith-wcqv-button {
+                    > span {
+                        color:#c2c2c2;
+                        @include edgeTransition(all 0.3s ease-in-out);
+                    }
+
+                    &:hover {
+                        >span {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .edge-plc-category,
+                .edge-plc-excerpt,
+                .edge-plc-rating,
+                .edge-plc-price{
+                    color: #999999;
+                }
+            }
+        }
+
+        .edge-plc-text-outer {
+            overflow: hidden;
+        }
+
+        .edge-plc-text-inner {
+            @include edgeTransition(all .2s);
+            @include edgeTransform(translateY(100%));
+        }
+
+        .edge-plc-title {
+            margin: 0;
+            text-transform: uppercase;
+            font-family: $heading-font;
+        }
+
+        .edge-plc-category {
+            margin: 0px;
+        }
+
+        .edge-plc-excerpt {
+            color: $default-heading-color;
+            line-height: 1.3em;
+            margin: 0px;
+        }
+
+        .edge-plc-rating-holder {
+            @include edgeRelativeHolderLayout();
+            line-height: 1;
+            margin: 3px 0 6px;
+        }
+
+        .edge-plc-rating {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            font-family: "ElegantIcons";
+            font-size: 12px;
+            line-height: 1.1em;
+            letter-spacing: 6px;
+            color: $additional-text-color;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+
+            &:before {
+                content: "\e031\e031\e031\e031\e031";
+            }
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+
+                &:before {
+                    content: "\e033\e033\e033\e033\e033";
+                }
+            }
+        }
+
+        .edge-plc-price {
+            display: inline-block;
+            color: $default-text-color;
+            font-size: 16px;
+            font-family: $heading-font;
+            opacity: 1;
+            @include edgeTransition(all 0.3s ease);
+            will-change: transform;
+
+            * {
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+            del {
+                margin: 0 5px 0 0;
+            }
+
+            ins {
+                text-decoration: none;
+            }
+        }
+
+        .edge-plc-add-to-cart{
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            @include edgeTransform(translateX(-100%));
+            letter-spacing: 0.1em;
+            opacity: 0;
+            @include edgeTransition(all 0.4s ease);
+            font-family: $heading-font;
+            width: 100%;
+
+            a{
+                color: $first-main-color;
+                border-bottom: 1px solid $first-main-color;
+
+                &.added {
+                    display: none;
+                }
+
+                &:hover {
+                    border-color: $default-border-color;
+                }
+            }
+        }
+
+        .edge-plc-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+        }
+
+        .edge-plc-text-wrapper {
+            @include edgeRelativeHolderLayout();
+            margin: 22px 0 38px;
+            text-align: center;
+            min-height: 10px;
+        }
+    }
+
+    .edge-owl-slider .owl-nav{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        .owl-next,
+        .owl-prev {
+            top: -48px;
+            @include edgeTransform(none);
+
+            .edge-prev-icon,
+            .edge-next-icon {
+                span {
+                    font-family: "Linearicons-Free";
+                    font-size: 16px;
+                    color: $additional-color;
+                }
+            }
+
+            &:hover {
+                .edge-prev-icon,
+                .edge-next-icon {
+                    span { 
+                        opacity:0.8;
+                    }
+                }
+            }
+        }
+
+        .owl-prev {
+            left: auto;
+            right: 25px;
+
+            .edge-prev-icon span:before{
+                content: "\e879";
+            }
+        }
+
+        .owl-next{
+            right: -6px;
+
+            .edge-next-icon span:before{
+                content: "\e87a";
+            }
+        }
+    }
+
+	&.edge-plc-nav-light-skin {
+		
+		.owl-nav {
+			
+			.owl-prev,
+			.owl-next {
+				
+				&:hover {
+					
+					.edge-prev-icon,
+					.edge-next-icon {
+						color: $header-light-hover-color;
+					}
+				}
+			}
+			
+			.edge-prev-icon,
+			.edge-next-icon {
+				color: $header-light-color;
+			}
+		}
+	}
+	
+	&.edge-plc-pag-inside-slider {
+		
+		.owl-prev,
+		.owl-next {
+			@include edgeTransform(translateY(-50%));
+		}
+		
+		.owl-dots {
+			position: absolute;
+			left: 0;
+			bottom: 10px;
+			margin: 0;
+		}
+	}
+	
+	&.edge-plc-pag-light-skin {
+		
+		.owl-dots {
+			
+			.owl-dot {
+
+				span {
+
+					&:after {
+						background-color: $header-light-hover-color;
+					}
+				}
+
+				&:hover,
+				&.active {
+
+					span {
+
+						&:after {
+							background-color: $header-light-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Product List - Carousel shortcode styles - end
+   ========================================================================== */

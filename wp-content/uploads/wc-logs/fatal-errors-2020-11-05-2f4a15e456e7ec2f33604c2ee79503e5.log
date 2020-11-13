@@ -1,0 +1,14 @@
+2020-11-05T12:28:14+00:00 CRITICAL require_once(): Failed opening required '/opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/admin/revslider-admin.class.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/revslider.php on line 168
+
+2020-11-05T12:28:17+00:00 CRITICAL require_once(): Failed opening required '/opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/admin/revslider-admin.class.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/revslider.php on line 168
+
+2020-11-05T12:28:17+00:00 CRITICAL require_once(): Failed opening required '/opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/admin/revslider-admin.class.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/revslider.php on line 168
+
+2020-11-05T12:28:45+00:00 CRITICAL require_once(): Failed opening required '/opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/admin/revslider-admin.class.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/revslider.php on line 168
+
+2020-11-05T12:29:03+00:00 CRITICAL require_once(): Failed opening required '/opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/admin/revslider-admin.class.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/revslider.php on line 168
+
+2020-11-05T12:29:06+00:00 CRITICAL require_once(): Failed opening required '/opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/admin/revslider-admin.class.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/revslider.php on line 168
+
+2020-11-05T12:29:06+00:00 CRITICAL require_once(): Failed opening required '/opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/admin/revslider-admin.class.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/enyendira/wp-content/plugins/revslider/revslider.php on line 168
+

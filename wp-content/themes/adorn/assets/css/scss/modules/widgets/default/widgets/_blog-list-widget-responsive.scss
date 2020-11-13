@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Blog list widget responsive style - begin
+   ========================================================================== */
+
+aside.edge-sidebar{
+    div.widget{
+        ul.edge-blog-list{
+            .edge-post-title{
+                @include laptop-landscape-medium{
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Blog list widget responsive style - end
+   ========================================================================== */

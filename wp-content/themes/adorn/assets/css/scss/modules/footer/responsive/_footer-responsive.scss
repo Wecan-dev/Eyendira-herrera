@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+	.edge-page-footer {
+
+		.edge-footer-bottom-holder {
+
+			.edge-footer-bottom-inner {
+				.edge-responsive-widget-padding {
+					padding-left: 0 !important;
+					margin-top: -8px;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-landscape {
+    
+    .edge-page-footer {
+
+		.edge-footer-bottom-holder {
+
+			.edge-grid-row {
+				text-align: center;
+			}
+
+			.edge-footer-bottom-inner {
+
+				.edge-responsive-widget-padding {
+					padding-left: 15px !important;
+					margin-top: 0;
+				}
+
+				.edge-grid-col-6:last-child {
+					text-align: left;
+				}
+
+
+				.widget {
+
+					&.widget_nav_menu {
+
+						ul {
+							li {
+								a {
+									&:first-child {
+										padding-left: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.edge-grid-col-4{
+			width: 33.33333333333333%;
+			float: left;
+
+			&:first-child{
+				text-align: left;
+			}
+			&:last-child{
+				text-align: right;
+			}
+		}
+        
+        .edge-column-content {
+		
+			&.edge-grid-col-3 {
+				width: 50%;
+				float: left;
+
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+			}
+
+			&.edge-grid-col-4 {
+				width: 33.33333333333333%;
+				float: left;
+				text-align: center;
+			}
+        }
+    }
+}
+
+@include ipad-portrait {
+
+    .edge-page-footer {
+
+        .edge-column-content {
+
+			&.edge-grid-col-3 {
+				width: 50%;
+				float: left;
+
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+			}
+        }
+
+		.edge-footer-bottom-holder{
+			.edge-footer-bottom-inner{
+				.edge-grid-col-4{
+					width: 100%;
+					float: none;
+
+					&:first-child,
+					&:last-child{
+						text-align: center;
+					}
+				}
+			}
+		}
+    }
+}
+
+@include phone-portrait {
+
+	.edge-page-footer {
+
+		.edge-column-content {
+
+			&.edge-grid-col-3 {
+				width: 100%;
+				float: none;
+			}
+		}
+
+		.edge-footer-bottom-holder {
+
+			.edge-footer-bottom-inner {
+				.edge-responsive-widget-padding {
+					padding-left: 0 !important;
+					margin-top: -2px;
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */

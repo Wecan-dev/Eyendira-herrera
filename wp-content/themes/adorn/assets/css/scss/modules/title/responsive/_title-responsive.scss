@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+    
+    .edge-title {
+        
+        &.edge-has-background {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+            height: auto !important;
+            padding: 0 !important;
+        }
+        
+        &.edge-title-image-not-responsive {
+            
+            .edge-title-image {
+                display: block;
+            }
+        }
+        
+        .edge-title-holder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            height: 100% !important;
+            padding: 0 !important;
+            
+            .edge-container {
+                display: block;
+                height: 100%;
+            }
+            
+            .edge-container-inner {
+                display: table;
+                height: 100%;
+            }
+            
+            .edge-title-subtitle-holder {
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+                padding: 0px !important;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    
+    .edge-title {
+        
+        &.edge-standard-type {
+            
+            .edge-breadcrumbs-holder {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include phone-portrait{
+    .edge-title{
+        .edge-title-holder {
+            .edge-subtitle {
+                display: none;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */

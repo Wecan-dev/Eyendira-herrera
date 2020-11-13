@@ -1,0 +1,552 @@
+/* UI Css Style - begin */
+
+.edge-page .btn-default:hover
+.btn-default:active,
+.edge-page .btn-default.active,
+.edge-page .btn-default:hover,
+.edge-page .btn-default:active,
+.edge-page .btn-default.active,
+.edge-meta-box .btn-default:hover
+.btn-default:active,
+.edge-meta-box .btn-default.active,
+.edge-meta-box .btn-default:hover,
+.edge-meta-box .btn-default:active,
+.edge-meta-box .btn-default.active {
+    background-color: transparent;
+}
+
+.edge-page .btn-primary:hover,
+.edge-page .btn-primary:active,
+.edge-page .btn-primary.active,
+.edge-page .btn-primary:hover,
+.edge-page .btn-primary:active,
+.edge-page .btn-primary.active,
+.edge-meta-box .btn-primary:hover,
+.edge-meta-box .btn-primary:active,
+.edge-meta-box .btn-primary.active,
+.edge-meta-box .btn-primary:hover,
+.edge-meta-box .btn-primary:active,
+.edge-meta-box .btn-primary.active {
+    background-color: #bba011;
+}
+
+.edge-page .btn-info:hover,
+.edge-page .btn-info:focus,
+.edge-page .btn-info:active,
+.edge-page .btn-info.active,
+.edge-page .btn-info:hover,
+.edge-page .btn-info:focus,
+.edge-page .btn-info:active,
+.edge-page .btn-info.active,
+.edge-meta-box .btn-info:hover,
+.edge-meta-box .btn-info:focus,
+.edge-meta-box .btn-info:active,
+.edge-meta-box .btn-info.active,
+.edge-meta-box .btn-info:hover,
+.edge-meta-box .btn-info:focus,
+.edge-meta-box .btn-info:active,
+.edge-meta-box .btn-info.active {
+    border-color: #bba011;
+    color: #bba011;
+}
+
+.edge-page .btn,
+.edge-meta-box .btn {
+    border: 1px solid transparent;
+    padding: 8px 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+}
+
+.edge-page .btn:active,
+.edge-meta-box .btn:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.edge-page .btn-sm:focus,
+.edge-meta-box .btn-sm:focus {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #bba011;
+}
+
+.edge-page .btn-primary,
+.edge-meta-box .btn-primary {
+    background-color: #bba011;
+}
+
+.edge-page .btn-primary:hover,
+.edge-meta-box .btn-primary:hover {
+    border: none;
+    background-color: transparent;
+    color: #bba011;
+    border: 1px solid #bba011;
+}
+
+.edge-page .btn-default,
+.edge-meta-box .btn-default {
+    background-color: #ABB7C7;
+    color: #fff;
+    margin-left: 3px;
+}
+
+.edge-page .btn-info,
+.edge-meta-box .btn-info {
+    background-color: #bba011;
+    color: #fff;
+}
+
+.edge-page .nav > li > a,
+.edge-meta-box .nav > li > a {
+    padding: 0;
+}
+
+.edge-page .nav-tabs > li > a,
+.edge-meta-box .nav-tabs > li > a {
+    border: none;
+}
+
+.edge-page .nav-tabs > li,
+.edge-meta-box .nav-tabs > li {
+    margin-bottom: 0;
+}
+
+.edge-page .edge-tabs-wrapper .nav-tabs,
+.edge-meta-box .edge-tabs-wrapper .nav-tabs {
+    margin-top: 0;
+}
+
+.edge-page .edge-tabs-wrapper .nav-tabs > li.active > a,
+.edge-meta-box .edge-tabs-wrapper .nav-tabs > li.active > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    border-left-color: transparent;
+}
+
+.edge-page .edge-tabs-wrapper .nav-tabs > li.active > a:hover,
+.edge-page .edge-tabs-wrapper .nav-tabs > li.active > a:focus,
+.edge-meta-box .edge-tabs-wrapper .nav-tabs > li.active > a:hover,
+.edge-meta-box .edge-tabs-wrapper .nav-tabs > li.active > a:focus {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+}
+
+.edge-page .edge-tabs-wrapper .nav-tabs > li a > i,
+.edge-meta-box .edge-tabs-wrapper .nav-tabs > li a > i {
+    width: 19px;
+}
+
+.edge-page .edge-tabs-wrapper .edge-tabs-content,
+.edge-meta-box .edge-tabs-wrapper .edge-tabs-content {
+    background-color: #fcfcfc;
+    padding: 20px 20px 20px 20px;
+}
+
+.edge-page .edge-tabs-wrapper.vertical .nav-tabs,
+.edge-meta-box .edge-tabs-wrapper.vertical .nav-tabs {
+    border-bottom: 0;
+}
+
+.edge-page .edge-tabs-wrapper.vertical .nav-tabs > li,
+.edge-meta-box .edge-tabs-wrapper.vertical .nav-tabs > li {
+    float: none;
+    border-bottom: 1px solid #191919;
+    width: 100%;
+}
+
+.edge-page .edge-tabs-wrapper.vertical .nav-tabs > li.active a,
+.edge-page .edge-tabs-wrapper.vertical .nav-tabs > li.active a:focus,
+.edge-page .edge-tabs-wrapper.vertical .nav-tabs > li.active a:hover,
+.edge-meta-box .edge-tabs-wrapper.vertical .nav-tabs > li.active a,
+.edge-meta-box .edge-tabs-wrapper.vertical .nav-tabs > li.active a:focus,
+.edge-meta-box .edge-tabs-wrapper.vertical .nav-tabs > li.active a:hover {
+    border-bottom: 0px solid #566269;
+    margin-bottom: 0;
+    background-color: #bba011;
+    border-left: none;
+}
+
+.edge-page .edge-tabs-wrapper.vertical .nav-tabs > li a:focus,
+.edge-page .edge-tabs-wrapper.vertical .nav-tabs > li a:hover,
+.edge-page .edge-tabs-wrapper.vertical.left .nav-tabs > li.active > a,
+.edge-meta-box .edge-tabs-wrapper.vertical .nav-tabs > li a:focus,
+.edge-meta-box .edge-tabs-wrapper.vertical .nav-tabs > li a:hover,
+.edge-meta-box .edge-tabs-wrapper.vertical.left .nav-tabs > li.active > a {
+    background-color: #080808;
+    color: #fff;
+    border-left: none;
+}
+
+.edge-page .edge-tabs-navigation-wrapper .nav-tabs li > a > i,
+.edge-meta-box .edge-tabs-navigation-wrapper .nav-tabs li > a > i {
+    -webkit-transition: "color 0.3s ease-in-out";
+    -moz-transition: "color 0.3s ease-in-out";
+    -ms-transition: "color 0.3s ease-in-out";
+    -o-transition: "color 0.3s ease-in-out";
+    transition: "color 0.3s ease-in-out";
+}
+
+.edge-page .edge-tabs-wrapper.vertical .edge-tabs-navigation-wrapper,
+.edge-page .edge-tabs-wrapper.vertical .edge-tabs-content,
+.edge-meta-box .edge-tabs-wrapper.vertical .edge-tabs-navigation-wrapper,
+.edge-meta-box .edge-tabs-wrapper.vertical .edge-tabs-content {
+    min-height: 300px;
+}
+
+.edge-page .edge-tabs-wrapper.vertical .edge-tabs-navigation-wrapper,
+.edge-meta-box .edge-tabs-wrapper.vertical .edge-tabs-navigation-wrapper {
+    width: 226px;
+    /*was 199*/
+}
+
+.edge-page .edge-tabs-wrapper.vertical .edge-tabs-content,
+.edge-meta-box .edge-tabs-wrapper.vertical .edge-tabs-content {
+    margin-left: 226px;
+    background-color: #EBEFF2;
+    color: #34383C;
+    min-height: 780px;
+}
+
+.edge-page .edge-tabs-wrapper.vertical.left .nav-tabs > li:first-child > a,
+.edge-meta-box .edge-tabs-wrapper.vertical.left .nav-tabs > li:first-child > a {
+    border-top: none;
+}
+
+.edge-page .edge-tabs-wrapper.vertical.left .nav-tabs > li > a,
+.edge-meta-box .edge-tabs-wrapper.vertical.left .nav-tabs > li > a {
+    font-size: 13px;
+    color: #fff;
+    padding-left: 30px;
+    border-left: none;
+    margin-right: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    border-radius: 0;
+}
+
+.edge-page .edge-tabs-wrapper.vertical.left .nav-tabs > li > a:hover,
+.edge-page .edge-tabs-wrapper.vertical.left .nav-tabs > li.active > a,
+.edge-page .edge-tabs-navigation-wrapper .nav-tabs li > a:hover > i,
+.edge-page .edge-tabs-wrapper.vertical.left .nav-tabs > li.active > a i,
+.edge-meta-box .edge-tabs-wrapper.vertical.left .nav-tabs > li > a:hover,
+.edge-meta-box .edge-tabs-wrapper.vertical.left .nav-tabs > li.active > a,
+.edge-meta-box .edge-tabs-navigation-wrapper .nav-tabs li > a:hover > i,
+.edge-meta-box .edge-tabs-wrapper.vertical.left .nav-tabs > li.active > a i {
+    color: #bba011;
+}
+
+.edge-page .edge-tabs-wrapper.vertical.left .nav-tabs > li > a span,
+.edge-meta-box .edge-tabs-wrapper.vertical.left .nav-tabs > li > a span {
+    display: inline-block;
+    padding: 10px;
+}
+
+.edge-page .edge-tabs-wrapper.vertical.left .edge-tabs-navigation-wrapper,
+.edge-meta-box .edge-tabs-wrapper.vertical.left .edge-tabs-navigation-wrapper {
+    float: left;
+    background-color: #111;
+}
+
+.edge-page .edge-tabs-wrapper.vertical.right .edge-tabs-navigation-wrapper,
+.edge-page .edge-tabs-wrapper.vertical.right .edge-tabs-wrapper.vertical.right .edge-tabs-content,
+.edge-meta-box .edge-tabs-wrapper.vertical.right .edge-tabs-navigation-wrapper,
+.edge-meta-box .edge-tabs-wrapper.vertical.right .edge-tabs-wrapper.vertical.right .edge-tabs-content {
+    float: right;
+}
+
+.edge-page #back_to_top,
+.edge-meta-box #back_to_top {
+    color: #fff;
+    height: auto;
+    position: fixed;
+    bottom: 65px;
+    margin: 0;
+    z-index: 101;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    right: 38px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: hidden;
+}
+
+.edge-page #back_to_top.on,
+.edge-meta-box #back_to_top.on {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+    right: 38px;
+}
+
+.edge-page #back_to_top > span,
+.edge-meta-box #back_to_top > span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    background: transparent;
+    text-align: center;
+    border: 2px solid #bba011;
+    color: #bba011;
+    opacity: .5;
+    font-size: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+.edge-page #back_to_top:hover > span,
+.edge-meta-box #back_to_top:hover > span {
+    background-color: #bba011;
+    border-color: #bba011;
+    opacity: 1;
+    color: #fff;
+}
+
+.edge-page .edge-page-content-wrapper .edge-page-message .alert,
+.edge-meta-box .edge-page-content-wrapper .edge-page-message .alert {
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+}
+
+.edge-page .cb-enable, .edge-page .cb-disable, .edge-page .cb-enable span, .edge-page .cb-disable span,
+.edge-meta-box .cb-enable,
+.edge-meta-box .cb-disable,
+.edge-meta-box .cb-enable span,
+.edge-meta-box .cb-disable span {
+    display: block;
+    float: left;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.edge-page .switch-type .cb-enable, .edge-page .switch-type .cb-disable, .edge-page .switch-type .cb-enable span, .edge-page .switch-type .cb-disable span,
+.edge-meta-box .switch-type .cb-enable,
+.edge-meta-box .switch-type .cb-disable,
+.edge-meta-box .switch-type .cb-enable span,
+.edge-meta-box .switch-type .cb-disable span {
+    display: block;
+    float: left;
+}
+
+.edge-page .field.switch,
+.edge-meta-box .field.switch {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.edge-page .cb-enable span,
+.edge-page .cb-disable span,
+.edge-page .switch-type .cb-enable span,
+.edge-page .switch-type .cb-disable span,
+.edge-meta-box .cb-enable span,
+.edge-meta-box .cb-disable span,
+.edge-meta-box .switch-type .cb-enable span,
+.edge-meta-box .switch-type .cb-disable span {
+    line-height: 29px;
+    display: block;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+
+.edge-page .cb-enable span,
+.edge-page .switch-type .cb-enable span,
+.edge-meta-box .cb-enable span,
+.edge-meta-box .switch-type .cb-enable span {
+    background-color: #fff;
+    padding: 0 10px;
+    color: #8D9CA6;
+}
+
+.edge-page .cb-disable span,
+.edge-page .switch-type .cb-disable span,
+.edge-meta-box .cb-disable span,
+.edge-meta-box .switch-type .cb-disable span {
+    color: #8D9CA6;
+    padding: 0 13px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.edge-page .cb-disable span:hover,
+.edge-meta-box .cb-disable span:hover {
+    background-color: #dce0e6;
+    color: #fff;
+}
+
+.edge-page .cb-enable span:hover,
+.edge-meta-box .cb-enable span:hover {
+    background-color: rgba(187, 160, 17, 0.2);
+    color: #fff;
+}
+
+.edge-page .cb-disable.selected,
+.edge-meta-box .cb-disable.selected {
+    background: #7d7d7d;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.edge-page .cb-disable.selected span,
+.edge-meta-box .cb-disable.selected span {
+    color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.edge-page .cb-enable.selected,
+.edge-meta-box .cb-enable.selected {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.edge-page .cb-enable.selected span,
+.edge-meta-box .cb-enable.selected span {
+    background-color: #bba011;
+    color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.edge-page .switch label,
+.edge-meta-box .switch label {
+    cursor: pointer;
+}
+
+.edge-page .switch input,
+.edge-meta-box .switch input {
+    display: none;
+}
+
+.edge-page .field.switch input[type=checkbox]:checked:before,
+.edge-meta-box .field.switch input[type=checkbox]:checked:before {
+    content: '';
+}
+
+.edge-page .edge-page .switch .checkbox,
+.edge-meta-box .edge-page .switch .checkbox {
+    display: none;
+}
+
+.edge-page .thumbnail,
+.edge-meta-box .thumbnail {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+
+.edge-page .img-thumbnail,
+.edge-meta-box .img-thumbnail {
+    margin-bottom: 15px;
+    max-width: 100px;
+}
+
+.edge-page .wp-color-result,
+.edge-meta-box .wp-color-result {
+    height: auto;
+    outline: none;
+}
+
+/* used on blog post formats for video cover image upload */
+input.upload_button {
+    border: 1px solid #acacac;
+    border-radius: 3px 3px 3px 3px;
+    color: #444;
+    padding: 2px;
+    width: auto;
+}
+
+/* tinymce in portfolio */
+/* used in multiple images upload for portfolio */
+.edgt-gallery-images-holder li.edgt-gallery-image-holder {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 100px;
+}
+
+.edgt-gallery-images-holder li.edgt-gallery-image-holder img {
+    width: 100%;
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Edge Slider custom fields - start*/
+.form-field.slider-field input {
+    width: auto;
+}
+
+.form-field.slider-field .inline label {
+    float: left;
+    line-height: 28px;
+    margin-right: 5px;
+}
+
+.inline {
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+    font-size: 13px;
+}
+
+/* Edge Slider custom fields - end*/
+
+/*# sourceMappingURL=edge-ui.css.map */

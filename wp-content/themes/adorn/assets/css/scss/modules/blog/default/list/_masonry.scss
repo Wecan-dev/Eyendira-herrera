@@ -1,0 +1,303 @@
+/* ==========================================================================
+   Blog List - Masonry style - begin
+   ========================================================================== */
+
+.edge-blog-holder {
+	
+    &.edge-blog-masonry {
+
+        article {
+            margin: 0 0 20px;
+            padding: 0 0 30px;
+
+            .edge-post-title {
+                font-family: $heading-font;
+                font-size: 16px;
+                line-height: 40px;
+                font-weight: 400;
+                margin: 20px 0 0;
+                letter-spacing: 1.5px;
+            }
+
+            .edge-post-info-date {
+                font-family: $heading-font;
+                margin-top: -10px;
+
+                a {
+                    font-size: 12px;
+                    letter-spacing: 1.5px;
+                    color: $additional-text-color;
+                    line-height:1em;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+
+            .edge-post-excerpt-holder {
+                @include edgeRelativeHolderLayout();
+                margin: 14px 0 18px;
+                columns: $default-border-color;
+
+                .edge-post-excerpt {
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+
+            .edge-post-read-more-button{
+                margin-bottom: 16px;
+            }
+
+            .edge-post-read-more-button {
+                a {
+                    margin: -15px 0 0;
+                    font-family: $heading-font;
+                    span {
+                        color: $additional-color;
+                        font-weight: 400;
+                        letter-spacing: 1.5px;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                    }
+
+                    i {
+                        color: $first-main-color;
+                        font-size: 11px;
+                    }
+
+                    &:hover span{
+                        color: $first-main-color;
+                    }
+                }
+            }
+
+            .edge-more-link-container {
+                @include edgeRelativeHolderLayout();
+                margin: 20px 0 0;
+            }
+
+            .edge-post-info-top {
+	            
+                > div {
+	                position: relative;
+	                display: inline-block;
+                    padding-right: 25px;
+                    margin-left: 5px;
+	                
+	                &:after {
+		                content: "/";
+		                position: absolute;
+		                top: 0;
+		                right: 5px;
+	                }
+	                
+	                &:first-child {
+		                margin-left: 0;
+	                }
+	                
+	                &:last-child {
+		                
+		                &:after {
+			                content: '';
+		                }
+	                }
+	
+	                span {
+		                color: #444;
+	                }
+                }
+            }
+
+            .edge-post-info-bottom {
+	            margin-top: 40px;
+	            padding-top: 15px;
+	            border-top: 1px solid #dadada;
+
+                .edge-post-info-bottom-left,
+                .edge-post-info-bottom-right {
+	                position: relative;
+	                display: inline-block;
+	                width: 50%;
+	                float: left;
+                    line-height: 25px;
+                }
+
+                .edge-post-info-bottom-right {
+	                
+                    > div {
+                        margin-left: 15px;
+	                    
+	                    &:first-child {
+		                    margin-left: 0;
+	                    }
+                    }
+                }
+
+                .edge-post-info-author {
+                    display: inline-block;
+	                
+                    a {
+                        text-transform: capitalize;
+                        color: #444;
+	                    
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .edge-post-info-bottom-right {
+                    text-align: right;
+                }
+
+                .edge-post-info-comments-holder,
+                .edge-blog-like {
+                    display: inline-block;
+
+                    a {
+                        display: inline-block;
+
+                        span,
+                        i {
+                            vertical-align: middle;
+                            color: #444;
+                        }
+                    }
+                }
+
+                .edge-blog-like {
+	                
+                    i:first-child,
+                    span:first-child {
+                        @include edgeTransition(color 0.15s ease-out);
+                        margin-right: 7px;
+                        color: #c4c3c3;
+                    }
+
+                    &:hover {
+	                    
+                        i:first-child,
+                        span:first-child {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .edge-post-info-comments-holder {
+	                
+                    span:first-child {
+                        @include edgeTransition(color 0.15s ease-out);
+                        margin-right: 7px;
+                        color: #c4c3c3;
+                    }
+	                
+                    &:hover {
+	                    
+                        span:first-child {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+            }
+
+            &.format-audio {
+                &.edge-post-no-media.has-post-thumbnail {
+                    .edge-post-heading {
+                    }
+                }
+            }
+
+            &.format-link {
+	            
+                .edge-post-text {
+	                padding: 5px 25px 25px;
+	                background-color: #fbfbfb;
+                    text-align: center;
+                    .edge-post-info-top > div {
+                        padding-right: 0;
+                    }
+                }
+	            
+                .edge-post-text-main {
+                    @include edgeTableLayout();
+                }
+	            
+                .edge-post-mark {
+                    @include edgeTableCellLayout();
+                    width: 50px;
+                    vertical-align: top;
+
+                    .edge-link-mark {
+                        padding-top: 5px;
+                        font-size: 36px;
+                        color: $first-main-color;
+                    }
+                }
+	            
+                .edge-post-link-holder {
+                    @include edgeTableCellLayout();
+                    vertical-align: top;
+                    text-align: left;
+                }
+	            
+                .edge-post-title {
+                    margin-bottom: 0;
+                }
+            }
+	        
+            &.format-quote {
+	            
+                .edge-post-text {
+	                padding: 5px 25px 25px;
+	                background-color: #fbfbfb;
+                    text-align: center;
+                    .edge-post-info-top > div {
+                        padding-right: 0;
+                    }
+                }
+	            
+                .edge-post-text-main {
+                    @include edgeTableLayout();
+                    text-align: center;
+                    .edge-quote-author {
+                        font-size: 13px;
+                    }
+                }
+	            
+                .edge-post-mark {
+                    @include edgeTableCellLayout();
+                    width: 50px;
+                    vertical-align: top;
+                    text-align: left;
+
+                    .edge-quote-mark {
+                        padding-top: 5px;
+                        font-size: 36px;
+                        color: $first-main-color;
+                    }
+                }
+	            
+                .edge-post-link-holder {
+                    @include edgeTableCellLayout();
+                    vertical-align: top;
+                    text-align: left;
+                }
+	            
+                .edge-post-title {
+                    margin-bottom: 0;
+                }
+	            
+                .edge-post-author {
+	                display: inline-block;
+	                margin-bottom: 23px;
+	                font-size: 13px;
+	                line-height: 20px;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Blog List - Masonry style - end
+   ========================================================================== */

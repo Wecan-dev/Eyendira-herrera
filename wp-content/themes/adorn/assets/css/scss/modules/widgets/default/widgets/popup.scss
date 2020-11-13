@@ -1,0 +1,180 @@
+/* ==========================================================================
+# Pop-up style - begin
+========================================================================== */
+
+.edge-popup-opener {
+    font-family: inherit;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+/* Popup opener style - end */
+
+.edge-popup-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 115;
+    visibility: hidden;
+    @include edgeTransition(opacity .2s ease-out .1s, visibility .0s .4s);
+
+    .edge-popup-close-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .edge-popup-shader {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 110%;
+        height: 130%;
+        z-index: 1;
+        -webkit-transform-style: flat;
+        -moz-transform-style: flat;
+        transform-style: flat;
+        background-color: rgba($header-light-color, 0.85);
+        @include edgeTransform(translateZ(0));
+    }
+
+    .edge-popup-table {
+        display: table;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 9;
+    }
+
+    .edge-popup-table-cell {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .edge-popup-inner {
+        @include edgeTableLayout();
+        height: auto;
+        width: 700px;
+        left: 50%;
+        background-color: #fff;
+        opacity: 0;
+        border: 1px solid #e1e1e1;
+        box-shadow: 0 0 5px rgba(0,0,0,.07);
+        @include edgeTransition(transform .2s ease, opacity .3s ease);
+        @include edgeTransform(translateX(-50%));
+        box-sizing: border-box;
+
+        .edge-popup-image,
+        .edge-popup-content {
+            @include edgeTableCellLayout();
+            vertical-align: middle;
+        }
+
+        .edge-popup-image {
+            img {
+                display: block;
+            }
+        }
+
+        .edge-popup-close {
+            position: absolute;
+            right: 4px;
+            top: 3px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 20px;
+            line-height: 1;
+            color: $dark-color;
+            z-index: 10;
+
+            span {
+                display: block;
+                line-height: inherit;
+
+                &:before {
+                    display: block;
+                    line-height: inherit;
+                }
+            }
+
+            &:hover {
+                color: $default-heading-color;
+            }
+        }
+
+        .edge-popup-content {
+            padding: 30px;
+            text-align: initial;
+            box-sizing: border-box;
+
+            .edge-popup-title {
+                font-family: $additional-text-font;
+                letter-spacing: 0;
+                font-size: 30px;
+                line-height: 1em;
+                font-weight: 400;
+                color: $dark-color;
+                display: block;
+            }
+
+            .edge-popup-subtitle {
+                display: block;
+                margin: 16px 0 0;
+            }
+
+            .edge-popup-desc{
+                font-family: $heading-font;
+                font-size: 11px;
+                color: #666;
+                line-height: 15px;
+                margin: 5px 0 0;
+            }
+
+            .edge-popup-form {
+                @include edgeRelativeHolderLayout();
+                margin: 32px 0 0;
+                line-height: 20px;
+
+                .wpcf7-form-control.wpcf7-text,
+                .wpcf7-form-control.wpcf7-number,
+                .wpcf7-form-control.wpcf7-date,
+                .wpcf7-form-control.wpcf7-textarea,
+                .wpcf7-form-control.wpcf7-select,
+                .wpcf7-form-control.wpcf7-quiz {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Popup open/close style */
+
+.edge-popup-opened {
+
+    .edge-popup-holder {
+        opacity: 1;
+        visibility: visible;
+        @include edgeTransition(opacity .3s ease);
+
+        .edge-popup-inner {
+            opacity: 1;
+            -webkit-transition: -webkit-transform 1s cubic-bezier(0.26, 0.63, 0, 0.96);
+            -moz-transition: -moz-transform 1s cubic-bezier(0.26, 0.63, 0, 0.96);
+            transition:transform 1s cubic-bezier(0.26, 0.63, 0, 0.96);
+        }
+    }
+}
+/* ==========================================================================
+# Pop-up style - end
+========================================================================== */

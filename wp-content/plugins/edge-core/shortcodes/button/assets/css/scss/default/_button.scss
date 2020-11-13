@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.edge-btn {
+    @include edgeButtonDefaultStyle();
+    @include edgeButtonMediumParams();
+
+    &.edge-btn-simple {
+        padding: 0 !important;
+        color: $default-text-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+        line-height: 16px;
+        border-bottom: 1px solid transparent;
+        font-family: $heading-font;
+
+        .edge-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+            font-family: $heading-font;
+            text-transform: uppercase;
+        }
+
+        &:not(.edge-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $default-heading-color !important;
+        }
+
+        &:not(.edge-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: transparent !important;
+        }
+
+        &:not(.edge-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $default-border-color !important;
+        }
+    }
+
+    &.edge-btn-solid {
+        @include edgeButtonSolidColor();
+
+        &:not(.edge-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.edge-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $button-hover-color !important;
+        }
+
+        &:not(.edge-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $button-hover-color !important;
+        }
+    }
+
+    &.edge-btn-outline {
+	    @include edgeButtonOutlineColor();
+
+        &:not(.edge-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.edge-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: #d3d3d3 !important;
+        }
+
+        &:not(.edge-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: #d3d3d3 !important;
+        }
+    }
+
+    &.edge-btn-small {
+        @include edgeButtonSmallParams();
+    }
+
+    &.edge-btn-medium {
+        //same as default
+    }
+
+    &.edge-btn-large {
+        @include edgeButtonLargeParams();
+    }
+
+    &.edge-btn-huge {
+        @include edgeButtonHugeParams();
+    }
+
+    &.edge-btn-icon {
+
+        > i,
+        > span:not(.edge-btn-text) {
+            position: relative;
+            top: -1px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.142857142857143em;
+            @include edgeTransition(all .2s);
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+
+        &:hover {
+            > i,
+            > span:not(.edge-btn-text) {
+                @include edgeTransform(translateX(5px));
+            }
+        }
+    }
+}
+
+input[type=submit].edge-btn,
+button.edge-btn {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

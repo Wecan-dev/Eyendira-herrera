@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Blog Slider shortcode style - begin
+   ========================================================================== */
+
+.edge-blog-slider-holder {
+
+    .edge-blog-slider-item {
+        @include edgeRelativeHolderLayout();
+        list-style-type: none;
+        text-align: center;
+
+        .edge-item-image {
+            @include edgeRelativeHolderLayout();
+
+            &::after {
+                @include edgeAbsoluteHolderLayout();
+                content: "";
+                background: rgba($default-heading-color, 0.3);
+            }
+        }
+
+        .edge-item-text-wrapper {
+            @include edgeAbsoluteHolderLayout();
+            opacity: 0;
+            @include edgeTransition(opacity 0.45s ease-out);
+        }
+
+        .edge-item-text-holder {
+            @include edgeTableLayout();
+        }
+    
+        .edge-item-text-holder-inner {
+            @include edgeTableCellLayout();
+            padding: 0 5%;
+        }
+    
+        .edge-item-info-section{
+            margin-bottom: 5px;
+            color: #fff;
+
+            .edge-post-info-category,
+            .edge-post-info-comments-holder,
+            .edge-post-info-author,
+            .edge-post-info-date{
+              a,
+              span {
+                color: #fff;
+              }
+            }
+    
+            > div {
+                position: relative;
+                display: inline-block;
+                padding-right: 25px;
+                margin-left: 5px;
+        
+                &:after {
+                    content: "/";
+                    position: absolute;
+                    top: 0;
+                    right: 5px;
+                }
+        
+                &:first-child {
+                    margin-left: 0;
+                }
+        
+                &:last-child {
+            
+                    &:after {
+                        content: '';
+                    }
+                }
+        
+                span {
+                    color: #444;
+                }
+            }
+        }
+    
+        .edge-item-title {
+            margin: 0 0 15px;
+            color: #fff;
+            margin-top: 40px;
+          
+            a {
+              &:hover {
+                color: #e6e6e6;
+              }
+            }
+        }
+
+        .edge-section-button-holder {
+            @include edgeRelativeHolderLayout();
+            margin: 20px 0 0;
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: #e6e6e6 !important;
+                }
+            }
+        }
+    }
+
+    .active.center {
+	    
+        .edge-blog-slider-item {
+	        
+            .edge-item-text-wrapper {
+                opacity: 1;
+            }
+        }
+    }
+	
+	.owl-nav {
+		
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			top: 50%;
+			z-index: 3;
+			@include edgeTransform(translateY(-50%));
+			
+			&:hover {
+				
+				.edge-prev-icon,
+				.edge-next-icon {
+					color: $first-main-color;
+				}
+			}
+		}
+		
+		.owl-prev {
+			left: 30px;
+		}
+		
+		.owl-next {
+			right: 30px;
+		}
+		
+		.edge-prev-icon,
+		.edge-next-icon {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			color: $default-heading-color;
+			@include edgeTransition(color .2s ease-out);
+			
+			.edge-icon-arrow {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				font-size: 46px;
+				line-height: 1em;
+				
+				&:before {
+					display: block;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+
+    .owl-dots {
+        text-align: center;
+        margin: 25px 0 0;
+
+        .owl-dot {
+            display: inline-block;
+            vertical-align: middle;
+
+            &:not(.active) {
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 8px;
+                    height: 8px;
+                    margin: 0 6px;
+                    border-radius: 50%;
+                    background-color: $default-text-color;
+                    border-color: $default-text-color;
+                    @include edgeTransition(background-color .2s ease-out, border .2s ease-out);
+                    box-sizing: border-box;
+                }
+            }
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                width: 12px;
+                height: 12px;
+                margin: 0 6px;
+                border-radius: 3em;
+                background-color: transparent;
+                border: 2px solid rgba($default-heading-color, .5);
+                @include edgeTransition(background-color .2s ease-out, border .2s ease-out);
+                box-sizing: border-box;
+            }
+
+            &:hover,
+            &.active {
+
+                span {
+                    background-color: $default-heading-color;
+                    border-color: $default-heading-color;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Blog Slider shortcode style - end
+   ========================================================================== */

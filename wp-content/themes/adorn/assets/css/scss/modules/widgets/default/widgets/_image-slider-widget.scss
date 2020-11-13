@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Image Slider widget style - begin
+   ========================================================================== */
+
+.widget.edge-image-slider-widget {
+    @include edgeRelativeHolderLayout();
+    
+    .edge-is-widget-inner {
+        @include edgeRelativeHolderLayout();
+        visibility: hidden;
+    }
+    
+    .edge-widget-title {
+        margin: 0 0 32px;
+    }
+    
+    img {
+        display: block;
+    }
+    
+    .owl-dots {
+        text-align: center;
+        margin: 15px 0 0;
+        
+        .owl-dot {
+            display: inline-block;
+            vertical-align: middle;
+            
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                width: 10px;
+                height: 10px;
+                margin: 0 5px;
+                background-color: #ccc;
+                box-sizing: border-box;
+                @include edgeTransition(background-color .2s ease-out, width .2s ease-out, height .2s ease-out);
+                
+                .edge-page-footer & {
+                    background-color: rgba(#fff, .2);
+                }
+            }
+            
+            &.active {
+                
+                span {
+                    width: 12px;
+                    height: 12px;
+                    background-color: $default-heading-color;
+    
+                    .edge-page-footer & {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-nav{
+
+        .owl-prev{
+            left: -25px;
+        }
+        .owl-next{
+            right: -25px;
+        }
+
+    }
+    
+    .owl-carousel .owl-item img {
+        cursor:move;
+        -webkit-transform: translateZ(0); //chrome text cut off fix
+    }
+}
+/* ==========================================================================
+   Image Slider widget style - end
+   ========================================================================== */

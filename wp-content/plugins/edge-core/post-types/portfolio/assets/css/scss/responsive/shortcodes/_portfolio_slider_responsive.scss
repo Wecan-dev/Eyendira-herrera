@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Portfolio slider shortcode responsive style - begin
+   ========================================================================== */
+.edge-portfolio-slider-holder{
+    .edge-portfolio-list-holder{
+        &.edge-pl-standard-shader{
+            article{
+                .edge-pli-text-holder{
+                    @include laptop-landscape-medium{
+                         top: 41%;
+                         left: 54%;
+                    }
+                    @include ipad-pro-landscape{
+                        top: 42%;
+                        left: 56%;
+                    }
+                    @include laptop-landscape-medium{
+                        top: 41%;
+                        left: 54%;
+                    }
+                    @include ipad-landscape{
+                        top: 38%;
+                        left: 46%;
+                    }
+                    @include ipad-portrait{
+                        top: 50%;
+                        left: 0;
+                        @include edgeTransform(translateY(-50%));
+                        text-align: center;
+                        margin: 0;
+
+                        .edge-pli-text{
+                            .edge-pli-title {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    @include phone-landscape{
+                        .edge-pli-text{
+                            .edge-pli-title {
+                                font-size: 20px;
+                            }
+                            .edge-pli-category-holder{
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include ipad-portrait{
+                .owl-nav{
+                    display: none;
+                }
+            }
+            @include phone-landscape{
+                .owl-dots{
+                    bottom: 5px
+                }
+                .edge-pli-cat
+                egory-holder{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio slider shortcode responsive style - begin
+   ========================================================================== */

@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Testimonials boxed style - begin
+   ========================================================================== */
+.edge-testimonials-holder {
+    &.edge-testimonials-boxed {
+
+        .edge-testimonials {
+            margin: 0;
+
+            .edge-testimonial-text-holder {
+                text-align: center;
+
+                .edge-testimonial-text {
+                    margin-top: 30px;
+                    line-height: 30px;
+                    color: $default-text-color;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+
+        .edge-testimonial-content {
+            padding: 0 57px 0;
+            background-color: #fbfbfb;
+            box-sizing: border-box;
+
+        }
+
+        .edge-testimonials-author-holder {
+            @include edgeRelativeHolderLayout();
+            margin: 9px 0 0;
+
+            .edge-testimonial-position {
+                font-weight: 400;
+                letter-spacing: 0.1em;
+                text-transform: none;
+            }
+
+            .edge-testimonial-author {
+                margin-bottom: -13px;
+            }
+
+            .edge-testimonial-image {
+                img {
+                    margin: 0 auto;
+                }
+            }
+
+        }
+
+        /* Light/Dark styles */
+        &.edge-testimonials-light {
+            .owl-nav {
+
+                .edge-prev-icon,
+                .edge-next-icon {
+                    color: rgba(255,255,255,.7);
+
+                }
+            }
+            .edge-testimonial-title {
+                color: #fff;
+            }
+            .edge-testimonial-text {
+                color: #fff;
+            }
+            .edge-testimonial-author {
+                color: #fff;
+            }
+
+            .edge-testimonials-author-holder {
+                .edge-testimonial-position {
+                    color: #fff;
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    span {
+                        border: 2px solid rgba(#fff, .5);
+                    }
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &.edge-testimonials-dark {
+            .owl-nav {
+
+                .edge-prev-icon,
+                .edge-next-icon {
+                    color: rgba(8,8,8,0.4);
+
+                }
+            }
+        }
+
+        .owl-nav {
+            .owl-prev,
+            .owl-next {
+                top: 30%;
+            }
+
+        }
+    }
+}
+
+@include ipad-landscape {
+
+     .edge-testimonials-holder {
+         &.edge-testimonials-boxed {
+
+             .edge-testimonials {
+
+                 .edge-testimonial-text-holder {
+
+                     .edge-testimonial-text {
+                         width: 100%;
+                     }
+                 }
+             }
+
+             .edge-testimonial-content {
+                 padding: 0 20px 0;
+             }
+
+         }
+     }
+}
+
+@include ipad-portrait {
+
+    .edge-testimonials-holder {
+        &.edge-testimonials-boxed {
+
+            .edge-testimonials {
+
+                .edge-testimonial-text-holder {
+
+                    .edge-testimonial-text {
+                        width: 90%;
+                    }
+                }
+            }
+
+            .edge-testimonial-content {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@include phone-portrait {
+
+    .edge-testimonials-holder {
+        &.edge-testimonials-boxed {
+
+            .owl-nav {
+                display: none;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Testimonials boxed style - end
+   ========================================================================== */
+

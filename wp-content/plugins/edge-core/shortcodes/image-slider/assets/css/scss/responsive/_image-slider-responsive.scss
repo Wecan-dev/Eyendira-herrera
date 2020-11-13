@@ -1,0 +1,17 @@
+.edge-split-scrolling-section{
+    @include ipad-landscape{
+
+        .edge-image-slider-item{
+            background-image: none !important;
+
+        }
+        .edge-image-slider-item-inner{
+            &.image{
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

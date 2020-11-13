@@ -1,0 +1,23 @@
+/* ==========================================================================
+# Team responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: $ipad-landscape-plus-pixel) {
+	.edge-team {
+		&.info-bellow .edge-team-image {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: $ipad-portrait) {
+	.edge-team {
+		&.info-hover {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/* ==========================================================================
+# Team responsive style - end
+========================================================================== */

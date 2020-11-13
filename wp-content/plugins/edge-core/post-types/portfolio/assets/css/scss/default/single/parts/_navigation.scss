@@ -1,0 +1,221 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.edge-ps-navigation {
+	padding: 70px 1000px 30px;
+	position: relative;
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	margin: 10px -1000px 40px;
+	clear: both;
+
+	&:before{
+		position: absolute;
+		width: 1300px;
+		height: 1px;
+		content: '';
+		background-color: $light-border-color;
+		top: 0;
+	}
+
+	.edge-ps-full-width-custom-layout & {
+		padding: 0 40px;
+	}
+
+	.edge-ps-back-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		@include edgeTransform(translateX(-50%) translateY(-50%));
+
+		a {
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			cursor: pointer;
+			font-size: 16px;
+			width:12px;
+			height:12px;
+			line-height: 1;
+
+			span {
+				display: block;
+				line-height: inherit;
+				color: $default-text-color;
+				position:relative;
+
+				.icon_grid-square {
+					background-color:#212121;
+					width:5px;
+					height:5px;
+					position:absolute;
+					@include edgeTransition(all 0.3s ease-in-out);
+
+					&.icon_grid-square-1 {
+						top:0;
+						left:0;
+					}
+					&.icon_grid-square-2 {
+						top:0;
+						left:7px;
+					}
+					&.icon_grid-square-3 {
+						top:7px;
+						left:0;
+					}
+					&.icon_grid-square-4 {
+						top:7px;
+						left:7px;
+					}
+				}
+
+				&:before,
+				&:after {
+					display: block;
+					line-height: 14px;
+				}
+
+			}
+
+			&:hover {
+				.icon_grid-square {
+					&.icon_grid-square-1 {
+						@include edgeTransform(translate3d(-2px,-2px,0));
+					}
+					&.icon_grid-square-2 {
+						@include edgeTransform(translate3d(2px,-2px,0));
+					}
+					&.icon_grid-square-3 {
+						@include edgeTransform(translate3d(-2px,2px,0));
+					}
+					&.icon_grid-square-4 {
+						@include edgeTransform(translate3d(2px,2px,0));
+					}
+				}
+			}
+		}
+	}
+
+	.edge-ps-prev,
+	.edge-ps-next {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		width: 49%;
+		padding: 0;
+		box-sizing: border-box;
+
+		.edge-single-nav-image-holder {
+			width: 82px;
+			height: 82px;
+		}
+
+		.edge-single-nav-title-holder {
+			padding-top: 11px;
+
+			a {
+				display: block;
+				font-size: 14px;
+				font-family: $heading-font;
+				color: $default-border-color;
+
+				&:hover{
+					color: $first-main-color;
+				}
+				&:not(.edge-single-nav-title):hover{
+					text-decoration: underline;
+				}
+			}
+
+			.edge-single-nav-title {
+				font-size: 16px;
+				color: $additional-color;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				font-weight: 400;
+
+				@include phone-portrait {
+					display: none;
+				}
+			}
+		}
+
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 16px;
+			line-height: 31px;
+			color: #929292;
+			font-family: $heading-font;
+
+			img{
+				border-radius: 50%;
+			}
+
+			.edge-ps-nav-mark {
+				position: relative;
+				display: inline-block;
+				font-size: 11px;
+				color: $first-main-color;
+
+				&:before {
+					display: block;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+
+	.edge-ps-prev {
+
+		.edge-single-nav-title-holder {
+			float: left;
+		}
+
+		.edge-single-nav-image-holder {
+			float: left;
+			padding-right: 24px;
+		}
+
+		a {
+
+			.edge-ps-nav-mark {
+				padding-left: 3px;
+				padding-right: 10px;
+				left: 0;
+			}
+		}
+	}
+
+	.edge-ps-next {
+		text-align: right;
+
+		.edge-single-nav-title-holder {
+			float: right;
+		}
+
+		.edge-single-nav-image-holder {
+			float: right;
+			padding-left: 24px;
+		}
+
+		a {
+
+			.edge-ps-nav-mark {
+				padding-left: 10px;
+				padding-right: 3px;
+				right: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

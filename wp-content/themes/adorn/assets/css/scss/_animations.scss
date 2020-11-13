@@ -1,0 +1,212 @@
+
+/* ==========================================================================
+   #Animation styles - start
+   ========================================================================== */
+
+@include keyframes(element-from-left) {
+	0% {
+		opacity: 0;
+		transform: translate(-20%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+
+@include keyframes(element-from-right) {
+	0% {
+		opacity: 0;
+		transform: translate(20%, 0);
+
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@include keyframes(element-from-top) {
+	0% {
+		opacity: 0;
+		transform: translate(0, -30%);
+
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@include keyframes(element-from-bottom) {
+	0% {
+		opacity: 0;
+		transform: translate(0, 30%);
+
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+
+.edge-element-from-left,
+.edge-element-from-right,
+.edge-element-from-top,
+.edge-element-from-bottom,
+.edge-element-from-fade {
+	@include edgeRelativeHolderLayout();
+	
+	> div {
+		@include edgeRelativeHolderLayout();
+		opacity: 0;
+	}
+}
+
+.edge-element-from-fade {
+
+	&.edge-element-from-fade-on {
+
+		> div {
+			opacity: 1;
+			@include edgeTransition(opacity .8s ease 0s);
+		}
+	}
+}
+
+.edge-element-from-left {
+
+	&.edge-element-from-left-on {
+
+		> div {
+
+			@include edgeAnimation(element-from-left 0.55s 1 ease);
+			opacity: 1;
+		}
+	}
+}
+
+.edge-element-from-right {
+
+	&.edge-element-from-right-on {
+
+		> div {
+			@include edgeAnimation(element-from-right 0.55s 1 ease);
+			opacity: 1;
+		}
+	}
+}
+
+.edge-element-from-top {
+
+	&.edge-element-from-top-on {
+
+		> div {
+			@include edgeAnimation(element-from-top 0.55s 1 ease);
+			opacity: 1;
+		}
+	}
+}
+
+.edge-element-from-bottom {
+
+	&.edge-element-from-bottom-on {
+
+		> div {
+			@include edgeAnimation(element-from-bottom 0.55s 1 ease);
+			opacity: 1;
+		}
+	}
+}
+
+.edge-flip-in {
+	opacity: 0;
+	@include edgeTransform(perspective(1000px) rotateY(25deg));
+	@include edgeTransition(all 1.1s ease-in-out);
+
+	&.edge-flip-in-on {
+		opacity: 1;
+		@include edgeTransform(rotateY(0deg));
+	}
+}
+
+.edge-grow-in {
+	opacity: 0;
+	@include edgeTransform(scale(0.8));
+	@include edgeTransition(all 1s cubic-bezier(0,1,.5,1));
+
+	&.edge-grow-in-on {
+		opacity: 1;
+		@include edgeTransform(scale(1));
+	}
+}
+
+.edge-z-rotate {
+	opacity: 0;
+	@include edgeTransform(rotateZ(7deg));
+	@include edgeTransition(all 300ms cubic-bezier(0.165, 0.84, 0.44, 1));
+	@include edgeTransformOrigin(top right);
+
+	&.edge-z-rotate-on {
+		opacity: 1;
+		@include edgeTransform(rotateZ(0deg));
+	}
+}
+
+.edge-x-rotate {
+	opacity: 0;
+	@include edgeTransform(perspective(900px) rotateX(-45deg));
+	@include edgeTransition(all .6s cubic-bezier(.785,.135,.15,.86));
+
+	&.edge-x-rotate-on {
+		opacity: 1;
+		@include edgeTransform(rotateX(0deg));
+	}
+}
+
+.edge-y-translate {
+	opacity: 0;
+	@include edgeTransform(translate(0,30px));
+	@include edgeTransition(all 700ms cubic-bezier(0.680, -0.650, 0.265, 1.650));
+
+	&.edge-y-translate-on {
+		opacity: 1;
+		@include edgeTransform(translate(0,0));
+	}
+}
+
+.edge-fade-in-down {
+	opacity: 0;
+	@include edgeTransform(translate(0,-25px));
+	@include edgeTransition(all .9s cubic-bezier(0,1,.5,1));
+
+	&.edge-fade-in-down-on {
+		opacity: 1;
+		@include edgeTransform(translate(0,0));
+	}
+}
+
+.edge-fade-in-left-x-rotate {
+	opacity: 0;
+	@include edgeTransform(rotateZ(-5deg) translate(-30px,0));
+	@include edgeTransition(all .4s ease);
+
+	&.edge-fade-in-left-x-rotate-on {
+		opacity: 1;
+		@include edgeTransform(rotateZ(0deg) translate(0,0));
+	}
+}
+
+.edge-fade-in {
+	opacity: 0;
+	@include edgeTransition(all 1s ease);
+
+	&.edge-fade-in-on {
+		opacity: 1;
+	}
+}
+/* ==========================================================================
+   #Animation styles - end
+   ========================================================================== */

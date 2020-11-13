@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Icon With Text shortcode responsive style - begin
+   ========================================================================== */
+
+@include phone-portrait {
+
+	.edge-iwt {
+
+		&.edge-iwt-icon-left {
+
+			.edge-iwt-icon,
+			.edge-iwt-content {
+				display: block;
+			}
+
+			.edge-iwt-icon {
+				top: 0;
+				right: 0;
+				margin-bottom: 18px;
+			}
+
+			.edge-iwt-content {
+				padding: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Icon With Text shortcode responsive style - end
+   ========================================================================== */

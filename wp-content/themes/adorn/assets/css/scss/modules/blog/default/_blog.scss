@@ -1,0 +1,283 @@
+/* ==========================================================================
+   Blog Common style - begin
+   ========================================================================== */
+
+div.edge-grid-col-8 {
+    div.edge-blog-holder {
+        &.edge-blog-single-standard {
+            width: 100%;
+        }
+
+        &.edge-blog-single-title-area-empty {
+            width: 100%;
+        }
+
+        &.edge-blog-single-title-area-info {
+            width: 100%;
+        }
+        &.edge-blog-standard {
+            width: 100%;
+        }
+    }
+}
+
+div.edge-grid-col-9 {
+    div.edge-blog-holder {
+        &.edge-blog-single-standard {
+            width: 100%;
+        }
+
+        &.edge-blog-single-title-area-empty {
+            width: 100%;
+        }
+
+        &.edge-blog-single-title-area-info {
+            width: 100%;
+        }
+        &.edge-blog-standard {
+            width: 100%;
+        }
+    }
+}
+
+.edge-blog-holder {
+    @include edgeRelativeHolderLayout();
+    clear: both;
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    &.edge-blog-masonry {
+        width: 100%;
+    }
+
+    &.edge-blog-masonry-gallery {
+        width: 100%;
+    }
+
+    article {
+        @include edgeRelativeHolderLayout();
+        box-sizing: border-box;
+
+        &.sticky {
+
+            .edge-post-title a {
+                color: $first-main-color;
+            }
+        }
+
+        .edge-post-content {
+            @include edgeRelativeHolderLayout();
+        }
+
+        .edge-post-image {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+
+            img {
+                display: block;
+            }
+        }
+
+        .edge-post-text {
+            @include edgeRelativeHolderLayout();
+            box-sizing: border-box;
+        }
+
+        .edge-post-title {
+            @include edgeTransition(opacity 0.3s ease);
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .edge-post-excerpt {
+
+            &:after {
+                content: '...';
+            }
+        }
+
+        .edge-post-info {
+            @include edgeRelativeHolderLayout();
+
+            > * {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                color: currentColor;
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+
+        //Gallery post style
+        &.format-gallery {
+
+            .edge-post-image {
+                width: 100%;
+            }
+
+            .owl-carousel .owl-item {
+                z-index: 2;
+
+                &.active {
+                    z-index: 3;
+                }
+            }
+        }
+
+        //Audio post style
+        &.format-audio {
+
+            .edge-blog-audio-holder {
+
+                .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+                    background: none;
+                }
+
+                .mejs-container {
+                    background-color: #f8f8f8;
+                }
+
+                .mejs-container,
+                .mejs-container .mejs-controls {
+                    height: 38px !important;
+                }
+
+                .mejs-container .mejs-controls {
+                    padding: 0 10px 0 4px;
+                    box-sizing: border-box;
+                }
+
+                .mejs-container .mejs-controls > .mejs-playpause-button {
+                    width: 39px;
+                }
+
+                .mejs-container .mejs-controls > .mejs-volume-button {
+                    width: 30px;
+                }
+
+                .mejs-container .mejs-controls > .mejs-playpause-button,
+                .mejs-container .mejs-controls > .mejs-volume-button {
+                    height: 38px;
+
+                    button {
+                        position: relative;
+                        height: 100%;
+                        background: none;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin: 0;
+                        border: 0;
+                        outline: none;
+                    }
+
+                    &.mejs-play button {
+                        width: 39px;
+                        background-image: url('../img/audio/play.png');
+                    }
+
+                    &.mejs-pause button {
+                        width: 39px;
+                        background-image: url('../img/audio/pause.png');
+                    }
+
+                    &.mejs-stop button {
+                        width: 39px;
+                        background-image: url('../img/audio/stop.png');
+                    }
+
+                    &.mejs-mute button {
+                        width: 30px;
+                        background-image: url('../img/audio/sound.png');
+                    }
+
+                    &.mejs-unmute button {
+                        width: 30px;
+                        background-image: url('../img/audio/mute.png');
+                    }
+                }
+
+                .mejs-container .mejs-controls > .mejs-time {
+                    height: 100%;
+                    padding: 0;
+                    font-family: $heading-font;
+                    font-size: 13px;
+                    color: $additional-color;
+                    line-height: 36px;
+                }
+
+                .mejs-container .mejs-controls > .mejs-time-rail {
+                    height: 100%;
+                    padding: 0;
+                    font-family: $heading-font;
+
+                    .mejs-time-total {
+                        height: 5px;
+                        margin: 15px 14px;
+                        background: none;
+                        background-color: #e5e5e5;
+
+                        .mejs-time-current {
+                            height: 5px;
+                            background-color: $first-main-color;
+                        }
+
+                        .mejs-time-float {
+                            top: -14px;
+                            border: 0;
+                            color: #fff;
+
+                            .mejs-time-float-corner {
+                                border-top-color: $default-heading-color;
+                            }
+                        }
+
+                        .mejs-time-loaded,
+                        .mejs-time-float {
+                            background: none;
+                        }
+                    }
+                }
+
+                .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider {
+                    height: 38px;
+
+                    .mejs-horizontal-volume-total,
+                    .mejs-horizontal-volume-current {
+                        height: 5px;
+                        top: 15px;
+                        background: none;
+                    }
+
+                    .mejs-horizontal-volume-total {
+                        background-color: #e5e5e5;
+                    }
+
+                    .mejs-horizontal-volume-current {
+                        background-color: $first-main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    // Pagination styles
+    .edge-blog-load-more-button-holder,
+    .edge-load-more-ajax-pagination {
+        @include edgeRelativeHolderLayout();
+        margin: 30px 0 60px;
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
+   Blog Common style - end
+   ========================================================================== */

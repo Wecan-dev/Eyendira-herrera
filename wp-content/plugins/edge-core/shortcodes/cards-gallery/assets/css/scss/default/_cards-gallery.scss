@@ -1,0 +1,197 @@
+.edge-cards-gallery-holder {
+    padding: 10px 0;
+
+    .edge-cards-gallery {
+        width: 100%;
+        position: relative;
+    }
+
+    img {
+        position: relative;
+        display: block;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .fake_card {
+        position: relative;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+
+    .card {
+        box-sizing: border-box;
+        position: absolute;
+        @include edgeTransition(all .15s ease);
+        width: 100%;
+
+        &.animating {
+            @include edgeTransition(all 1s cubic-bezier(.19,1,.22,1));
+            pointer-events:none;
+        }
+
+        &.animating-siblings {
+            @include edgeTransition(all .6s cubic-bezier(0,0,0,1));
+            pointer-events:none;
+        }
+    }
+
+    &.edge-shuffled-left .card {
+        will-change:transform;
+        width: auto;
+
+        &.out {
+            @include edgeTransform(translateX(-100%));
+        }
+
+        &:nth-last-child(6) {
+            @include edgeTransform(scale(.5) translateX(113%));
+        }
+
+        &:nth-last-child(5) {
+            @include edgeTransform(scale(.65) translateX(150%));
+        }
+
+        &:nth-last-child(4) {
+            @include edgeTransform(scale(.7) translateX(140%));
+        }
+
+        &:nth-last-child(3) {
+            @include edgeTransform(scale(.72) translateX(123%));
+        }
+
+        &:nth-last-child(2) {
+            @include edgeTransform(scale(.855) translateX(65%));
+        }
+
+        &:last-child{
+            @include edgeTransform(translateX(24%));
+        }
+
+        &:not(:last-of-type) {
+            cursor: pointer;
+        }
+
+        &:not(:last-of-type):not(.active):hover {
+            margin-left: 10px !important;
+        }
+    }
+
+    &.edge-shuffled-right .card {
+        will-change:transform;
+
+        &.out {
+            @include edgeTransform(translateX(100%));
+        }
+
+        &:nth-last-child(6) {
+            @include edgeTransform(scale(.5) translateX(-80%));
+        }
+
+        &:nth-last-child(5) {
+            @include edgeTransform(scale(.5) translateX(-70%));
+        }
+
+        &:nth-last-child(4) {
+            @include edgeTransform(scale(.5) translateX(-65%));
+        }
+
+        &:nth-last-child(3) {
+            @include edgeTransform(scale(.577) translateX(-60%));
+        }
+
+        &:nth-last-child(2) {
+            @include edgeTransform(scale(.74) translateX(-15%));
+        }
+
+        &:last-child{
+            @include edgeTransform(translateX(20%));
+        }
+
+        &:not(:last-of-type) {
+            cursor: pointer;
+        }
+
+        &:not(:last-of-type):not(.active):hover {
+            margin-left: -10px !important;
+        }
+    }
+
+    .no-touch &.edge-bundle-animation {
+        img {
+            visibility: hidden;
+        }
+
+        &.edge-shuffled-right.edge-appeared {
+            @include keyframes(edgeCardAppearFromRight) {
+                0% {
+                    @include edgeTransform(translate3d(100%,0,0));
+                    opacity:0;
+                    visibility: visible;
+                }
+
+                30% {
+                    opacity:1;
+                    visibility: visible;
+                }
+
+                100% {
+                    visibility: visible;
+                    @include edgeTransform(translate3d(0,0,0));
+                }
+            }
+
+            img {
+                @include edgeAnimation(edgeCardAppearFromRight 1s cubic-bezier(.19,1,.22,1) forwards);
+            }
+
+            .card {
+                @for $i from 1 through 8 {
+                    &:nth-child(#{$i}) {
+                        img:not(.edge-animation-done) {
+                            -webkit-animation-delay: $i * .2s;
+                            animation-delay: $i * .2s;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.edge-shuffled-left.edge-appeared {
+            @include keyframes(edgeCardAppearFromLeft) {
+                0% {
+                    visibility: visible;
+                    @include edgeTransform(translate3d(-100%,0,0));
+                    opacity:0;
+                }
+
+                30% {
+                    visibility: visible;
+                    opacity:1;
+                }
+
+                100% {
+                    visibility: visible;
+                    @include edgeTransform(translate3d(0,0,0));
+                }
+            }
+
+            img {
+                @include edgeAnimation(edgeCardAppearFromLeft 1s cubic-bezier(.19,1,.22,1) forwards);
+            }
+
+            .card {
+                @for $i from 1 through 8 {
+                    &:nth-child(#{$i}) {
+                        img:not(.edge-animation-done) {
+                            -webkit-animation-delay: $i * .2s;
+                            animation-delay: $i * .2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

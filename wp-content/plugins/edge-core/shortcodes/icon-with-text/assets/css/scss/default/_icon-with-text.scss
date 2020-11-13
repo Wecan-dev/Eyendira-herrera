@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+
+.edge-iwt {
+	@include edgeRelativeHolderLayout();
+
+
+	.edge-iwt-icon {
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		.edge-icon-shortcode {
+			line-height: 1;
+			
+			&.edge-circle,
+			&.edge-square {
+				line-height: 2;
+			}
+		}
+	}
+	
+	.edge-iwt-title {
+		margin: 0;
+		line-height: 40px;
+		letter-spacing: 0.1em;
+		padding-top: 2px;
+		font-family: $heading-font;
+		font-weight: 400;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			color: currentColor;
+		}
+	}
+	
+	.edge-iwt-title-text {
+		display: block;
+	}
+	
+	.edge-iwt-text {
+		margin: 15px 0 0;
+		color: $default-text-color;
+	}
+	
+	&.edge-iwt-icon-left {
+		width: auto;
+		
+		.edge-iwt-icon,
+		.edge-iwt-content {
+			display: table-cell;
+			vertical-align: top;
+		}
+		
+		.edge-iwt-icon {
+			position: relative;
+			top: 13px;
+			right: 12px;
+
+			.edge-icon-shortcode {
+				font-size: 2.5em;
+				color: $default-text-color;
+			}
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.edge-iwt-content {
+			padding: 0 0 0 13px;
+		}
+	}
+	
+	&.edge-iwt-icon-left-from-title {
+		
+		.edge-iwt-icon,
+		.edge-iwt-title-text {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		.edge-iwt-icon {
+			
+			.edge-icon-element {
+				@include edgeTransition(none);
+			}
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.edge-iwt-title-text {
+			padding: 0 0 0 17px;
+		}
+
+		.edge-iwt-text{
+			margin-top: 2px;
+		}
+	}
+	
+	&.edge-iwt-icon-top {
+		text-align: center;
+		
+		.edge-iwt-content {
+			padding: 17px 35px 0 22px;
+		}
+	}
+}
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */

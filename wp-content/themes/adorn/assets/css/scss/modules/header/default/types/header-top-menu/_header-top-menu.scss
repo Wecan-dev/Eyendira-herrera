@@ -1,0 +1,52 @@
+.edge-header-top-menu {
+    .edge-page-header {
+        .edge-logo-area {
+            height: 80px;
+            overflow: visible;
+	        margin-top: 70px;
+	        z-index: 99;
+
+            .edge-logo-wrapper a {
+                max-height: 72px; //80*0.9
+            }
+
+            box-sizing: border-box;
+        }
+
+        .edge-menu-area {
+            position: fixed;
+	        left: 0;
+	        top: 0;
+	        width: 100%;
+	        height: 70px;
+	        z-index: 100;
+
+            box-sizing: border-box;
+
+            .edge-vertical-align-containers {
+                .edge-position-left-inner {
+                    height: 100%;
+                }
+            }
+
+        }
+
+        .edge-page-header .edge-sticky-header {
+            .edge-position-left-inner {
+                height: auto;
+            }
+
+            .edge-position-right-inner {
+                height: 100%;
+            }
+        }
+    }
+}
+.admin-bar.edge-header-top-menu {
+	.edge-page-header {
+
+		.edge-menu-area {
+			top: 32px;
+		}
+	}
+}

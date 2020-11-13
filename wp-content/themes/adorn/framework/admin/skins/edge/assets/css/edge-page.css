@@ -1,0 +1,4 @@
+/* line 4, scss/edge-page.scss */
+.edge-page a:focus, .edge-page a:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,934 @@
+@import 'variables';
+@import 'mixins';
+
+/* ==========================================================================
+   #Comments styles - start
+   ========================================================================== */
+
+.edge-comment-holder {
+    @include edgeRelativeHolderLayout();
+
+    &.edge-comment-holder-no-comments {
+        padding-bottom: 0;
+        .edge-comment-holder-inner {
+            padding: 0;
+        }
+    }
+
+    .edge-comment-holder-inner {
+        padding: 41px 0 20px;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 60px;
+    }
+	
+	.edge-comment {
+		
+		&.edge-pingback-comment {
+			
+			.edge-comment-text {
+				padding: 0;
+			}
+		}
+	}
+
+    .edge-comment-list {
+        list-style: none;
+        position: relative;
+        z-index: 150;
+        padding: 17px 0 45px;
+        margin: 0;
+
+        li {
+            @include edgeRelativeHolderLayout();
+            margin: 25px 0 0;
+            padding: 29px 0 0;
+        }
+
+        > li:first-child {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .children {
+            padding: 0 0 0 112px;
+        }
+    }
+
+    .edge-comments-title {
+        margin-bottom: 28px;
+        margin-top: 28px;
+        font-family: $heading-font;
+
+        h3 {
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        > * {
+            margin: 0;
+        }
+    }
+
+    .edge-comment-image {
+        position: relative;
+        display: block;
+        top: 10px;
+        left: 0;
+        width: 82px;
+        height: 82px;
+        float: left;
+
+        img {
+            display: block;
+            border-radius: 4em;
+        }
+    }
+
+    .edge-comment-text {
+        padding: 0 0 0 112px;
+        min-height: 82px;
+
+        .edge-comment-info {
+            @include edgeRelativeHolderLayout();
+            margin: 6px 0 1px;
+        }
+
+        .replay,
+        .comment-reply-link,
+        .comment-edit-link {
+            float: left;
+            font-size: 12px;
+            color: #323232;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            font-family: $heading-font;
+
+            &:hover {
+                color: $default-heading-color;
+            }
+        }
+        
+        .comment-edit-link{
+            float: right;
+            padding-left: 15px;
+        }
+
+        .comment-reply-link {
+            float: right;
+        }
+
+        .edge-comment-name {
+            float: left;
+            margin: 0;
+            text-transform: uppercase;
+            font-family: $heading-font;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+
+            span {
+                color: #cacaca;
+                font-size: 12px;
+                letter-spacing: 0.1em;
+                padding-left: 27px;
+            }
+        }
+
+        .edge-comment-date {
+            float: left;
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .edge-text-holder p {
+            margin: 7px 0;
+            color: $default-text-color;
+            font-size: 16px;
+        }
+
+        .comment-respond {
+            margin: 20px 0;
+
+            .comment-reply-title {
+                margin: 0 0 10px;
+                font-size: 14px;
+            }
+
+            .logged-in-as {
+                margin: 0 0 8px;
+            }
+        }
+
+        #cancel-comment-reply-link {
+            margin-left: 10px;
+            font-size: 12px;
+            color: $first-main-color;
+            font-family: $heading-font;
+
+            &:hover {
+                color: $default-heading-color;
+            }
+        }
+    
+        ul, ol {
+        
+            li {
+                display: list-item;
+            }
+        }
+    
+        li {
+            margin: 0 !important;
+            padding: 0 !important;
+            border: 0 !important;
+        }
+    }
+}
+
+.edge-comment-form {
+    padding: 0;
+    clear: both;
+    box-sizing: border-box;
+    
+    .edge-comment-form-inner {
+        padding: 77px 0 78px;
+    }
+    
+    .comment-reply-title {
+        margin: 0 0 32px;
+        font-family: $heading-font;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+    }
+    
+    .logged-in-as {
+        margin: 0 0 8px;
+    }
+}
+
+@include laptop-landscape-medium {
+
+    .edge-comment-holder {
+
+        .edge-comment-list {
+
+            .children {
+                padding: 0 0 0 50px;
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+
+    .edge-comment-holder {
+
+        .edge-comment-list {
+
+            .children {
+                padding: 0 0 0 30px;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+
+    .edge-comment-holder {
+	    
+        .edge-comment-list {
+	        
+            .children {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+	
+    .edge-comment-holder {
+	    
+        .edge-comment-list {
+	        
+            .children {
+                padding: 0;
+            }
+        }
+
+        .edge-comment-image {
+            float: none;
+        }
+
+        .edge-comment-text {
+            padding: 40px 0 0;
+	        
+            .edge-comment-date,
+            .edge-comment-name {
+                float: none;
+            }
+	        
+            .replay,
+            .comment-reply-link,
+            .comment-edit-link {
+                float: none;
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+}
+
+@include phone-portrait {
+	
+    .edge-comment-holder {
+	    
+        .edge-comment-list {
+	        
+            .children {
+                padding: 0;
+            }
+        }
+
+        .edge-comment-image {
+            float: none;
+        }
+
+        .edge-comment-text {
+            padding: 20px 0 0;
+            min-height: inherit;
+        }
+    }
+}
+
+/* ==========================================================================
+   #Comments styles - end
+   ========================================================================== */
+
+%input-style {
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 16px 24px 15px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: inherit;
+    color: $default-heading-color;
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    @include edgeTransition(border-color 0.2s ease-in-out);
+
+    &:focus {
+        color: $default-heading-color;
+        border-color: #d3d3d3;
+        background-color: #fafafa;
+    }
+    
+    @include edgePlaceholder {
+        color: $default-text-color;
+    }
+}
+
+#respond textarea,
+#respond input[type='text'],
+#respond input[type="email"],
+.post-password-form input[type='password'] {
+    @extend %input-style;
+    margin-top: 4px;
+    padding: 3px 12px;
+    line-height: 47px;
+    font-family: $heading-font;
+}
+
+.post-password-form input[type='password'] {
+    width: 50%;
+}
+
+#respond textarea {
+    display: block;
+    padding: 5px 12px;
+    height: 180px;
+    line-height: 2em;
+}
+
+p.form-submit {
+    margin: 0;
+    margin-top: 7px;
+    text-align: right;
+}
+
+#submit_comment,
+.post-password-form input[type='submit'] {
+    @include edgeButtonDefaultStyle();
+    @include edgeButtonMediumParams();
+    @include edgeButtonSolidColor();
+    padding: 1px 60px;
+    cursor: pointer;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    &:hover {
+        @include edgeButtonSolidHoverColor();
+    }
+}
+
+.post-password-form input[type='submit'] {
+    height: 65px;
+}
+
+div.edge-newsletter {
+    text-align: center;
+    position: relative;
+    .wpcf7-not-valid-tip {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .wpcf7-form-control {
+        &.wpcf7-text {
+            margin: 0 0 15px;
+            padding: 20px 200px 18px 23px;
+            float: left;
+            height: 59px;
+        }
+    }
+}
+
+div.edge-newsletter {
+    .wpcf7-form-control {
+        &.wpcf7-submit {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 59px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            cursor:pointer;
+            @include edgeTransition(color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out);
+
+            &:hover {
+                @include edgeButtonSolidHoverColor();
+            }
+        }
+    }
+}
+
+.wpcf7-form-control.wpcf7-date,
+.wpcf7-form-control.wpcf7-number,
+.wpcf7-form-control.wpcf7-quiz,
+.wpcf7-form-control.wpcf7-select,
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-textarea{
+    padding: 10px 13px;
+}
+
+.contact {
+    margin-top: 5px;
+
+    input.wpcf7-form-control.wpcf7-submit{
+        float: right;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}
+
+div.edge-newsletter-form{
+    label{
+        font-family: $heading-font;
+        font-size: 30px;
+        font-weight: 400;
+        color: $first-main-color;
+        letter-spacing: 2px;
+        display: block;
+        margin-bottom: 28px;
+        text-transform: uppercase;
+    }
+    input.wpcf7-form-control{
+        &.wpcf7-email{
+            width: calc(100% - 58px);
+            float: left;
+            padding: 11px 13px;
+            margin: 0 10px 0 0;
+            border-color: $additional-border-color;
+            font-size: 16px;
+            line-height: 21px;
+            letter-spacing: 0;
+            background-color: $default-background-color;
+            box-sizing: border-box;
+        }
+
+        &.wpcf7-submit{
+            padding: 0;
+            line-height: 1em;
+            font-family: "linea-basic-10";
+            font-size: 22px;
+            height: 45px;
+            width: 48px;
+            float: left;
+        }
+    }
+}
+
+div.edge-newsletter-popup{
+    label{
+        font-family: $heading-font;
+        font-size: 30px;
+        font-weight: 400;
+        color: $first-main-color;
+        letter-spacing: 2px;
+        display: block;
+        margin-bottom: 28px;
+        text-transform: uppercase;
+    }
+    div.wpcf7-response-output{
+        margin: 5px 0;
+    }
+    input.wpcf7-form-control{
+        &.wpcf7-email{
+            width: calc(100% - 48px);
+            float: left;
+            padding: 11px 13px;
+            margin: 0 0 0 10px;
+            border-color: #f6f6f6;
+            font-size: 16px;
+            line-height: 21px;
+            letter-spacing: 0;
+            background-color: #f6f6f6;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+
+        &.wpcf7-submit{
+            padding: 0;
+            line-height: 1em;
+            font-family: "linea-basic-10";
+            font-size: 22px;
+            height: 45px;
+            width: 48px;
+            float: left;
+            border-radius: 2px;
+        }
+    }
+}
+
+
+div.edge-newsletter-form,
+.edge-newsletter-popup{
+    input.wpcf7-form-control {
+        &.wpcf7-email{
+            @include ipad-landscape {
+                width: 80%;
+                margin-right: 10px;
+            }
+            @include phone-landscape {
+                width: 78%;
+            }
+            @include phone-portrait {
+                width: 100%;
+            }
+        }
+    }
+}
+
+div.edge-newsletter-form,
+.edge-newsletter-popup{
+    label {
+        @include ipad-landscape {
+            font-size: 20px;
+        }
+        @include phone-portrait {
+            text-align: center;
+        }
+    }
+}
+
+@include phone-portrait {
+    .edge-newsletter-form,
+    .edge-newsletter-popup{
+        .wpcf7-form-control {
+
+            &.wpcf7-submit {
+                position: relative;
+            }
+        }
+
+        span.ajax-loader {
+            display: block;
+            margin: 10px auto 0;
+        }
+    }
+}
+
+%cf7-input-style {
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 20px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: inherit;
+    color: $default-text-color;
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+
+    &:focus {
+        color: $default-heading-color;
+        background-color: #fafafa;
+    }
+
+	@include edgePlaceholder {
+		color: $default-text-color;
+	}
+}
+
+.wpcf7-form-control {
+    &.wpcf7-text,
+    &.wpcf7-number,
+    &.wpcf7-date,
+    &.wpcf7-textarea,
+    &.wpcf7-select,
+    &.wpcf7-quiz {
+        @extend %cf7-input-style;
+        margin-top: 2px;
+        font-family: $heading-font;
+
+        footer & {
+            margin: 0;
+        }
+    }
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    @include edgeButtonDefaultStyle();
+    @include edgeButtonMediumParams();
+    @include edgeButtonSolidColor();
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 3px 53px;
+    font-size: 11px;
+
+    &:hover {
+        @include edgeButtonSolidHoverColor();
+    }
+}
+
+.wpcf7-form {
+    p {
+        margin: 0;
+    }
+    .wpcf7-form-control-wrap {
+        display: block;
+    }
+    .wpcf7-not-valid-tip{
+        position: absolute;
+        top:40px;
+    }
+}
+
+.wpcf7-form textarea {
+    vertical-align: middle;
+    height: 179px;
+}
+
+.edge-two-columns-form-without-space {
+
+    .wpcf7-form .ajax-loader {
+        display: none;
+    }
+}
+/* ==========================================================================
+   #Comments styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Global Owl Slider - begin
+   ========================================================================== */
+.edge-owl-slider{
+    visibility: hidden;
+
+    .owl-stage-outer {
+        z-index: 1;
+    }
+
+    &.edge-slider-has-both-nav {
+
+        .owl-nav {
+
+            .owl-prev,
+            .owl-next {
+                $pos: calc(-50% - 19px); // 19 is is half height of pagination control
+                @include edgeTransform(translateY($pos));
+            }
+        }
+    }
+
+    .owl-nav {
+
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            z-index: 3;
+            @include edgeTransform(translateY(-50%));
+
+            &:hover {
+
+                .edge-prev-icon,
+                .edge-next-icon {
+                    color: rgba($default-heading-color, .8);
+                }
+            }
+        }
+
+        .owl-prev {
+            left: 30px;
+        }
+
+        .owl-next {
+            right: 30px;
+        }
+
+        .edge-prev-icon,
+        .edge-next-icon {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            color: $default-heading-color;
+            line-height: 1;
+            @include edgeTransition(color .2s ease-out);
+
+            .edge-icon-arrow {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 46px;
+                line-height: inherit;
+
+                &:before {
+                    display: block;
+                    line-height: inherit;
+                }
+            }
+        }
+    }
+
+    .owl-dots {
+        text-align: center;
+        margin: 16px 0 0;
+
+        .owl-dot {
+            display: inline-block;
+            vertical-align: middle;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                width: 12px;
+                height: 12px;
+                margin: 0 6px;
+                border-radius: 3em;
+                background-color: transparent;
+                border: 2px solid rgba($default-heading-color, .5);
+                @include edgeTransition(background-color .2s ease-out, border .2s ease-out);
+                box-sizing: border-box;
+            }
+
+            &:hover,
+            &.active {
+
+                span {
+                    background-color: $default-heading-color;
+                    border-color: $default-heading-color;
+                }
+            }
+        }
+    }
+
+    .owl-carousel .owl-item img {
+        -webkit-transform: translateZ(0); //chrome text cut off fix
+    }
+}
+/* ==========================================================================
+   #Global Owl Slider - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #404 styles - start
+   ========================================================================== */
+
+.edge-404-page {
+
+    &.edge-wrapper {
+        padding: 0 !important;
+    }
+
+    .edge-content-inner {
+        position: relative;
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    .edge-page-not-found {
+        position: relative;
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+        padding: 0 20%;
+        text-align: center;
+        height: 55vh;
+
+        @media screen and (max-width: 1000px) {
+            height: calc(100vh - 100px);
+        }
+
+
+
+        .edge-icon-shortcode {
+            font-size: 30px;
+            color: $first-main-color;
+            margin-bottom: 10px;
+        }
+
+        .edge-page-not-found-title {
+            margin: 0;
+            letter-spacing: 0.1em;
+            padding-top: 10px;
+        }
+
+	    .edge-page-not-found-subtitle {
+            margin: 35px 0 0;
+        }
+
+	    .edge-page-not-found-text {
+            font-size: 15px;
+            color: $default-text-color;
+            width: 40%;
+            margin: 0 auto;
+            line-height: 27px;
+            margin-top: 20px;
+	    }
+
+        .edge-btn {
+            margin: 37px 0 5px;
+            letter-spacing: 0.2em;
+            padding: 2px 34px;
+            font-family: $heading-font;
+            text-transform: uppercase;
+        }
+    }
+
+    @include ipad-portrait {
+
+        .edge-page-not-found {
+            padding: 0 30px;
+        }
+    }
+}
+
+/* ==========================================================================
+   #404 styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Back to Top styles - start
+   ========================================================================== */
+#edge-back-to-top {
+    position: fixed;
+    right: -21px;
+    bottom: 90px;
+    margin: 0;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    @include edgeTransform(rotate(270deg));
+
+    &.off {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &.on {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    > span {
+        position: relative;
+        display: block;
+        line-height: 18px;
+        font-size: 15px;
+        text-align: center;
+        color: #000;
+        overflow: hidden;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        @include edgeTransition(color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out);
+        font-family: $heading-font;
+        border-bottom:1px solid transparent;
+
+        i {
+            @include edgeTransition(.15s ease .05s);
+        }
+
+        &:after {
+            content: '\e87a';
+            font-family: 'Linearicons-Free';
+            position: relative;
+            z-index: 1;
+            top: 0;
+            left: 2px;
+            @include edgeTransform(translateX(-50%));
+            height: 0;
+            width: 0;
+            @include edgeTransition(all 0.25s ease-in-out);
+        }
+
+        &:hover {
+            border-bottom:1px solid #959595;
+        }
+    }
+
+    span span {
+        display: block;
+        line-height: inherit;
+    }
+}
+/* ==========================================================================
+   #Back to Top styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Self Hosted Video styles - begin
+   ========================================================================== */
+.edge-self-hosted-video-holder {
+    .edge-video-wrap {
+        .mejs-container,
+        .mejs-overlay-play {
+            height: 100% !important; /*!important because of the inline style*/
+            width: 100% !important; /*!important because of the inline style*/
+        }
+    }
+}
+/* ==========================================================================
+   #Self Hosted Video styles - end
+   ========================================================================== */

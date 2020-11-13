@@ -1,0 +1,29 @@
+/* ==========================================================================
+   WooCommerce Onsale and Out of Stock styles - begin
+   ========================================================================== */
+
+.woocommerce {
+    
+    .edge-onsale,
+    .edge-out-of-stock,
+    .edge-new-product {
+        position: absolute;
+        display: inline-block;
+        top: 4%;
+        right: 12%;
+        width: auto;
+        color: $additional-color;
+        font-size: 16px;
+        font-family: $heading-font;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: center;
+        z-index: 100;
+        @include edgeTransform(translateZ(0));
+        box-sizing: border-box;
+    }
+}
+
+/* ==========================================================================
+   WooCommerce Onsale and Out of Stock styles - end
+   ========================================================================== */

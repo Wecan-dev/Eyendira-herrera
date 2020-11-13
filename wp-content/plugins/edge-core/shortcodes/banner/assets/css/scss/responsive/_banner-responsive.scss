@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Banner shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-portrait {
+
+    .edge-banner-holder {
+
+        .edge-banner-text-inner {
+            .edge-banner-title{
+                font-size: 25px;
+                line-height: 1em;
+            }
+            .edge-banner-subtitle{
+                font-size: 13px;
+                line-height: 1em;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Banner shortcode responsive style - end
+   ========================================================================== */

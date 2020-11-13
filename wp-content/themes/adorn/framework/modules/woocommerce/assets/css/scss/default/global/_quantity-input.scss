@@ -1,0 +1,128 @@
+/* ==========================================================================
+   WooCommerce Quantity Inputs styles - begin
+   ========================================================================== */
+
+.woocommerce-page .edge-content,
+div.woocommerce {
+
+    .edge-quantity-buttons {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        border: 1px solid $additional-border-color;
+        box-sizing: border-box;
+        line-height: 45px;
+        height: 48px;
+        padding: 0 10px 0 16px;
+        margin: 0px -4px 0 0;
+        width: 168px;
+        font-family: $heading-font;
+
+        .edge-quantity-label,
+        .edge-quantity-input,
+        .edge-quantity-minus,
+        .edge-quantity-plus {
+            display: inline-block;
+            vertical-align: middle;
+            color: $default-text-color;
+            background-color: transparent;
+            border: 0;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 17px;
+            float: left;
+            line-height: 45px;
+        }
+
+        .edge-quantity-minus{
+            &.arrow_triangle-left{
+                &:before{
+                    content: "\34";
+                }
+            }
+        }
+        .edge-quantity-plus{
+            &.arrow_triangle-right{
+                &:before{
+                    content: "\35";
+                }
+            }
+        }
+
+        .edge-quantity-label{
+            margin-right: 20px;
+            font-size: 14px;
+            color: $default-text-color ;
+        }
+
+        .edge-quantity-input {
+            position: relative;
+            width: 27px;
+            padding: 0;
+            margin: 0;
+            font-family: inherit;
+            outline: 0;
+        }
+
+        .edge-quantity-minus,
+        .edge-quantity-plus {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            height: 22px;
+            border-left: 0;
+            cursor: pointer;
+            @include edgeTransition(color .15s ease-in-out);
+            font-size: 18px;
+
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+}
+
+.woocommerce-page .edge-content,
+div.woocommerce {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    textarea {
+        position: relative;
+        width: 100%;
+        margin: 0 0 14px;
+        padding: 15px 20px;
+        font-family: inherit;
+        font-size: 13px;
+        font-weight: inherit;
+        color: $default-text-color;
+        background-color: #fff;
+        border: 1px solid $additional-border-color;
+        outline: 0;
+        -webkit-appearance: none;
+        box-sizing: border-box;
+        border-radius: 0;
+    
+        @include edgePlaceholder {
+            color: $default-text-color;
+        }
+
+        &:focus{
+            background: #fafafa;
+        }
+    }
+
+    label{
+        color: $dark-color;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 4px;
+        font-family: $heading-font;
+    }
+}
+/* ==========================================================================
+   WooCommerce Quantity Inputs styles - end
+   ========================================================================== */

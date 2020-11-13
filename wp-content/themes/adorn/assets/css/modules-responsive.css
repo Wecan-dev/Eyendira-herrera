@@ -1,0 +1,2834 @@
+/*------------------------------------------------------------------
+ * This is main responsive css file for theme. It is broken into following sections:
+ * 1. Global responsive styles
+ * 2. Header responsive styles
+ * 3. Footer responsive styles
+ * 4. Title area responsive styles
+ * 5. Search functionality responsive styles
+ * 6. Blog responsive styles
+ * 7. Widgets responsive styles
+ * 8. Shortcodes responsive styles
+ * 9. Custom Post Types responsive styles
+-------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. Global responsive styles
+   ========================================================================== */
+
+/* Button mixins - start */
+
+/* Button mixins - end */
+
+@media only screen and (max-width: 1024px) {
+  .edge-content {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-grid,
+  .edge-container-inner,
+  .edge-row-grid-section,
+  .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-grid,
+  .edge-container-inner,
+  .edge-row-grid-section,
+  .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-grid,
+  .edge-container-inner,
+  .edge-row-grid-section,
+  .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-grid,
+  .edge-container-inner,
+  .edge-row-grid-section,
+  .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-grid,
+  .edge-container-inner,
+  .edge-row-grid-section,
+  .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-grid,
+  .edge-container-inner,
+  .edge-row-grid-section,
+  .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .edge-grid,
+  .edge-container-inner,
+  .edge-row-grid-section,
+  .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section,
+  .edge-header-vertical .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section,
+  .edge-header-vertical .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section,
+  .edge-header-vertical .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section,
+  .edge-header-vertical .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section,
+  .edge-header-vertical .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section,
+  .edge-header-vertical .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section,
+  .edge-header-vertical .edge-slider .carousel-inner .edge-slider-content-outer {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .edge-header-vertical footer .edge-grid {
+    width: 850px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-header-vertical footer .edge-grid {
+    width: 668px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .edge-header-vertical.edge-grid-1300 footer .edge-grid,
+  .edge-header-vertical.edge-grid-1200 footer .edge-grid {
+    width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-boxed .edge-wrapper .edge-wrapper-inner,
+  .edge-boxed .edge-wrapper .edge-footer-inner {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-boxed .edge-wrapper .edge-wrapper-inner,
+  .edge-boxed .edge-wrapper .edge-footer-inner {
+    width: 818px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-boxed .edge-wrapper .edge-wrapper-inner,
+  .edge-boxed .edge-wrapper .edge-footer-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-boxed .edge-wrapper .edge-wrapper-inner,
+  .edge-boxed .edge-wrapper .edge-footer-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-boxed .edge-wrapper .edge-wrapper-inner,
+  .edge-boxed .edge-wrapper .edge-footer-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .edge-boxed .edge-wrapper .edge-wrapper-inner,
+  .edge-boxed .edge-wrapper .edge-footer-inner {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  #edge-back-to-top {
+    right: -25px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #edge-back-to-top {
+    right: -16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #edge-back-to-top {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   2. Header responsive styles
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-top-bar,
+  .edge-top-bar-background {
+    display: none;
+  }
+
+  .edge-page-header {
+    display: none;
+  }
+
+  .edge-header-vertical .edge-vertical-menu-area {
+    display: none;
+  }
+
+  .edge-header-vertical .edge-content,
+  .edge-header-vertical footer {
+    padding-left: 0;
+  }
+
+  .edge-mobile-header {
+    display: block;
+  }
+
+  .edge-header-vertical-closed .edge-vertical-menu-area,
+  .edge-header-vertical-closed .edge-vertical-area-bottom-logo {
+    display: none;
+  }
+
+  .edge-header-vertical-closed .edge-content {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-mobile-header .edge-mobile-side-area .edge-close-mobile-side-area-holder {
+    right: 135px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-mobile-header .edge-mobile-side-area .edge-close-mobile-side-area-holder {
+    right: 95px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-mobile-header .edge-mobile-side-area .edge-close-mobile-side-area-holder {
+    right: 135px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-mobile-header .edge-mobile-side-area .edge-close-mobile-side-area-holder {
+    right: 45px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-fullscreen-search-holder .edge-search-submit {
+    float: left !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-drop-down .wide .second > .inner > ul {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-drop-down .wide .second > .inner > ul {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-boxed .edge-page-header .edge-sticky-header,
+  .edge-boxed .edge-page-header .edge-fixed-wrapper.fixed {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 818px;
+    left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 96%;
+  }
+}
+
+/* ==========================================================================
+   3. Footer responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner .edge-responsive-widget-padding {
+    padding-left: 0 !important;
+    margin-top: -8px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-page-footer .edge-footer-bottom-holder .edge-grid-row {
+    text-align: center;
+  }
+
+  .edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner .edge-responsive-widget-padding {
+    padding-left: 15px !important;
+    margin-top: 0;
+  }
+
+  .edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner .edge-grid-col-6:last-child {
+    text-align: left;
+  }
+
+  .edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner .widget.widget_nav_menu ul li a:first-child {
+    padding-left: 0;
+  }
+
+  .edge-page-footer .edge-grid-col-4 {
+    width: 33.33333333333333%;
+    float: left;
+  }
+
+  .edge-page-footer .edge-grid-col-4:first-child {
+    text-align: left;
+  }
+
+  .edge-page-footer .edge-grid-col-4:last-child {
+    text-align: right;
+  }
+
+  .edge-page-footer .edge-column-content.edge-grid-col-3 {
+    width: 50%;
+    float: left;
+  }
+
+  .edge-page-footer .edge-column-content.edge-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+
+  .edge-page-footer .edge-column-content.edge-grid-col-4 {
+    width: 33.33333333333333%;
+    float: left;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-page-footer .edge-column-content.edge-grid-col-3 {
+    width: 50%;
+    float: left;
+  }
+
+  .edge-page-footer .edge-column-content.edge-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+
+  .edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner .edge-grid-col-4 {
+    width: 100%;
+    float: none;
+  }
+
+  .edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner .edge-grid-col-4:first-child,
+  .edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner .edge-grid-col-4:last-child {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-page-footer .edge-column-content.edge-grid-col-3 {
+    width: 100%;
+    float: none;
+  }
+
+  .edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner .edge-responsive-widget-padding {
+    padding-left: 0 !important;
+    margin-top: -2px;
+  }
+}
+
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   4. Title area responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-title.edge-has-background {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .edge-title.edge-title-image-not-responsive .edge-title-image {
+    display: block;
+  }
+
+  .edge-title .edge-title-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100% !important;
+    padding: 0 !important;
+  }
+
+  .edge-title .edge-title-holder .edge-container {
+    display: block;
+    height: 100%;
+  }
+
+  .edge-title .edge-title-holder .edge-container-inner {
+    display: table;
+    height: 100%;
+  }
+
+  .edge-title .edge-title-holder .edge-title-subtitle-holder {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-title.edge-standard-type .edge-breadcrumbs-holder {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-title .edge-title-holder .edge-subtitle {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   5. Search functionality responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+# Search template responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .search .edge-content .edge-content-inner > .edge-container > .edge-container-inner {
+    padding: 40px 0 0;
+  }
+
+  .edge-search-page-holder article .edge-post-image {
+    width: 82px;
+  }
+
+  .edge-search-page-holder article .edge-post-title-area {
+    padding: 0 0 0 108px;
+    min-height: 82px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-search-page-holder article .edge-post-image {
+    width: 72px;
+  }
+
+  .edge-search-page-holder article .edge-post-title-area {
+    padding: 0 0 0 92px;
+    min-height: 72px;
+  }
+}
+
+/* ==========================================================================
+# Search template responsive style - end
+========================================================================== */
+
+/* ==========================================================================
+   6. Blog responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog Responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 680px) {
+  .edge-blog-holder {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-blog-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog Responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog Masonry general style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns .edge-blog-masonry-grid-sizer {
+    width: 25%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-post-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns .edge-blog-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article.edge-post-size-large-width-height {
+    width: 66.66667%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns .edge-blog-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-post-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns .edge-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article.edge-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns .edge-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article.edge-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns .edge-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-post-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-two-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-two-columns .edge-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-two-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-two-columns article.edge-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns .edge-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article.edge-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns .edge-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article.edge-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns .edge-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-post-size-large-width,
+  .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-post-size-large-width-height {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog Masonry general style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .edge-related-posts-holder .edge-related-post {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-related-posts-holder .edge-related-post {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-grid-sizer {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-four-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-four-columns .edge-bl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-four-columns .edge-bl-item:nth-child(3n+1),
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-four-columns .edge-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-five-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-five-columns .edge-bl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-five-columns .edge-bl-item:nth-child(3n+1),
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-five-columns .edge-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-four-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-four-columns .edge-bl-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-grid-sizer {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-three-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-three-columns .edge-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-three-columns .edge-bl-item:nth-child(2n+1),
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-three-columns .edge-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-four-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-four-columns .edge-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-four-columns .edge-bl-item:nth-child(2n+1),
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-four-columns .edge-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-five-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-five-columns .edge-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-five-columns .edge-bl-item:nth-child(2n+1),
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-five-columns .edge-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-three-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-three-columns .edge-bl-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-four-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-four-columns .edge-bl-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-grid-sizer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-blog-list-holder.edge-bl-standard .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-boxed .edge-bl-item {
+    width: 100% !important;
+  }
+
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-two-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-two-columns .edge-bl-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-three-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-three-columns .edge-bl-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-four-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-four-columns .edge-bl-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-item,
+  .edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-grid-sizer {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-blog-slider-holder .active .edge-blog-slider-item .edge-item-text-wrapper {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .edge-blog-holder.edge-blog-single article .edge-post-info-bottom .edge-post-info-bottom-left,
+  .edge-blog-holder.edge-blog-single article .edge-post-info-bottom .edge-post-info-bottom-right {
+    width: 100%;
+    float: none;
+  }
+
+  .edge-blog-holder.edge-blog-single article .edge-post-info-bottom .edge-post-info-bottom-right {
+    text-align: inherit;
+    margin: 10px 0 0;
+  }
+}
+
+/* ==========================================================================
+   7. Widgets responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   8. Social sidebar responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Social sidebar responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .edge-social-sidebar-holder {
+    left: -65px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .edge-social-sidebar-holder {
+    left: -56px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-social-sidebar-holder {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Social sidebar responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/modules-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* Button mixins - start */
+
+/* Button mixins - end */
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Banner shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .edge-banner-holder .edge-banner-text-inner .edge-banner-title {
+    font-size: 25px;
+    line-height: 1em;
+  }
+
+  .edge-banner-holder .edge-banner-text-inner .edge-banner-subtitle {
+    font-size: 13px;
+    line-height: 1em;
+  }
+}
+
+/* ==========================================================================
+   Banner shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .edge-btn.edge-btn-large,
+  .edge-btn.edge-btn-huge {
+    padding: 2px 48px;
+    font-size: 14px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .edge-call-to-action-holder .edge-grid {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-call-to-action-holder.edge-three-quarters-columns .edge-cta-text-holder,
+  .edge-call-to-action-holder.edge-four-fifths-columns .edge-cta-text-holder {
+    width: 66.66666666666667%;
+  }
+
+  .edge-call-to-action-holder.edge-three-quarters-columns .edge-cta-button-holder,
+  .edge-call-to-action-holder.edge-four-fifths-columns .edge-cta-button-holder {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-call-to-action-holder.edge-normal-layout .edge-cta-inner,
+  .edge-call-to-action-holder.edge-normal-layout .edge-cta-text-holder,
+  .edge-call-to-action-holder.edge-normal-layout .edge-cta-button-holder {
+    display: block;
+  }
+
+  .edge-call-to-action-holder.edge-normal-layout .edge-cta-button-holder {
+    margin: 10px 0 0;
+    text-align: initial;
+  }
+
+  .edge-call-to-action-holder.edge-two-halves-columns .edge-cta-text-holder,
+  .edge-call-to-action-holder.edge-two-halves-columns .edge-cta-button-holder,
+  .edge-call-to-action-holder.edge-two-thirds-columns .edge-cta-text-holder,
+  .edge-call-to-action-holder.edge-two-thirds-columns .edge-cta-button-holder,
+  .edge-call-to-action-holder.edge-three-quarters-columns .edge-cta-text-holder,
+  .edge-call-to-action-holder.edge-three-quarters-columns .edge-cta-button-holder,
+  .edge-call-to-action-holder.edge-four-fifths-columns .edge-cta-text-holder,
+  .edge-call-to-action-holder.edge-four-fifths-columns .edge-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .edge-cards-gallery-holder .fake_card {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-left .card {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-left .card.out {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(6) {
+    -webkit-transform: scale(0.3) translateX(84%);
+    -moz-transform: scale(0.3) translateX(84%);
+    transform: scale(0.3) translateX(84%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(5) {
+    -webkit-transform: scale(0.4) translateX(60%);
+    -moz-transform: scale(0.4) translateX(60%);
+    transform: scale(0.4) translateX(60%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(4) {
+    -webkit-transform: scale(0.5) translateX(39%);
+    -moz-transform: scale(0.5) translateX(39%);
+    transform: scale(0.5) translateX(39%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(3) {
+    -webkit-transform: scale(0.6) translateX(25%);
+    -moz-transform: scale(0.6) translateX(25%);
+    transform: scale(0.6) translateX(25%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-left .card:nth-last-child(2) {
+    -webkit-transform: scale(0.7) translateX(11.2%);
+    -moz-transform: scale(0.7) translateX(11.2%);
+    transform: scale(0.7) translateX(11.2%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-right .card {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-right .card.out {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(6) {
+    -webkit-transform: scale(0.3) translateX(-84%);
+    -moz-transform: scale(0.3) translateX(-84%);
+    transform: scale(0.3) translateX(-84%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(5) {
+    -webkit-transform: scale(0.4) translateX(-60%);
+    -moz-transform: scale(0.4) translateX(-60%);
+    transform: scale(0.4) translateX(-60%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(4) {
+    -webkit-transform: scale(0.5) translateX(-39%);
+    -moz-transform: scale(0.5) translateX(-39%);
+    transform: scale(0.5) translateX(-39%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(3) {
+    -webkit-transform: scale(0.6) translateX(-25%);
+    -moz-transform: scale(0.6) translateX(-25%);
+    transform: scale(0.6) translateX(-25%);
+  }
+
+  .edge-cards-gallery-holder.edge-shuffled-right .card:nth-last-child(2) {
+    -webkit-transform: scale(0.7) translateX(-11.2%);
+    -moz-transform: scale(0.7) translateX(-11.2%);
+    transform: scale(0.7) translateX(-11.2%);
+  }
+}
+
+/* ==========================================================================
+   Clients Boxes shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-clients-boxes-holder .edge-cb-inner {
+    margin: 0 -24px;
+  }
+
+  .edge-clients-boxes-holder .edge-cb-item {
+    padding: 0 24px;
+    margin: 0 0 25px;
+  }
+
+  .edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner {
+    margin: 0 0 24px;
+  }
+
+  .edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner:before {
+    right: -24px;
+  }
+
+  .edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner:after {
+    bottom: -24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-child(2n) .edge-cb-item-inner:before {
+    display: none;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-last-child(-n+2) {
+    margin: 0;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-last-child(-n+2) .edge-cb-item-inner {
+    margin: 0;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-last-child(-n+2) .edge-cb-item-inner:after {
+    display: none;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-child(2n) .edge-cb-item-inner:before {
+    display: none;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-last-child(-n+2) {
+    margin: 0;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-last-child(-n+2) .edge-cb-item-inner {
+    margin: 0;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-last-child(-n+2) .edge-cb-item-inner:after {
+    display: none;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-clients-boxes-holder.edge-cb-columns-three .edge-cb-item {
+    width: 100%;
+  }
+
+  .edge-clients-boxes-holder.edge-cb-columns-four .edge-cb-item {
+    width: 100%;
+  }
+
+  .edge-clients-boxes-holder .edge-cb-inner {
+    margin: 0;
+  }
+
+  .edge-clients-boxes-holder .edge-cb-item {
+    padding: 0;
+  }
+
+  .edge-clients-boxes-holder .edge-cb-item .edge-cb-item-inner:before {
+    display: none;
+  }
+
+  .edge-clients-boxes-holder .edge-cb-item:nth-last-child(-n+1) .edge-cb-item-inner:after {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Clients Boxes shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .edge-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-countdown .countdown-row.countdown-show4 .countdown-section,
+  .edge-countdown .countdown-row.countdown-show5 .countdown-section,
+  .edge-countdown .countdown-row.countdown-show6 .countdown-section,
+  .edge-countdown .countdown-row.countdown-show7 .countdown-section {
+    width: 33.33333333333333%;
+  }
+
+  .edge-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .edge-elements-holder.edge-responsive-mode-1280.edge-two-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-1280.edge-three-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-1280.edge-four-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-1280.edge-five-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-1280.edge-six-columns .edge-eh-item {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-elements-holder.edge-responsive-mode-1024.edge-two-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-1024.edge-three-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-1024.edge-four-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-1024.edge-five-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-1024.edge-six-columns .edge-eh-item {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-elements-holder.edge-responsive-mode-768.edge-two-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-768.edge-three-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-768.edge-four-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-768.edge-five-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-768.edge-six-columns .edge-eh-item {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .edge-elements-holder.edge-responsive-mode-600.edge-two-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-600.edge-three-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-600.edge-four-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-600.edge-five-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-600.edge-six-columns .edge-eh-item {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-elements-holder.edge-responsive-mode-480.edge-two-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-480.edge-three-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-480.edge-four-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-480.edge-five-columns .edge-eh-item,
+  .edge-elements-holder.edge-responsive-mode-480.edge-six-columns .edge-eh-item {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-elements-holder .edge-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-elements-holder.edge-responsive-mode-1280.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+    text-align: left;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-1280.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+    text-align: right;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-1280.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-elements-holder.edge-responsive-mode-1024.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+    text-align: left;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-1024.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+    text-align: right;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-1024.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-elements-holder.edge-responsive-mode-768.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+    text-align: left;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-768.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+    text-align: right;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-768.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-elements-holder.edge-responsive-mode-600.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+    text-align: left;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-600.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+    text-align: right;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-600.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-elements-holder.edge-responsive-mode-480.edge-one-column-alignment-left .edge-eh-item .edge-eh-item-content {
+    text-align: left;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-480.edge-one-column-alignment-right .edge-eh-item .edge-eh-item-content {
+    text-align: right;
+  }
+
+  .edge-elements-holder.edge-responsive-mode-480.edge-one-column-alignment-center .edge-eh-item .edge-eh-item-content {
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Frame Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .edge-frame-slider-holder .edge-fs-phone {
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-frame-slider-holder {
+    padding: 74px 0;
+  }
+
+  .edge-frame-slider-holder .edge-fs-phone {
+    height: 100%;
+    width: 72%;
+    background-size: 100% auto;
+  }
+
+  .edge-frame-slider-holder .edge-fs-slides img {
+    width: 66%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-frame-slider-holder {
+    padding: 57px 0 66px;
+  }
+
+  .edge-frame-slider-holder .edge-fs-phone {
+    width: 76%;
+  }
+}
+
+/* ==========================================================================
+   Frame Slider shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Icon With Text shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  .edge-iwt.edge-iwt-icon-left .edge-iwt-icon,
+  .edge-iwt.edge-iwt-icon-left .edge-iwt-content {
+    display: block;
+  }
+
+  .edge-iwt.edge-iwt-icon-left .edge-iwt-icon {
+    top: 0;
+    right: 0;
+    margin-bottom: 18px;
+  }
+
+  .edge-iwt.edge-iwt-icon-left .edge-iwt-content {
+    padding: 0;
+  }
+}
+
+/* ==========================================================================
+   Icon With Text shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image:nth-child(6n+1) {
+    clear: none;
+  }
+
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image:nth-child(5n+1) {
+    clear: none;
+  }
+
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image:nth-child(6n+1) {
+    clear: none;
+  }
+
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-4 .edge-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-4 .edge-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-2 .edge-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-3 .edge-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-image-gallery .owl-nav .owl-prev {
+    left: 20px;
+  }
+
+  .edge-image-gallery .owl-nav .owl-next {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-4 .edge-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-4 .edge-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-2 .edge-ig-image {
+    width: 100%;
+  }
+
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-3 .edge-ig-image {
+    width: 100%;
+  }
+
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-4 .edge-ig-image {
+    width: 100%;
+  }
+
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-5 .edge-ig-image {
+    width: 100%;
+  }
+
+  .edge-image-gallery .edge-ig-grid.edge-ig-columns-6 .edge-ig-image {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-split-scrolling-section .edge-image-slider-item {
+    background-image: none !important;
+  }
+
+  .edge-split-scrolling-section .edge-image-slider-item-inner.image {
+    display: block;
+  }
+
+  .edge-split-scrolling-section .edge-image-slider-item-inner.image img {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Item Showcase shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-item-showcase-holder .edge-is-image {
+    width: 100%;
+    float: none;
+    margin-bottom: 45px;
+  }
+
+  .edge-item-showcase-holder .edge-is-item-holder.edge-is-left-holder,
+  .edge-item-showcase-holder .edge-is-item-holder.edge-is-right-holder {
+    width: 45%;
+    padding: 0 15px;
+  }
+
+  .edge-item-showcase-holder .edge-is-item-holder.edge-is-left-holder {
+    float: left;
+  }
+
+  .edge-item-showcase-holder .edge-is-item-holder.edge-is-right-holder {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-item-showcase-holder .edge-is-item-holder.edge-is-left-holder,
+  .edge-item-showcase-holder .edge-is-item-holder.edge-is-right-holder {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .edge-item-showcase-holder .edge-is-item {
+    opacity: 1;
+    -webkit-transform: translateX(0) translateY(0) !important;
+    -moz-transform: translateX(0) translateY(0) !important;
+    transform: translateX(0) translateY(0) !important;
+  }
+
+  .edge-item-showcase-holder .edge-is-item.edge-is-left .edge-is-content,
+  .edge-item-showcase-holder .edge-is-item.edge-is-right .edge-is-content {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-item-showcase-holder .edge-is-item-holder.edge-is-left-holder .edge-is-item.edge-is-left:last-child .edge-item-inner {
+    padding-bottom: 77px;
+  }
+}
+
+/* ==========================================================================
+   Item Showcase shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+# Message responsive style - begin
+========================================================================== */
+
+/* Unique style for both types  - begin
+========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  .edge-message {
+    padding: 20px 15px;
+  }
+
+  .edge-message .edge-message-inner a.edge-close {
+    right: 7px;
+    top: 6px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .edge-message .edge-message-text {
+    line-height: normal;
+  }
+}
+
+/* Unique style for both types - end
+========================================================================== */
+
+/* Type with icon - begin
+========================================================================== */
+
+@media only screen and (max-width: 600px) {
+  .edge-message.edge-with-icon .edge-message-icon-holder {
+    padding: 0 15px;
+  }
+}
+
+/* Type with icon - end
+========================================================================== 
+/* ==========================================================================
+# Message responsive style - end
+========================================================================== */
+
+/* ==========================================================================
+   Mobile Slider responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item {
+    padding: 0 67px;
+  }
+
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder {
+    width: 130px;
+    height: 130px;
+    right: -50px;
+    top: -60px;
+  }
+
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item {
+    padding: 0 67px;
+  }
+
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder {
+    width: 90px;
+    height: 90px;
+    right: -50px;
+    top: -40px;
+  }
+
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item {
+    padding: 0 67px;
+  }
+
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder {
+    width: 110px;
+    height: 110px;
+    right: -40px;
+    top: -50px;
+  }
+
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item {
+    padding: 0 67px;
+  }
+
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder {
+    width: 100px;
+    height: 100px;
+    right: -40px;
+    top: -50px;
+  }
+
+  .edge-mobile-slider-holder .edge-ms-inner .edge-ms-item .edge-ms-images-holder .edge-ms-qr-holder img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* ==========================================================================
+   Mobile Slider responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Pricing Item shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .edge-price-item .edge-pi-inner .edge-pi-prices {
+    width: 45%;
+    text-align: right;
+  }
+
+  .edge-price-item .edge-pi-inner .edge-pi-content-holder {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-price-item .edge-pi-inner .edge-pi-prices {
+    width: 45%;
+    text-align: center;
+    padding-right: 15px;
+  }
+
+  .edge-price-item .edge-pi-inner .edge-pi-content-holder {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-price-item .edge-pi-inner .edge-pi-prices {
+    width: 100%;
+    text-align: left;
+  }
+
+  .edge-price-item .edge-pi-inner .edge-pi-content-holder {
+    width: 100%;
+    margin-top: 90px;
+  }
+}
+
+/* ==========================================================================
+   Pricing Item shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .edge-price-table .edge-pt-inner ul li.edge-pt-button .edge-btn {
+    padding: 2px 48px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-pricing-tables.edge-five-columns .edge-price-table {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+  .edge-pricing-tables.edge-five-columns .edge-price-table:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-pricing-tables.edge-four-columns .edge-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .edge-pricing-tables.edge-four-columns .edge-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-price-table .edge-pt-inner ul li {
+    padding: 12px 20px;
+  }
+
+  .edge-price-table .edge-pt-inner ul li.edge-pt-title-holder .edge-pt-title {
+    padding: 17px 0 16px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+
+  .edge-price-table .edge-pt-inner ul li.edge-pt-prices {
+    padding: 15px 10px 0;
+  }
+
+  .edge-price-table .edge-pt-inner ul li.edge-pt-content {
+    padding: 12px 10px;
+  }
+
+  .edge-price-table .edge-pt-inner ul li.edge-pt-button {
+    padding: 18px 15px 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-pricing-tables.edge-three-columns .edge-price-table {
+    width: 50%;
+  }
+
+  .edge-pricing-tables.edge-three-columns .edge-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+
+  .edge-pricing-tables.edge-four-columns .edge-price-table {
+    width: 50%;
+  }
+
+  .edge-pricing-tables.edge-four-columns .edge-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+
+  .edge-pricing-tables.edge-five-columns .edge-price-table {
+    width: 50%;
+  }
+
+  .edge-pricing-tables.edge-five-columns .edge-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-pricing-tables.edge-two-columns .edge-price-table {
+    width: 100%;
+  }
+
+  .edge-pricing-tables.edge-three-columns .edge-price-table {
+    width: 100%;
+  }
+
+  .edge-pricing-tables.edge-four-columns .edge-price-table {
+    width: 100%;
+  }
+
+  .edge-pricing-tables.edge-five-columns .edge-price-table {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .edge-process-holder .edge-process-item-holder .edge-pi-image-holder {
+    width: 275px;
+    height: 275px;
+    margin-top: -20px;
+  }
+
+  .edge-process-holder .edge-process-item-holder .edge-pi-holder-inner {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-process-holder .edge-process-bg-holder {
+    display: none;
+  }
+
+  .edge-process-holder .edge-process-item-holder .edge-pi-image-holder {
+    width: 171px;
+    height: 171px;
+  }
+
+  .edge-grid-col-9 .edge-process-holder-items-four .edge-process-item-holder {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .edge-grid-col-9 .edge-process-holder .edge-process-bg-holder {
+    background: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-process-holder.edge-process-holder-items-four .edge-process-item-holder {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .edge-process-holder.edge-process-holder-items-four .edge-process-item-holder .edge-pi-holder-inner {
+    width: 100%;
+  }
+
+  .edge-process-holder.edge-process-holder-items-four .edge-process-item-holder .edge-pi-holder-inner .edge-pi-content-holder {
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .edge-process-holder .edge-process-item-holder .edge-pi-holder-inner .edge-pi-holder-inner-wrapper:before {
+    content: none;
+  }
+
+  .edge-process-holder .edge-process-item-holder .edge-pi-holder-inner .edge-pi-holder-inner-wrapper:after {
+    content: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-process-holder.edge-process-holder-items-three .edge-process-item-holder .edge-pi-image-holder {
+    margin-top: 0;
+  }
+
+  .edge-process-holder .edge-process-item-holder {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .edge-process-holder .edge-process-item-holder .edge-pi-holder-inner {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 680px) {
+  .edge-section-title-holder {
+    padding: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Split Scrolling Section shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-split-scrolling-section .edge-sss-ms-left {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .edge-split-scrolling-section .edge-sss-ms-right {
+    width: 100%;
+    float: left;
+    margin: 38px 0 0;
+  }
+}
+
+/* ==========================================================================
+   Split Scrolling Section shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .edge-tabs.edge-tabs-standard .edge-tabs-nav li {
+    padding-bottom: 15px;
+  }
+
+  .edge-tabs.edge-tabs-standard .edge-tabs-nav li a {
+    padding: 6px 46px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-tabs.edge-tabs-standard .edge-tabs-nav li {
+    padding-bottom: 15px;
+  }
+
+  .edge-tabs.edge-tabs-standard .edge-tabs-nav li a {
+    padding: 7px 21px;
+  }
+
+  .edge-tabs.edge-tabs-boxed .edge-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+
+  .edge-tabs.edge-tabs-boxed .edge-tabs-nav li a {
+    padding: 7px 18px;
+  }
+
+  .edge-tabs.edge-tabs-simple .edge-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+
+  .edge-tabs.edge-tabs-vertical .edge-tabs-nav {
+    width: 180px;
+  }
+
+  .edge-tabs.edge-tabs-vertical .edge-tab-container {
+    width: calc(100% - 180px);
+    padding: 0 0 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-tabs.edge-tabs-standard .edge-tabs-nav li {
+    display: block;
+    float: none;
+  }
+
+  .edge-tabs.edge-tabs-standard .edge-tabs-nav li a {
+    width: 100%;
+  }
+
+  .edge-tabs.edge-tabs-boxed .edge-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+
+  .edge-tabs.edge-tabs-boxed .edge-tabs-nav li a {
+    width: 100%;
+  }
+
+  .edge-tabs.edge-tabs-simple .edge-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+
+  .edge-tabs.edge-tabs-vertical .edge-tabs-nav,
+  .edge-tabs.edge-tabs-vertical .edge-tab-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .edge-tabs.edge-tabs-vertical .edge-tabs-nav {
+    border-right: 0;
+  }
+
+  .edge-tabs.edge-tabs-vertical .edge-tabs-nav li {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+
+  .edge-tabs.edge-tabs-vertical .edge-tab-container {
+    padding: 31px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-tabs.edge-tabs-simple .edge-tabs-nav {
+    padding: 0 0 20px;
+  }
+
+  .edge-tabs.edge-tabs-simple .edge-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .edge-tabs.edge-tabs-simple .edge-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+
+  .edge-tabs.edge-tabs-vertical .edge-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .edge-tabs.edge-tabs-vertical .edge-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .edge-text-marquee .edge-text-marquee-wrapper .edge-text-marquee-title {
+    font-size: 15vmax;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  #multiscroll-nav {
+    bottom: 25px;
+    -webkit-transform: translateX(-26px);
+    -moz-transform: translateX(-26px);
+    transform: translateX(-26px);
+  }
+
+  #multiscroll-nav ul li {
+    margin: 23px 0px;
+  }
+
+  #multiscroll-nav ul li a {
+    width: 25px;
+  }
+
+  #multiscroll-nav ul li a:before {
+    font-size: 22px;
+    left: -33px;
+    top: -10px;
+  }
+
+  #multiscroll-nav ul li a.active,
+  #multiscroll-nav ul li a:hover {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body.edge-vss-initialized {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+
+  .edge-vertical-split-slider,
+  #multiscroll-nav {
+    display: none;
+  }
+
+  .edge-vss-responsive {
+    display: block;
+  }
+
+  .edge-vertical-split-slider-widget-area {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Video button shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .edge-video-button-holder .edge-video-button-play {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-video-button-holder .edge-video-button-play {
+    font-size: 65px;
+  }
+}
+
+/* ==========================================================================
+   Video button shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-core/assets/css/shortcodes-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* Button mixins - start */
+
+/* Button mixins - end */
+
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .edge-masonry-gallery-holder .edge-mg-grid-sizer,
+  .edge-masonry-gallery-holder .edge-mg-item {
+    width: 50%;
+  }
+
+  .edge-masonry-gallery-holder .edge-mg-item.edge-mg-square-big,
+  .edge-masonry-gallery-holder .edge-mg-item.edge-mg-rectangle-landscape {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-masonry-gallery-holder .edge-mg-grid-sizer,
+  .edge-masonry-gallery-holder .edge-mg-item {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder {
+    top: 41%;
+    left: 54%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder {
+    top: 42%;
+    left: 56%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder {
+    top: 41%;
+    left: 54%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder {
+    top: 38%;
+    left: 46%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder {
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0;
+  }
+
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder .edge-pli-text .edge-pli-title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder .edge-pli-text .edge-pli-title {
+    font-size: 20px;
+  }
+
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder .edge-pli-text .edge-pli-category-holder {
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader .owl-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader .owl-dots {
+    bottom: 5px;
+  }
+
+  .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader .edge-pli-cat
+egory-holder {
+    margin: 0;
+  }
+}
+
+/* ==========================================================================
+   Portfolio slider shortcode responsive style - begin
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-four-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-four-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-five-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-five-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns .edge-pl-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article.edge-pl-masonry-large-width,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article.edge-pl-masonry-large-width-height {
+    width: 66.66667%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns .edge-pl-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article.edge-pl-masonry-large-width,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article.edge-pl-masonry-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-three-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-three-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-four-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-four-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-five-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-five-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns .edge-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns article.edge-pl-masonry-large-width,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns article.edge-pl-masonry-large-width-height {
+    width: 100%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns .edge-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article.edge-pl-masonry-large-width,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article.edge-pl-masonry-large-width-height {
+    width: 100%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns .edge-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article.edge-pl-masonry-large-width,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article.edge-pl-masonry-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-portfolio-list-holder.edge-pl-gallery article {
+    width: 100% !important;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-two-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-two-columns .edge-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns .edge-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns .edge-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article,
+  .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns .edge-pl-grid-sizer {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Portfolio shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-four-columns .edge-ps-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-four-columns .edge-ps-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-three-columns .edge-ps-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-three-columns .edge-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-four-columns .edge-ps-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-four-columns .edge-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images .edge-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-image,
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-image.edge-ps-masonry-large-item {
+    width: 66.66667%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-five-columns .edge-ps-image,
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-five-columns .edge-ps-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-five-columns .edge-ps-image.edge-ps-masonry-large-item {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-three-columns .edge-ps-image,
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-three-columns .edge-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-three-columns .edge-ps-image.edge-ps-masonry-large-item {
+    width: 100%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-image,
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-image.edge-ps-masonry-large-item {
+    width: 100%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-five-columns .edge-ps-image,
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-five-columns .edge-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-five-columns .edge-ps-image.edge-ps-masonry-large-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-two-columns .edge-ps-image,
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-two-columns .edge-ps-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-three-columns .edge-ps-image,
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-three-columns .edge-ps-grid-sizer {
+    width: 100%;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-image,
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-grid-sizer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder .edge-ps-info-holder {
+    margin: 100px 0 0 !important;
+  }
+
+  .edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-info-holder,
+  .edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-info-holder,
+  .edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-info-holder,
+  .edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-info-holder {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-portfolio-single-holder .edge-ps-content-holder .edge-ps-info-holder {
+    margin: 50px 0 0 !important;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-navigation .edge-ps-next,
+  .edge-portfolio-single-holder .edge-ps-navigation .edge-ps-prev,
+  .edge-portfolio-single-holder .edge-ps-navigation .edge-ps-back-btn {
+    display: block;
+    clear: both;
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-navigation .edge-ps-next div,
+  .edge-portfolio-single-holder .edge-ps-navigation .edge-ps-prev div,
+  .edge-portfolio-single-holder .edge-ps-navigation .edge-ps-back-btn div {
+    float: none;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-portfolio-single-holder .edge-ps-info-item.edge-ps-social-share:before {
+    display: none;
+  }
+
+  .edge-portfolio-single-holder .edge-ps-info-item.edge-ps-social-share .edge-social-share-holder {
+    margin-left: -6px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item {
+    padding-left: 10px;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Team list shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .edge-team-list-holder.edge-tl-four-columns .edge-team {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-team-list-holder.edge-tl-four-columns .edge-team:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-team-list-holder.edge-tl-five-columns .edge-team {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-team-list-holder.edge-tl-five-columns .edge-team:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-team-list-holder.edge-tl-three-columns .edge-team {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-team-list-holder.edge-tl-three-columns .edge-team:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-team-list-holder.edge-tl-four-columns .edge-team {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-team-list-holder.edge-tl-four-columns .edge-team:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-team-list-holder.edge-tl-five-columns .edge-team {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-team-list-holder.edge-tl-five-columns .edge-team:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-team-list-holder .edge-tl-inner .edge-team {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Team list shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+# Team responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: 1025px) {
+  .edge-team.info-bellow .edge-team-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-team.info-hover {
+    margin-bottom: 30px;
+  }
+}
+
+/* ==========================================================================
+# Team responsive style - end
+========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-core/assets/css/custom-post-types-responsive.css.map */

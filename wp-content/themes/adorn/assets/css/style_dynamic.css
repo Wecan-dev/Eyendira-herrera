@@ -1,0 +1,60 @@
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_design_styles function */
+body { font-family: Inconsolata;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_design_styles function */
+.edge-boxed .edge-wrapper { background-attachment: fixed;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_content_styles function */
+.edge-content .edge-content-inner > .edge-full-width > .edge-full-width-inner { padding-top: 0px;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_content_styles function */
+.edge-content .edge-content-inner > .edge-container > .edge-container-inner { padding-top: 40px;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_h1_styles function */
+h1 { font-family: Arial;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_h2_styles function */
+h2 { font-family: Arial;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_h3_styles function */
+h3 { font-family: Arial;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_h4_styles function */
+h4 { font-family: Arial;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_h5_styles function */
+h5 { font-family: Arial;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/assets/custom-styles/general-custom-styles.php adorn_edge_h6_styles function */
+h6 { font-family: Arial;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/footer/custom-styles/custom-styles.php adorn_edge_footer_top_general_styles function */
+footer.edge-page-footer .edge-footer-top-holder { background-color: #f9f9f9;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/footer/custom-styles/custom-styles.php adorn_edge_footer_bottom_general_styles function */
+footer.edge-page-footer .edge-footer-bottom-holder { background-color: #f9f9f9;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/header/custom-styles/header.php adorn_edge_header_top_bar_styles function */
+.edge-top-bar-background { height: 100px;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/header/custom-styles/header.php adorn_edge_fixed_header_styles function */
+.edge-page-header .edge-fixed-wrapper.fixed .edge-menu-area { background-color: rgba(255, 255, 255, 1)!important;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/search/custom-styles/search.php adorn_edge_search_opener_icon_size function */
+.edge-search-opener { font-size: 16px;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/sidearea/custom-styles/sidearea.php adorn_edge_side_area_slide_from_right_type_style function */
+.edge-side-menu-slide-from-right .edge-side-menu { right: -395px;width: 395px;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/sidearea/custom-styles/sidearea.php adorn_edge_side_area_icon_color_styles function */
+.edge-side-menu a.edge-close-side-menu { color: #555555;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/sidearea/custom-styles/sidearea.php adorn_edge_side_area_styles function */
+.edge-side-menu { background-color: #fafafa;padding: 37px 24px 117px;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/title/custom-styles/title.php adorn_edge_title_area_typography_style function */
+.edge-title .edge-title-holder .edge-subtitle { font-family: Ubuntu;}
+
+/* generated in /opt/lampp/htdocs/enyendira/wp-content/themes/adorn/framework/modules/title/custom-styles/title.php adorn_edge_title_area_typography_style function */
+.edge-title .edge-title-holder .edge-breadcrumbs a, .edge-title .edge-title-holder .edge-breadcrumbs span { font-size: 15px;}
+

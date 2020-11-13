@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Social sidebar responsive style - begin
+   ========================================================================== */
+
+
+.edge-social-sidebar-holder{
+    @include laptop-landscape-large{
+        left: -65px;
+    }
+    @include ipad-pro-landscape{
+        left: -56px;
+    }
+    @include ipad-landscape {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   Social sidebar responsive style - end
+   ========================================================================== */

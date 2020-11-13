@@ -1,0 +1,62 @@
+@import "blocks/_logo";
+@import "blocks/_widgets";
+@import "blocks/navigation/_navigation";
+
+.edge-header-vertical {
+
+    .edge-content,
+    footer {
+        padding-left: $vertical-menu-width;
+        box-sizing: border-box;
+    }
+
+    .edge-vertical-menu-area {
+        position: fixed;
+        width: $vertical-menu-width;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 52px 0px 58px 68px;
+        background-color: transparent;
+        outline: none;
+        z-index: 101;
+        -webkit-backface-visibility: hidden;
+        box-sizing: border-box;
+    }
+
+    .edge-vertical-menu-area-inner {
+        @include edgeRelativeHolderLayout();
+        height: 100%;
+
+        &.edge-vertical-align-left {
+            text-align: left;
+        }
+
+        &.edge-vertical-align-center {
+            text-align: center;
+
+            .edge-logo-wrapper img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .edge-vertical-menu-area.edge-with-scroll {
+        overflow: hidden;
+    }
+
+    .edge-vertical-area-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: $vertical-menu-width;
+        height: 100%;
+        background-color: #fafafa;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+        opacity: 1;
+        @include edgeTransition(opacity 0.5s ease, background-color 0.5s ease);
+    }
+}

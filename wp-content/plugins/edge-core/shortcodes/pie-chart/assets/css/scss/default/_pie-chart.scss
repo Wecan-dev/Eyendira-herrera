@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Pie Chart shortcode style - begin
+   ========================================================================== */
+
+.edge-pie-chart-holder {
+    @include edgeRelativeHolderLayout();
+	opacity: 0;
+	@include edgeTransition(opacity .2s ease-in);
+	
+    .edge-pc-percentage {
+        position: relative;
+        display: block;
+        height: 176px;
+        width: 176px;
+        line-height: 176px;
+	    text-align: center;
+	    margin: 0 auto;
+    
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .edge-pc-percent {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            color: $default-heading-color;
+	        font-size: 36px;
+	        line-height: inherit;
+	        font-weight: 600;
+    
+            &:after {
+                position: relative;
+	            top: -15px;
+                content: '%';
+	            font-size: 15px;
+            }
+        }
+    }
+
+    .edge-pc-text-holder {
+        @include edgeRelativeHolderLayout();
+        text-align: center;
+        margin: 30px 0 0;
+	    
+	    .edge-pc-title {
+		    margin: 0;
+	    }
+	
+	    .edge-pc-text {
+		    margin: 14px 0 0;
+	    }
+    }
+}
+/* ==========================================================================
+   Pie Chart shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.edge-image-with-text-holder {
+    @include edgeRelativeHolderLayout();
+	
+	.edge-iwt-image {
+		@include edgeRelativeHolderLayout();
+		
+		a, img {
+			display: block;
+		}
+	}
+
+	.shadow_enabled{
+		img{
+			box-shadow: 0 0 5px rgba(0,0,0,0.07);
+		}
+
+		&:hover{
+			img{
+				box-shadow: 2px 4px 15px rgba(0,0,0,.05) !important;
+			}
+		}
+	}
+
+	.border_enabled{
+		img{
+			border: 1px solid #efefef;
+		}
+	}
+	
+	.edge-iwt-text-holder {
+		@include edgeRelativeHolderLayout();
+		box-sizing: border-box;
+	}
+	
+	.edge-iwt-title {
+		margin: 35px 0 0;
+		letter-spacing: 2px;
+	}
+	
+	.edge-iwt-text {
+		margin: 10px 0 0;
+		font-size: 15px;
+		line-height: 26px;
+		color: $default-text-color;
+	}
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

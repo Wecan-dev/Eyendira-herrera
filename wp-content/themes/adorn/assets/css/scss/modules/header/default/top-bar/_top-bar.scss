@@ -1,0 +1,172 @@
+$top-bar-height: 36px;
+
+.edge-top-bar-background {
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	z-index: 101;
+}
+
+.edge-top-bar {
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	position: relative;
+	font-weight: 400;
+	height: $top-bar-height;
+	font-size: 12px;
+	z-index: 111;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+
+	.edge-grid {
+		height: 100%;
+
+		.edge-vertical-align-containers {
+			padding-left: 0;
+			padding-right: 0;
+
+			.edge-top-bar-in-grid-padding & {
+				padding: 0px 25px;
+			}
+		}
+	}
+
+	.edge-vertical-align-containers {
+		.edge-position-left:before,
+		.edge-position-center:before,
+		.edge-position-right:before {
+			margin-right: 0px;
+		}
+
+	}
+
+	.edge-top-bar-widget-area,
+	.edge-top-bar-widget-area-inner {
+		height: 100%;
+	}
+
+	.edge-top-bar-widget {
+		display: table;
+		float: left;
+		height: 100%;
+        margin-bottom: 0;
+
+		padding-right: 24px;
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		&.widget_text {
+			position: relative;
+		}
+
+		&.widget_edge_search_opener {
+			.edge-top-bar-widget-inner {
+				padding-top: 5px;
+			}
+		}
+
+		&.widget_nav_menu {
+			padding-top: 0;
+			border-top: none;
+
+			ul li {
+				display: inline-block;
+                padding: 0 22px;
+                vertical-align: middle;
+
+                a {
+                    color: inherit;
+
+                    &:after {
+                        display: none;
+                    }
+                    &:hover {
+                        padding-left: 0;
+                    }
+                }
+			}
+		}
+	}
+
+	.edge-top-bar-widget-inner {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.edge-logo-wrapper a {
+		max-height: $top-bar-height;
+	}
+
+    a {
+        color: inherit;
+    }
+}
+
+.edge-top-bar-light .edge-top-bar {
+	color: $header-light-color; //Beacause of inline color styles
+
+	.widget:not(.widget_edge_woocommerce_dropdown_cart) {
+		color: $header-light-color; //Beacause of inline color styles
+
+		p,
+		a,
+		span,
+		i,
+		.widgettitle {
+			color: $header-light-color !important; //Beacause of inline color styles
+		}
+
+	}
+
+	.edge-shopping-cart-holder .edge-header-cart {
+		.edge-cart-icon {
+			color: #fff;
+		}
+
+		.edge-cart-number {
+			background-color: #fff;
+			color: #9e9e9e;
+		}
+	}
+}
+
+.edge-top-bar-dark .edge-top-bar {
+	color: $header-dark-color; //Beacause of inline color styles
+
+	.widget {
+		color: $header-dark-color; //Beacause of inline color styles
+
+		p,
+		a,
+		span,
+		i,
+		.widgettitle {
+			color: $header-dark-color !important; //Beacause of inline color styles
+		}
+
+	}
+}
+
+.edge-top-bar-gray .edge-top-bar {
+	color: #777777; //Beacause of inline color styles
+
+	.widget {
+		color: #777777; //Beacause of inline color styles
+
+		p,
+		a,
+		span,
+		i,
+		.widgettitle {
+			color: #777777; //Beacause of inline color styles
+		}
+
+	}
+}

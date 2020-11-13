@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+
+.edge-elements-holder {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+
+	&.edge-two-columns {
+
+		.edge-eh-item {
+			width: 50%;
+		}
+	}
+
+	&.edge-three-columns {
+
+		.edge-eh-item {
+			width: 33%;
+		}
+	}
+
+	&.edge-four-columns {
+
+		.edge-eh-item {
+			width: 25%;
+		}
+	}
+
+	&.edge-five-columns {
+
+		.edge-eh-item {
+			width: 20%;
+		}
+	}
+
+	&.edge-six-columns {
+
+		.edge-eh-item {
+			width: 16%;
+		}
+	}
+
+	.edge-eh-item {
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+
+		&.edge-vertical-alignment-top {
+			vertical-align: top;
+		}
+
+		&.edge-vertical-alignment-bottom {
+			vertical-align: bottom;
+		}
+
+		&.edge-horizontal-alignment-center {
+			text-align: center;
+		}
+
+		&.edge-horizontal-alignment-right {
+			text-align: right;
+		}
+
+		.edge-elements-holder-item-inner {
+			width: 100%;
+		}
+	}
+
+	&.edge-ehi-float {
+
+		&.edge-three-columns {
+
+			.edge-eh-item {
+				width: 33.33333333333333%;
+			}
+		}
+
+		&.edge-six-columns {
+
+			.edge-eh-item {
+				width: 16.66666666666667%;
+			}
+		}
+
+		.edge-eh-item {
+			float:left;
+		}
+	}
+
+	.edge-ehi-content {
+		padding: 0 20px;
+	}
+}
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */

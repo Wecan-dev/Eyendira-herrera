@@ -1,0 +1,15 @@
+.edge-floating-prod-cats-holder{
+    @include ipad-portrait{
+        $standard_list_columns: ('two', 'three', 'four');
+
+        @for $i from 0 to length($standard_list_columns) {
+            &.edge-#{nth($standard_list_columns,$i+1)}-columns {
+                $column_width: 100%;
+
+                .edge-floating-prod-cat{
+                    width: $column_width;
+                }
+            }
+        }
+    }
+}

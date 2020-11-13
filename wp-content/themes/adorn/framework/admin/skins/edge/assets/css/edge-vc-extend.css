@@ -1,0 +1,300 @@
+.wpb_edge_accordion_tab,
+.wpb_edge_elements_holder_item,
+.wpb_edge_pricing_table > .wpb_element_wrapper,
+.wpb_edge_tab,
+.wpb_edge_vertical_split_slider_left_panel,
+.wpb_edge_vertical_split_slider_right_panel {
+	background-color: #f4f4f4;
+}
+
+.extended-custom-icon {
+	background-image: url('img/vc-extend.png') !important; /* to override Visual Composer css style */
+    background-size: auto !important; /* to override Visual Composer css style */
+}
+
+.extended-custom-icon.icon-wpb-accordion {
+	background-position: 0 0;
+}
+
+.extended-custom-icon.icon-wpb-accordion-tab {
+	background-position: -32px 0;
+}
+
+.extended-custom-icon.icon-wpb-animation-holder {
+	background-position: -64px 0;
+}
+
+.extended-custom-icon.icon-wpb-banner {
+	background-position: -96px 0;
+}
+
+.extended-custom-icon.icon-wpb-blockquote {
+	background-position: -128px 0;
+}
+
+.extended-custom-icon.icon-wpb-blog-list {
+	background-position: -160px 0;
+}
+
+.extended-custom-icon.icon-wpb-blog-slider {
+	background-position: -192px 0;
+}
+
+.extended-custom-icon.icon-wpb-button {
+	background-position: -1728px 0;
+}
+
+.extended-custom-icon.icon-wpb-call-to-action {
+	background-position: -224px 0;
+}
+
+.extended-custom-icon.icon-wpb-cards-gallery{
+	background-position: -256px 0;
+}
+
+.extended-custom-icon.icon-wpb-clients-boxes {
+	background-position: -288px 0;
+}
+
+.extended-custom-icon.icon-wpb-clients-boxes-item {
+	background-position: -320px 0;
+}
+
+.extended-custom-icon.icon-wpb-clients-carousel {
+	background-position: -352px 0;
+}
+
+.extended-custom-icon.icon-wpb-clients-carousel-item {
+	background-position: -384px 0;
+}
+
+.extended-custom-icon.icon-wpb-countdown {
+	background-position: -416px 0;
+}
+
+.extended-custom-icon.icon-wpb-counter {
+	background-position: -448px 0;
+}
+
+.extended-custom-icon.icon-wpb-edge-custom-product-categories-list {
+	background-position: -448px 0;
+}
+
+.extended-custom-icon.icon-wpb-elements-holder {
+	background-position: -480px 0;
+}
+
+.extended-custom-icon.icon-wpb-floating-product-categories {
+	background-position: -512px 0;
+}
+
+.extended-custom-icon.icon-wpb-device-slider {
+	background-position: -544px 0;
+}
+
+.extended-custom-icon.icon-wpb-video-button {
+	background-position: -576px 0;
+}
+
+.extended-custom-icon.icon-wpb-gallery-blocks {
+	background-position: -608px 0;
+}
+
+.extended-custom-icon.icon-wpb-google-map {
+	background-position: -640px 0;
+}
+
+.extended-custom-icon.icon-wpb-icon-list-item {
+	background-position: -672px 0;
+}
+
+.extended-custom-icon.icon-wpb-icon-with-text {
+	background-position: -704px 0;
+}
+
+.extended-custom-icon.icon-wpb-icon {
+	background-position: -736px 0;
+}
+
+.extended-custom-icon.icon-wpb-image-gallery {
+	background-position: -768px 0;
+}
+
+.extended-custom-icon.icon-wpb-image-slider {
+	background-position: -800px 0;
+}
+
+.extended-custom-icon.icon-wpb-image-with-text {
+	background-position: -832px 0;
+}
+
+.extended-custom-icon.icon-wpb-item-showcase {
+	background-position: -864px 0;
+}
+
+.extended-custom-icon.icon-wpb-item-showcase-item {
+	background-position: -896px 0;
+}
+
+.extended-custom-icon.icon-wpb-masonry-gallery {
+	background-position: -928px 0;
+}
+
+.extended-custom-icon.icon-wpb-message {
+	background-position: -960px 0;
+}
+
+.extended-custom-icon.icon-wpb-mobile-slider {
+	background-position: -992px 0;
+}
+
+.extended-custom-icon.icon-wpb-mobile-slider-item {
+	background-position: -1024px 0;
+}
+
+.extended-custom-icon.icon-wpb-parallax {
+	background-position: -1056px 0;
+}
+
+.extended-custom-icon.icon-wpb-pie-chart {
+	background-position: -1088px 0;
+}
+
+.extended-custom-icon.icon-wpb-portfolio {
+	background-position: -1120px 0;
+}
+
+.extended-custom-icon.icon-wpb-portfolio-project-info {
+	background-position: -1152px 0;
+}
+
+.extended-custom-icon.icon-wpb-portfolio-slider {
+	background-position: -1184px 0;
+}
+
+.extended-custom-icon.icon-wpb-pricing-item {
+	background-position: -1216px 0;
+}
+
+.extended-custom-icon.icon-wpb-pricing-tables {
+	background-position: -1248px 0;
+}
+.extended-custom-icon.icon-wpb-pricing-table{
+	background-position: -1280px 0;
+}
+.extended-custom-icon.icon-wpb-process {
+	background-position: -1312px 0;
+}
+
+.extended-custom-icon.icon-wpb-process-item {
+	background-position: -1344px 0;
+}
+
+.extended-custom-icon.icon-wpb-product-categories {
+	background-position: -1376px 0;
+}
+
+.extended-custom-icon.icon-wpb-product-info {
+	background-position: -1408px 0;
+}
+
+.extended-custom-icon.icon-wpb-product-list-carousel {
+	background-position: -1440px 0;
+}
+
+.extended-custom-icon.icon-wpb-product-list-simple {
+	background-position: -1472px 0;
+}
+
+.extended-custom-icon.icon-wpb-product-list {
+	background-position: -1504px 0;
+}
+
+.extended-custom-icon.icon-wpb-product-single-slider {
+	background-position: -2048px 0;
+}
+
+.extended-custom-icon.icon-wpb-progress-bar {
+	background-position: -1536px 0;
+}
+
+.extended-custom-icon.icon-wpb-section-title {
+	background-position: -1568px 0;
+}
+
+.extended-custom-icon.icon-wpb-separator {
+	background-position: -1600px 0;
+}
+
+.extended-custom-icon.icon-wpb-social-share {
+	background-position: -1632px 0;
+}
+
+.extended-custom-icon.icon-wpb-split-scrolling-section {
+	background-position: -1664px 0;
+}
+
+.extended-custom-icon.icon-wpb-split-scrolling-section-content-item {
+	background-position: -1696px 0;
+}
+
+.extended-custom-icon.icon-wpb-split-scrolling-section-left-panel {
+	background-position: -1728px 0;
+}
+
+.extended-custom-icon.icon-wpb-split-scrolling-section-right-panel {
+	background-position: -1760px 0;
+}
+
+.extended-custom-icon.icon-wpb-tabs {
+	background-position: -1792px 0;
+}
+
+.extended-custom-icon.icon-wpb-tab {
+	background-position: -1824px 0;
+}
+
+.extended-custom-icon.icon-wpb-team-list {
+	background-position: -1856px 0;
+}
+
+.extended-custom-icon.icon-wpb-team-member {
+	background-position: -1888px 0;
+}
+
+.extended-custom-icon.icon-wpb-team-slider {
+	background-position: -1920px 0;
+}
+
+.extended-custom-icon.icon-wpb-testimonials {
+	background-position: -1952px 0;
+}
+
+.extended-custom-icon.icon-wpb-text-marquee {
+	background-position: -1984px 0;
+}
+
+.extended-custom-icon.icon-wpb-image-gallery {
+	background-position: -2016px 0px;
+}
+
+.extended-custom-icon.icon-wpb-video-button {
+	background-position: -2080px 0;
+}
+
+.wpb_edge_vertical_split_slider_left_panel {
+	width: 50%;
+	float: left;
+	clear: left;
+}
+
+.wpb_edge_vertical_split_slider_right_panel {
+	width: 50%;
+	float: right;
+	clear: right;
+}
+
+.wpb_edge_vertical_split_slider_left_panel > .controls > .column_edit,
+.wpb_edge_vertical_split_slider_right_panel > .controls > .column_edit{
+	display: none;
+}

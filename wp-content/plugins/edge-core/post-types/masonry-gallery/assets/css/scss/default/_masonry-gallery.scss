@@ -1,0 +1,214 @@
+/* ==========================================================================
+   Masonry Gallery shortcodes style - begin
+   ========================================================================== */
+
+.edge-masonry-gallery-holder {
+	@include edgeRelativeHolderLayout();
+	
+	/***** Masonry Gallery Columns Space - begin *****/
+	
+	$columns_space_label: ('no', 'tiny', 'small', 'normal');
+	$columns_space: (0, 5, 10, 15);
+	
+	@for $i from 0 to length($columns_space_label) {
+		&.edge-mg-#{nth($columns_space_label,$i+1)}-space {
+			$item_space: nth($columns_space, $i+1);
+			@if($item_space == 0) {
+				margin: 0;
+			} @else {
+				margin: 0 -#{$item_space}px;
+			}
+			
+			.edge-mg-inner {
+				@if($item_space == 0) {
+					margin: 0;
+				} @else {
+					margin: 0 -#{$item_space}px;
+				}
+			}
+			
+			.edge-mg-item {
+				padding: #{$item_space}px;
+			}
+		}
+	}
+	
+	/***** Masonry Gallery Columns Space - end *****/
+	
+	.edge-mg-inner {
+		opacity: 0;
+	}
+	
+	.edge-mg-grid-gutter {
+		width: 0;
+	}
+	
+	.edge-mg-grid-sizer {
+		width: 25%;
+	}
+
+	.edge-mg-item {
+		position: relative;
+		width: 25%;
+		z-index: 1;
+		box-sizing: border-box;
+		
+		&.edge-mg-square-big {
+			width: 50%;
+		}
+
+		&.edge-mg-rectangle-landscape {
+			width: 50%;
+
+			.edge-mg-image {
+				
+				img {
+					max-height: inherit;
+				}
+			}
+		}
+
+		&.edge-mg-rectangle-portrait {
+			
+			.edge-mg-image {
+				
+				img {
+					max-width: inherit;
+					width: auto;
+					height: 100%;
+				}
+			}
+		}
+		
+		.edge-mg-content {
+			@include edgeRelativeHolderLayout();
+			height: 100%;
+			box-sizing: border-box;
+		}
+		
+		.edge-mg-item-outer {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		
+		.edge-mg-item-inner {
+			@include edgeTableLayout();
+		}
+		
+		.edge-mg-item-content {
+			@include edgeTableCellLayout();
+			padding: 10px;
+		}
+
+		.edge-mg-image {
+			position: relative;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			@include edgeTransform(translateZ(0px));
+		}
+		
+		.edge-mg-image-overlay {
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			height: calc(100% + 10px);
+			width: calc(100% + 10px);
+			background-size: cover;
+			background-position: center;
+			z-index: -1;
+		}
+		
+		.edge-mg-item-icon {
+			margin: 0 0 1px;
+		}
+		
+		.edge-mg-item-title {
+			margin: 0;
+		}
+		
+		.edge-mg-item-text {
+			margin: 14px 0 0;
+		}
+		
+		.edge-mg-item-button {
+			margin: 21px 0 0;
+		}
+		
+		.edge-mg-item-link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+		}
+		
+		&.edge-mg-standard {
+			
+			.edge-mg-item-inner {
+				opacity: 0;
+				@include edgeTransition(opacity .25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color .25s cubic-bezier(0.45, 0.05, 0.55, 0.95));
+			}
+			
+			.edge-mg-item-title,
+			.edge-mg-item-text {
+				color: #fff;
+			}
+			
+			img {
+				@include edgeTransition(opacity .7s ease);
+				@include edgeTransform(translateZ(0));
+			}
+			
+			&:hover {
+				
+				.edge-mg-item-inner {
+					opacity: 1;
+					background-color: rgba($default-heading-color, 0.4);
+				}
+				
+				img {
+					opacity: 0;
+				}
+			}
+		}
+
+		&.edge-mg-simple {
+			
+			&.edge-mg-skin-default {
+				
+				.edge-mg-item-inner {
+					background-color: #f8f7f7;
+				}
+			}
+			
+			&.edge-mg-skin-light {
+				
+				.edge-mg-item-inner {
+					background-color: #fff;
+				}
+			}
+			
+			&.edge-mg-skin-dark {
+				
+				.edge-mg-item-inner {
+					background-color: $default-heading-color;
+				}
+				
+				.edge-mg-item-title,
+				.edge-mg-item-text {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Masonry Gallery shortcodes style - end
+   ========================================================================== */

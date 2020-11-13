@@ -1,0 +1,26 @@
+/* ==========================================================================
+# Pop-up style responsive - begin
+========================================================================== */
+
+.edge-popup-holder {
+
+    .edge-popup-inner {
+
+        @include phone-landscape {
+            width: 300px;
+
+            .edge-popup-image {
+                display: none;
+            }
+
+            .edge-popup-image,
+            .edge-popup-content {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+}
+/* ==========================================================================
+# Pop-up style responsive - end
+========================================================================== */

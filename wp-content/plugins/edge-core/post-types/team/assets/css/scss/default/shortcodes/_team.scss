@@ -1,0 +1,151 @@
+/* ==========================================================================
+# Team style - begin
+	========================================================================== */
+
+/* Team type simple - begin
+========================================================================== */
+
+.edge-team {
+	position: relative;
+
+	.edge-icon-shortcode {
+		color: $default-text-color;
+
+		a, span, i {
+			color: $default-text-color;
+		}
+	}
+
+	&.info-bellow {
+		.edge-team-inner {
+			text-align: center;
+			width: 100%;
+		}
+
+		.edge-team-image {
+			position: relative;
+			overflow: hidden;
+			display: block;
+			margin: 0 auto;
+
+            a{
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+			a:after {
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				background-color: #fff;
+				opacity: 0;
+
+				@include edgeTransition(opacity 0.3s ease);
+			}
+
+			a:hover:after {
+				opacity: 0.3;
+			}
+
+			img {
+				vertical-align: middle;
+			}
+
+		}
+
+		.edge-team-text {
+			margin-bottom: 17px;
+		}
+
+		.edge-team-title-holder {
+			margin-top: 30px;
+			margin-bottom: 16px;
+		}
+
+		.edge-icon-shortcode {
+			margin: 0 8px;
+			font-size: 20px;
+		}
+	}
+
+	&.info-hover {
+		.edge-team-inner {
+			position: relative;
+		}
+
+		.edge-team-image img {
+			display: block;
+		}
+
+		.edge-team-inner:hover {
+			.edge-team-info {
+				opacity: 1;
+			}
+		}
+
+		.edge-team-name, .edge-team-position, .edge-team-text,
+		.edge-icon-shortcode, .edge-icon-shortcode a, .edge-icon-shortcode span, .edge-icon-shortcode i {
+			color: #fff;
+		}
+
+		.edge-team-info-tb {
+			display: table-cell;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			text-align: center;
+            opacity: 0;
+			@include edgeTransition(opacity 0.2s ease-out);
+
+			&:after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+				background: -moz-linear-gradient(top, rgba(69, 78, 92, 0) 1%, rgba(69, 78, 92, 1) 100%);
+				background: -webkit-linear-gradient(top, rgba(69, 78, 92, 0) 1%, rgba(69, 78, 92, 1) 100%);
+				background: linear-gradient(to bottom, rgba(69, 78, 92, 0) 1%, rgba(69, 78, 92, 1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00454e5c', endColorstr='#454e5c', GradientType=0);
+			}
+
+            &:hover{
+                opacity: 1;
+            }
+		}
+
+		.edge-team-info-tc {
+            width: 100%;
+			position: absolute;
+			bottom: 22px;
+			left: 50%;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            z-index: 10;
+
+			@include edgeTransform(translateX(-50%));
+		}
+
+		.edge-icon-shortcode {
+			margin: 0 8px;
+			font-size: 20px;
+		}
+
+	}
+
+}
+
+/* ==========================================================================
+# Team style - end
+========================================================================== */

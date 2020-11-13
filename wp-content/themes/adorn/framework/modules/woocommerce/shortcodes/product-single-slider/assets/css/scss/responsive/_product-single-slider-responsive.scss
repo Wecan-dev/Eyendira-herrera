@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Product Single - Slider shortcode responsive styles - begin
+   ========================================================================== */
+
+.edge-pls-holder{
+     .edge-pls-item{
+         .edge-pls-text-wrapper{
+             &.edge-pls-text-right-type{
+                 @include ipad-pro-landscape {
+                     width: 45%;
+                     left: 55%;
+
+                 }
+                 @include ipad-landscape {
+                     width: 55%;
+                     left: 45%;
+                     .edge-pls-button{
+                         margin-top: 10px;
+                     }
+                 }
+                 @include phone-landscape{
+                     .edge-pls-category{
+                        font-size: 20px;
+                        line-height: 20px;
+                         margin: 0;
+                     }
+                     .edge-pls-excerpt{
+                         display: none;
+                     }
+                 }
+                 @include phone-portrait{
+                     .edge-pls-button{
+                         display: none;
+                     }
+                 }
+             }
+         }
+     }
+ }
+
+@include ipad-portrait {
+    
+    .edge-pls-holder {
+
+        .edge-pls-item{
+            .edge-pls-text-wrapper{
+                &.edge-pls-text-right-type{
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+        }
+
+        &.edge-simple-type {
+        
+            .edge-pls-image-outer,
+            .edge-pls-text-wrapper {
+                display: inline-block;
+                width: 100%;
+                padding: 0;
+            }
+
+            .edge-pls-text-wrapper {
+                margin: 30px 0 40px;
+            }
+        }
+
+        &.edge-pls-pag-with-numbers{
+            .owl-dots{
+                bottom: 25px;
+
+                .owl-dot{
+                    font-size: 15px;
+                    width: 20px;
+                    padding: 3px;
+                }
+            }
+        }
+    }
+}
+
+@include phone-landscape{
+    .edge-pls-holder{
+        .edge-pls-item{
+            .edge-pls-text-wrapper.edge-pls-text-left-type{
+                .edge-pls-title,
+                .edge-pls-price{
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+
+                .edge-pls-price{
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &.edge-pls-pag-inside-slider{
+            .owl-dots{
+                display: none;
+            }
+        }
+    }
+
+    .edge-floating-prod-cats-holder{
+        .edge-floating-prod-cat{
+            .edge-category-title{
+                font-size: 17px;
+                margin: 0;
+            }
+
+            .edge-floating-cat-content{
+                .edge-btn{
+                    margin-top: 5px;
+                }
+            }
+
+            &.edge-content-bottom-left,
+            &.edge-content-bottom-right{
+                .edge-floating-cat-content{
+                    bottom: -20px;
+                }
+            }
+            &.edge-content-middle-left{
+                .edge-floating-cat-content{
+                    left: -20px;
+                }
+            }
+            &.edge-content-middle-right{
+                .edge-floating-cat-content{
+                    right: -20px;
+                }
+            }
+        }
+    }
+}
+
+@include phone-portrait{
+    .edge-pls-holder{
+        .edge-pls-item{
+            .edge-pls-text-wrapper{
+                &.edge-pls-text-left-type{
+                    left: 0;
+                    text-align: center;
+
+                    .edge-pls-category{
+                        display: none;
+                    }
+                    .edge-pls-title{
+                        font-size: 20px;
+                    }
+                    .edge-pls-price{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Product Single - Slider shortcode responsive styles - end
+   ========================================================================== */

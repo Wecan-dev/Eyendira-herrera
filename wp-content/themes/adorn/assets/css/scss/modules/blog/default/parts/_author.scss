@@ -1,0 +1,105 @@
+/* Single author box styles - begin
+	====================================================================== */
+
+.edge-author-description {
+    @include edgeRelativeHolderLayout();
+    text-align: center;
+
+    .edge-author-description-inner {
+        padding: 60px 0;
+        min-height: 78px; // static height of author image -- edge-author-description-image
+        clear: both;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .edge-author-description-content {
+        position: relative;
+        padding: 0 30px;
+    }
+
+    .edge-author-description-image {
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        left: 0;
+        width: 160px;
+        height: 160px;
+        float: left;
+
+        img {
+            display: block;
+            border-radius: 5em;
+        }
+    }
+
+    .edge-author-description-text-holder {
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 195px;
+        padding-top: 20px;
+        min-height: 82px;
+        font-family: $heading-font;
+
+        .edge-author-name {
+            margin: 0;
+            margin-bottom: -7px;
+            font-size: 16px;
+
+            a {
+                color: $first-main-color;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+        }
+
+        .edge-author-email {
+            margin: 0;
+        }
+
+        .edge-author-text {
+            @include edgeRelativeHolderLayout();
+
+            > p {
+                margin: 17px 0 14px;
+                color: $default-text-color;
+                font-size: 16px;
+                font-family: $default-text-font;
+            }
+        }
+
+        .edge-author-social-icons {
+            @include edgeRelativeHolderLayout();
+            padding-top: 2px;
+
+            .edge-author-social-icons-text{
+                font-size: 14px;
+            }
+
+            a {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0;
+                margin: 0 5px 0 0;
+                font-size: 13px;
+                color: $additional-color;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+}
+
+/* Single author box styles - end
+	====================================================================== */

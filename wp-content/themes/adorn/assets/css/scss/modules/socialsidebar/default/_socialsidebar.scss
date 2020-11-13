@@ -1,0 +1,27 @@
+.edge-social-sidebar-holder{
+    position: fixed;
+    left: -53.8px;
+    top: 50%;
+    font-size: 15px;
+    color: $additional-color;
+    @include edgeTransform(rotate(-90deg));
+    z-index: 199;
+
+    .edge-social-sidebar-text{
+        font-family: $heading-font;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    &.edge-social-sidebar-light{
+        span,
+        i{
+            color: #9b9b9b !important; //to override the icon color
+        }
+
+        i{
+            &:hover{
+                color: $header-light-color !important;
+            }
+        }
+    }
+}

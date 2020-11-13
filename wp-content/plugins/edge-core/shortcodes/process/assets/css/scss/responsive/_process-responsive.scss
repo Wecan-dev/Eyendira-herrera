@@ -1,0 +1,100 @@
+@include laptop-landscape-large {
+	.edge-process-holder {
+		.edge-process-item-holder {
+			.edge-pi-image-holder {
+				width: 275px;
+				height: 275px;
+				margin-top: -20px;
+			}
+
+			.edge-pi-holder-inner {
+				width: 100%;
+			}
+
+		}
+	}
+}
+
+@include laptop-landscape {
+	.edge-process-holder {
+		.edge-process-bg-holder {
+			display: none;
+		}
+
+		.edge-process-item-holder {
+			.edge-pi-image-holder {
+				width: 171px;
+				height: 171px;
+			}
+		}
+	}
+
+	.edge-grid-col-9 .edge-process-holder-items-four .edge-process-item-holder {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+
+	.edge-grid-col-9 .edge-process-holder .edge-process-bg-holder {
+		background: none;
+	}
+}
+
+@include ipad-landscape {
+	.edge-process-holder {
+		&.edge-process-holder-items-four {
+			.edge-process-item-holder {
+				width: 50%;
+				margin-bottom: 30px;
+
+				.edge-pi-holder-inner {
+					width: 100%;
+
+					.edge-pi-content-holder {
+						padding: 0 20px;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.edge-process-item-holder {
+
+
+			.edge-pi-holder-inner {
+				.edge-pi-holder-inner-wrapper {
+					&:before {
+							content: none;
+					}
+
+					&:after {
+							content: none;
+					}
+				}
+			}
+
+		}
+
+	}
+}
+
+@include ipad-portrait {
+	.edge-process-holder {
+		&.edge-process-holder-items-three {
+			.edge-process-item-holder {
+				.edge-pi-image-holder {
+					margin-top: 0;
+				}
+
+			}
+		}
+
+		.edge-process-item-holder {
+			width: 100% !important;
+			margin-bottom: 30px;
+
+			.edge-pi-holder-inner {
+				width: 100%;
+			}
+		}
+	}
+}

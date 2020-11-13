@@ -1,0 +1,27 @@
+/* ==========================================================================
+   WooCommerce Onsale and Out of Stock responsive styles - begin
+   ========================================================================== */
+
+    .edge-woo-single-page {
+	
+	    .edge-single-product-content {
+
+			.edge-onsale,
+			.edge-out-of-stock,
+			.edge-new-product {
+				@include laptop-landscape-medium {
+					top: 2%;
+				}
+				@include ipad-landscape {
+					right: 20px;
+				}
+				@include phone-landscape {
+					right: 16%;
+					top: 4%;
+				}
+			}
+	    }
+    }
+/* ==========================================================================
+   WooCommerce Onsale and Out of Stock responsive styles - end
+   ========================================================================== */

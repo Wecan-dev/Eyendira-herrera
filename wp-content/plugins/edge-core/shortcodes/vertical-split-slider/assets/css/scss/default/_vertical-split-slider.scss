@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Vertical Split Slider shortcode style - begin
+   ========================================================================== */
+
+.edge-vss-initialized {
+	
+	.edge-content {
+		
+		.edge-content-inner {
+			
+			> .edge-container {
+				
+				> .edge-container-inner {
+					padding: 0;
+				}
+			}
+			
+			> .edge-full-width {
+				
+				> .edge-full-width-inner {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.edge-vertical-split-slider {
+	position: relative;
+	opacity: 0;
+	margin: 0 -2px;
+	overflow: hidden;
+	
+	.edge-vss-ms-left,
+	.edge-vss-ms-right {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+	}
+
+	.edge-vss-ms-left {
+		top: 0;
+		left: 0;
+		
+		.edge-vss-ms-section {
+			background-position: 100% center;
+			background-size: cover;
+		}
+	}
+
+	.edge-vss-ms-right {
+		top: 10000px;
+		right: 0;
+		
+		.edge-vss-ms-section {
+			background-position: 0 center;
+			background-size: cover;
+		}
+	}
+	
+	.edge-vss-ms-section {
+		
+		&.ms-table{
+			@include edgeTableLayout();
+			box-sizing: border-box;
+		}
+		
+		.ms-tableCell {
+			@include edgeTableCellLayout();
+			box-sizing: border-box;
+		}
+		
+		.ms-easing {
+			@include edgeTransition(all 0.7s ease-out);
+		}
+	}
+}
+
+.edge-vss-responsive {
+	display: none;
+	
+	.edge-vss-ms-section {
+		background-position: center;
+		background-size: cover;
+
+		&.ms-table{
+			@include edgeTableLayout();
+			box-sizing: border-box;
+		}
+
+		.ms-tableCell {
+			@include edgeTableCellLayout();
+			box-sizing: border-box;
+		}
+	}
+}
+
+.edge-vertical-split-slider-widget-area{
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	@include edgeTransform(rotate(-90deg));
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	z-index: 100;
+
+	.widget{
+		margin: 0 10px !important;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+#multiscroll-nav {
+	position: fixed;
+	bottom: 45px;
+	left: 50%;
+	@include edgeTransform(translateX(-33px));
+	opacity: 1;
+	z-index: 1000;
+	@include edgeTransition(opacity .5s ease-out);
+
+	ul {
+		margin: 0;
+		padding: 0;
+		counter-reset: section;
+
+		li {
+			position: relative;
+			display: block;
+			margin: 30px 0px;
+			line-height: 1;
+			text-align: left;
+
+			a {
+				position: relative;
+				display: inline-block;
+				width: 33px;
+				height: 2px;
+				background-color: #999;
+				z-index: 1;
+				box-sizing: border-box;
+				@include edgeTransition(background-color 0.25s ease, width 0.25s ease);
+
+				&:before{
+					counter-increment: section;
+					content: "0"counter(section);
+					font-size: 25px;
+					font-weight: 600;
+					letter-spacing: 1px;
+					position: absolute;
+					left: -38px;
+					top: -10px;
+					color: #999;
+				}
+				
+				&.active,
+				&:hover{
+					background-color: $default-heading-color;
+					width: 110px;
+
+					&:before{
+						color: $default-heading-color;
+					}
+				}
+				
+				.edge-light-header {
+					&.active,
+					&:hover{
+						background-color: $header-light-color;
+					}
+				}
+				
+				.edge-dark-header {
+					&.active,
+					&:hover{
+						background-color: $header-dark-color;
+					}
+				}
+				
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Vertical Split Slider shortcode style - end
+   ========================================================================== */

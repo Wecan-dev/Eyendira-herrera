@@ -1,0 +1,295 @@
+.edge-page input.edge-form-element,
+.edge-page select.edge-form-element,
+.edge-page textarea.edge-form-element {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    -ms-transition: border-color 0.3s ease-in-out;
+    -o-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border-color: #ddd;
+    font-size: 12px;
+    outline: none; }
+.edge-page .input-group-addon {
+    font-size: 12px;
+    background-color: #f7f7f7; }
+.edge-page input[type='text'].edge-form-element,
+.edge-page input[type='email'].edge-form-element,
+.edge-page input[type='password'].edge-form-element,
+.edge-page input[type='number'].edge-form-element,
+.edge-page select.edge-form-element,
+.edge-page textarea.edge-form-element {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px; }
+.edge-page input[type='text'].edge-form-element.edge-form-element-xxsmall,
+.edge-page input[type='email'].edge-form-element.edge-form-element-xxsmall,
+.edge-page input[type='password'].edge-form-element.edge-form-element-xxsmall,
+.edge-page input[type='number'].edge-form-element.edge-form-element-xxsmall,
+.edge-page select.edge-form-element.edge-form-element-xxsmall,
+.edge-page textarea.edge-form-element.edge-form-element-xxsmall {
+    width: 60px; }
+.edge-page input[type='text'].edge-form-element.edge-form-element-xsmall,
+.edge-page input[type='email'].edge-form-element.edge-form-element-xsmall,
+.edge-page input[type='password'].edge-form-element.edge-form-element-xsmall,
+.edge-page input[type='number'].edge-form-element.edge-form-element-xsmall,
+.edge-page select.edge-form-element.edge-form-element-xsmall,
+.edge-page textarea.edge-form-element.edge-form-element-xsmall {
+    width: 100px; }
+.edge-page input[type='text'].edge-form-element.edge-form-element-small,
+.edge-page input[type='email'].edge-form-element.edge-form-element-small,
+.edge-page input[type='password'].edge-form-element.edge-form-element-small,
+.edge-page input[type='number'].edge-form-element.edge-form-element-small,
+.edge-page select.edge-form-element.edge-form-element-small,
+.edge-page textarea.edge-form-element.edge-form-element-small {
+    width: 155px; }
+.edge-page input[type='text'].edge-form-element.edge-form-element-medium,
+.edge-page input[type='email'].edge-form-element.edge-form-element-medium,
+.edge-page input[type='password'].edge-form-element.edge-form-element-medium,
+.edge-page input[type='number'].edge-form-element.edge-form-element-medium,
+.edge-page select.edge-form-element.edge-form-element-medium,
+.edge-page textarea.edge-form-element.edge-form-element-medium {
+    width: 255px; }
+.edge-page input[type='text'].edge-form-element.edge-form-element-large,
+.edge-page input[type='email'].edge-form-element.edge-form-element-large,
+.edge-page input[type='password'].edge-form-element.edge-form-element-large,
+.edge-page input[type='number'].edge-form-element.edge-form-element-large,
+.edge-page select.edge-form-element.edge-form-element-large,
+.edge-page textarea.edge-form-element.edge-form-element-large {
+    width: 500px; }
+.edge-page #general textarea.edge-form-element {
+    resize: vertical; }
+.edge-page input[type='text'].edge-form-element,
+.edge-page input[type='email'].edge-form-element,
+.edge-page input[type='password'].edge-form-element,
+.edge-page input[type='number'].edge-form-element,
+.edge-page select.edge-form-element {
+    height: 34px;
+    line-height: 1.42857143; }
+.edge-page input[type='text'].edge-form-element,
+.edge-page input[type='email'].edge-form-element,
+.edge-page input[type='password'].edge-form-element,
+.edge-page input[type='number'].edge-form-element,
+.edge-page select.edge-form-element,
+.edge-page textarea.edge-form-element {
+    padding: 6px 12px; }
+.edge-page input.edge-form-element:hover,
+.edge-page select.edge-form-element:hover,
+.edge-page textarea.edge-form-element:hover {
+    background-color: #f7f9fa; }
+.edge-page input.edge-form-element:focus,
+.edge-page select.edge-form-element:focus,
+.edge-page textarea.edge-form-element:focus {
+    border-color: #999;
+    background-color: #f7f9fa;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+.edge-page input[type="radio"].edge-form-element,
+.edge-page input[type="checkbox"].edge-form-element {
+    margin-top: 1px;
+    outline: none; }
+@media only screen and (max-width: 782px) {
+    .edge-page input[type="radio"].edge-form-element,
+    .edge-page input[type="checkbox"].edge-form-element {
+        width: 16px;
+        height: 16px; } }
+@media only screen and (max-width: 782px) {
+    .edge-page input[type="radio"].edge-form-element:checked:before,
+    .edge-page input[type="checkbox"].edge-form-element:checked:before {
+        font: 400 21px/1 dashicons; } }
+@media only screen and (max-width: 782px) {
+    .edge-page input[type="checkbox"].edge-form-element:checked:before {
+        margin: -3px 0 0 -4px; } }
+@media only screen and (max-width: 782px) {
+    .edge-page input[type="radio"].edge-form-element:checked:before {
+        margin: 3px; } }
+.edge-page .input-group {
+    margin-bottom: 15px; }
+.edge-page .input-group .input-group-addon {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+.edge-page label {
+    margin: 0; }
+.edge-page .radio-inline input[type="radio"] + img {
+    border: 2px solid transparent;
+    -webkit-transition: border-color 0.15s ease-in-out;
+    -moz-transition: border-color 0.15s ease-in-out;
+    -ms-transition: border-color 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out; }
+.edge-page .radio-inline input[type="radio"]:checked + img {
+    border-color: #bba011; }
+.edge-page .edge-radio-group-holder.with-images .radio-inline {
+    padding-left: 0; }
+.edge-page .edge-field-description {
+    margin: 0px 0 10px;
+    display: block;
+    color: #808A93;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.5; }
+.edge-page .edge-field-description {
+    margin-top: 10px; }
+.edge-page .edge-page-form-section {
+    border-top: 1px solid #efefef;
+    display: table;
+    width: 100%; }
+.edge-page .edge-page-form-section:last-child {
+    border-bottom: none; }
+.edge-page .edge-page-form-section {
+    border-top: 1px solid #efefef;
+    display: table;
+    width: 100%; }
+.edge-page .edge-page-form-container-holder .edge-field-desc {
+    background-color: #f7f9fa;
+    border-left: 2px solid #D8DDE7; }
+.edge-page .edge-field-desc {
+    width: 20%;
+    padding: 15px 10px;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    background-color: #f7f9fa; }
+.edge-page .edge-field-desc h4 {
+    margin-bottom: 0;
+    color: #374a59;
+    font-size: 14px;
+    font-weight: 600; }
+.edge-page .edge-field-desc p {
+    color: #374a59;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 300; }
+.edge-page .edge-section-content {
+    padding: 20px 0;
+    display: table-cell;
+    width: 80%;
+    height: 100%;
+    vertical-align: middle; }
+
+@media only screen and (max-width: 782px) {
+    #wpbody select.edge-form-element {
+        font-size: 13px;
+        height: 34px; } }
+
+/*# sourceMappingURL=edge-forms.css.map */
+
+/*
+NEW CSS START
+*/
+
+.edge-page .edge-page-form-section.edge-no-description .edge-field-desc {
+    display: none;
+}
+
+.edge-page .edge-page-form-section.edge-no-description .edge-section-content {
+    width: 100%;
+}
+
+/* Repeater global style -  start */
+
+.edge-page .edge-repeater-fields-row-inner {
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    height: 100%;
+    table-layout: fixed;
+}
+
+.edge-page .edge-repeater-field-item {
+    display: table-cell;
+    width: 80%;
+    height: 100%;
+    vertical-align: middle;
+    background: #f6f6f6;
+}
+
+.edge-page .edge-repeater-fields-row .edge-repeater-wrapper {
+    width: 80%;
+    padding: 15px;
+}
+
+.edge-page .edge-repeater-fields-row .edge-repeater-wrapper .edge-repeater-add{
+    padding-left: 0;
+}
+
+.edge-page .edge-repeater-remove,
+.edge-page .edge-repeater-sort {
+    border-top: 1px solid #efefef;
+    font-size: 20px;
+    display: table-cell;
+    width: 10%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.edge-page .edge-repeater-sort {
+    cursor: move;
+}
+
+.edge-page .edge-repeater-sort:hover {
+    background-color: #efefef;
+}
+
+.edge-page .edge-repeater-add {
+    padding: 15px;
+    display: inline-block
+}
+
+.edge-page .edge-field-desc h4 {
+    margin-top: 0;
+}
+
+.edge-page .placeholder,
+.edge-page .placeholder-sub{
+    background-color: #dadada;
+    border: 1px dashed #000;
+    height: 75px;
+}
+
+.edge-page .placeholder-sub {
+    margin-left: 50px;
+}
+
+.edge-page .edge-repeater-fields-row.ui-sortable-helper {
+    background-color: #fff;
+}
+
+.edge-page .edge-repeater-fields-row.second-level{
+    margin-left: 50px;
+}
+
+/* Repeater global style -  end */
+
+/* Repeater table layout style -  start */
+
+.edge-page table.edge-repeater-fields-holder {
+    width: 100%;
+    text-align: center;
+}
+
+.edge-page table.edge-repeater-fields-holder thead tr th {
+    padding: 15px;
+    text-align: center;
+}
+
+.edge-page table.edge-repeater-fields-holder .edge-repeater-remove,
+.edge-page table.edge-repeater-fields-holder .edge-repeater-sort {
+    padding: 0 15px;
+}
+
+/* Repeater table layout style -  end */
+
+/*
+NEW CSS END
+*/

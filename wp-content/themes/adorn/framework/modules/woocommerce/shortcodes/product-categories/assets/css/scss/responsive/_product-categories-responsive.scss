@@ -1,0 +1,46 @@
+.edge-prod-cats-holder{
+
+    @include laptop-landscape-medium{
+        .edge-prod-cat.edge-cat-with-image{
+            &:hover{
+                .edge-prod-cat-content{
+                    &.bottom{
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include ipad-landscape{
+        $standard_list_columns: ('four');
+
+        @for $i from 0 to length($standard_list_columns) {
+            &.edge-#{nth($standard_list_columns,$i+1)}-columns {
+                $column_width: 100%/($i+2);
+
+                .edge-prod-cat{
+                    width: 50%;
+
+                    &:nth-child(2n+1) {
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+    @include phone-landscape{
+        $standard_list_columns: ('two', 'three', 'four');
+
+        @for $i from 0 to length($standard_list_columns) {
+            &.edge-#{nth($standard_list_columns,$i+1)}-columns {
+                $column_width: 100%/($i+2);
+
+                .edge-prod-cat{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

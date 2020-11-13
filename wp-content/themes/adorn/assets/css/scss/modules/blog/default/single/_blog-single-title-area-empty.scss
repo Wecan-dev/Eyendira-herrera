@@ -1,0 +1,209 @@
+/* ==========================================================================
+   Blog Single Title Area Empty style - begin
+   ========================================================================= */
+
+.edge-blog-single-title-area-empty {
+	article {
+
+		&.format-video {
+			.edge-post-heading {
+				padding-bottom: 40px;
+			}
+		}
+
+		&.format-gallery {
+			.owl-nav {
+				.edge-prev-icon,
+				.edge-next-icon {
+					font-size: 44px;
+					color: rgba(255, 255, 255, .7);
+				}
+			}
+
+			.edge-post-heading {
+				padding-bottom: 40px;
+			}
+		}
+
+		&.format-audio {
+			.edge-post-heading {
+				padding-bottom: 40px;
+			}
+		}
+
+		&.format-link {
+
+			margin-bottom: 110px;
+
+			.edge-post-additional-content {
+				margin-bottom: 50px;
+			}
+
+			.edge-post-content {
+				margin-bottom: 40px;
+			}
+
+			.edge-post-text-main {
+				margin-bottom: 0;
+			}
+
+			.edge-post-text-inner {
+				margin-bottom: 0;
+			}
+
+			.edge-post-text {
+				padding: 50px 53px;
+				background-color: #fbfbfb;
+			}
+
+			.edge-post-text-main {
+				@include edgeTableLayout();
+			}
+
+			.edge-post-info-bottom {
+				text-align: center;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			.edge-post-mark {
+				@include edgeTableCellLayout();
+				width: 50px;
+
+				.edge-link-mark {
+					font-size: 36px;
+					color: $first-main-color;
+				}
+			}
+
+			.edge-post-link-holder {
+				@include edgeTableCellLayout();
+			}
+
+			.edge-post-title {
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+		}
+
+		&.format-quote {
+
+			margin-bottom: 110px;
+
+			.edge-post-additional-content {
+				margin-bottom: 50px;
+			}
+
+			.edge-post-content {
+				margin-bottom: 40px;
+			}
+
+			.edge-post-text-main {
+				margin-bottom: 0;
+			}
+
+			.edge-post-text-inner {
+				margin-bottom: 0;
+			}
+
+			.edge-post-text {
+				padding: 50px 53px;
+				padding-bottom: 42px;
+				padding-top: 42px;
+				background-color: #fafafa;
+			}
+
+			.edge-post-text-main {
+				@include edgeTableLayout();
+				text-align: center;
+			}
+
+			.edge-post-info-bottom {
+				text-align: center;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			.edge-post-mark {
+				@include edgeTableCellLayout();
+				width: 50px;
+				vertical-align: top;
+				text-align: left;
+
+				.edge-quote-mark {
+					padding-top: 5px;
+					font-size: 36px;
+					color: $first-main-color;
+				}
+			}
+
+			.edge-post-link-holder {
+				@include edgeTableCellLayout();
+				vertical-align: top;
+				text-align: left;
+			}
+
+			.edge-post-title {
+				margin-bottom: 0;
+				padding-bottom: 3px;
+				font-size: 24px;
+				color: $default-heading-color;
+				font-weight: bold;
+				letter-spacing: 0.1em;
+				line-height: 1.83em
+			}
+
+			.edge-quote-author {
+				font-size: 12px;
+				color: $default-text-color;
+				letter-spacing: 0.1em;
+				font-weight: bold;
+			}
+
+			.edge-post-author {
+				display: inline-block;
+				margin-bottom: 23px;
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+
+		.edge-post-text-inner {
+			margin-bottom: 110px;
+		}
+
+		.edge-post-text-main {
+			margin-bottom: 55px;
+		}
+		.edge-post-content {
+			.edge-post-info-bottom {
+				text-align: center;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+
+		.edge-tags {
+			a {
+				display: inline-block;
+				text-transform: uppercase;
+				color: #848484;
+				font-size: 9px;
+				font-weight: 400;
+				padding: 0 25px;
+				background-color: transparent;
+				border: 1px solid #d3d3d3;
+				height: 29px;
+				line-height: 31px;
+				margin-right: 3px;
+				margin-bottom: 10px;
+				font-family: $heading-font;
+			}
+		}
+
+	}
+}
+
+/* ==========================================================================
+   Blog Single Title Area Empty style - end
+   ========================================================================= */

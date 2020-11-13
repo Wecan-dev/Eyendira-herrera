@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Split Scrolling Section shortcode style - begin
+   ========================================================================== */
+
+.edge-split-scrolling-section {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	
+	.edge-sss-ms-left,
+	.edge-sss-ms-right {
+		width: 50%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+	 .edge-sss-ms-section{
+		 height: 100%;
+		 overflow: hidden;
+	 }
+
+	.edge-sss-ms-left {
+		position: fixed;
+		div,ul,li{
+			height: 100%;
+		}
+		
+		.edge-sss-ms-section {
+			background-position: 100% center;
+			background-size: cover;
+		}
+	}
+
+	.edge-sss-ms-right {
+		float: right;
+		margin-top: 57px;
+		padding: 0 25px;
+		
+		.edge-sss-ms-section {
+			background-position: 0 center;
+			background-size: cover;
+		}
+	}
+	.edge-image-slider-item-inner{
+		&.image{
+			display: none;
+		}
+	}
+
+	.edge-image-slider-item-inner-wrapper{
+		position: relative;
+		.edge-image-slider-item-content{
+
+			height: auto;
+			position: absolute;
+			bottom: 56px;
+			width: 100%;
+			padding: 0 5%;
+			text-align: center;
+			box-sizing: border-box;
+
+			.edge-image-slider-item-inner{
+
+				color: $default-background-color;
+				&.title{
+					font-family: $additional-text-font;
+					font-size: 150px;
+					margin: 0 0 75px;
+					letter-spacing: -8px;
+				}
+				&.content{
+					font-family: $heading-font;
+					font-size: 30px;
+					letter-spacing: 5px;
+					font-weight: 400;
+					text-transform: uppercase;
+				}
+
+			}
+		}
+	}
+
+	.edge-prod-cat.edge-cat-with-image{
+		&:nth-child(even){
+			top: 38px;
+		}
+	}
+
+	.edge-owl-slider .owl-nav .owl-next,
+	.edge-owl-slider .owl-nav .owl-prev{
+		@include edgeTransform(none);
+		top: calc(100% - 48px );
+	}
+}
+/* ==========================================================================
+   Split Scrolling Section shortcode style - end
+   ========================================================================== */

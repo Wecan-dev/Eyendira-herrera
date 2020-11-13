@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+.edge-testimonials-holder {
+    &.edge-testimonials-standard {
+        text-align: center;
+        padding: 70px 0 95px;
+
+        .edge-testimonial-quote {
+            text-align: center;
+
+            span {
+                font-size: 45px;
+                color: #000;
+            }
+        }
+
+        .edge-testimonial-image {
+            @include edgeRelativeHolderLayout();
+            margin: 33px 0 0;
+
+            img {
+                height: 75px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .edge-testimonial-title {
+            margin: 0;
+            line-height: 45px;
+
+            &.entry-title-none{
+                letter-spacing: -0.7em;
+                margin-bottom: 40px;
+            }
+        }
+
+        .edge-testimonial-left-placement{
+            .edge-testimonial-author,
+            .edge-testimonial-position{
+                display: inline-block;
+                font-size: 14px;
+            }
+            .edge-testimonial-author:after{
+                content: ',';
+            }
+        }
+        .edge-testimonial-under-placement{
+            .edge-testimonial-author,
+            .edge-testimonial-position{
+                display: block;
+            }
+
+            .edge-testimonial-author{
+                text-transform: uppercase;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: $dark-color;
+            }
+            .edge-testimonial-position{
+                font-size: 12px;
+            }
+        }
+
+        .edge-testimonial-author {
+            margin: 27px 0 0;
+            font-family: $heading-font;
+            text-transform: none;
+            font-weight: 400;
+            color: $additional-color;
+        }
+
+        .edge-testimonial-position {
+            color: $additional-color;
+            margin-top: 8px;
+            text-transform: none;
+            letter-spacing: 1px;
+        }
+
+        .edge-testimonial-text {
+            margin: 26px 0 10px;
+            color: $default-text-color;
+            padding: 0 20px;
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin: 25px 0 0;
+
+            .owl-dot {
+                display: inline-block;
+                vertical-align: middle;
+
+                &:not(.active) {
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 8px;
+                        height: 8px;
+                        margin: 0 6px;
+                        border-radius: 50%;
+                        background-color: $default-text-color;
+                        border-color: $default-text-color;
+                        @include edgeTransition(background-color .2s ease-out, border .2s ease-out);
+                        box-sizing: border-box;
+                    }
+                }
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 12px;
+                    height: 12px;
+                    margin: 0 6px;
+                    border-radius: 3em;
+                    background-color: transparent;
+                    border: 2px solid rgba($default-heading-color, .5);
+                    @include edgeTransition(background-color .2s ease-out, border .2s ease-out);
+                    box-sizing: border-box;
+                }
+
+                &:hover,
+                &.active {
+
+                    span {
+                        background-color: $default-heading-color;
+                        border-color: $default-heading-color;
+                    }
+                }
+            }
+        }
+
+        /* Light/Dark styles */
+        &.edge-testimonials-light {
+
+            .owl-nav {
+
+                .edge-prev-icon,
+                .edge-next-icon {
+                    color: #fff;
+
+                }
+            }
+
+            .edge-testimonial-quote {
+                span {
+                    color: #fff;
+                }
+            }
+
+            .edge-testimonial-title {
+                color: #fff;
+            }
+            .edge-testimonial-text {
+                color: #fff;
+            }
+            .edge-testimonial-author {
+                color: #fff;
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    span {
+                        border: 2px solid rgba(#fff, .5);
+                        background-color: #fff;
+                    }
+
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &.edge-testimonials-dark {
+
+        }
+    }
+}
+
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */
+

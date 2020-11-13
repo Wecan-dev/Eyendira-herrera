@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Blog List shortcode Standard - begin
+   ========================================================================== */
+
+.edge-blog-list-holder {
+    &.edge-bl-standard {
+        &:not(.edge-bl-one-column) {
+
+            .edge-bl-item {
+                float: left;
+            }
+        }
+
+        $columns_number: ('two', 'three', 'four', 'five');
+
+        @for $i from 0 to length($columns_number) {
+            &.edge-bl-#{nth($columns_number,$i+1)}-columns {
+
+                .edge-bl-item {
+                    width: 100% / ($i+2);
+                }
+
+                @if ($i > 1) { // set different break point for four and five columns
+                    @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                        .edge-bl-item {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                } @else {
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                        .edge-bl-item {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .edge-post-title {
+            margin: 0;
+            margin-top: -6px;
+        }
+
+        .edge-bli-excerpt {
+            margin-top: -37px;
+            .edge-post-excerpt-holder {
+                p {
+                    margin-top: 26px;
+                    color: $default-text-color;
+                    font-weight: 500;
+                }
+            }
+
+            .edge-post-read-more-button {
+                a {
+                    margin-top: 11px;
+                    span {
+                        color: #323232;
+                        font-weight: 700;
+                        letter-spacing: 0.15em;
+                    }
+
+                    i {
+                        color: $first-main-color;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .edge-post-info-date {
+            margin-top: 25px;
+            a {
+                font-size: 12px;
+                letter-spacing: 0.1em;
+                line-height: 47px;
+                font-weight: 700;
+                color: $default-text-color;
+            }
+        }
+
+        .edge-bli-info {
+            @include edgeRelativeHolderLayout();
+            margin: 0;
+            clear: both;
+
+            > div {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                float: left;
+                padding: 0 13px 5px 0;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 4px;
+                    content: '/';
+                }
+
+                &:last-child {
+                    padding: 0 0 5px;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                a {
+                    span {
+                        padding-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Blog List shortcode Standard - end
+   ========================================================================== */

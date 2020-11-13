@@ -1,0 +1,4598 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+/* ==========================================================================
+   Masonry Gallery shortcodes style - begin
+   ========================================================================== */
+.edge-masonry-gallery-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Masonry Gallery Columns Space - begin *****/
+  /***** Masonry Gallery Columns Space - end *****/
+}
+
+.edge-masonry-gallery-holder.edge-mg-no-space {
+  margin: 0;
+}
+
+.edge-masonry-gallery-holder.edge-mg-no-space .edge-mg-inner {
+  margin: 0;
+}
+
+.edge-masonry-gallery-holder.edge-mg-no-space .edge-mg-item {
+  padding: 0px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-tiny-space {
+  margin: 0 -5px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-tiny-space .edge-mg-inner {
+  margin: 0 -5px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-tiny-space .edge-mg-item {
+  padding: 5px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-small-space {
+  margin: 0 -10px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-small-space .edge-mg-inner {
+  margin: 0 -10px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-small-space .edge-mg-item {
+  padding: 10px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-normal-space {
+  margin: 0 -15px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-normal-space .edge-mg-inner {
+  margin: 0 -15px;
+}
+
+.edge-masonry-gallery-holder.edge-mg-normal-space .edge-mg-item {
+  padding: 15px;
+}
+
+.edge-masonry-gallery-holder .edge-mg-inner {
+  opacity: 0;
+}
+
+.edge-masonry-gallery-holder .edge-mg-grid-gutter {
+  width: 0;
+}
+
+.edge-masonry-gallery-holder .edge-mg-grid-sizer {
+  width: 25%;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item {
+  position: relative;
+  width: 25%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-square-big {
+  width: 50%;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-rectangle-landscape {
+  width: 50%;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-rectangle-landscape .edge-mg-image img {
+  max-height: inherit;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-rectangle-portrait .edge-mg-image img {
+  max-width: inherit;
+  width: auto;
+  height: 100%;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-item-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-item-inner {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-item-content {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-image-overlay {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-item-icon {
+  margin: 0 0 1px;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-item-title {
+  margin: 0;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-item-text {
+  margin: 14px 0 0;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-item-button {
+  margin: 21px 0 0;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item .edge-mg-item-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-standard .edge-mg-item-inner {
+  opacity: 0;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  -moz-transition: opacity 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  transition: opacity 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-standard .edge-mg-item-title,
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-standard .edge-mg-item-text {
+  color: #fff;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-standard img {
+  -webkit-transition: opacity 0.7s ease;
+  -moz-transition: opacity 0.7s ease;
+  transition: opacity 0.7s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-standard:hover .edge-mg-item-inner {
+  opacity: 1;
+  background-color: rgba(33, 33, 33, 0.4);
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-standard:hover img {
+  opacity: 0;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-simple.edge-mg-skin-default .edge-mg-item-inner {
+  background-color: #f8f7f7;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-simple.edge-mg-skin-light .edge-mg-item-inner {
+  background-color: #fff;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-simple.edge-mg-skin-dark .edge-mg-item-inner {
+  background-color: #212121;
+}
+
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-simple.edge-mg-skin-dark .edge-mg-item-title,
+.edge-masonry-gallery-holder .edge-mg-item.edge-mg-simple.edge-mg-skin-dark .edge-mg-item-text {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio shortcode style - begin
+   ========================================================================== */
+.edge-portfolio-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Article Global Style - begin *****/
+  /***** Article Global Style - end *****/
+  /***** Specific Global Style - begin *****/
+  /***** Specific Global Style - end *****/
+  /***** Portfolio Columns Space - begin *****/
+  /***** Portfolio Columns Space - end *****/
+  /***** Portfolio Types - begin *****/
+  /***** Portfolio Types - end *****/
+  /***** Additional Features - begin *****/
+  /***** Additional Features - end *****/
+}
+
+.edge-portfolio-list-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.touch .edge-portfolio-list-holder article {
+  cursor: pointer;
+}
+
+.edge-portfolio-list-holder article .edge-pl-item-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.edge-portfolio-list-holder article .edge-pli-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-portfolio-list-holder article .edge-pli-image img {
+  display: block;
+  width: 100%;
+}
+
+.edge-portfolio-list-holder article .edge-pli-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text .edge-pli-title {
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text .edge-pli-category-holder {
+  position: relative;
+  display: block;
+  margin: 5px 0 0;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text .edge-pli-category-holder a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px 0 0;
+  margin: 0 -2px 0 0;
+  z-index: 8;
+  font-size: 14px;
+  color: #929292;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text .edge-pli-category-holder a:after {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  content: ',';
+  color: inherit;
+  font-size: 12px;
+  line-height: inherit;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text .edge-pli-category-holder a:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text .edge-pli-category-holder a:last-child:after {
+  display: none;
+}
+
+.edge-portfolio-list-holder article .edge-pli-text .edge-pli-excerpt {
+  margin: 3px 0 0;
+}
+
+.edge-portfolio-list-holder.edge-pl-no-content .edge-pli-text-holder {
+  display: none;
+}
+
+.edge-portfolio-list-holder.edge-pl-no-content .edge-pl-standard-pagination {
+  margin: 60px 0 0;
+}
+
+.edge-portfolio-list-holder.edge-pl-no-space .edge-pl-inner {
+  margin: 0;
+}
+
+.edge-portfolio-list-holder.edge-pl-no-space article {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edge-portfolio-list-holder.edge-pl-tiny-space .edge-pl-inner {
+  margin: 0 -5px;
+}
+
+.edge-portfolio-list-holder.edge-pl-tiny-space article {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edge-portfolio-list-holder.edge-pl-small-space .edge-pl-inner {
+  margin: 0 -10px;
+}
+
+.edge-portfolio-list-holder.edge-pl-small-space article {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edge-portfolio-list-holder.edge-pl-normal-space .edge-pl-inner {
+  margin: 0 -15px;
+}
+
+.edge-portfolio-list-holder.edge-pl-normal-space article {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.edge-portfolio-list-holder.edge-pl-medium-space .edge-pl-inner {
+  margin: 0 -25px;
+}
+
+.edge-portfolio-list-holder.edge-pl-medium-space article {
+  padding: 0 25px;
+  margin: 0 0 50px;
+}
+
+.edge-portfolio-list-holder.edge-pl-large-space .edge-pl-inner {
+  margin: 0 -30px;
+}
+
+.edge-portfolio-list-holder.edge-pl-large-space article {
+  padding: 0 30px;
+  margin: 0 0 60px;
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery:not(.edge-pl-one-column) article {
+  float: left;
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery.edge-pl-two-columns article {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-two-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery.edge-pl-three-columns article {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-three-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery.edge-pl-four-columns article {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-four-columns article:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery.edge-pl-five-columns article {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edge-portfolio-list-holder.edge-pl-gallery.edge-pl-five-columns article:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry .edge-pl-inner {
+  opacity: 0;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry article,
+.edge-portfolio-list-holder.edge-pl-masonry .edge-pl-grid-sizer {
+  width: 100%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry .edge-pl-grid-gutter {
+  width: 0;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-two-columns article,
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-two-columns .edge-pl-grid-sizer {
+  width: 50%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-two-columns article.edge-pl-masonry-large-width, .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-two-columns article.edge-pl-masonry-large-width-height {
+  width: 100%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns article,
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns .edge-pl-grid-sizer {
+  width: 33.33333%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns article.edge-pl-masonry-large-width, .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-three-columns article.edge-pl-masonry-large-width-height {
+  width: 66.66667%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article,
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns .edge-pl-grid-sizer {
+  width: 25%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article.edge-pl-masonry-large-width, .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-four-columns article.edge-pl-masonry-large-width-height {
+  width: 50%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article,
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns .edge-pl-grid-sizer {
+  width: 20%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article.edge-pl-masonry-large-width, .edge-portfolio-list-holder.edge-pl-masonry.edge-pl-five-columns article.edge-pl-masonry-large-width-height {
+  width: 40%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-images-fixed article .edge-pl-item-inner {
+  height: 100%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-images-fixed article .edge-pl-item-inner .edge-pli-image {
+  height: 100%;
+}
+
+.edge-portfolio-list-holder.edge-pl-masonry.edge-pl-images-fixed article .edge-pl-item-inner .edge-pli-image img {
+  height: 100%;
+}
+
+.edge-portfolio-list-holder.edge-pl-has-animation article {
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  transform: translateY(80px);
+  -webkit-transition: opacity 0.8s cubic-bezier(0.04, 0.46, 0.25, 1), -webkit-transform 1s cubic-bezier(0.04, 0.46, 0.25, 1);
+  transition: opacity 0.8s cubic-bezier(0.04, 0.46, 0.25, 1), transform 1s cubic-bezier(0.04, 0.46, 0.25, 1);
+}
+
+.edge-portfolio-list-holder.edge-pl-has-animation article.edge-item-show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.edge-portfolio-list-holder.edge-pl-has-animation article.edge-item-show.edge-item-shown {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  pointer-events: auto;
+}
+
+.touch .edge-portfolio-list-holder.edge-pl-has-animation article {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Portfolio shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio filter style - begin
+   ========================================================================== */
+.edge-pl-filter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.edge-pl-filter-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.edge-pl-filter-holder ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 8px;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+  .edge-pl-filter-holder ul li {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-pl-filter-holder ul li {
+    padding: 0 10px;
+  }
+}
+
+.edge-pl-filter-holder ul li span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #212121;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 22px;
+  white-space: nowrap;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+  text-transform: uppercase;
+}
+
+.edge-pl-filter-holder ul li.edge-pl-current span, .edge-pl-filter-holder ul li:hover span {
+  color: #888;
+}
+
+/* ==========================================================================
+   Portfolio filter style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio standard pagination style - begin
+   ========================================================================== */
+.edge-portfolio-list-holder.edge-pl-no-content .edge-pl-standard-pagination {
+  margin: 30px 0 0;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.edge-portfolio-list-holder.edge-pl-pag-standard .edge-pl-inner {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-portfolio-list-holder.edge-pl-pag-standard.edge-pl-pag-standard-animate .edge-pl-inner {
+  opacity: 0;
+}
+
+.edge-pl-standard-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 21px 0 0;
+  clear: both;
+  border-top: 1px solid #e6e6e6;
+  padding: 10px;
+}
+
+.edge-pl-standard-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.edge-pl-standard-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.edge-pl-standard-pagination ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.edge-pl-standard-pagination ul li a:hover {
+  color: #212121;
+}
+
+.edge-pl-standard-pagination ul li.edge-pl-pag-active a {
+  color: #212121;
+  font-size: 14px;
+}
+
+.edge-pl-standard-pagination ul li.edge-pl-pag-prev a, .edge-pl-standard-pagination ul li.edge-pl-pag-next a {
+  font-size: 10px;
+  -webkit-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  color: #212121;
+  font-weight: bold;
+}
+
+.edge-pl-standard-pagination ul li.edge-pl-pag-prev a span, .edge-pl-standard-pagination ul li.edge-pl-pag-next a span {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-pl-standard-pagination ul li.edge-pl-pag-prev a span:before, .edge-pl-standard-pagination ul li.edge-pl-pag-next a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-pl-standard-pagination ul li.edge-pl-pag-prev a {
+  opacity: 0;
+}
+
+.edge-pl-standard-pagination ul li.edge-pl-pag-prev a span {
+  padding-right: 10px;
+}
+
+.edge-pl-standard-pagination ul li.edge-pl-pag-next a {
+  opacity: 1;
+}
+
+.edge-pl-standard-pagination ul li.edge-pl-pag-next a span {
+  padding-left: 10px;
+}
+
+/* ==========================================================================
+   Portfolio standard pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio load more pagination style - begin
+   ========================================================================== */
+.edge-pl-load-more-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-pl-load-more-holder .edge-pl-load-more {
+  margin: 40px 0 0;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Portfolio load more pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio loading element style - begin
+   ========================================================================== */
+.edge-pl-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  color: #212121;
+  text-align: center;
+}
+
+.edge-pl-loading.edge-filter-trigger {
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.edge-pl-loading.edge-standard-pag-trigger {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.edge-pl-has-filter .edge-pl-loading.edge-standard-pag-trigger {
+  top: 150px;
+}
+
+.edge-pl-loading.edge-showing {
+  display: block;
+}
+
+.edge-pl-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #212121;
+  border-radius: 100%;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.edge-pl-loading .edge-pl-loading-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.edge-pl-loading .edge-pl-loading-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio archive additional style - start
+   ========================================================================== */
+.tax-portfolio-category .edge-pl-standard-shader a.edge-pli-link:hover {
+  background: rgba(38, 12, 12, 0.3);
+}
+
+/* ==========================================================================
+   Portfolio archive additional style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Project Info shortcode style - begin
+   ========================================================================== */
+.edge-portfolio-project-info {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-portfolio-project-info .edge-ppi-label {
+  margin: 0;
+  padding: 0;
+}
+
+.edge-portfolio-project-info > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-portfolio-project-info > div a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+
+.edge-portfolio-project-info > div a:last-child {
+  margin: 0;
+}
+
+.edge-portfolio-project-info .edge-ppi-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Portfolio Project Info shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Slider shortcode style - begin
+   ========================================================================== */
+.edge-portfolio-slider-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.edge-portfolio-slider-holder .edge-pl-inner {
+  margin: 0 !important;
+}
+
+.edge-portfolio-slider-holder article {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+}
+
+.edge-portfolio-slider-holder .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.edge-portfolio-slider-holder .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+
+.edge-portfolio-slider-holder .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-portfolio-slider-holder .owl-nav .owl-next,
+.edge-portfolio-slider-holder .owl-nav .owl-prev {
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.edge-portfolio-slider-holder .owl-nav .owl-next .edge-prev-icon span,
+.edge-portfolio-slider-holder .owl-nav .owl-next .edge-next-icon span,
+.edge-portfolio-slider-holder .owl-nav .owl-prev .edge-prev-icon span,
+.edge-portfolio-slider-holder .owl-nav .owl-prev .edge-next-icon span {
+  font-family: "Linearicons-Free";
+  font-size: 35px;
+}
+
+.edge-portfolio-slider-holder .owl-nav .owl-prev {
+  left: 45px;
+}
+
+.edge-portfolio-slider-holder .owl-nav .owl-prev .edge-prev-icon span:before {
+  content: "\e879";
+}
+
+.edge-portfolio-slider-holder .owl-nav .owl-next {
+  right: 45px;
+}
+
+.edge-portfolio-slider-holder .owl-nav .owl-next .edge-next-icon span:before {
+  content: "\e87a";
+}
+
+.edge-portfolio-slider-holder .owl-dots {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  counter-reset: section;
+}
+
+.edge-portfolio-slider-holder .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.edge-portfolio-slider-holder .owl-dots .owl-dot:before {
+  counter-increment: section;
+  content: counter(section, decimal-leading-zero);
+  font-family: "Inconsolata";
+  font-size: 18px;
+}
+
+.edge-portfolio-slider-holder .owl-dots .owl-dot:hover:before, .edge-portfolio-slider-holder .owl-dots .owl-dot.active:before {
+  color: #212121;
+  border-bottom: 1px solid #212121;
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-light-skin .owl-nav .owl-prev:hover .edge-prev-icon,
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-light-skin .owl-nav .owl-prev:hover .edge-next-icon,
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-light-skin .owl-nav .owl-next:hover .edge-prev-icon,
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-light-skin .owl-nav .owl-next:hover .edge-next-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-light-skin .owl-nav .edge-prev-icon,
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-light-skin .owl-nav .edge-next-icon {
+  color: #fff;
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-dark-skin .owl-nav .owl-prev:hover .edge-prev-icon,
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-dark-skin .owl-nav .owl-prev:hover .edge-next-icon,
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-dark-skin .owl-nav .owl-next:hover .edge-prev-icon,
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-dark-skin .owl-nav .owl-next:hover .edge-next-icon {
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-dark-skin .owl-nav .edge-prev-icon,
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-nav-dark-skin .owl-nav .edge-next-icon {
+  color: #333;
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pag-light-skin .owl-dots .owl-dot:before {
+  color: #fff;
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pag-light-skin .owl-dots .owl-dot.active:before, .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pag-light-skin .owl-dots .owl-dot:hover:before {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pag-dark-skin .owl-dots .owl-dot:before {
+  color: rgba(51, 51, 51, 0.2);
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pag-dark-skin .owl-dots .owl-dot.active:before, .edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pag-dark-skin .owl-dots .owl-dot:hover:before {
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pag-bellow-slider .owl-dots {
+  position: relative;
+  bottom: auto;
+  margin: 16px 0 0;
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder {
+  position: absolute;
+  top: 43%;
+  left: 57%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder .edge-pli-text .edge-pli-title {
+  font-family: "Inconsolata";
+  font-weight: 400;
+  color: #fff;
+  font-size: 40px;
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder .edge-pli-text .edge-pli-category-holder {
+  margin-bottom: 20px;
+}
+
+.edge-portfolio-slider-holder .edge-portfolio-list-holder.edge-pl-standard-shader article .edge-pli-text-holder .edge-pli-text .edge-pli-category-holder a {
+  font-family: "Inconsolata";
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   Portfolio Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Dark Overlay style - begin
+   ========================================================================== */
+.edge-portfolio-list-holder.edge-pl-gallery-dark-overlay article .edge-pli-text .edge-pli-title,
+.edge-portfolio-list-holder.edge-pl-gallery-dark-overlay article .edge-pli-text .edge-pli-excerpt {
+  color: #fff;
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery-dark-overlay article .edge-pli-text .edge-pli-category-holder a {
+  color: #fff;
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery-dark-overlay article .edge-pli-text .edge-pli-category-holder a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery-dark-overlay article:hover .edge-pli-text-holder {
+  opacity: 1;
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery-dark-overlay .edge-pli-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Dark Overlay style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Light Overlay style - begin
+   ========================================================================== */
+.edge-portfolio-list-holder.edge-pl-gallery-light-overlay article .edge-pli-text .edge-pli-title,
+.edge-portfolio-list-holder.edge-pl-gallery-light-overlay article .edge-pli-text .edge-pli-excerpt {
+  color: #000;
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery-light-overlay article .edge-pli-text .edge-pli-category-holder a {
+  color: #000;
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery-light-overlay article .edge-pli-text .edge-pli-category-holder a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery-light-overlay article:hover .edge-pli-text-holder {
+  opacity: 1;
+}
+
+.edge-portfolio-list-holder.edge-pl-gallery-light-overlay .edge-pli-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Light Overlay style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder .edge-ps-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder .edge-ps-image a, .edge-portfolio-single-holder .edge-ps-image-holder .edge-ps-image img {
+  position: relative;
+  display: block;
+}
+
+.edge-portfolio-single-holder .edge-ps-info-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-portfolio-single-holder .edge-ps-info-holder .edge-ps-info-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 10px;
+}
+
+.edge-portfolio-single-holder .edge-ps-info-holder .edge-ps-info-item p, .edge-portfolio-single-holder .edge-ps-info-holder .edge-ps-info-item a {
+  margin: 0;
+}
+
+.edge-portfolio-single-holder .edge-ps-info-holder .edge-ps-info-title {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+  /***** Space Between Columns Space - begin *****/
+  /***** Space Between Columns Space - end *****/
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-two-columns .edge-ps-image {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-two-columns .edge-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-three-columns .edge-ps-image {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-three-columns .edge-ps-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-four-columns .edge-ps-image {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-four-columns .edge-ps-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-no-space .edge-ps-image-inner {
+  margin: 0;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-no-space .edge-ps-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-tiny-space {
+  margin: 0 0 30px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-tiny-space .edge-ps-image-inner {
+  margin: 0 -5px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-tiny-space .edge-ps-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-small-space {
+  margin: 0 0 20px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-small-space .edge-ps-image-inner {
+  margin: 0 -10px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-small-space .edge-ps-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-normal-space {
+  margin: 0 0 10px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-normal-space .edge-ps-image-inner {
+  margin: 0 -15px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-gallery-images.edge-ps-normal-space .edge-ps-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+  /***** Space Between Columns Space - begin *****/
+  /***** Space Between Columns Space - end *****/
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images .edge-ps-image,
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images .edge-ps-grid-sizer {
+  width: 25%;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images .edge-ps-grid-gutter {
+  width: 0;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-two-columns .edge-ps-image,
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-two-columns .edge-ps-grid-sizer {
+  width: 50%;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-two-columns .edge-ps-image.edge-ps-masonry-large-item {
+  width: 100%;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-three-columns .edge-ps-image,
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-three-columns .edge-ps-grid-sizer {
+  width: 33.33333%;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-three-columns .edge-ps-image.edge-ps-masonry-large-item {
+  width: 66.66667%;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-image,
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-grid-sizer {
+  width: 25%;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-four-columns .edge-ps-image.edge-ps-masonry-large-item {
+  width: 50%;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-no-space .edge-ps-image-inner {
+  margin: 0;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-no-space .edge-ps-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-tiny-space {
+  margin: 0 0 30px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-tiny-space .edge-ps-image-inner {
+  margin: 0 -5px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-tiny-space .edge-ps-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-small-space {
+  margin: 0 0 20px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-small-space .edge-ps-image-inner {
+  margin: 0 -10px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-small-space .edge-ps-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-normal-space {
+  margin: 0 0 10px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-normal-space .edge-ps-image-inner {
+  margin: 0 -15px;
+}
+
+.edge-portfolio-single-holder .edge-ps-image-holder.edge-ps-masonry-images.edge-ps-normal-space .edge-ps-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-info-holder {
+  padding-top: 15px;
+  padding-bottom: 107px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-title-holder h2 {
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  margin: 42px 0 12px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-title-holder p {
+  font-size: 18px;
+  color: #888;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder {
+  text-align: center;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item {
+  padding-left: 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date {
+  display: inline;
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date p {
+  padding-left: 3px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field {
+  display: inline;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field p {
+  padding-left: 3px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-item p {
+  letter-spacing: 0;
+  width: 66%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-content-item p {
+    width: 100%;
+  }
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder {
+  padding: 0 0 56px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-portfolio-single-likes {
+  float: left;
+  display: inline-block;
+  padding-left: 3px;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-ps-social-share {
+  float: right;
+  display: inline;
+  padding-right: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-social-info-holder .edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-image-holder {
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-image-holder .edge-ps-image {
+  float: left;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-image-holder .edge-ps-image a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-image-holder .edge-ps-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(33, 33, 33, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-image-holder .edge-ps-image a:hover:before, .edge-portfolio-single-holder.edge-ps-gallery-layout .edge-ps-image-holder .edge-ps-image a:hover:after {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-huge-images-layout {
+  padding: 47px 4% 0;
+  box-sizing: border-box;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-holder {
+  padding-left: 18px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-portfolio-single-likes {
+  display: inline-block;
+  padding: 20px 0;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-portfolio-single-likes a span:nth-child(3):after {
+  content: "";
+  border-right: 1px solid #d3d3d3;
+  padding-left: 23px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-image-holder {
+  margin-bottom: 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-image-holder .edge-ps-image {
+  margin: 0 0 30px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-image-holder .edge-ps-image:last-child {
+  margin: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-content-item {
+  margin: 0 0 25px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-content-item h2 {
+  margin-top: -5px;
+  margin-bottom: 25px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  font-size: 27px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-content-item p {
+  color: #888;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  line-height: 31px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-date {
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-date p {
+  font-size: 14px;
+  color: #b1b1b1;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+  color: #080808;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-custom-field {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-custom-field p {
+  font-size: 14px;
+  color: #b1b1b1;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-social-share {
+  display: inline;
+  font-size: 14px;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-huge-images-layout .edge-ps-info-item.edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-portfolio-single-holder.edge-ps-huge-images-layout {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-portfolio-single-holder.edge-ps-huge-images-layout {
+    padding: 0 30px;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Images layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-info-holder {
+  padding-top: 15px;
+  padding-bottom: 101px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-title-holder h2 {
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  margin: 42px 0 12px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-title-holder p {
+  font-size: 18px;
+  color: #888;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder {
+  text-align: center;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item {
+  padding-left: 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date {
+  display: inline;
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date p {
+  padding-left: 3px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field {
+  display: inline;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field p {
+  padding-left: 3px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-item p {
+  letter-spacing: 0;
+  width: 66%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-content-item p {
+    width: 100%;
+  }
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder {
+  padding: 13px 0 56px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-portfolio-single-likes {
+  float: left;
+  display: inline-block;
+  padding-left: 3px;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-ps-social-share {
+  float: right;
+  display: inline;
+  padding-right: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-social-info-holder .edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-image-holder {
+  margin: 0 0 27px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-image-holder .edge-ps-image {
+  margin: 0 0 30px;
+}
+
+.edge-portfolio-single-holder.edge-ps-images-layout .edge-ps-image-holder .edge-ps-image:last-child {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-info-holder {
+  padding-top: 15px;
+  padding-bottom: 107px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-title-holder h2 {
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  margin: 42px 0 12px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-title-holder p {
+  font-size: 18px;
+  color: #888;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder {
+  text-align: center;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item {
+  padding-left: 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date {
+  display: inline;
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date p {
+  padding-left: 3px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field {
+  display: inline;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field p {
+  padding-left: 3px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-item p {
+  letter-spacing: 0;
+  width: 66%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-content-item p {
+    width: 100%;
+  }
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder {
+  padding: 0 0 56px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-portfolio-single-likes {
+  float: left;
+  display: inline-block;
+  padding-left: 3px;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-ps-social-share {
+  float: right;
+  display: inline;
+  padding-right: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-social-info-holder .edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-image-holder {
+  margin: 0 0 27px;
+}
+
+.edge-portfolio-single-holder.edge-ps-masonry-layout .edge-ps-image-holder .edge-ps-image-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Slider layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-info-holder {
+  padding-top: 15px;
+  padding-bottom: 107px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-title-holder h2 {
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  margin: 42px 0 12px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-title-holder p {
+  font-size: 18px;
+  color: #888;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder {
+  text-align: center;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item {
+  padding-left: 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date {
+  display: inline;
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date p {
+  padding-left: 3px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field {
+  display: inline;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field p {
+  padding-left: 3px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-holder .edge-ps-info-holder .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-item p {
+  letter-spacing: 0;
+  width: 66%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-content-item p {
+    width: 100%;
+  }
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder {
+  padding: 13px 0 56px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-portfolio-single-likes {
+  float: left;
+  display: inline-block;
+  padding-left: 3px;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-ps-social-share {
+  float: right;
+  display: inline;
+  padding-right: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-social-info-holder .edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-image-holder {
+  margin: 0 0 27px;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-image-holder .edge-ps-image-inner {
+  visibility: hidden;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .edge-ps-image-holder .edge-ps-image img {
+  width: 100%;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-prev .edge-prev-icon,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-prev .edge-next-icon,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-next .edge-prev-icon,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-next .edge-next-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-prev .edge-prev-icon .edge-icon-linear-icon:before,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-prev .edge-next-icon .edge-icon-linear-icon:before,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-next .edge-prev-icon .edge-icon-linear-icon:before,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-next .edge-next-icon .edge-icon-linear-icon:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-prev:hover .edge-prev-icon,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-prev:hover .edge-next-icon,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-next:hover .edge-prev-icon,
+.edge-portfolio-single-holder.edge-ps-slider-layout .owl-nav .owl-next:hover .edge-next-icon {
+  color: #999;
+}
+
+/* ==========================================================================
+   Portfolio Single - Slider layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout {
+  padding-top: 47px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-portfolio-single-likes {
+  display: inline-block;
+  padding: 20px 0 32px;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-portfolio-single-likes a span:nth-child(3):after {
+  content: "";
+  border-right: 1px solid #d3d3d3;
+  padding-left: 23px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-image-holder {
+  width: 100%;
+  padding-right: 13%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-image-holder .edge-ps-image {
+  float: left;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-image-holder .edge-ps-image a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-image-holder .edge-ps-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(33, 33, 33, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-image-holder .edge-ps-image a:hover:before, .edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-image-holder .edge-ps-image a:hover:after {
+  opacity: 1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-content-item {
+  margin: 0 0 25px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-content-item h2 {
+  margin-top: -5px;
+  margin-bottom: 25px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  font-size: 27px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-content-item p {
+  color: #888;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  line-height: 31px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-date {
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-date p {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-custom-field {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-custom-field p {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-social-share {
+  display: inline;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-info-item.edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-image-holder {
+    padding-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder.edge-ps-small-gallery-layout .edge-ps-image-holder {
+    padding-right: 0;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-small-images-layout {
+  padding-top: 8px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-portfolio-single-likes {
+  display: inline-block;
+  padding: 20px 0;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-portfolio-single-likes a span:nth-child(3):after {
+  content: "";
+  border-right: 1px solid #d3d3d3;
+  padding-left: 23px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-image-holder {
+  padding-right: 13%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-image-holder .edge-ps-image {
+  margin: 0 0 26px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-image-holder .edge-ps-image:last-child {
+  margin: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-content-item {
+  margin: 0 0 25px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-content-item h2 {
+  margin-top: -5px;
+  margin-bottom: 25px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  font-size: 27px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-content-item p {
+  color: #888;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  line-height: 31px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-date {
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-date p {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-custom-field {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-custom-field p {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-social-share {
+  display: inline;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-info-item.edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-image-holder {
+    padding-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder.edge-ps-small-images-layout .edge-ps-image-holder {
+    padding-right: 0;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout {
+  padding-top: 47px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-portfolio-single-likes {
+  display: inline-block;
+  padding: 20px 0;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-portfolio-single-likes a span:nth-child(3):after {
+  content: "";
+  border-right: 1px solid #d3d3d3;
+  padding-left: 23px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-image-holder {
+  padding-right: 13%;
+  box-sizing: border-box;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-image-holder .edge-ps-image-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-content-item {
+  margin: 0 0 25px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-content-item h2 {
+  margin-top: -5px;
+  margin-bottom: 25px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  font-size: 27px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-content-item p {
+  color: #888;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  line-height: 31px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-date {
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-date p {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-custom-field {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-custom-field p {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-social-share {
+  display: inline;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-info-item.edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-image-holder {
+    padding-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder.edge-ps-small-masonry-layout .edge-ps-image-holder {
+    padding-right: 0;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - begin
+   ========================================================================== */
+.edge-portfolio-single-holder.edge-ps-small-slider-layout {
+  padding-top: 8px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-portfolio-single-likes {
+  display: inline-block;
+  padding: 20px 0;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-portfolio-single-likes a {
+  padding-right: 20px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-portfolio-single-likes a i {
+  font-size: 13px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-portfolio-single-likes a span {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-left: 11px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-portfolio-single-likes a span:nth-child(3) {
+  padding-left: 5px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-portfolio-single-likes a span:nth-child(3):after {
+  content: "";
+  border-right: 1px solid #d3d3d3;
+  padding-left: 23px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-date {
+  margin-top: 6px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-date h5,
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-date p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-date p {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-date h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-custom-field {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-custom-field h5,
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-custom-field p {
+  display: inline-block;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-custom-field p {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-custom-field h5 {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-social-share {
+  display: inline;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-social-share:before {
+  content: "SHARE";
+  font-size: 14px;
+  color: #080808;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+  bottom: 1px;
+  padding-right: 15px;
+  font-family: "Inconsolata";
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-social-share ul li a {
+  color: #555;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-info-item.edge-ps-social-share ul li a:hover {
+  color: #000;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-image-holder {
+  padding-right: 13%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-image-holder .edge-ps-image-inner {
+  visibility: hidden;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-image-holder .edge-ps-image img {
+  width: 100%;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-content-item {
+  margin: 0 0 25px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-content-item h2 {
+  margin-top: -5px;
+  margin-bottom: 25px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  font-size: 27px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-content-item p {
+  color: #888;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  line-height: 31px;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .owl-nav .edge-prev-icon,
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .owl-nav .edge-next-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .owl-nav .edge-prev-icon .edge-icon-linear-icon:before,
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .owl-nav .edge-next-icon .edge-icon-linear-icon:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .owl-nav:hover .edge-prev-icon,
+.edge-portfolio-single-holder.edge-ps-small-slider-layout .owl-nav:hover .edge-next-icon {
+  color: #999;
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-image-holder {
+    padding-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-portfolio-single-holder.edge-ps-small-slider-layout .edge-ps-image-holder {
+    padding-right: 0;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+.edge-ps-navigation {
+  padding: 70px 1000px 30px;
+  position: relative;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  margin: 10px -1000px 40px;
+  clear: both;
+}
+
+.edge-ps-navigation:before {
+  position: absolute;
+  width: 1300px;
+  height: 1px;
+  content: '';
+  background-color: #e9e9e9;
+  top: 0;
+}
+
+.edge-ps-full-width-custom-layout .edge-ps-navigation {
+  padding: 0 40px;
+}
+
+.edge-ps-navigation .edge-ps-back-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.edge-ps-navigation .edge-ps-back-btn a {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 16px;
+  width: 12px;
+  height: 12px;
+  line-height: 1;
+}
+
+.edge-ps-navigation .edge-ps-back-btn a span {
+  display: block;
+  line-height: inherit;
+  color: #888;
+  position: relative;
+}
+
+.edge-ps-navigation .edge-ps-back-btn a span .icon_grid-square {
+  background-color: #212121;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.edge-ps-navigation .edge-ps-back-btn a span .icon_grid-square.icon_grid-square-1 {
+  top: 0;
+  left: 0;
+}
+
+.edge-ps-navigation .edge-ps-back-btn a span .icon_grid-square.icon_grid-square-2 {
+  top: 0;
+  left: 7px;
+}
+
+.edge-ps-navigation .edge-ps-back-btn a span .icon_grid-square.icon_grid-square-3 {
+  top: 7px;
+  left: 0;
+}
+
+.edge-ps-navigation .edge-ps-back-btn a span .icon_grid-square.icon_grid-square-4 {
+  top: 7px;
+  left: 7px;
+}
+
+.edge-ps-navigation .edge-ps-back-btn a span:before, .edge-ps-navigation .edge-ps-back-btn a span:after {
+  display: block;
+  line-height: 14px;
+}
+
+.edge-ps-navigation .edge-ps-back-btn a:hover .icon_grid-square.icon_grid-square-1 {
+  -webkit-transform: translate3d(-2px, -2px, 0);
+  -moz-transform: translate3d(-2px, -2px, 0);
+  transform: translate3d(-2px, -2px, 0);
+}
+
+.edge-ps-navigation .edge-ps-back-btn a:hover .icon_grid-square.icon_grid-square-2 {
+  -webkit-transform: translate3d(2px, -2px, 0);
+  -moz-transform: translate3d(2px, -2px, 0);
+  transform: translate3d(2px, -2px, 0);
+}
+
+.edge-ps-navigation .edge-ps-back-btn a:hover .icon_grid-square.icon_grid-square-3 {
+  -webkit-transform: translate3d(-2px, 2px, 0);
+  -moz-transform: translate3d(-2px, 2px, 0);
+  transform: translate3d(-2px, 2px, 0);
+}
+
+.edge-ps-navigation .edge-ps-back-btn a:hover .icon_grid-square.icon_grid-square-4 {
+  -webkit-transform: translate3d(2px, 2px, 0);
+  -moz-transform: translate3d(2px, 2px, 0);
+  transform: translate3d(2px, 2px, 0);
+}
+
+.edge-ps-navigation .edge-ps-prev,
+.edge-ps-navigation .edge-ps-next {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 49%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edge-ps-navigation .edge-ps-prev .edge-single-nav-image-holder,
+.edge-ps-navigation .edge-ps-next .edge-single-nav-image-holder {
+  width: 82px;
+  height: 82px;
+}
+
+.edge-ps-navigation .edge-ps-prev .edge-single-nav-title-holder,
+.edge-ps-navigation .edge-ps-next .edge-single-nav-title-holder {
+  padding-top: 11px;
+}
+
+.edge-ps-navigation .edge-ps-prev .edge-single-nav-title-holder a,
+.edge-ps-navigation .edge-ps-next .edge-single-nav-title-holder a {
+  display: block;
+  font-size: 14px;
+  font-family: "Inconsolata";
+  color: #959595;
+}
+
+.edge-ps-navigation .edge-ps-prev .edge-single-nav-title-holder a:hover,
+.edge-ps-navigation .edge-ps-next .edge-single-nav-title-holder a:hover {
+  color: #212121;
+}
+
+.edge-ps-navigation .edge-ps-prev .edge-single-nav-title-holder a:not(.edge-single-nav-title):hover,
+.edge-ps-navigation .edge-ps-next .edge-single-nav-title-holder a:not(.edge-single-nav-title):hover {
+  text-decoration: underline;
+}
+
+.edge-ps-navigation .edge-ps-prev .edge-single-nav-title-holder .edge-single-nav-title,
+.edge-ps-navigation .edge-ps-next .edge-single-nav-title-holder .edge-single-nav-title {
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-ps-navigation .edge-ps-prev .edge-single-nav-title-holder .edge-single-nav-title,
+  .edge-ps-navigation .edge-ps-next .edge-single-nav-title-holder .edge-single-nav-title {
+    display: none;
+  }
+}
+
+.edge-ps-navigation .edge-ps-prev a,
+.edge-ps-navigation .edge-ps-next a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 31px;
+  color: #929292;
+  font-family: "Inconsolata";
+}
+
+.edge-ps-navigation .edge-ps-prev a img,
+.edge-ps-navigation .edge-ps-next a img {
+  border-radius: 50%;
+}
+
+.edge-ps-navigation .edge-ps-prev a .edge-ps-nav-mark,
+.edge-ps-navigation .edge-ps-next a .edge-ps-nav-mark {
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  color: #212121;
+}
+
+.edge-ps-navigation .edge-ps-prev a .edge-ps-nav-mark:before,
+.edge-ps-navigation .edge-ps-next a .edge-ps-nav-mark:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-ps-navigation .edge-ps-prev .edge-single-nav-title-holder {
+  float: left;
+}
+
+.edge-ps-navigation .edge-ps-prev .edge-single-nav-image-holder {
+  float: left;
+  padding-right: 24px;
+}
+
+.edge-ps-navigation .edge-ps-prev a .edge-ps-nav-mark {
+  padding-left: 3px;
+  padding-right: 10px;
+  left: 0;
+}
+
+.edge-ps-navigation .edge-ps-next {
+  text-align: right;
+}
+
+.edge-ps-navigation .edge-ps-next .edge-single-nav-title-holder {
+  float: right;
+}
+
+.edge-ps-navigation .edge-ps-next .edge-single-nav-image-holder {
+  float: right;
+  padding-left: 24px;
+}
+
+.edge-ps-navigation .edge-ps-next a .edge-ps-nav-mark {
+  padding-left: 10px;
+  padding-right: 3px;
+  right: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+.edge-ps-related-posts-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 30px 0 0;
+  clear: both;
+}
+
+.edge-ps-related-posts-holder .edge-ps-related-posts {
+  margin: 0 -15px;
+}
+
+.edge-ps-related-posts-holder .edge-ps-related-post {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  float: left;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-ps-related-posts-holder .edge-ps-related-post {
+    width: 50%;
+  }
+  .edge-ps-related-posts-holder .edge-ps-related-post:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-ps-related-posts-holder .edge-ps-related-post {
+    width: 100%;
+  }
+}
+
+.edge-ps-related-posts-holder .edge-ps-related-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-ps-related-posts-holder .edge-ps-related-image a, .edge-ps-related-posts-holder .edge-ps-related-image img {
+  display: block;
+}
+
+.edge-ps-related-posts-holder .edge-ps-related-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+}
+
+.edge-ps-related-posts-holder .edge-ps-related-text .edge-ps-related-title {
+  margin: 0;
+}
+
+.edge-ps-related-posts-holder .edge-ps-related-text .edge-ps-related-categories {
+  margin: 6px 0 0;
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+# Team list - begin
+	========================================================================== */
+.edge-team-list-holder .edge-tl-inner {
+  margin: 0px -15px;
+}
+
+.edge-team-list-holder .edge-team {
+  float: left;
+  padding: 0 15px;
+  margin-bottom: 63px;
+  box-sizing: border-box;
+}
+
+.edge-team-list-holder .edge-team .edge-team-info .edge-team-position {
+  letter-spacing: 0.1em;
+  color: #999;
+  margin-top: -13px;
+  text-transform: uppercase;
+}
+
+.edge-team-list-holder .edge-team .edge-team-info .edge-team-excerpt {
+  color: #999;
+}
+
+.edge-team-list-holder .edge-team .edge-icon-shortcode .edge-icon-element {
+  color: #555;
+  font-size: 13px;
+}
+
+.edge-team-list-holder .edge-team .edge-icon-shortcode .edge-icon-element:hover {
+  color: #000;
+}
+
+.edge-team-list-holder .edge-team.info-bellow h4.edge-team-title-holder {
+  font-size: 16px;
+}
+
+.edge-team-list-holder .edge-team.info-bellow .edge-team-title-holder {
+  margin-top: 23px;
+}
+
+.edge-team-list-holder .edge-team.info-bellow.circle .edge-team-image {
+  padding: 0px 27%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-team-list-holder .edge-team.info-bellow.circle .edge-team-image {
+    padding: 0;
+  }
+}
+
+.edge-team-list-holder .edge-team.info-bellow.circle .edge-team-image img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.edge-team-list-holder.edge-tl-two-columns .edge-team {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-team-list-holder.edge-tl-two-columns .edge-team:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edge-team-list-holder.edge-tl-three-columns .edge-team {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-team-list-holder.edge-tl-three-columns .edge-team:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edge-team-list-holder.edge-tl-four-columns .edge-team {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edge-team-list-holder.edge-tl-four-columns .edge-team:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edge-team-list-holder.edge-tl-five-columns .edge-team {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edge-team-list-holder.edge-tl-five-columns .edge-team:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+/* ==========================================================================
+# Team list - end
+========================================================================== */
+/* ==========================================================================
+# Team Slider styles - begin
+========================================================================== */
+.edge-team-slider-holder .edge-tl-inner {
+  visibility: hidden;
+}
+
+.edge-team-slider-holder .edge-tl-inner .edge-team {
+  margin-bottom: 0;
+  float: none;
+}
+
+.edge-team-slider-holder .edge-tl-inner .edge-team.info-bellow.circle .edge-team-image {
+  box-sizing: border-box;
+  padding: 0 27%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-team-slider-holder .edge-tl-inner .edge-team.info-bellow.circle .edge-team-image {
+    padding: 0 14%;
+  }
+}
+
+.edge-team-slider-holder .edge-tl-inner .owl-nav {
+  display: none;
+}
+
+.edge-team-slider-holder .edge-tl-inner .owl-dots {
+  text-align: center;
+  margin: 25px 0 0;
+}
+
+.edge-team-slider-holder .edge-tl-inner .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-team-slider-holder .edge-tl-inner .owl-dots .owl-dot:not(.active) span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: #888;
+  border-color: #888;
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-team-slider-holder .edge-tl-inner .owl-dots .owl-dot span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 3em;
+  background-color: transparent;
+  border: 2px solid rgba(33, 33, 33, 0.5);
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-team-slider-holder .edge-tl-inner .owl-dots .owl-dot:hover span, .edge-team-slider-holder .edge-tl-inner .owl-dots .owl-dot.active span {
+  background-color: #212121;
+  border-color: #212121;
+}
+
+/* ==========================================================================
+# Team Slider styles - end
+========================================================================== */
+/* ==========================================================================
+# Team style - begin
+	========================================================================== */
+/* Team type simple - begin
+========================================================================== */
+.edge-team {
+  position: relative;
+}
+
+.edge-team .edge-icon-shortcode {
+  color: #888;
+}
+
+.edge-team .edge-icon-shortcode a, .edge-team .edge-icon-shortcode span, .edge-team .edge-icon-shortcode i {
+  color: #888;
+}
+
+.edge-team.info-bellow .edge-team-inner {
+  text-align: center;
+  width: 100%;
+}
+
+.edge-team.info-bellow .edge-team-image {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+.edge-team.info-bellow .edge-team-image a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.edge-team.info-bellow .edge-team-image a:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.edge-team.info-bellow .edge-team-image a:hover:after {
+  opacity: 0.3;
+}
+
+.edge-team.info-bellow .edge-team-image img {
+  vertical-align: middle;
+}
+
+.edge-team.info-bellow .edge-team-text {
+  margin-bottom: 17px;
+}
+
+.edge-team.info-bellow .edge-team-title-holder {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.edge-team.info-bellow .edge-icon-shortcode {
+  margin: 0 8px;
+  font-size: 20px;
+}
+
+.edge-team.info-hover .edge-team-inner {
+  position: relative;
+}
+
+.edge-team.info-hover .edge-team-image img {
+  display: block;
+}
+
+.edge-team.info-hover .edge-team-inner:hover .edge-team-info {
+  opacity: 1;
+}
+
+.edge-team.info-hover .edge-team-name, .edge-team.info-hover .edge-team-position, .edge-team.info-hover .edge-team-text,
+.edge-team.info-hover .edge-icon-shortcode, .edge-team.info-hover .edge-icon-shortcode a, .edge-team.info-hover .edge-icon-shortcode span, .edge-team.info-hover .edge-icon-shortcode i {
+  color: #fff;
+}
+
+.edge-team.info-hover .edge-team-info-tb {
+  display: table-cell;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-team.info-hover .edge-team-info-tb:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(top, rgba(69, 78, 92, 0) 1%, #454e5c 100%);
+  background: -webkit-linear-gradient(top, rgba(69, 78, 92, 0) 1%, #454e5c 100%);
+  background: linear-gradient(to bottom, rgba(69, 78, 92, 0) 1%, #454e5c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00454e5c', endColorstr='#454e5c', GradientType=0);
+}
+
+.edge-team.info-hover .edge-team-info-tb:hover {
+  opacity: 1;
+}
+
+.edge-team.info-hover .edge-team-info-tc {
+  width: 100%;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  z-index: 10;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.edge-team.info-hover .edge-icon-shortcode {
+  margin: 0 8px;
+  font-size: 20px;
+}
+
+/* ==========================================================================
+# Team style - end
+========================================================================== */
+.edge-team-single-holder .edge-two-columns-50-50 {
+  width: 100%;
+}
+
+.edge-team-single-holder .edge-two-columns-50-50 .edge-two-columns-50-50-inner {
+  margin: 0 -15px;
+}
+
+.edge-team-single-holder .edge-two-columns-50-50 .edge-two-columns-50-50-inner .edge-column {
+  width: 50%;
+  float: left;
+}
+
+.edge-team-single-holder .edge-two-columns-50-50 .edge-two-columns-50-50-inner .edge-column:first-child .edge-column-inner {
+  padding-right: 0;
+}
+
+.edge-team-single-holder .edge-two-columns-50-50 .edge-two-columns-50-50-inner .edge-column:last-child .edge-column-inner {
+  padding-right: 7%;
+}
+
+.edge-team-single-holder .edge-two-columns-50-50 .edge-two-columns-50-50-inner .edge-column .edge-column-inner {
+  padding: 0 15px;
+}
+
+.edge-team-single-holder .edge-two-columns-50-50 .edge-two-columns-50-50-inner .edge-column .edge-column-inner .edge-ts-details-holder-inner {
+  padding-top: 18.2%;
+  width: 67%;
+  margin: 0 auto;
+}
+
+.edge-team-single-holder .edge-name {
+  margin: -10px 0 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-team-single-holder .edge-name {
+    margin: 15px 0 10px;
+  }
+}
+
+.edge-team-single-holder .edge-position {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.edge-team-single-holder .edge-position .edge-icon-shortcode {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  font-size: 12.5px;
+}
+
+.edge-team-single-holder .edge-position .edge-icon-shortcode:first-child {
+  padding-left: 12px;
+}
+
+.edge-team-single-holder .edge-position .edge-icon-shortcode a, .edge-team-single-holder .edge-position .edge-icon-shortcode span, .edge-team-single-holder .edge-position .edge-icon-shortcode i {
+  color: #888;
+}
+
+.edge-team-single-holder .edge-ts-bio-holder {
+  padding-top: 53px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-team-single-holder .edge-ts-bio-holder {
+    padding-top: 18px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-team-single-holder .edge-ts-bio-holder {
+    padding-top: 53px;
+  }
+}
+
+.edge-team-single-holder .edge-grid-col-6 {
+  color: #ababab;
+  font-size: 12px;
+  padding: 10px 15px;
+  padding-left: 2px;
+  padding-right: 30px;
+  padding-top: 0;
+}
+
+.edge-team-single-holder .edge-grid-col-6 .edge-grid-col-6-inner {
+  border-bottom: 1px solid #dadada;
+  padding: 10px 15px;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.edge-team-single-holder .edge-grid-col-6 .edge-grid-col-6-inner .info {
+  font-size: 16px;
+  color: #ababab;
+}
+
+.edge-team-single-holder .edge-grid-col-6:nth-last-child(2) .edge-grid-col-6-inner {
+  border: 0;
+}
+
+.edge-team-single-holder .edge-grid-col-6:last-child .edge-grid-col-6-inner {
+  border: 0;
+}
+
+.edge-team-single-holder .edge-grid-col-6 .icon {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.edge-team-single-holder .edge-grid-col-6 .info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-team-single-holder .edge-grid-col-6 a {
+  color: #888;
+}
+
+.edge-team-single-holder .edge-team-single-content {
+  margin-top: 34px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.edge-team-single-holder .edge-team-single-content .edge-btn {
+  margin-top: 18px;
+  padding: 14px 35px 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-team-single-holder .edge-two-columns-50-50 {
+    width: 100%;
+  }
+  .edge-team-single-holder .edge-two-columns-50-50 .edge-two-columns-50-50-inner {
+    margin: 0 -15px;
+  }
+  .edge-team-single-holder .edge-two-columns-50-50 .edge-two-columns-50-50-inner .edge-column {
+    width: 100%;
+    float: left;
+  }
+}
+
+/* ==========================================================================
+   Testimonials boxed style - begin
+   ========================================================================== */
+.edge-testimonials-holder.edge-testimonials-boxed {
+  /* Light/Dark styles */
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials {
+  margin: 0;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials .edge-testimonial-text-holder {
+  text-align: center;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials .edge-testimonial-text-holder .edge-testimonial-text {
+  margin-top: 30px;
+  line-height: 30px;
+  color: #888;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonial-content {
+  padding: 0 57px 0;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials-author-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 9px 0 0;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials-author-holder .edge-testimonial-position {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: none;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials-author-holder .edge-testimonial-author {
+  margin-bottom: -13px;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials-author-holder .edge-testimonial-image img {
+  margin: 0 auto;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-nav .edge-prev-icon,
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-nav .edge-next-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .edge-testimonial-title {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .edge-testimonial-text {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .edge-testimonial-author {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .edge-testimonials-author-holder .edge-testimonial-position {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-dots .owl-dot span {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-dots .owl-dot:hover span, .edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-dark .owl-nav .edge-prev-icon,
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-dark .owl-nav .edge-next-icon {
+  color: rgba(8, 8, 8, 0.4);
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .owl-nav .owl-prev,
+.edge-testimonials-holder.edge-testimonials-boxed .owl-nav .owl-next {
+  top: 30%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials .edge-testimonial-text-holder .edge-testimonial-text {
+    width: 100%;
+  }
+  .edge-testimonials-holder.edge-testimonials-boxed .edge-testimonial-content {
+    padding: 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials .edge-testimonial-text-holder .edge-testimonial-text {
+    width: 90%;
+  }
+  .edge-testimonials-holder.edge-testimonials-boxed .edge-testimonial-content {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-testimonials-holder.edge-testimonials-boxed .owl-nav {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Testimonials boxed style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+.edge-testimonials-holder.edge-testimonials-standard {
+  text-align: center;
+  padding: 70px 0 95px;
+  /* Light/Dark styles */
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-quote {
+  text-align: center;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-quote span {
+  font-size: 45px;
+  color: #000;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 33px 0 0;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-image img {
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-title {
+  margin: 0;
+  line-height: 45px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-title.entry-title-none {
+  letter-spacing: -0.7em;
+  margin-bottom: 40px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-left-placement .edge-testimonial-author,
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-left-placement .edge-testimonial-position {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-left-placement .edge-testimonial-author:after {
+  content: ',';
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-under-placement .edge-testimonial-author,
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-under-placement .edge-testimonial-position {
+  display: block;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-under-placement .edge-testimonial-author {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-under-placement .edge-testimonial-position {
+  font-size: 12px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-author {
+  margin: 27px 0 0;
+  font-family: "Inconsolata";
+  text-transform: none;
+  font-weight: 400;
+  color: #555;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-position {
+  color: #555;
+  margin-top: 8px;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-text {
+  margin: 26px 0 10px;
+  color: #888;
+  padding: 0 20px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots {
+  text-align: center;
+  margin: 25px 0 0;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot:not(.active) span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: #888;
+  border-color: #888;
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 3em;
+  background-color: transparent;
+  border: 2px solid rgba(33, 33, 33, 0.5);
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot:hover span, .edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot.active span {
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-nav .edge-prev-icon,
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-nav .edge-next-icon {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .edge-testimonial-quote span {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .edge-testimonial-title {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .edge-testimonial-text {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .edge-testimonial-author {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-dots .owl-dot span {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-dots .owl-dot:hover span, .edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+.edge-testimonials-holder {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
+  /* No Js */
+  /*
+     *  Owl Carousel - Animate Plugin
+     */
+}
+
+.edge-testimonials-holder.owl-loaded {
+  display: block;
+}
+
+.edge-testimonials-holder.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.edge-testimonials-holder.owl-hidden {
+  opacity: 0;
+}
+
+.edge-testimonials-holder.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.edge-testimonials-holder.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.edge-testimonials-holder.owl-grab {
+  cursor: grab;
+}
+
+.edge-testimonials-holder.owl-rtl {
+  direction: rtl;
+}
+
+.edge-testimonials-holder.owl-rtl .owl-item {
+  float: right;
+}
+
+.no-js .edge-testimonials-holder {
+  display: block;
+}
+
+.edge-testimonials-holder .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.edge-testimonials-holder .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.edge-testimonials-holder .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.edge-testimonials-holder .owl-wrapper,
+.edge-testimonials-holder .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.edge-testimonials-holder .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.edge-testimonials-holder .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.edge-testimonials-holder .owl-item img .owl-lazy {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.edge-testimonials-holder .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.edge-testimonials-holder .owl-nav.disabled {
+  display: none;
+}
+
+.edge-testimonials-holder .owl-nav .owl-prev,
+.edge-testimonials-holder .owl-nav .owl-next {
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.edge-testimonials-holder .owl-dots.disabled {
+  display: none;
+}
+
+.edge-testimonials-holder .owl-dots .owl-dot {
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.edge-testimonials-holder .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.edge-testimonials-holder .owl-animated-in {
+  z-index: 0;
+}
+
+.edge-testimonials-holder .owl-animated-out {
+  z-index: 1;
+}
+
+.edge-testimonials-holder .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.edge-testimonials-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.edge-testimonials-holder .edge-testimonials,
+.edge-testimonials-holder .edge-testimonial-content,
+.edge-testimonials-holder .edge-testimonial-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-testimonials-holder .edge-testimonials {
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-testimonials-holder .edge-testimonials {
+    padding: 0 10px;
+  }
+}
+
+.edge-testimonials-holder .edge-testimonials:hover .owl-nav {
+  opacity: 1;
+}
+
+.edge-testimonials-holder .edge-testimonial-image img {
+  width: auto !important;
+  border-radius: 5em;
+}
+
+.edge-testimonials-holder .owl-stage-outer {
+  z-index: 1;
+}
+
+.edge-testimonials-holder .owl-nav {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-testimonials-holder .owl-nav .owl-prev,
+.edge-testimonials-holder .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  cursor: pointer;
+  -webkit-transition: opacity 0.25s ease-out;
+  -moz-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-testimonials-holder .owl-nav .owl-prev:hover .edge-prev-icon,
+.edge-testimonials-holder .owl-nav .owl-prev:hover .edge-next-icon,
+.edge-testimonials-holder .owl-nav .owl-next:hover .edge-prev-icon,
+.edge-testimonials-holder .owl-nav .owl-next:hover .edge-next-icon {
+  color: #212121;
+  opacity: 0.8;
+}
+
+.edge-testimonials-holder .owl-nav .owl-prev {
+  left: 0;
+}
+
+.edge-testimonials-holder .owl-nav .owl-next {
+  right: 0;
+}
+
+.edge-testimonials-holder .owl-nav .edge-prev-icon,
+.edge-testimonials-holder .owl-nav .edge-next-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #212121;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.edge-testimonials-holder .owl-nav .edge-prev-icon > span,
+.edge-testimonials-holder .owl-nav .edge-next-icon > span {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 40px;
+  color: #555;
+}
+
+.edge-testimonials-holder .owl-nav .edge-prev-icon > span:before,
+.edge-testimonials-holder .owl-nav .edge-next-icon > span:before {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  line-height: inherit;
+}
+
+.edge-testimonials-holder .owl-dots {
+  text-align: center;
+  margin: 67px 0 0;
+}
+
+.edge-testimonials-holder .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.edge-testimonials-holder .owl-dots .owl-dot:not(.active) span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: #000;
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-testimonials-holder .owl-dots .owl-dot span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 3em;
+  background-color: transparent;
+  border: 2px solid rgba(33, 33, 33, 0.5);
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-testimonials-holder .owl-dots .owl-dot:hover span, .edge-testimonials-holder .owl-dots .owl-dot.active span {
+  background-color: #212121;
+  border-color: #212121;
+}
+
+/* ==========================================================================
+   Testimonials boxed style - begin
+   ========================================================================== */
+.edge-testimonials-holder.edge-testimonials-boxed {
+  /* Light/Dark styles */
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials {
+  margin: 0;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials .edge-testimonial-text-holder {
+  text-align: center;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials .edge-testimonial-text-holder .edge-testimonial-text {
+  margin-top: 30px;
+  line-height: 30px;
+  color: #888;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonial-content {
+  padding: 0 57px 0;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials-author-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 9px 0 0;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials-author-holder .edge-testimonial-position {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: none;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials-author-holder .edge-testimonial-author {
+  margin-bottom: -13px;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials-author-holder .edge-testimonial-image img {
+  margin: 0 auto;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-nav .edge-prev-icon,
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-nav .edge-next-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .edge-testimonial-title {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .edge-testimonial-text {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .edge-testimonial-author {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .edge-testimonials-author-holder .edge-testimonial-position {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-dots .owl-dot span {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-dots .owl-dot:hover span, .edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-dark .owl-nav .edge-prev-icon,
+.edge-testimonials-holder.edge-testimonials-boxed.edge-testimonials-dark .owl-nav .edge-next-icon {
+  color: rgba(8, 8, 8, 0.4);
+}
+
+.edge-testimonials-holder.edge-testimonials-boxed .owl-nav .owl-prev,
+.edge-testimonials-holder.edge-testimonials-boxed .owl-nav .owl-next {
+  top: 30%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials .edge-testimonial-text-holder .edge-testimonial-text {
+    width: 100%;
+  }
+  .edge-testimonials-holder.edge-testimonials-boxed .edge-testimonial-content {
+    padding: 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-testimonials-holder.edge-testimonials-boxed .edge-testimonials .edge-testimonial-text-holder .edge-testimonial-text {
+    width: 90%;
+  }
+  .edge-testimonials-holder.edge-testimonials-boxed .edge-testimonial-content {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-testimonials-holder.edge-testimonials-boxed .owl-nav {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Testimonials boxed style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+.edge-testimonials-holder.edge-testimonials-standard {
+  text-align: center;
+  padding: 70px 0 95px;
+  /* Light/Dark styles */
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-quote {
+  text-align: center;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-quote span {
+  font-size: 45px;
+  color: #000;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 33px 0 0;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-image img {
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-title {
+  margin: 0;
+  line-height: 45px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-title.entry-title-none {
+  letter-spacing: -0.7em;
+  margin-bottom: 40px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-left-placement .edge-testimonial-author,
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-left-placement .edge-testimonial-position {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-left-placement .edge-testimonial-author:after {
+  content: ',';
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-under-placement .edge-testimonial-author,
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-under-placement .edge-testimonial-position {
+  display: block;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-under-placement .edge-testimonial-author {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-under-placement .edge-testimonial-position {
+  font-size: 12px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-author {
+  margin: 27px 0 0;
+  font-family: "Inconsolata";
+  text-transform: none;
+  font-weight: 400;
+  color: #555;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-position {
+  color: #555;
+  margin-top: 8px;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .edge-testimonial-text {
+  margin: 26px 0 10px;
+  color: #888;
+  padding: 0 20px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots {
+  text-align: center;
+  margin: 25px 0 0;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot:not(.active) span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: #888;
+  border-color: #888;
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 3em;
+  background-color: transparent;
+  border: 2px solid rgba(33, 33, 33, 0.5);
+  -webkit-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
+  box-sizing: border-box;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot:hover span, .edge-testimonials-holder.edge-testimonials-standard .owl-dots .owl-dot.active span {
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-nav .edge-prev-icon,
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-nav .edge-next-icon {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .edge-testimonial-quote span {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .edge-testimonial-title {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .edge-testimonial-text {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .edge-testimonial-author {
+  color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-dots .owl-dot span {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+}
+
+.edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-dots .owl-dot:hover span, .edge-testimonials-holder.edge-testimonials-standard.edge-testimonials-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-core/assets/css/custom-post-types.css.map */

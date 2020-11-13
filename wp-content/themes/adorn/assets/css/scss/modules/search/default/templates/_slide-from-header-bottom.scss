@@ -1,0 +1,82 @@
+/* ==========================================================================
+# Slide From Header Bottom search general style - start
+========================================================================== */
+
+.edge-slide-from-header-bottom-holder {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    display: none;
+    margin: 0 -29px 0 0;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 9999;
+    box-sizing: border-box;
+
+    .edge-form-holder {
+        @include edgeRelativeHolderLayout;
+        box-sizing: border-box;
+        background-color: #111;
+        padding-top: 6px;
+        padding-bottom: 7px;
+
+        .edge-search-field,
+        .edge-search-submit {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            float: left;
+            margin: 0;
+            height: 44px;
+            line-height: 42px;
+            color: #a1a1a1;
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            outline: 0;
+            -webkit-appearance: none;
+            box-sizing: border-box;
+            @include edgeTransition(color 0.2s ease-out);
+            font-size: 14px;
+        }
+
+        .edge-search-field {
+            width: calc(100% - 40px);
+            padding: 0 10px 0 20px;
+            font-family: inherit;
+            @include edgePlaceholder {
+                color: #7a7a7a;
+            }
+
+            &:focus {
+                color: #fff;
+            }
+        }
+
+        .edge-search-submit {
+            width: 40px;
+            padding: 0 12px 0 0;
+            font-size: 14px;
+            cursor: pointer;
+
+            span {
+                display: block;
+                line-height: inherit;
+
+                &:before {
+                    display: block;
+                    line-height: inherit;
+                }
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Slide From Header Bottom search general style - end
+========================================================================== */

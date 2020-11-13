@@ -1,0 +1,43 @@
+.edge-header-centered {
+    .edge-page-header {
+        .edge-logo-area {
+            height: 206px;
+            z-index: 2; //to be above menu area in order to cover shadow
+            overflow: visible;
+
+            .edge-logo-wrapper a {
+                max-height: 185px; //206*0.9
+            }
+
+            box-sizing: border-box;
+        }
+
+        .edge-menu-area {
+            z-index: 1;
+            height: 60px;
+
+            box-sizing: border-box;
+
+            .edge-vertical-align-containers {
+                .edge-position-center-inner {
+                    height: 100%;
+                }
+            }
+        }
+
+        .edge-position-right-inner{
+            height: 100%;
+        }
+
+        .edge-page-header .edge-sticky-header {
+            .edge-position-left-inner {
+                height: auto;
+            }
+
+            .edge-position-right-inner {
+                height: 100%;
+            }
+        }
+    }
+}
+

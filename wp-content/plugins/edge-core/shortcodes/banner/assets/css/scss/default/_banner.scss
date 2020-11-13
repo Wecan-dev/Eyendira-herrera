@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.edge-banner-holder {
+    @include edgeRelativeHolderLayout();
+	
+	.edge-banner-image {
+		@include edgeRelativeHolderLayout();
+		overflow:hidden;
+		
+		img {
+			display: block;
+			@include edgeTransition(all 0.3s ease-in-out);
+		}
+	}
+	
+	.edge-banner-text-holder {
+		@include edgeAbsoluteHolderLayout();
+	}
+	
+	.edge-banner-text-inner {
+		@include edgeRelativeHolderLayout();
+		box-sizing: border-box;
+		position: absolute;
+		top: 50%;
+		@include edgeTransform(translateY(-50%));
+	}
+	
+	.edge-banner-subtitle {
+		margin: 0;
+		font-family: $heading-font;
+		font-size: 16px;
+		color: $additional-color;
+		letter-spacing: 0.1em;
+	}
+	
+	.edge-banner-title {
+		position: relative;
+		overflow: hidden;
+		margin: 4px 0 0;
+		@include edgeTransition(all .2s);
+		font-family: $additional-text-font;
+		font-size: 35px;
+		text-transform: none;
+		display: inline-block;
+		max-width: 200px;
+	}
+	
+	.edge-banner-text {
+		margin: 6px 0 0;
+		line-height: 1em;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+	}
+
+	.edge-banner-link {
+		@include edgeAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,322 @@
+/* ==========================================================================
+   Pretty Photo style - begin
+   ========================================================================== */
+
+body {
+
+    .pp_pic_holder {
+        display: none;
+        position: absolute;
+        width: 100px;
+        z-index: 10001 !important;
+
+        .pp_top {
+
+            .pp_middle,
+            .pp_left,
+            .pp_right {
+                background: none;
+                display: none;
+            }
+        }
+
+        .pp_bottom {
+
+            .pp_middle,
+            .pp_left,
+            .pp_right {
+                background: none;
+                display: none;
+            }
+        }
+
+        div.pp_content {
+            background: none;
+            margin: 0 auto;
+            height: 40px;
+            min-width: 40px;
+            overflow: hidden;
+
+            * html & {
+                width: 40px;
+            }
+        }
+
+        .pp_content_container {
+            position: relative;
+            text-align: left;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+
+            div.pp_details {
+                margin-top: -15px;
+            }
+
+
+            div.pp_left,
+            div.pp_right {
+                background: none; 
+                padding: 0;
+            }
+        }
+
+        #pp_full_res {
+            line-height: 1 !important;
+
+            .pp_inline { 
+                color: $default-heading-color;
+                text-align: left;
+
+                p {
+                    margin: 0 0 15px;
+                }
+            }
+
+            img {
+                vertical-align: middle;
+            }
+        }
+
+        .ppt,               
+        .pp_gallery,
+        .pp_description {
+            display: none !important;
+        }
+
+        .pp_loaderIcon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 32px;
+            height: 32px;
+            margin: -16px 0 0 -16px;
+            background-color: #fff;
+            border-radius: 16px;
+            -webkit-animation: scaleout 1.0s infinite ease-in-out;
+            animation: scaleout 1.0s infinite ease-in-out;
+        }
+        
+        .pp_nav {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            height: auto;
+            float: none;
+
+            .pp_play,
+            .pp_pause {
+                display: none;
+            }
+
+            .currentTextHolder {
+                position: absolute;
+                left: 50%;
+                margin: 0 0 0 -16px;
+                letter-spacing: 5px;
+                color: $default-text-color;
+                line-height: inherit;
+                font-family: inherit;
+                font-style: inherit;
+                font-size: inherit;
+                padding: 0;
+                top: inherit;
+            }
+        }
+
+        .pp_fade {
+            display: none;
+        }
+
+        div.pp_details {
+            position: relative;
+            margin: 0;
+            margin-top: -15px;
+            float: none;
+            background: none;
+            line-height: 67px;
+            height: 67px;
+        }
+
+        a {
+
+            &:focus {
+                outline: none;
+            }
+
+            &.pp_arrow_previous,
+            &.pp_arrow_next {
+                background: none;
+                position: relative;
+                width: 4%;
+                min-width: 25px;
+                float: left;
+                height: 100%;
+                margin: 0;
+                left: 0;
+                overflow: hidden;
+                color: $default-text-color;
+                font-size: 33px;
+                text-indent: -10000px;
+
+                &:after {
+                    position: absolute;
+                    font-family: 'linea-arrows-10';
+                    top: 0;
+                    left: -2px; // rendering fix                    
+                    height: inherit;
+                    line-height: inherit;
+                    text-align: center;
+                    width: 100%;
+                    text-indent: 0;
+                }
+
+                &:hover {
+                    color: $header-light-color;
+                }
+            }
+
+            &.pp_arrow_previous {
+                margin-left: 22px;
+
+                &:after {
+                    content: "\e03f";
+                }
+            }
+
+            &.pp_arrow_next {
+
+                &:after {
+                    content: "\e04b";
+                }
+            }
+
+            &.pp_next,
+            &.pp_previous {
+                position: absolute;
+                top: 50%;
+                margin: -13px 0 0;
+                background: none !important;                
+                color: $default-text-color;
+                text-indent: -9999px !important;
+                opacity: 0;
+                @include edgeTransition(opacity 0.2s ease-out, color 0.2s ease-out);
+
+                &:after {
+                    display: block;
+                    font-family: 'linea-arrows-10';
+                    font-size: 40px;
+                    text-indent: 0 !important;
+                    height: inherit;
+                    line-height: inherit;
+                }
+
+                &:hover {
+                    color: $default-heading-color;
+                }
+            }
+    
+            &.pp_next {
+                right: 20px;
+        
+                &:after {
+                    content: "\e04b";
+                }
+            }
+    
+            &.pp_previous {
+                left: 20px;
+        
+                &:after {
+                    content: "\e03f";
+                }
+            }
+
+            &.pp_close { 
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                width: 25px;
+                line-height: inherit;
+                height: auto;
+                right: 23px;
+                text-indent: -10000px;
+                background: none;
+                cursor: pointer;
+                opacity: 1 !important;
+                font-size: 34px;
+                color: $default-text-color;
+
+                &:after{                    
+                    content: "\e04a";
+                    font-family: 'linea-arrows-10';
+                    text-align: center;
+                    text-indent: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                &:hover {
+                    color: $header-light-color;
+                }
+            }
+
+            &.pp_expand {
+                position: absolute;
+                right: -8px;
+                top: 0;
+                display: block;
+                width: 18px;
+                line-height: inherit;
+                height: auto;
+                text-indent: -10000px;
+                font-size: 17px;
+                color: #fff;
+
+                &:after{                    
+                    content: "\e028";
+                    font-family: 'linea-arrows-10';
+                    text-align: center;
+                    text-indent: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .pp_hoverContainer { 
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2000;
+
+        &:hover {
+
+            a {
+
+                &.pp_next,
+                &.pp_previous {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .pp_overlay {
+        background-color: $default-heading-color;
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10000 !important;
+    }
+}
+/* ==========================================================================
+   Pretty Photo style - end
+   ========================================================================== */

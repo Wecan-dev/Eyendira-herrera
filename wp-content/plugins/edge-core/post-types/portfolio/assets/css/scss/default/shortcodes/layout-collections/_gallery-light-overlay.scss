@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Light Overlay style - begin
+   ========================================================================== */
+
+.edge-portfolio-list-holder {
+	
+	&.edge-pl-gallery-light-overlay {
+		
+		article {
+			
+			.edge-pli-text {
+				
+				.edge-pli-title,
+				.edge-pli-excerpt {
+					color: #000;
+				}
+				
+				.edge-pli-category-holder {
+					
+					a {
+						color: #000;
+						
+						&:hover {
+							color: rgba(0,0,0,0.7);
+						}
+					}
+				}
+			}
+			
+			&:hover {
+				
+				.edge-pli-text-holder {
+					opacity: 1;
+				}
+			}
+		}
+		
+		.edge-pli-text-holder {
+			position: absolute;
+			display: block;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 100%;
+			padding: 20px;
+			background-color: rgba(255,255,255, 0.8);
+			opacity: 0;
+			text-align: center;
+			@include edgeTransition(opacity .2s ease-in-out);
+			box-sizing: border-box;
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Light Overlay style - end
+   ========================================================================== */

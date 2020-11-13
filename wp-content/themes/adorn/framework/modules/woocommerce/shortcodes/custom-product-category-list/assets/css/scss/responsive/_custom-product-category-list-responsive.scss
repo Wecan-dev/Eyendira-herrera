@@ -1,0 +1,41 @@
+@include ipad-landscape {
+  .edge-woo-custom-items-holder {
+    $masonry_columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($masonry_columns_number) {
+      &.edge-#{nth($masonry_columns_number,$i+1)}-columns {
+
+        article,
+        .edge-woo-custom-grid-sizer {
+          width: 50%;
+        }
+
+        article {
+
+          &.edge-product-large-width-height,
+          &.edge-product-large-width {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include phone-landscape{
+  .edge-woo-custom-items-holder{
+
+      $masonry_columns_number: ('two', 'three', 'four', 'five');
+
+      @for $i from 0 to length($masonry_columns_number) {
+        &.edge-#{nth($masonry_columns_number,$i+1)}-columns {
+
+          article,
+          .edge-woo-custom-grid-sizer {
+            width: 100%;
+          }
+        }
+      }
+
+  }
+}

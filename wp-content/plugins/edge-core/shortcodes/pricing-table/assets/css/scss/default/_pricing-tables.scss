@@ -1,0 +1,229 @@
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+
+.edge-pricing-tables {
+    @include edgeRelativeHolderLayout();
+    clear: both;
+	
+	.edge-pt-wrapper {
+        position: relative;
+    }
+    
+    $pricing_table_space_label: ('no', 'tiny', 'small', 'normal');
+    $pricing_table_space_width: (0, 5, 10, 15);
+    
+    @for $i from 0 to length($pricing_table_space_label) {
+        &.edge-pt-#{nth($pricing_table_space_label,$i+1)}-space {
+            $column_width: nth($pricing_table_space_width,$i+1);
+            $column_width_margin: $column_width * 2;
+	
+	        .edge-pt-wrapper {
+		        @if($column_width == 0) {
+			        margin: 0;
+		        } @else {
+			        margin: 0 -#{$column_width}px;
+		        }
+	        }
+	
+	        .edge-price-table {
+                padding: 0 #{$column_width}px;
+                margin: 0 0 #{$column_width_margin}px;
+            }
+        }
+    }
+	
+	$pricing_table_columns: ('edge-two-columns', 'edge-three-columns', 'edge-four-columns', 'edge-five-columns');
+    @for $i from 0 to length($pricing_table_columns) {
+        &.#{nth($pricing_table_columns, $i+1)} {
+            $column_width: 100%/($i+2);
+	
+	        .edge-price-table {
+                width: $column_width;
+            }
+        }
+    }
+}
+
+.edge-price-table {
+    position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+    box-sizing: border-box;
+    font-family: $heading-font;
+
+    &:hover{
+        .edge-pt-inner {
+            border-color: $default-border-color;
+
+            ul {
+                background-color: #fafafa;
+            }
+        }
+    }
+
+    .edge-pt-inner {
+        @include edgeRelativeHolderLayout();
+        background-color: #f7f7f7;
+        border: 1px solid $additional-border-color;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 15px 0;
+                text-align: center;
+
+                &.edge-pt-title-holder {
+                    position: relative;
+                    color: $default-heading-color;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 400;
+	                letter-spacing: 1px;
+                    padding-bottom: 0;
+                    font-family: $heading-font;
+	                
+                    .edge-pt-title {
+                        display: block;
+	                    padding: 17px 0 16px;
+                        padding-top: 30px;
+                        padding-bottom: 0px;
+	                    box-sizing: border-box;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 41px;
+                        letter-spacing: 0.1em;
+                        color: $default-text-color;
+                    }
+                }
+
+                &.edge-pt-subtitle-holder {
+                    position: relative;
+                    color: $default-heading-color;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    padding: 22px 0 2px;
+                    font-family: $heading-font;
+                    width: 70%;
+                    margin: auto;
+
+                    .edge-pt-subtitle {
+                      display: block;
+                      padding: 17px 0 32px;
+                      padding-bottom: 0px;
+                      box-sizing: border-box;
+                      font-weight: 400;
+                      font-size: 17px;
+                      line-height: 31px;
+                      letter-spacing: 0;
+                      color: $default-text-color;
+
+                      &:after {
+                        content: ' ';
+                        display: block;
+                        margin: 20px auto;
+                        margin-top: 34px;
+                        width: 60%;
+                        border-bottom: 1px solid #e6e6e6;
+                        padding-bottom: 5px;
+                      }
+                    }
+                }
+
+                &.edge-pt-prices {
+                    position: relative;
+					padding: 33px 15px 0;
+                    padding-top: 0;
+                    font-family: $heading-font;
+	                
+                    .edge-pt-value {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 30px;
+                        line-height: 25px;
+                        letter-spacing: 0.1em;
+                        font-weight: 100;
+                        font-family: $heading-font;
+                        color: #323232;
+                    }
+
+                    .edge-pt-price {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+	                    left: -5px;
+                        font-size: 30px;
+                        line-height: 47px;
+                        letter-spacing: 0.1em;
+                        font-weight: 100;
+                        font-family: $heading-font;
+                        color: #323232;
+                    }
+
+                    .edge-pt-mark {
+                        position: relative;
+                        display: block;
+	                    margin: 1px 0 0;
+                    }
+                }
+
+                &.edge-pt-content {
+	                padding: 16px 15px;
+                    padding-top: 6px;
+                    font-family: $heading-font;
+                    font-size: 16px;
+                    width: 70%;
+                    margin: auto;
+
+                    ul li {
+                      padding-top: 10px;
+                      padding-bottom: 10px;
+                      font-size: 16px;
+                      line-height: 25px;
+                      color: $default-text-color;
+
+                      &:before {
+                        content: "\4e";
+                        font-family: 'ElegantIcons';
+                        font-size: 12px;
+                        letter-spacing: 0.14em;
+                        color: $default-text-color;
+                        margin-right: 5px;
+                        position: relative;
+                        top: 2px;
+
+                      }
+
+                    }
+                }
+
+                &.edge-pt-button {
+                    padding: 19px 15px 66px;
+
+                    .edge-btn {
+                      padding: 2px 48px 2px;
+
+                      .edge-btn-text {
+                          font-family: $heading-font;
+                          font-size: 14px;
+                          font-weight: 400;
+                          letter-spacing: 0.15;
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */

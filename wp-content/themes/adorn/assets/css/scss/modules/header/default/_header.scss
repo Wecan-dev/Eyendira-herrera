@@ -1,0 +1,395 @@
+$logo-area-height: 96px;
+$menu-area-height: 96px;
+$sticky-header-height: 60px;
+
+.edge-page-header {
+    @include edgeRelativeHolderLayout();
+    margin: 0;
+    padding: 0;
+    z-index: 110;
+    box-sizing: border-box;
+
+    /* ==========================================================================
+    #General header layout - start
+    ========================================================================== */
+    a img {
+        display: block;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .edge-grid {
+        height: 100%;
+
+        .edge-vertical-align-containers {
+            padding: 0;
+            @include edgeTransition(background-color 0.3s ease);
+        }
+    }
+
+    /* ==========================================================================
+    #General header layout - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Logo area styles - start
+    ========================================================================== */
+    .edge-logo-area {
+        height: $logo-area-height;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+
+        .edge-logo-wrapper a {
+            max-height: $logo-area-height;
+        }
+    }
+    /* ==========================================================================
+    #Logo area styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Menu area styles - start
+    ========================================================================== */
+    .edge-menu-area {
+        position: relative;
+        height: $menu-area-height;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        .edge-boxed & {
+            padding: 0;
+        }
+
+        .edge-logo-wrapper a {
+            max-height: $menu-area-height;
+        }
+
+        .widget {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 12px;
+
+            &.widget_text{
+                line-height: 16px;
+
+                .edge-btn-text{
+                    padding-bottom: 1px;
+                }
+            }
+
+        }
+
+        .edge-main-menu-widget-area-inner{
+            margin: 0 -10px 0 0;
+        }
+    }
+    /* ==========================================================================
+    #Menu area styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Sticky header styles - start
+    ========================================================================== */
+    .edge-sticky-header {
+        height: $sticky-header-height;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        @include edgeTransform(translateY(-100%));
+        -webkit-transition: -webkit-transform 0.6s ease;
+        -moz-transition: -moz-transform 0.6s ease;
+        transition: transform .6s ease;
+        -webkit-backface-visibility: hidden;
+
+        .edge-grid {
+            height: 100% !important; //override settings for other instances of this div
+        }
+
+        &.header-appear {
+            transform: translateY(0%);
+        }
+        .edge-logo-wrapper a {
+            top: -4px;
+        }
+        .edge-sticky-holder {
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            background-color: #fff;
+            box-sizing: border-box;
+            border-bottom: 1px solid $extra-border-color;
+
+            .edge-vertical-align-containers {
+                padding: 0 40px;
+            }
+            .edge-grid{
+                .edge-vertical-align-containers {
+                    padding: 0;
+                }
+            }
+        }
+
+        .admin-bar &.header-appear {
+            top: 32px;
+        }
+
+        .edge-sticky-holder .edge-logo-wrapper a {
+            max-height: $sticky-header-height;
+        }
+
+        .edge-position-center-inner {
+            height: 100%;
+        }
+
+        .edge-sticky-right {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .edge-position-right-inner {
+
+            .edge-main-menu-widget-area {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+
+                &:only-child {
+                    display: table;
+                    height: 100%;
+                    margin: 0 -10px;
+
+                    .edge-main-menu-widget-area-inner {
+                        display: table-cell;
+                        vertical-align: middle;
+                        height: 100%;
+                    }
+                }
+
+                .edge-main-menu-widget-area-inner{
+                    height: 100%;
+                    margin: 0 -10px;
+                }
+            }
+        }
+
+
+    }
+    /* ==========================================================================
+    #Sticky header styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Fixed header styles - start
+    ========================================================================== */
+    .edge-fixed-wrapper.fixed {
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        -webkit-backface-visibility: hidden;
+
+        .admin-bar & {
+            margin-top: 32px;
+        }
+    }
+
+    /* ==========================================================================
+    #Fixed header - end
+    ========================================================================== */
+}
+
+.edge-header-logo-area-in-grid-padding .edge-page-header .edge-logo-area .edge-vertical-align-containers,
+.edge-header-menu-area-in-grid-padding .edge-page-header .edge-menu-area .edge-vertical-align-containers {
+    padding: 0px 25px;
+}
+
+.edge-menu-area-shadow-disable .edge-page-header .edge-menu-area,
+.edge-menu-area-in-grid-shadow-disable .edge-page-header .edge-menu-area .edge-grid .edge-vertical-align-containers{
+    box-shadow: none;
+}
+
+.edge-logo-area-border-disable .edge-page-header .edge-logo-area,
+.edge-logo-area-in-grid-border-disable .edge-page-header .edge-logo-area .edge-grid .edge-vertical-align-containers,
+.edge-menu-area-border-disable .edge-page-header .edge-menu-area,
+.edge-menu-area-in-grid-border-disable .edge-page-header .edge-menu-area .edge-grid .edge-vertical-align-containers{
+    border: none;
+}
+
+.edge-header-vertical-shadow-disable .edge-vertical-area-background{
+    box-shadow: none;
+}
+
+.edge-header-vertical-border-disable .edge-vertical-area-background{
+    border: none;
+}
+
+/* ==========================================================================
+#Light header - begin
+========================================================================== */
+
+.edge-light-header {
+
+    .edge-page-header > div:not(.fixed):not(.edge-sticky-header) {
+
+        .edge-logo-wrapper {
+
+            .edge-light-logo {
+                opacity: 1;
+            }
+
+            .edge-normal-logo,
+            .edge-dark-logo {
+                opacity: 0;
+            }
+        }
+
+        .edge-menu-area {
+            color: $header-light-color !important; //Beacause of inline color styles
+
+            .widget:not(.edge-login-register-widget) {
+                color: $header-light-color !important; //Beacause of inline color styles
+
+                p,
+                a,
+                span,
+                i,
+                .widgettitle {
+                    color: $header-light-color !important; //Beacause of inline color styles
+                }
+
+                a:hover {
+                    color: $header-light-hover-color !important; //Beacause of inline color styles
+                }
+            }
+        }
+
+        &.edge-menu-area {
+            color: $header-light-color !important; //Beacause of inline color styles
+
+            .widget:not(.edge-login-register-widget) {
+                color: $header-light-color !important; //Beacause of inline color styles
+
+                p,
+                a,
+                span,
+                i,
+                .widgettitle {
+                    color: $header-light-color !important; //Beacause of inline color styles
+                }
+
+                a:hover {
+                    color: $header-light-hover-color !important; //Beacause of inline color styles
+                }
+            }
+        }
+    }
+
+    .edge-vertical-menu-area {
+
+        .edge-logo-wrapper {
+
+            .edge-light-logo {
+                opacity: 1;
+            }
+
+            .edge-normal-logo,
+            .edge-dark-logo {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+#Light header - end
+========================================================================== */
+
+/* ==========================================================================
+#Dark header - begin
+========================================================================== */
+
+.edge-dark-header {
+
+    .edge-page-header {
+
+        > div:not(.fixed):not(.edge-sticky-header) {
+
+            .edge-logo-wrapper {
+
+                .edge-dark-logo {
+                    opacity: 1;
+                }
+
+                .edge-normal-logo,
+                .edge-light-logo {
+                    opacity: 0;
+                }
+            }
+
+            .edge-menu-area {
+                color: $header-dark-color !important; //Because of inline color styles
+
+                .widget {
+                    color: $header-dark-color !important; //Beacause of inline color styles
+
+                    p,
+                    a,
+                    span,
+                    i,
+                    .widgettitle {
+                        color: $header-dark-color !important; //Beacause of inline color styles
+                    }
+
+                    a:hover {
+                        color: $header-dark-hover-color !important; //Beacause of inline color styles
+                    }
+                }
+            }
+
+            &.edge-menu-area {
+                color: $header-dark-color !important; //Because of inline color styles
+
+                .widget {
+                    color: $header-dark-color !important; //Beacause of inline color styles
+
+                    p,
+                    a,
+                    span,
+                    i,
+                    .widgettitle {
+                        color: $header-dark-color !important; //Beacause of inline color styles
+                    }
+
+                    a:hover {
+                        color: $header-dark-hover-color !important; //Beacause of inline color styles
+                    }
+                }
+            }
+        }
+    }
+
+    .edge-vertical-menu-area {
+
+        .edge-logo-wrapper {
+
+            .edge-dark-logo {
+                opacity: 1;
+            }
+
+            .edge-normal-logo,
+            .edge-light-logo {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+#Dark header - end
+========================================================================== */

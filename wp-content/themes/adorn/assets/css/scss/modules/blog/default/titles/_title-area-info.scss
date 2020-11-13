@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Title Area Info style - begin
+   ========================================================================= */
+.edge-title {
+    &.edge-blog-single-title-area-info {
+        text-align: center;
+        .edge-post-info-date {
+            a {
+                color: #fff;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+            }
+        }
+        .entry-title {
+            color: #fff;
+            font-size: 30px;
+            letter-spacing: 0.1em;
+            margin-top: 3px;
+            margin-bottom: 5px;
+        }
+
+        .edge-post-info-author {
+            color: #fff;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            a {
+                letter-spacing: 0.1em;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+/* ==========================================================================
+   Title Area Info style - end
+   ========================================================================= */

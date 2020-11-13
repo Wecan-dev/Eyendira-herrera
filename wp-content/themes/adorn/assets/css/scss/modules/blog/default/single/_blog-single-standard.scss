@@ -1,0 +1,420 @@
+/* ==========================================================================
+   Blog Single Standard style - begin
+   ========================================================================== */
+
+.edge-grid-col-12{
+    .edge-blog-holder.edge-blog-single {
+        &.edge-blog-single-standard {
+            .edge-post-content {
+                .edge-post-text {
+                    padding: 0 17%;
+                    box-sizing: border-box;
+                }
+            }
+            div.edge-related-posts-holder,
+            .edge-comment-holder,
+            .edge-comment-form,
+            .edge-author-description{
+                padding: 0 17%;
+                box-sizing: border-box;
+            }
+        }
+        .format-link,
+        .format-quote{
+            .edge-post-content {
+                .edge-post-text {
+                    padding: 41px 14% 42px;
+                }
+            }
+        }
+    }
+}
+
+
+.single-post{
+    .edge-grid-row{
+       &:not(.edge-content-has-sidebar){
+           .edge-blog-holder.edge-blog-single{
+                article{
+                    .edge-post-content{
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                    &.format-audio{
+                        .edge-post-content{
+                            padding: 0 7.23%;
+                        }
+                    }
+                }
+           }
+        }
+    }
+}
+
+.edge-blog-holder.edge-blog-single {
+
+    &.edge-blog-single-standard {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+        article {
+            margin: 0;
+
+            .edge-post-text-inner {
+                margin-bottom: 55px;
+            }
+
+            .edge-post-text-main {
+                margin-bottom: 35px;
+
+                p{
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+            }
+
+            .edge-post-content {
+                .edge-post-info-bottom {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+
+            .edge-tags {
+                a {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    color: $additional-text-color;
+                    font-size: 12px;
+                    font-weight: 400;
+                    background-color: transparent;
+                    line-height: 57px;
+                    margin-left: 11px;
+                    margin-bottom: 10px;
+                    font-family: $heading-font;
+                    letter-spaci
+                    
+                    &:hover{
+                        color: $first-main-color;
+                    }
+                }
+            }
+        
+            .edge-post-heading {
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        
+            .edge-post-title {
+                margin: 18px 0 10px;
+                font-family: $heading-font;
+                font-weight: 400;
+                line-height: 40px;
+            }
+
+            .edge-post-info-date {
+                font-family: $heading-font;
+
+                a {
+                    letter-spacing: 0.1em;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+            }
+        
+            .edge-post-text {
+                padding: 0;
+            }
+        
+            .edge-post-info-top {
+                margin-bottom: 11px;
+
+                .edge-post-info-author {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: bold;
+                    letter-spacing: 0.1em;
+                    .edge-post-info-author-link {
+                        color: #404040;
+                    }
+                }
+
+                .edge-post-info-comments-holder {
+                    a {
+                        font-weight: bold;
+                        font-size: 12px;
+                        &:before {
+                            content: "\76";
+                            font-family: 'ElegantIcons';
+                            font-size: 14px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+
+                .edge-post-info-category {
+                    a {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: #464646;
+                        font-size: 12px;
+                        letter-spacing: 0.1em;
+                    }
+                }
+            
+                > div {
+                    position: relative;
+                    display: inline-block;
+                    padding-right: 15px;
+                    margin-right: 3px;
+                    color: $default-text-color;
+                
+                    a {
+                        color: inherit;
+                    
+                        &:hover {
+                            color: $default-heading-color;
+                        }
+                    }
+                
+                    &:last-child {
+                        padding-right: 0;
+                        margin-right: 0;
+                    
+                        &:after {
+                            content: '';
+                        }
+                    }
+                }
+            }
+        
+            .edge-post-info-bottom {
+                @include edgeRelativeHolderLayout();
+                margin: 31px 0 0;
+            
+                .edge-post-info-bottom-left,
+                .edge-post-info-bottom-right {
+                    position: relative;
+                    display: inline-block;
+                    width: 50%;
+                    float: left;
+                }
+            
+                .edge-post-info-bottom-left {
+                
+                    > div {
+                        position: relative;
+                        display: inline-block;
+                        padding-right: 8px;
+                        margin-right: 3px;
+                        color: $default-text-color;
+                    
+                        a {
+                            color: inherit;
+                        
+                            &:hover {
+                                color: $default-heading-color;
+                            }
+
+                            span {
+                                padding-left: 3px;
+                            }
+                        }
+                    
+                        &:after {
+                            content: "/";
+                            position: absolute;
+                            top: 0;
+                            right: -2px;
+                        }
+                    
+                        &:last-child {
+                            padding-right: 0;
+                            margin-right: 0;
+                        
+                            &:after {
+                                content: '';
+                            }
+                        }
+                    }
+                }
+            
+                .edge-post-info-bottom-right {
+                    text-align: right;
+                
+                    > div {
+                        margin-left: 17px;
+                    
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            &.format-video{
+                .edge-post-heading{
+                    padding: 0 7.2%;
+                }
+            }
+        
+            &.format-link {
+
+                margin-bottom: 10px;
+                padding: 50px 17%;
+                box-sizing: border-box;
+
+                .edge-post-additional-content {
+                    margin-bottom: 50px;
+                }
+
+                .edge-post-content {
+                    margin-bottom: 40px;
+                }
+
+                .edge-post-info-top {
+                    margin-bottom: 21px;
+                }
+
+                .edge-post-text-main {
+                    margin-bottom: 0;
+                    font-size: 16px;
+                }
+
+                .edge-post-text-inner {
+                    margin-bottom: 0;
+                }
+            
+                .edge-post-text {
+                    padding: 50px 53px;
+                    background-color: #fbfbfb;
+                }
+            
+                .edge-post-text-main {
+                    @include edgeTableLayout();
+                }
+
+                .edge-post-info-bottom {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            
+                .edge-post-mark {
+                    position: absolute;
+                    top: -33px;
+                    right: -57px;
+                    width: 50px;
+                
+                    .edge-link-mark {
+                        font-size: 24px;
+                        color: #c7c7c7;
+                    }
+                }
+            
+                .edge-post-link-holder {
+                    @include edgeTableCellLayout();
+                    text-align: center;
+                }
+            
+                .edge-post-title {
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+            }
+
+            &.format-quote {
+
+                margin-bottom: 55px;
+                padding: 0 17%;
+                box-sizing: border-box;
+
+                .edge-post-additional-content {
+                    margin-bottom: 50px;
+                }
+
+                .edge-post-content {
+                    margin-bottom: 40px;
+                }
+
+                .edge-post-text-main {
+                    margin-bottom: 0;
+                }
+
+                .edge-post-text-inner {
+                    margin-bottom: 0;
+                }
+
+                .edge-post-text {
+                    padding: 50px 53px;
+                    padding-bottom: 42px;
+                    padding-top: 42px;
+                    background-color: #fafafa;
+                }
+
+                .edge-post-text-main {
+                    @include edgeTableLayout();
+                    text-align: center;
+                }
+
+                .edge-post-info-bottom {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .edge-post-mark {
+                    @include edgeTableCellLayout();
+                    width: 50px;
+                    vertical-align: top;
+                    text-align: left;
+
+                    .edge-quote-mark {
+                        padding-top: 5px;
+                        font-size: 36px;
+                        color: $first-main-color;
+                    }
+                }
+
+                .edge-post-link-holder {
+                    @include edgeTableCellLayout();
+                    vertical-align: top;
+                    text-align: left;
+                }
+
+                .edge-post-title {
+                    margin-bottom: 0;
+                    padding-bottom: 3px;
+                    font-size: 24px;
+                    color: $additional-color;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    line-height: 33px;
+                    text-transform: uppercase;
+                }
+
+                .edge-quote-author {
+                    font-size: 12px;
+                    color: $first-main-color;
+                    letter-spacing: 0.1em;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    font-family: $heading-font;
+                }
+
+                .edge-post-author {
+                    display: inline-block;
+                    margin-bottom: 23px;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Blog Single Standard style - end
+   ========================================================================== */

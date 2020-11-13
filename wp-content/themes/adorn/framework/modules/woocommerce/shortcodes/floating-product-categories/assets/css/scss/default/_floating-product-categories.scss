@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Product Categories shortcode styles - begin
+   ========================================================================== */
+
+.edge-floating-prod-cats-holder{
+
+    .edge-floating-prod-cat{
+        float: left;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0;
+        @include edgeTransition(opacity .2 ease-in-out);
+        &.show{
+          opacity: 1;
+        }
+
+      .edge-floating-cat-inner{
+        @include edgeRelativeHolderLayout();
+        height: 100%;
+        padding: 0;
+        border:0 solid #fff;
+        box-sizing: border-box;
+        background-color: #fbfbfb;
+        @include edgeTransition(all 0.2s ease-in-out);
+      }
+
+      .edge-floating-cat-wrapper{
+          @include edgeRelativeHolderLayout();
+          @include edgeBackgroundStyle();
+          height: 100%;
+          background-size:100%;
+          @include edgeTransition(all 0.2s ease-in-out);
+        }
+
+
+      &:hover{
+        .edge-floating-cat-inner{
+          border:15px solid #fff;
+          margin:-15px 0;
+
+          .edge-floating-cat-wrapper{
+            background-size:115%;
+          }
+
+        }
+      }
+
+
+    .edge-category-title{
+        color: $first-main-color;
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin-bottom: 7px;
+    }
+
+    .edge-floating-cat-price-holder{
+        display: block;
+        font-family: $heading-font;
+        font-size: 16px;
+        letter-spacing: 0;
+        color: $default-text-color;
+
+        >span{
+            margin-left: -5px;
+        }
+    }
+
+    .edge-floating-cat-content{
+        position: absolute;
+
+        .edge-btn{
+            font-family: $heading-font;
+            font-size: 16px;
+            color: $first-main-color;
+            margin-top: 19px;
+            border-bottom: 1px solid $first-main-color;
+
+            > span{
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    &.edge-img-small-size{
+      .edge-floating-cat-inner{
+        width: 75%;
+        height: 75%;
+        top: 50%;
+        @include edgeTransform(translateY(-50%));
+      }
+    }
+    &.edge-img-right-side{
+      .edge-floating-cat-inner{
+        float: right;
+      }
+    }
+    .edge-floating-cat-content{
+      position: absolute;
+    }
+
+    &.edge-content-top-left{
+      .edge-floating-cat-content{
+        top: -40px;
+        left: 25px;
+      }
+    }
+    &.edge-content-bottom-left{
+      .edge-floating-cat-content{
+        bottom: -40px;
+        left: 25px;
+      }
+    }
+
+    &.edge-content-top-right{
+      .edge-floating-cat-content{
+        top: -40px;
+        right: 25px;
+      }
+    }
+    &.edge-content-bottom-right{
+      .edge-floating-cat-content{
+        bottom: -40px;
+        right: 25px;
+      }
+    }
+
+    &.edge-content-middle-right{
+      .edge-floating-cat-content{
+        top: 50%;
+        right: -40px;
+        @include edgeTransform(translateY(-50%));
+          -webkit-filter: blur(0);
+          filter: blur(0);
+      }
+    }
+    &.edge-content-middle-left{
+      .edge-floating-cat-content{
+          top: 50%;
+          left: -40px;
+          @include edgeTransform(translateY(-50%));
+          -webkit-filter: blur(0);
+          filter: blur(0);
+      }
+    }
+  }
+
+  $columns_space_label: ('no', 'tiny', 'small', 'normal', 'large');
+  $columns_space_width: (0, 5, 10, 15, 25);
+
+  @for $i from 0 to length($columns_space_label) {
+    &.edge-#{nth($columns_space_label,$i+1)}-space {
+      $column_width: nth($columns_space_width,$i+1);
+      $column_width_padding: $column_width * 2;
+
+      .edge-floating-prod-cat-holder-inner {
+        @if($column_width == 0) {
+          margin: 0;
+        } @else {
+          margin: 0 -#{$column_width}px;
+        }
+
+        .edge-floating-prod-cat{
+          padding: 0 #{$column_width}px;
+          margin: 0 0 #{2*$column_width + 100}px;
+        }
+      }
+    }
+  }
+
+  /*************** Standard Layout - begin ***************/
+
+
+
+  $standard_list_columns: ('two', 'three', 'four');
+
+  @for $i from 0 to length($standard_list_columns) {
+    &.edge-#{nth($standard_list_columns,$i+1)}-columns {
+      $column_width: 100%/($i+2);
+
+      .edge-floating-prod-cat{
+        width: $column_width;
+
+        @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+          &:nth-child(#{$i+2}n+1) {
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+  /*************** Standard Layout - end ***************/

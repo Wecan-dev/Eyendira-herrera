@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Twitter widget style - begin
+   ========================================================================== */
+
+.widget.widget_edge_twitter_widget {
+
+    margin: 0 0 20px;
+
+    > h4 {
+        margin: 0 0 8px;
+    }
+
+    .edge-twitter-widget {
+        @include edgeRelativeHolderLayout();
+        margin: 0;
+
+        li {
+            @include edgeRelativeHolderLayout();
+
+            &:not(:last-child) {
+                margin: 0 0 12px !important;
+            }
+
+            .edge-tweet-text {
+                position: relative;
+
+                a {
+                    position: relative;
+                    line-height: inherit;
+                    color: inherit;
+
+                    &.edge-tweet-time {
+                        display: block;
+
+                        span {
+                            margin: 0 2px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.edge-twitter-standard {
+
+            li {
+
+                .edge-twitter-icon {
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+
+                    i {
+                        font-size: 18px;
+                    }
+                }
+
+                .edge-tweet-text {
+                    padding: 0 0 0 28px;
+                    font-size: 15px;
+
+                    a,
+                    span {
+                        color: $default-heading-color;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.edge-twitter-slider {
+            @include edgeRelativeHolderLayout();
+            padding: 0 40px;
+            text-align: center;
+            box-sizing: border-box;
+
+            li {
+                overflow: hidden;
+
+                .edge-twitter-icon {
+
+                    i {
+                        font-size: 16px;
+                        color: $first-main-color;
+                    }
+                }
+
+                .edge-tweet-text {
+                    font-size: 14px;
+
+                    a,
+                    span {
+                        color: $first-main-color;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: $default-heading-color;
+                        }
+
+                        &.edge-tweet-time {
+                            margin: 21px 0 0;
+                        }
+                    }
+                }
+            }
+    
+            .owl-nav {
+                
+                .owl-prev {
+                    left: 0;
+                }
+    
+                .owl-next {
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Twitter widget style - end
+   ========================================================================== */

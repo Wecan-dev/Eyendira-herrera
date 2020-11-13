@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Product Info shortcode styles - begin
+   ========================================================================== */
+
+.edge-product-info {
+    position: relative;
+	display: block;
+	vertical-align: middle;
+
+	> div {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		
+		p {
+			margin: 0;
+		}
+
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 9px 0 0;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	.edge-pi-title,
+	.edge-pi-image,
+	.edge-pi-rating {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		font-family: $heading-font;
+	}
+
+	h2.edge-pi-title{
+		letter-spacing: 3px;
+		line-height: 40px;
+	}
+
+	.edge-pi-price{
+		font-size: 24px;
+		line-height: 40px;
+		font-family: $heading-font;
+	}
+	
+	.edge-pi-image {
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.edge-pi-category {
+		
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0;
+			
+			a {
+				vertical-align: top;
+			}
+		}
+	}
+	
+	.edge-pi-rating {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		font-family: "ElegantIcons";
+		font-size: 12px;
+		line-height: 1.1em;
+		letter-spacing: 6px;
+		color: #ebbc00;
+		overflow: hidden;
+		-webkit-font-smoothing: antialiased;
+
+		&:before {
+			content: "\e031\e031\e031\e031\e031";
+		}
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+
+			&:before {
+				content: "\e033\e033\e033\e033\e033";
+			}
+		}
+	}
+	
+	.edge-pi-add-to-cart {
+		
+		.edge-btn.edge-btn-solid {
+			
+			&.edge-white-skin {
+				color: $default-heading-color;
+				background-color: #fff;
+				border-color: #fff;
+				
+				&:hover {
+					color: #fff;
+					background-color: $default-heading-color;
+					border-color: $default-heading-color;
+				}
+			}
+			
+			&.edge-dark-skin {
+				color: #fff;
+				background-color: $default-heading-color;
+				border-color: $default-heading-color;
+				
+				&:hover {
+					color: $default-heading-color;
+					background-color: #fff;
+					border-color: #fff;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Product Info shortcode styles - end
+   ========================================================================== */
