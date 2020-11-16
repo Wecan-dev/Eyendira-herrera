@@ -38,6 +38,8 @@ function translate_text($translated) {
      $translated = str_ireplace('LEAVE A COMMENT',  'DEJA UN COMENTARIO',  $translated);
      $translated = str_ireplace('Submit',  'Enviar',  $translated);
      $translated = str_ireplace('Write a comment...',  'Escribe un comentario',  $translated);
+     $translated = str_ireplace('Categories',  'Categorias',  $translated);
+     $translated = str_ireplace('No products in the Carrito.',  'No hay productos en el carrito',  $translated);
   
 
      return $translated;

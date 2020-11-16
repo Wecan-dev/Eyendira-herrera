@@ -113,3 +113,21 @@ span.edge-side-menu-lines {
 .edge-login-register-widget .edge-login-opener {
     font-size: 12px!important;
 }
+@media only screen and (max-width: 768px){
+.edge-pl-holder .edge-pl-categories {
+    float: none;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px!important;
+}
+	.edge-vertical-align-containers .edge-position-left:before {
+    height: 100%!important;
+}
+	.edge-mobile-logo-wrapper {
+    width: 230px!important;
+}
+	.edge-mobile-logo-wrapper img {
+    object-fit: contain!important;
+}
+}
+
