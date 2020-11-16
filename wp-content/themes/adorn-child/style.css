@@ -52,7 +52,7 @@ body {
   font-family:'balham'!important;
     font-size: 12px!important;
 }
-a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p, label, button.frm_button_submit, edge-title .edge-title-holder .edge-breadcrumbs span {
+a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p, label, button.frm_button_submit, edge-title .edge-title-holder .edge-breadcrumbs span, .edge-woo-single-page .woocommerce-tabs #reviews .comment-respond .comment-reply-title {
   font-family:'balham'!important;
 }
 .edge-google-map {
