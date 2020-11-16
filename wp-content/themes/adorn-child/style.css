@@ -73,3 +73,6 @@ span.edge-cart-icon-text, .edge-btn-holder.clearfix, .edge-shopping-cart-inner {
 .edge-page-footer .edge-footer-top-holder .edge-footer-top-inner.edge-grid {
 	display: none!important;
 }
+.edge-woo-single-page .woocommerce-tabs ul.tabs>li:not(:first-child) {
+    margin-left: 0px!important;
+}
