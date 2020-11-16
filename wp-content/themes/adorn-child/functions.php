@@ -29,6 +29,11 @@ function translate_text($translated) {
      $translated = str_ireplace('SEARCH RESULTS',  'Buscar resultados',  $translated);
      $translated = str_ireplace('SEARCH HERE',  'Buscar',  $translated);
      $translated = str_ireplace('HELLO',  '¡HOLA!',  $translated);
+     $translated = str_ireplace('Back to top',  'Volver arriba',  $translated);
+     $translated = str_ireplace('Cart',  'Carrito',  $translated);
+     $translated = str_ireplace('Checkout',  'Pagar',  $translated);
+     $translated = str_ireplace('VIEW CARRITO',  'Ver carrito',  $translated);
+     $translated = str_ireplace('Quantity',  'Cantidad',  $translated);
   
 
      return $translated;

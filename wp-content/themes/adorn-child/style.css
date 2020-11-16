@@ -90,3 +90,10 @@ button.frm_button_submit:hover {
     padding: 15px 20px!important;
 	transition: 0.5s!important;
 }
+/*.edge-header-vertical .edge-vertical-menu ul li a.current-menu-ancestor>a .item_text, .edge-header-vertical .edge-vertical-menu ul li a.current-menu-item>a .item_text, .edge-header-vertical .edge-vertical-menu ul li a:hover .item_text {
+    border-color: transparent;
+}*/
+
+.edge-logo-wrapper {
+    left: -4%!important;
+}

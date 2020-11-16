@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-10-21T14:26:58-03:00\n"
-"PO-Revision-Date: 2020-11-16 15:14+0000\n"
+"PO-Revision-Date: 2020-11-16 15:15+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: woocommerce\n"
 "Language: es_VE\n"
@@ -8245,7 +8245,7 @@ msgstr ""
 #: packages/woocommerce-blocks/build/reviews-by-product.js:1
 #: packages/woocommerce-blocks/build/single-product.js:1
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: includes/admin/class-wc-admin-attributes.php:327
 #: includes/admin/class-wc-admin-log-table-list.php:190
