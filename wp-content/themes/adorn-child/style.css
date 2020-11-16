@@ -42,9 +42,9 @@ body {
 .edge-logo-wrapper {
     width: 270px!important;
 }
-.edge-pl-holder.edge-standard-layout.edge-no-space.edge-three-columns.edge-info-on-image, .edge-side-menu-button-opener .edge-side-menu-lines, .edge-social-sidebar-holder {
+/*.edge-pl-holder.edge-standard-layout.edge-no-space.edge-three-columns.edge-info-on-image, .edge-side-menu-button-opener .edge-side-menu-lines, .edge-social-sidebar-holder {
     display: none!important;
-}
+}*/
 .edge-fullscreen-search-holder.edge-animate {
     background: #fff!important;
 }
