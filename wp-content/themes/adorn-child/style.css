@@ -52,7 +52,7 @@ body {
   font-family:'balham'!important;
     font-size: 12px!important;
 }
-a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p {
+a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p, label, button.frm_button_submit {
   font-family:'balham'!important;
 }
 .edge-google-map {
@@ -75,4 +75,18 @@ span.edge-cart-icon-text, .edge-btn-holder.clearfix, .edge-shopping-cart-inner {
 }
 .edge-woo-single-page .woocommerce-tabs ul.tabs>li:not(:first-child) {
     margin-left: 0px!important;
+}
+button.frm_button_submit {
+    background-color: #000!important;
+    border-radius: 0px!important;
+    border: 1px solid #000!important;
+    padding: 15px 20px!important;
+}
+button.frm_button_submit:hover {
+    background-color: #fff!important;
+	color: #000!important;
+    border-radius: 0px!important;
+    border: 1px solid #000!important;
+    padding: 15px 20px!important;
+	transition: 0.5s!important;
 }
