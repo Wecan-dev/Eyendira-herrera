@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-10-21T14:26:58-03:00\n"
-"PO-Revision-Date: 2020-11-16 16:06+0000\n"
+"PO-Revision-Date: 2020-11-16 19:07+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: woocommerce\n"
 "Language: es_VE\n"
@@ -18082,7 +18082,7 @@ msgstr ""
 #: includes/class-wc-frontend-scripts.php:558
 #: includes/wc-cart-functions.php:125 includes/wc-template-functions.php:2122
 msgid "View cart"
-msgstr ""
+msgstr "Ver carrito"
 
 #: includes/class-wc-cart.php:1153
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart/shared/product-unavailable.js:7
@@ -26873,7 +26873,7 @@ msgstr ""
 #: includes/rest-api/Controllers/Version2/class-wc-rest-system-status-v2-controller.php:1163
 msgctxt "Page setting"
 msgid "Cart"
-msgstr ""
+msgstr "Carrito"
 
 #: includes/rest-api/Controllers/Version2/class-wc-rest-system-status-v2-controller.php:1167
 msgctxt "Page setting"
@@ -28886,7 +28886,7 @@ msgstr ""
 #: packages/woocommerce-blocks/assets/js/blocks/cart-checkout/cart/index.js:20
 #: packages/woocommerce-blocks/build/cart.js:1
 msgid "Cart"
-msgstr ""
+msgstr "Carrito"
 
 #: includes/widgets/class-wc-widget-cart.php:35
 msgid "Hide if cart is empty"
@@ -33877,7 +33877,7 @@ msgstr ""
 
 #: templates/cart/mini-cart.php:92
 msgid "No products in the cart."
-msgstr ""
+msgstr "No hay productos en el carrito"
 
 #: templates/cart/proceed-to-checkout-button.php:26
 msgid "Proceed to checkout"

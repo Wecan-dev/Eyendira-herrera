@@ -19,6 +19,7 @@ add_filter('gettext',  'translate_text');
 add_filter('ngettext',  'translate_text');
 
 function translate_text($translated) {
+	 $translated = str_ireplace('No products in the carrito',  'NO HAY PRODUCTOS EN EL CARRITO',  $translated);
      $translated = str_ireplace('Home',  'Inicio',  $translated);
      $translated = str_ireplace('Type here',  'Escribe aqui',  $translated);
      $translated = str_ireplace('SEARCH RESULTS FOR',  'BUSCAR RESULTADOS PARA',  $translated);
@@ -34,6 +35,9 @@ function translate_text($translated) {
      $translated = str_ireplace('Checkout',  'Pagar',  $translated);
      $translated = str_ireplace('VIEW CARRITO',  'Ver carrito',  $translated);
      $translated = str_ireplace('Quantity',  'Cantidad',  $translated);
+     $translated = str_ireplace('LEAVE A COMMENT',  'DEJA UN COMENTARIO',  $translated);
+     $translated = str_ireplace('Submit',  'Enviar',  $translated);
+     $translated = str_ireplace('Write a comment...',  'Escribe un comentario',  $translated);
   
 
      return $translated;

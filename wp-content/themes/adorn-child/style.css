@@ -52,7 +52,7 @@ body {
   font-family:'balham'!important;
     font-size: 12px!important;
 }
-a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p, label, button.frm_button_submit {
+a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p, label, button.frm_button_submit, edge-title .edge-title-holder .edge-breadcrumbs span {
   font-family:'balham'!important;
 }
 .edge-google-map {
@@ -96,4 +96,20 @@ button.frm_button_submit:hover {
 
 .edge-logo-wrapper {
     left: -4%!important;
+}
+.edge-woocommerce-account-login-form .u-column2.col-2 {
+    margin-top: 35px!important;
+}
+a, i.edge-menu-arrow.arrow_carrot-down {
+    color: #888!important;
+    font-weight: bold!important;
+}
+.edge-logo-wrapper.edge-fullscreen-search-logo.edge-logo-wrapper {
+    display: none!important;
+}
+span.edge-side-menu-lines {
+    display: none!important;
+}
+.edge-login-register-widget .edge-login-opener {
+    font-size: 12px!important;
 }

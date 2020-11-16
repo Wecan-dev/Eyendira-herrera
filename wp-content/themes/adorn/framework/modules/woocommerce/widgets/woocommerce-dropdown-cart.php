@@ -191,7 +191,7 @@ class AdornEdgeWoocommerceDropdownCart extends WP_Widget {
 				<?php else : ?>
 					<div class="edge-shopping-cart-dropdown">
 						<ul>
-							<li class="edge-empty-cart"><?php esc_html_e( 'No products in the cart.', 'adorn' ); ?></li>
+							<li class="edge-empty-cart"><?php esc_html_e( 'No hay productos en el carrito', 'adorn' ); ?></li>
 						</ul>
 					</div>
 				<?php endif; ?>
@@ -278,7 +278,7 @@ function adorn_edge_woocommerce_header_add_to_cart_fragment( $fragments ) {
 		<?php else : ?>
 			<div class="edge-shopping-cart-dropdown">
 				<ul>
-					<li class="edge-empty-cart"><?php esc_html_e( 'No products in the cart.', 'adorn' ); ?></li>
+					<li class="edge-empty-cart"><?php esc_html_e( 'No hay productos en el carrito', 'adorn' ); ?></li>
 				</ul>
 			</div>
 		<?php endif; ?>
