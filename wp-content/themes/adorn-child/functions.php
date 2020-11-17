@@ -42,6 +42,7 @@ function translate_text($translated) {
      $translated = str_ireplace('No products in the Carrito.',  'No hay productos en el carrito',  $translated);
      $translated = str_ireplace('Go Back Shopping',  'Volver de compras',  $translated);
      $translated = str_ireplace('SHOPPING CARRITO',  'CARRITO',  $translated);
+     $translated = str_ireplace('Page',  'Pagina',  $translated);
      $translated = str_ireplace('ADDING TO',  'AGREGANDO AL',  $translated);
      $translated = str_ireplace('Why not return to our amazing shop and start filling it with products. Just click on the button below to instantly get back to the shop page. Oh, and while you are there, check out all of our mind-blowing discounts.',  '¿Por qué no volver a nuestra increíble tienda y empezar a llenarla de productos? Simplemente haga clic en el botón de abajo para volver instantáneamente a la página de la tienda. Ah, y mientras estás allí, echa un vistazo a todos nuestros increíbles descuentos.',  $translated);
   
