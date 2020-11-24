@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2019-05-09T09:46:30+02:00\n"
-"PO-Revision-Date: 2020-11-16 15:24+0000\n"
+"PO-Revision-Date: 2020-11-24 18:03+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: edge-membership\n"
 "Language: es_VE\n"
@@ -151,8 +151,7 @@ msgstr ""
 #: dashboard/page-templates/user-dashboard.php:31
 #: widgets/login-widget/templates/login-modal-template.php:5
 msgid "Register"
-msgstr ""
-"Registrarse\n"
+msgstr "Registrarse"
 
 #: dashboard/page-templates/user-dashboard.php:34
 msgid "Reset Password"
@@ -238,8 +237,7 @@ msgstr ""
 #: shortcodes/login/templates/login-template.php:28
 #: shortcodes/login/templates/login-template.php:33
 msgid "SIGN IN"
-msgstr ""
-"Registrarse\n"
+msgstr "Acceder"
 
 #: shortcodes/register/register.php:56
 msgid "You don't have permission to register"
@@ -259,8 +257,7 @@ msgstr ""
 #: shortcodes/register/templates/register-template.php:27
 #: shortcodes/register/templates/register-template.php:32
 msgid "REGISTER"
-msgstr ""
-"Registrarse\n"
+msgstr "Registrarse"
 
 #: shortcodes/reset-password/templates/reset-password-template.php:4
 msgid "Enter username or email"
@@ -280,8 +277,7 @@ msgstr ""
 
 #: widgets/login-widget/login-widget.php:22
 msgid "Sign In"
-msgstr ""
-"Registrarse\n"
+msgstr "Ingresar"
 
 #: widgets/login-widget/templates/login-widget-template.php:37
 msgid "Log Out"
