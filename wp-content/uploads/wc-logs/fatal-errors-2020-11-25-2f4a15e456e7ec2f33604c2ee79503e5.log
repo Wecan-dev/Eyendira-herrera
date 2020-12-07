@@ -1,0 +1,2 @@
+2020-11-25T20:06:47+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 32768 bytes) en /var/www/html/Eyendira-herrera/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php en la línea 210
+
