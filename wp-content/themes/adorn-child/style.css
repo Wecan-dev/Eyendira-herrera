@@ -16,7 +16,9 @@ body {
   font-family: 'balham';
   src: url("../adorn/custom/balham.woff") format('woff');
 }
-
+.container.mi-cuenta-tecniplas {
+	width: 100%!important;
+}
 
 /*button.button, .edge-widget-title {
     font-family: sans-serif!important;
@@ -52,7 +54,7 @@ body {
   font-family:'balham'!important;
     font-size: 12px!important;
 }
-a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p, label, button.frm_button_submit, edge-title .edge-title-holder .edge-breadcrumbs span, .edge-woo-single-page .woocommerce-tabs #reviews .comment-respond .comment-reply-title, button.btn.button.ur-submit-button, button.woocommerce-button.button.woocommerce-form-login__submit {
+a, li, .woocommerce-page .edge-content label, div.woocommerce label , span.item_text, h1, h2, h3, h4, h5, h6, p, label, button.frm_button_submit, edge-title .edge-title-holder .edge-breadcrumbs span, .edge-woo-single-page .woocommerce-tabs #reviews .comment-respond .comment-reply-title, button.btn.button.ur-submit-button, button.woocommerce-button.button.woocommerce-form-login__submit, body > div > div.edge-wrapper-inner > header.edge-page-header > div.edge-menu-area > div > div.edge-position-right > div > div > div > div.edge-shopping-cart-holder.edge-cart-info-is-active > div > a > span.edge-cart-info > span {
   font-family:'balham'!important;
 }
 .edge-google-map {
@@ -113,7 +115,26 @@ span.edge-side-menu-lines {
 .edge-login-register-widget .edge-login-opener {
     font-size: 12px!important;
 }
+
 @media only screen and (max-width: 768px){
+	.edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    overflow: auto!important;
+    width: max-content!important;
+}
+	.container.mi-cuenta-tecniplas {
+    width: auto!important;
+}
+	.holder .edge-pl-categories ul {
+    margin-top: 10px;
+    display: contents!important;
+}
+	.edge-pl-holder .edge-pl-categories ul {
+    margin-top: 10px;
+    display: contents!important;
+}
+	body > div > div.edge-wrapper-inner > div.edge-content > div > div.edge-container.edge-default-page-template > div > div > div > div > div > div > div > div > div.edge-pl-categories > h6 {
+    display: none!important;
+}
 .edge-pl-holder .edge-pl-categories {
     float: none;
     padding-top: 20px;
@@ -129,5 +150,65 @@ span.edge-side-menu-lines {
 	.edge-mobile-logo-wrapper img {
     object-fit: contain!important;
 }
+	.edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    width: max-content!important;
+    overflow: auto!important;
+}
+}
+@media only screen and (max-width: 320px){
+	body > div > div.edge-wrapper-inner > div.edge-content > div > div.edge-container > div > div > div.edge-sidebar-holder.edge-grid-col-4.edge-grid-col-pull-8 > aside {
+    margin-bottom: 0;
+}
+}
+.woocommerce-MyAccount-content {
+    font-size: 20px!important;
+}
+.woocommerce-MyAccount-content:before {
+    width: 1px;
+    height: initial;
+    background: #d2d2d2;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    left: -8px;
+    position: absolute;
 }
 
+
+body > div > div.edge-wrapper-inner > div.edge-content > div > div.edge-container.edge-default-page-template > div > div > div > div > ul > li.order > strong, body > div > div.edge-wrapper-inner > div.edge-content > div > div.edge-container.edge-default-page-template > div > div > div > div > ul > li.date > strong, body > div > div.edge-wrapper-inner > div.edge-content > div > div.edge-container.edge-default-page-template > div > div > div > div > ul > li.total > strong > span, body > div > div.edge-wrapper-inner > div.edge-content > div > div.edge-container.edge-default-page-template > div > div > div > div > ul > li.method > strong {
+    padding-left: 10px;
+}
+.woocommerce-message.woocommerce-message--info.woocommerce-Message.woocommerce-Message--info.woocommerce-info {
+    margin-bottom: 0!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+	margin-top: 0!important;
+}
+body > div > div.edge-wrapper-inner > div.edge-content > div > div > div > div.woocommerce-MyAccount-content > div.woocommerce-message.woocommerce-message--info.woocommerce-Message.woocommerce-Message--info.woocommerce-info > a {
+    line-height: 30px;
+    font-size: 12px;
+}
+.edge-woocommerce-page .woocommerce-info, .edge-woocommerce-page .woocommerce-message {
+    position: relative;
+    display: block;
+    padding: 5px 5px 5px 5px!important;
+	}
+.u-column1.col-1.woocommerce-Address, .edge-woocommerce-page.woocommerce-account .woocommerce .col2-set.addresses .col-2 {
+    width: 100%!important;
+}
+.edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    width: 75%!important;
+}
+body > div > div.edge-wrapper-inner > div.edge-content > div > div > div > div.woocommerce-MyAccount-content > div.woocommerce-message.woocommerce-message--info.woocommerce-Message.woocommerce-Message--info.woocommerce-info {
+    display: flex;
+    flex-direction: column-reverse;
+}
+body > div > div.edge-wrapper-inner > div.edge-content > div > div > div > div.woocommerce-MyAccount-content {
+    padding: 20px;
+}
+body > div > div.edge-wrapper-inner > div.edge-content > div > div > div > div.woocommerce-MyAccount-content > table > tbody {
+    font-size: 16px!important;
+}

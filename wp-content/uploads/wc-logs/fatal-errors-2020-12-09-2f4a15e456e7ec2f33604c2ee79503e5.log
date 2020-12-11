@@ -1,0 +1,16 @@
+2020-12-09T15:21:37+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 20480 bytes) en /var/www/html/Eyendira-herrera/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php en la línea 350
+
+2020-12-09T15:28:38+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 77824 bytes) en /var/www/html/Eyendira-herrera/wp-content/plugins/js_composer/include/params/google_fonts/google_fonts.php en la línea 33
+
+2020-12-09T15:31:03+00:00 CRITICAL Out of memory (allocated 50331648) (tried to allocate 8192 bytes) en /var/www/html/Eyendira-herrera/wp-admin/includes/ajax-actions.php en la línea 3793
+
+2020-12-09T15:34:46+00:00 CRITICAL Out of memory (allocated 33554432) (tried to allocate 20480 bytes) en /var/www/html/Eyendira-herrera/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/Routes/Cart.php en la línea 38
+
+2020-12-09T15:40:06+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 20480 bytes) en /var/www/html/Eyendira-herrera/wp-includes/functions.php en la línea 624
+
+2020-12-09T15:51:32+00:00 CRITICAL Out of memory (allocated 69206016) (tried to allocate 266240 bytes) in /var/www/html/Eyendira-herrera/wp-includes/pomo/streams.php on line 118
+
+2020-12-09T15:52:06+00:00 CRITICAL Out of memory (allocated 20971520) (tried to allocate 20480 bytes) en /var/www/html/Eyendira-herrera/wp-includes/pomo/mo.php en la línea 323
+
+2020-12-09T16:07:26+00:00 CRITICAL Out of memory (allocated 48234496) (tried to allocate 32768 bytes) en /var/www/html/Eyendira-herrera/wp-admin/includes/post.php en la línea 1901
+
