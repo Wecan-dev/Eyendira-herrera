@@ -16,8 +16,22 @@ body {
   font-family: 'balham';
   src: url("../adorn/custom/balham.woff") format('woff');
 }
+
+.edge-page-header .edge-sticky-header .edge-sticky-holder .edge-logo-wrapper a {
+    max-height: 70px !important;
+}
+.edge-logo-wrapper a{
+	height: 70px !important;
+	
+}
 .container.mi-cuenta-tecniplas {
 	width: 100%!important;
+}
+.edge-logo-wrapper a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 85%;
 }
 
 /*button.button, .edge-widget-title {
@@ -41,8 +55,9 @@ body {
     font-size: 15px!important;
     font-family: 'balham'!important;
 }
-.edge-logo-wrapper {
-    width: 270px!important;
+
+.edge-logo-wrapper img {
+    object-fit: contain!important;
 }
 /*.edge-pl-holder.edge-standard-layout.edge-no-space.edge-three-columns.edge-info-on-image, .edge-side-menu-button-opener .edge-side-menu-lines, .edge-social-sidebar-holder {
     display: none!important;
@@ -97,7 +112,7 @@ button.frm_button_submit:hover {
 }*/
 
 .edge-logo-wrapper {
-    left: -4%!important;
+    left: -6%!important;
 }
 .edge-woocommerce-account-login-form .u-column2.col-2 {
     margin-top: 35px!important;
